@@ -1,0 +1,120 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Verify Your Email | SBook</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      .logo {
+        max-width: 150px;
+        height: auto;
+      }
+      .content {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      .button {
+        background-color: #160202;
+        color: #ffffff;
+        padding: 14px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 20px 0;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        color: #777777;
+      }
+      .unsubscribe {
+        font-size: 11px;
+        color: #999999;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .address {
+        font-size: 11px;
+        color: #999999;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <img
+          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGiECI2hsJO3gXHHlCqxDCfbMsMAtoEx0uc5OPVaksHXTPfTJyBTWpMOFpGkfSeIYixeo&usqp=CAU'
+          alt='SBook Logo'
+          class='logo'
+        />
+
+      </div>
+
+      <div class='content'>
+        <h2 style='color: #111; margin-top: 0;'>Verify Your Email</h2>
+        <p style='font-size: 16px;'>Hi {{name}},</p>
+        <p style='font-size: 15px;'>
+          Welcome to
+          <strong>SBook</strong>
+          – your space to connect and share.<br />
+          Please verify your email address to activate your account.
+        </p>
+
+        <div style='text-align: center;'>
+          <a href='{{verificationLink}}' class='button'>Verify Email</a>
+        </div>
+
+        <p style='font-size: 13px; color: #888;'>
+          If the button doesn't work, copy and paste this URL into your browser:<br
+          />
+          <a
+            href='{{verificationLink}}'
+            style='color: #000000;'
+          >{{verificationLink}}</a>
+        </p>
+      </div>
+
+      <div class='footer'>
+        <p>If you didn't sign up for SBook, you can safely ignore this email.</p>
+        <p>Need help? Contact us at
+          <a
+            href='mailto:support@sbook.com'
+            style='color: #090202;'
+          >support@sbook.com</a></p>
+      </div>
+
+      <div class='unsubscribe'>
+        <a href='{{unsubscribeLink}}' style='color: #999999;'>Unsubscribe</a>
+        from these emails
+      </div>
+
+      <div class='address'>
+        SBook Inc.<br />
+        123 Business Street<br />
+        City, State 12345<br />
+        United States
+      </div>
+    </div>
+  </body>
+</html>

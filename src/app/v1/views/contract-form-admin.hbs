@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>New Contact Form Submission</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 30px auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+      .header {
+        background-color: #1abc9c;
+        padding: 20px;
+        text-align: center;
+      }
+      .header img {
+        max-width: 120px;
+      }
+      .title {
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      .content {
+        padding: 25px;
+        color: #333;
+        font-size: 16px;
+      }
+      .content h2 {
+        margin: 0 0 12px;
+        font-size: 22px;
+        color: #2c3e50;
+        border-bottom: 2px solid #1abc9c;
+        padding-bottom: 5px;
+        display: inline-block;
+      }
+      .content p {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #1abc9c;
+      }
+      .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 18px;
+        font-size: 14px;
+      }
+      .footer a {
+        color: #1abc9c;
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: bold;
+      }
+      .meta-info {
+        background: #f8f9fa;
+        padding: 15px;
+        border-left: 5px solid #1abc9c;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <!-- Logo Section -->
+      <div class='header'>
+        <img
+          src='https://z-p4-instagram.fdac3-1.fna.fbcdn.net/v/t51.29350-15/457625921_1044222610489340_8708443853309445830_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=z-p4-instagram.fdac3-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2AEH_nfNWh5OFBlWmyCBzoF3lVTA2XMdC5u_LzoPRFXr7-4v8e8F7GGdrobKyBiiTovZxPxzTBRI9KPDe8ZRv1KS&_nc_ohc=mgtSL1brS9AQ7kNvgGN8lqS&_nc_gid=d82cad43857f4306a2b739bc8e5997b1&edm=APoiHPcBAAAA&ccb=7-5&ig_cache_key=MzQ0NTQ2NjI5ODU0Mzc5OTg3MA%3D%3D.3-ccb7-5&oh=00_AYDkyx_FqC9mqreMcNhptVijli68P-CqlejwrpFJvrQKbg&oe=67B00C28&_nc_sid=22de04'
+          alt='Company Logo'
+        />
+        <div class='title'>New Contact Form Submission</div>
+      </div>
+
+      <!-- Main Content -->
+      <div class='content'>
+        <h2>Submission Details</h2>
+        <p><span class='highlight'>Client Name:</span> {{clientName}}</p>
+        <p><span class='highlight'>Client Email:</span> {{clientEmail}}</p>
+        <p><span class='highlight'>Message:</span></p>
+        <p>{{body}}</p>
+
+        <!-- Meta Info -->
+        <div class='meta-info'>
+          <p><span class='highlight'>Submitted On:</span> {{submittedDate}}</p>
+        </div>
+
+        <p style='margin-top: 20px; font-style: italic; color: #555;'>
+          This is an automated notification. Please review the details and
+          respond accordingly.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class='footer'>
+        <p><strong>📌 Internal Use Only – Do Not Forward</strong></p>
+        <p>&copy; {{year}} Josim. All Rights Reserved.</p>
+        <p>
+          <a href='https://yourwebsite.com'>Website</a>
+          |
+          <a href='https://facebook.com/yourpage'>Facebook</a>
+          |
+          <a href='https://linkedin.com/in/yourprofile'>LinkedIn</a>
+          |
+          <a href='https://instagram.com/yourprofile'>Instagram</a>
+          |
+          <a href='https://twitter.com/yourprofile'>X</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
