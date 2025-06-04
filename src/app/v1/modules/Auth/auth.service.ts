@@ -3,6 +3,7 @@ import httpStatus from 'http-status';
 import { User } from '../User/user.model';
 import type {
   TChangePassword,
+  TChangeUserRole,
   TJwtPayload,
   TLoginUser,
   TRegisterUser,
@@ -14,7 +15,7 @@ import config from '../../config';
 import { sendEmailBySendGrid } from '../../utils/sendEmailSendGrid';
 import { Profile } from '../Profile/profile.model';
 import mongoose from 'mongoose';
-import { USER_ROLE, USER_STATUS } from '../User/user.constant';
+import { ADMIN_BADGE, USER_ROLE, USER_STATUS } from '../User/user.constant';
 
 const {
   bcryptComparePassword,
@@ -109,12 +110,27 @@ const login = async (payload: TLoginUser) => {
     $or: [{ email: identifier }, { username: identifier }],
   })
     .select('+password')
-    .select('password role email isVerified');
+    .select('password role email isVerified status');
 
   if (!isExistsUser) {
     throw new AppError(
       httpStatus.NOT_FOUND,
       'Invalid username or email. Please check your credentials or sign up.',
+    );
+  }
+
+  // Check user status
+  if (isExistsUser.status === USER_STATUS.DEACTIVATED) {
+    throw new AppError(
+      httpStatus.FORBIDDEN,
+      'Your account is deactivated. Please reactivate your account to login.',
+    );
+  }
+
+  if (isExistsUser.status === USER_STATUS.SOFT_DELETED) {
+    throw new AppError(
+      httpStatus.FORBIDDEN,
+      'Your account has been deleted. Please reactivate your account to login.',
     );
   }
 
@@ -326,7 +342,10 @@ const refreshToken = async (token: string) => {
   }
 
   // jwt payload
-  const jwtPayload = { email, role };
+  const jwtPayload = {
+    email: user.email,
+    role: user.role,
+  };
 
   // create jwt access token
   const accessToken = createJwtAccessToken(jwtPayload);
@@ -362,7 +381,7 @@ const createAdminByAdminIntoDB = async (payload: TRegisterUser) => {
           username,
           role: USER_ROLE.ADMIN,
           isVerified: true,
-          badge: 'https://i.ibb.co/NcYMQtB/admin.jpg',
+          badge: ADMIN_BADGE,
         },
       ],
       { session },
@@ -390,6 +409,38 @@ const createAdminByAdminIntoDB = async (payload: TRegisterUser) => {
   }
 };
 
+const changeUserRoleIntoDB = async (payload: TChangeUserRole) => {
+  const { role, userId } = payload;
+
+  const user = await User.findById(userId).select('role email').lean();
+
+  if (!user) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The user is not found');
+  }
+
+  // an admin can't change own role and can't change first admin role
+  if (user.email === config.SUPER_ADMIN_EMAIL) {
+    throw new AppError(
+      httpStatus.FORBIDDEN,
+      "You can't change the super admin role",
+    );
+  }
+
+  const result = await User.findByIdAndUpdate(
+    userId,
+    {
+      role,
+      badge: role === USER_ROLE.ADMIN ? ADMIN_BADGE : '',
+      ...(role === USER_ROLE.ADMIN && { isVerified: true }), // conditionally set isVerified to true for admin
+    },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
+  return result;
+};
+
 export const AuthServices = {
   userRegistrationIntoDB,
   login,
@@ -400,4 +451,5 @@ export const AuthServices = {
   resetPasswordIntoDB,
   refreshToken,
   createAdminByAdminIntoDB,
+  changeUserRoleIntoDB,
 };

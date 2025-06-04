@@ -1,5 +1,7 @@
+import { UserValidations } from './user.validation';
 import { Types } from 'mongoose';
 import { USER_ROLE, USER_STATUS } from './user.constant';
+import { z } from 'zod';
 
 export type TUserStatus = (typeof USER_STATUS)[keyof typeof USER_STATUS];
 export type TUserRole = (typeof USER_ROLE)[keyof typeof USER_ROLE];
@@ -20,3 +22,5 @@ export type TUser = {
   updatedAt: Date;
   lastLoginAt: Date;
 };
+
+export type TSuspendUser = z.infer<typeof UserValidations.suspendUserSchema>;

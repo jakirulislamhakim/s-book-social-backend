@@ -1,0 +1,131 @@
+[error]: timestamp:2025-06-03 00:53:45 AM traceId:[5f4f3bed-5256-4005-b4eb-3d91e69d3757] msg: method: GET: /api/v1/users msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-03 00:54:21 AM traceId:[fca82e7b-c342-40bd-bc74-18b5cd21d37d] msg: method: GET: /api/v1/users msg: The superAdmin is not found.
+[error]: timestamp:2025-06-03 01:00:17 AM traceId:[f942d0da-a8b5-4eb8-bf45-eab73b6ac7f0] msg: method: GET: /api/v1/users msg: The superAdmin is not found.
+[error]: timestamp:2025-06-03 15:14:04 PM traceId:[e04723c4-7c35-478e-851a-5f0362d1cbfd] msg: method: GET: /api/v1/users?isVerified=tru msg: Invalid mongo id
+[error]: timestamp:2025-06-03 15:14:23 PM traceId:[d495950c-58f2-4636-a392-8d141e0af7c7] msg: method: GET: /api/v1/users?isVerified=fals msg: Invalid mongo id
+[error]: timestamp:2025-06-03 15:15:04 PM traceId:[e96e2380-0a91-45a8-8313-07ca5515f0f7] msg: method: GET: /api/v1/users?isVerified=fals msg: Invalid mongo id
+[error]: timestamp:2025-06-03 15:35:55 PM traceId:[c6e08ece-f6e6-48d6-915e-81bd284bfeb4] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified,%20-email msg: Invalid field "" passed to sort()
+[error]: timestamp:2025-06-03 15:36:05 PM traceId:[d93abcc6-f78d-4efb-b421-2a5d78fe2b43] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified%20,%20-email msg: Invalid field "" passed to sort()
+[error]: timestamp:2025-06-03 15:38:26 PM traceId:[db1673b1-1716-4824-a0ad-24f79a587854] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified%20,%20-email msg: Invalid field "" passed to sort()
+[error]: timestamp:2025-06-03 15:43:23 PM traceId:[4cf32914-aeb5-4242-bbdb-5e810a5d5f1f] msg: method: GET: /api/v1/users?username=superadmin&page=2&limit=2&sort=-isVerified,-email msg: page number 2 must be smaller than totalPage 1 
+[error]: timestamp:2025-06-03 16:47:20 PM traceId:[db175a53-be44-471f-bbd4-1a02e13f4f44] msg: method: GET: /api/v1/users?page=1.2 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:27 PM traceId:[3cfe44ed-f111-4e26-9f36-69c31d49ad6d] msg: method: GET: /api/v1/users?page=askfdja msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:29 PM traceId:[f1aeef4e-5311-41a2-b3b2-6e842f0db3c2] msg: method: GET: /api/v1/users?page=askfdja msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:32 PM traceId:[5c096164-32e8-4c14-9ec6-906ff34ce490] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:34 PM traceId:[9c64bc0a-8119-4ee2-83e3-26bd5e7ca2ed] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:35 PM traceId:[ae5d68e6-6648-4203-a70f-227c2f72f406] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:47:40 PM traceId:[c9bdc845-8b4d-4f56-82de-9e39cb092ce2] msg: method: GET: /api/v1/users?page=999 msg: page number 999 must be smaller than totalPage 1 
+[error]: timestamp:2025-06-03 16:48:12 PM traceId:[641fdf99-4d20-4e86-adff-4d377527db09] msg: method: GET: /api/v1/users?limit=e msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:13 PM traceId:[3a5fadb0-1541-457f-87b9-b5365113a34a] msg: method: GET: /api/v1/users?limit=e msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:16 PM traceId:[0b693158-57df-464e-b362-7f10235fcc4b] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:17 PM traceId:[52a7f8a0-5432-4c76-b424-1de8ee4f7539] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:18 PM traceId:[a3451181-0842-46a6-86ee-06d0df5b9bba] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:57 PM traceId:[c249d330-029f-4e91-a7bd-b482e084bd49] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:48:59 PM traceId:[9f38dc8b-9191-4097-9804-27e6630e6d3c] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:04 PM traceId:[9e9ecc86-e0fb-4d0e-94af-9515c425e638] msg: method: GET: /api/v1/users?limit=adfa msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:10 PM traceId:[50609aba-5651-4bc0-a789-b6cc738a931b] msg: method: GET: /api/v1/users?limit=-134 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:11 PM traceId:[a6958c95-88d5-44b5-afd6-6e7a8b2d650a] msg: method: GET: /api/v1/users?limit=-134 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:20 PM traceId:[a882ec4c-2982-4bb5-b342-172cc8e2fcef] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:21 PM traceId:[033b3b58-ead3-4561-af56-f1cf10681597] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:22 PM traceId:[c2ad87c4-69d9-4005-852e-f19db3080799] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[error]: timestamp:2025-06-03 16:49:43 PM traceId:[7503e46c-ec6b-4783-930a-41cde582eca6] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[error]: timestamp:2025-06-03 16:49:56 PM traceId:[3564969e-59cf-4f2b-874f-4d91a534d0a6] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[error]: timestamp:2025-06-03 16:50:15 PM traceId:[0752ca1a-7f07-4648-84ab-4ecddd54eaa3] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[error]: timestamp:2025-06-03 16:51:52 PM traceId:[393118f6-a81e-4600-871e-ae74f7b38f2a] msg: method: GET: /api/v1/users?searchTerm=aasdfasf msg: page number 1 must be smaller than totalPage 0 
+[error]: timestamp:2025-06-03 17:03:52 PM traceId:[a04f3c44-668b-4d81-86cf-ce074c037b31] msg: method: GET: /api/v1/users?fields=email,-role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:04:14 PM traceId:[71960b6c-f297-4298-8f26-cb4399de2c68] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:04:15 PM traceId:[074b38d8-abbd-4d9e-adb7-28929f53bf05] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:04:21 PM traceId:[48dbc313-99b9-4118-819e-6a8ed86c9fa1] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:31:42 PM traceId:[c19d7951-516a-4345-946b-cf0a635ed28f] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:31:45 PM traceId:[d5147954-7abe-4b30-9c1c-5c0116eed813] msg: method: GET: /api/v1/users?username=altongorczany&fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:36:12 PM traceId:[a79bc413-22bb-46a6-b0e6-fb2f737424e4] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:36:13 PM traceId:[2cd0ed36-36a7-4baa-86a4-0428dc28d8d1] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:36:16 PM traceId:[21d0bbf2-6bb7-4f22-a5ef-ee4b2801c067] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,-role msg: Validation failed !
+[error]: timestamp:2025-06-03 17:37:24 PM traceId:[67cd9901-a482-4ba8-8283-51203a10ec82] msg: method: GET: /api/v1/users?username=altongorczany&fields=-email,-role, msg: Validation failed !
+[error]: timestamp:2025-06-03 19:28:23 PM traceId:[5bdaf104-da98-4c51-8e61-f49bbc9c9bd6] msg: method: GET: /api/v1/users/23423 msg: Validation failed !
+[error]: timestamp:2025-06-03 19:29:03 PM traceId:[6e0bdd4a-cd1e-4361-80b6-2c44e307411d] msg: method: GET: /api/v1/users/23423 msg: Validation failed!
+[error]: timestamp:2025-06-03 19:29:58 PM traceId:[6967e6ff-cf35-4f67-9084-7e9ff2ca9f24] msg: method: GET: /api/v1/users/683df83e28220ea933ad9ecd msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-03 19:30:29 PM traceId:[4851f41a-f01a-4581-a109-b57b1394e925] msg: method: GET: /api/v1/users/683df83e28220ea933ad9ecd msg: The admin is not found.
+[error]: timestamp:2025-06-03 19:31:06 PM traceId:[cbcb17f3-5ab5-4ab9-ac50-600b98c3e8da] msg: method: POST: /api/v1/auth/login msg: Invalid username or email. Please check your credentials or sign up.
+[error]: timestamp:2025-06-03 19:34:12 PM traceId:[94f04477-b373-4c77-b7a3-709c63c3b1ae] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[error]: timestamp:2025-06-03 19:34:44 PM traceId:[dbb34bcb-7a89-417c-ae81-111528467375] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-03 19:39:11 PM traceId:[b736c19a-1c61-4efd-9cd9-e1e75ca3892d] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:39:50 PM traceId:[38f4ac6b-e643-4da6-bdfa-90d2495450c8] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:40:41 PM traceId:[0c6b322d-7fdb-49d2-9959-a8035a08f1b2] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:41:09 PM traceId:[93061d65-ec9a-4df3-8b9f-a2a9654b7f72] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:41:20 PM traceId:[d9457002-98ca-4274-aad2-d9f455ba5c27] msg: method: PATCH: /api/v1/users/username msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-03 19:42:30 PM traceId:[8925d947-3573-4829-a4bb-036391e237ca] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:43:49 PM traceId:[56fe304b-2825-46b0-89fa-a99eb1b62bdf] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:44:28 PM traceId:[2c0d3d87-cd46-408e-9580-b065fdad1f06] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:44:31 PM traceId:[934a9a55-f416-4231-9417-9b5e06a647fd] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:44:33 PM traceId:[de614d51-aadf-4e9f-8667-88391dfaf5bc] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:45:52 PM traceId:[ff66a4b4-f9dd-43cb-8d18-5e2185a0aa5f] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:46:03 PM traceId:[1378175b-eb96-4165-83a3-4b7b5e175af4] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:46:37 PM traceId:[a609211c-2597-459c-ab43-5e8d20acaaeb] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:52:55 PM traceId:[1fe71201-0d91-4942-ba72-747775315941] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[error]: timestamp:2025-06-03 19:54:43 PM traceId:[904e16b0-265c-4d10-a8a8-ea7cdb1449f7] msg: method: PATCH: /api/v1/users/change-role/683df83e28220ea933ad9eca msg: Validation failed!
+[error]: timestamp:2025-06-03 20:01:08 PM traceId:[cea86a76-70a6-4db6-8e1d-f8d7a4bdac15] msg: method: PATCH: /api/v1/users/change-role/683df83e28220ea933ad9eca msg: Validation failed!
+[error]: timestamp:2025-06-04 00:48:41 AM  msg: method: PATCH: /api/v1/users/change-role msg: Unexpected token '}', "{
+    "role":
+}" is not valid JSON
+[error]: timestamp:2025-06-04 00:48:51 AM traceId:[3d760cd2-96a6-4c77-9895-2560667d981c] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[error]: timestamp:2025-06-04 00:49:20 AM traceId:[b8879a13-73fe-4edd-aa0c-caf261dd36b4] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[error]: timestamp:2025-06-04 00:49:38 AM traceId:[12446ee3-5eca-41e7-8259-b5ca657ffb11] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[error]: timestamp:2025-06-04 00:50:08 AM traceId:[df057efd-2c07-4501-a14e-ad9ae050b975] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-04 00:50:14 AM traceId:[e778c70b-8346-4a5c-b148-e410c9685c17] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[error]: timestamp:2025-06-04 00:50:20 AM traceId:[c0f59f7e-daaa-4f26-839d-49303097945e] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[error]: timestamp:2025-06-04 01:01:48 AM traceId:[2db84778-7b43-499a-8e4d-50d9322e8297] msg: method: PATCH: /api/v1/users/change-role msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-04 01:02:17 AM traceId:[0d7748ac-5e9c-4645-acd1-c3562517fdb4] msg: method: PATCH: /api/v1/users/change-role msg: You have no access to this route!
+[error]: timestamp:2025-06-04 01:06:26 AM traceId:[b020c751-eb1a-488a-8b6c-f49facd7ad63] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[error]: timestamp:2025-06-04 01:07:31 AM traceId:[9166a097-e78c-424f-adc7-e8a50ab2b114] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[error]: timestamp:2025-06-04 01:07:35 AM traceId:[3bea0110-cd5f-4072-b671-149a997eb67f] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[error]: timestamp:2025-06-04 01:08:09 AM traceId:[0d071903-093e-4d1a-8b19-cff5f286fa8d] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[error]: timestamp:2025-06-04 01:08:32 AM traceId:[14db88be-cc27-476f-93d6-95ce35650f33] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[error]: timestamp:2025-06-04 01:37:25 AM traceId:[adc1fc4d-e84e-4dce-9010-21cf7dfc9cb6] msg: method: PATCH: /api/v1/auth/change-role msg: Validation failed!
+[error]: timestamp:2025-06-04 14:36:18 PM traceId:[1f42e8e5-bca8-467f-ade2-7e42bb171b75] msg: method: PATCH: /api/v1/users/me/deactivate msg: Access token is required start with Bearer token!
+[error]: timestamp:2025-06-04 15:10:56 PM traceId:[8a584aab-94fe-4981-85be-aee10c65fc0c] msg: method: PATCH: /api/v1/users/me/deactivate msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-04 15:11:43 PM traceId:[7629e3de-9cd6-43ed-bfb5-355dbb098acc] msg: method: PATCH: /api/v1/users/me/deactivate msg: Access denied. Required role(s): user, admin. Your role: superAdmin
+[error]: timestamp:2025-06-04 15:17:05 PM traceId:[7d6eb528-c14e-481e-8e57-62ad872842a8] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please contact support.
+[error]: timestamp:2025-06-04 15:19:12 PM traceId:[27a48263-3e17-42eb-88f3-c858a2de64b2] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:20:05 PM traceId:[f91b8d17-df96-4d08-a32e-35eb9158809d] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:20:08 PM traceId:[bb2190a8-f419-490a-bc16-6a5dc4db1757] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:20:26 PM traceId:[890e10a7-5213-4529-bb1a-87d05aec1747] msg: method: PATCH: /api/v1/users/me/restore msg: Account is currently deactivated. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:23:19 PM traceId:[09fd9145-698c-4edf-9531-8416f95aa6a5] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently active . Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:26:53 PM traceId:[c5c804fe-40b2-495d-89dc-1d4aaf89c6d9] msg: method: PATCH: /api/v1/users/me/restore msg: Account is currently softdeleted. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:39:57 PM traceId:[87c23afa-38be-48ab-b0fe-3e73a1520fcf] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently softdeleted. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:40:07 PM traceId:[ae2b7482-5917-4a90-b7d1-7bf3ce988ed2] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently softdeleted. Please restore your account or contact support.
+[error]: timestamp:2025-06-04 15:42:22 PM traceId:[bad66458-74c4-4d5e-be68-f74fad66fdb2] msg: method: PATCH: /api/v1/users/afasdf/suspend msg: Validation failed!
+[error]: timestamp:2025-06-04 15:43:11 PM traceId:[c7982599-113f-435a-9459-420beba56c2c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Validation failed!
+[error]: timestamp:2025-06-04 15:43:36 PM traceId:[e3acd926-5103-45cf-97d9-39c484fd9de0] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Validation failed!
+[error]: timestamp:2025-06-04 16:15:31 PM traceId:[c5d15b8a-1213-4d34-b010-4dde34566ff9] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Access denied. Required role(s): superAdmin, admin. Your role: user
+[error]: timestamp:2025-06-04 16:15:56 PM traceId:[abd82c78-52ce-4cff-a277-7d602e862dcd] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-04 16:16:43 PM traceId:[6c61c19f-f9ff-438d-b82c-0d29a27fda8c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Invalid mongo id
+[error]: timestamp:2025-06-04 16:40:18 PM traceId:[e632b231-62f1-4f7a-b871-902b6add1e2b] msg: method: PATCH: /api/v1/users/683df4f62f2f13ef7c9d9932/suspend msg: You can't suspend an admin
+[error]: timestamp:2025-06-04 16:40:36 PM traceId:[57c22580-509c-4a5f-96c3-bc7c757f7077] msg: method: PATCH: /api/v1/users/683ef9358fc661deac40eb46/suspend msg: You can't suspend an admin
+[error]: timestamp:2025-06-04 16:46:33 PM traceId:[e0671f24-ecac-42b4-9294-b62831a4e042] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: User is already suspended
+[error]: timestamp:2025-06-04 16:48:22 PM traceId:[393b1621-9329-4534-827d-a525f0777e84] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/restore msg: User is not suspended
+[error]: timestamp:2025-06-04 16:50:18 PM traceId:[77b826de-948f-4e13-91f9-526ad7ea7057] msg: method: PATCH: /api/v1/users/683df83e28220ea933a9ecd/restore msg: Validation failed!
+[error]: timestamp:2025-06-04 16:55:20 PM traceId:[fb84a3a3-f390-400d-80ac-98f35b9e755c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/restore msg: User is not suspended
+[error]: timestamp:2025-06-04 16:55:52 PM traceId:[a386453e-7967-4ea3-a7c1-d5e739ee683f] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: User is already suspended
+[error]: timestamp:2025-06-04 16:56:36 PM traceId:[4c4e6c9c-3e6f-4338-9909-54f2013720e3] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9eca/restore msg: The user is not found
+[error]: timestamp:2025-06-05 01:07:43 AM traceId:[6cfb4e95-6165-4224-80aa-be7416a574cf] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[error]: timestamp:2025-06-05 01:08:22 AM traceId:[f9153620-ce20-431f-81c6-3a7cc3a954b5] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[error]: timestamp:2025-06-05 01:09:15 AM traceId:[c67c8d5e-4bee-4ff2-ad01-01ce19010964] msg: method: POST: /api/v1/auth/login msg: Your account is deactivated. Please reactivate your account to login.
+[error]: timestamp:2025-06-05 01:10:37 AM traceId:[05c9eb82-0a0a-4c8a-b064-5cd018af4215] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[error]: timestamp:2025-06-05 01:10:52 AM traceId:[5650a722-99cc-4731-a6a4-3286097dec3f] msg: method: PATCH: /api/v1/users/me/reactive msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:56:01 AM traceId:[e565bbce-4e50-458f-aefa-f02fb763b67c] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:56:05 AM traceId:[70783489-b544-4a1d-a733-548d6c79fefd] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:57:01 AM traceId:[ba16b053-699f-40c1-8d93-9851b243b8f1] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[error]: timestamp:2025-06-05 01:57:16 AM traceId:[76746976-2d79-458b-8d10-2966eca8d5b7] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:57:19 AM traceId:[5ba7f5ef-bb22-4af9-b047-de3fd32a6c19] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:57:20 AM traceId:[2b61c3e2-6ad9-4191-a358-64fbedcdeae5] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:57:21 AM traceId:[72d7f82a-1315-407e-9174-d7fdfcd9d176] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[error]: timestamp:2025-06-05 01:57:35 AM traceId:[f3595c48-d749-4313-bbe8-871d366475ff] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[error]: timestamp:2025-06-05 01:57:39 AM traceId:[8a584401-9838-4e70-94ed-41fca4d899bb] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[error]: timestamp:2025-06-05 01:58:33 AM traceId:[4fcc0e37-594b-41c6-a047-a29b4ca92353] msg: method: GET: /api/v1/users msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-06-05 02:02:15 AM traceId:[83ec862a-8a36-4888-bce3-8a4e3f481608] msg: method: GET: /api/v1/users?fields=-email,role msg: Validation failed!
+[error]: timestamp:2025-06-05 02:06:24 AM traceId:[0003cb10-6a57-49a1-951c-fe99b0a0a85b] msg: method: GET: /api/v1/users?page=3&limit=5 msg: page number 3 must be smaller than totalPage 1 
+[error]: timestamp:2025-06-05 02:07:57 AM traceId:[320457e7-676b-48fd-8443-d11e61d9b88a] msg: method: GET: /api/v1/users?page=3&limit=5 msg: Requested page number (3) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-06-05 02:12:19 AM traceId:[4dee366e-4b3a-4588-8698-0645eafb6850] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.
+[error]: timestamp:2025-06-05 02:22:19 AM traceId:[3a9365a2-8c91-4daf-8f44-addcda514f8f] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.
+[error]: timestamp:2025-06-05 02:22:31 AM traceId:[1fb1ecd5-24cd-41a0-9f93-1ff3c553df17] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.

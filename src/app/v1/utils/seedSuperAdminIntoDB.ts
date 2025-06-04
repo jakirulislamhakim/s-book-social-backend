@@ -7,7 +7,7 @@ import { Profile } from '../modules/Profile/profile.model';
 import mongoose from 'mongoose';
 
 // the fnc execute only once when the app is running for the first time
-export const seedFirstSuperAdminIntoDB = async () => {
+export const seedSuperAdminIntoDB = async () => {
   const user = await User.findOne({
     email: config.SUPER_ADMIN_EMAIL,
     role: USER_ROLE.SUPER_ADMIN,
@@ -58,7 +58,7 @@ export const seedFirstSuperAdminIntoDB = async () => {
       );
 
       // eslint-disable-next-line no-console
-      console.log('First admin seeded successfully');
+      console.log('super admin seeded successfully 🛡️ ✅');
       await session.commitTransaction();
       session.endSession();
     } catch (error) {

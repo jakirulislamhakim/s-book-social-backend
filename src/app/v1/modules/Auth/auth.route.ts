@@ -58,4 +58,11 @@ router.post(
   AuthControllers.createAdminBySuperAdmin,
 );
 
+router.patch(
+  '/change-role',
+  validateReq.body(AuthValidations.changeUserRoleSchema),
+  authMiddleware(USER_ROLE.SUPER_ADMIN),
+  AuthControllers.changeUserRole,
+);
+
 export const AuthRoutes = router;

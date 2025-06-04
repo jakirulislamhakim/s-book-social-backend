@@ -4,7 +4,7 @@ import httpStatus from 'http-status';
 
 const handleZodError = (err: ZodError) => {
   const statusCode = httpStatus.BAD_REQUEST;
-  const message = 'Validation failed !';
+  const message = 'Validation failed!';
 
   const errorSources: TErrorSources = err.issues.map((issue) => {
     const unCategorizedKey = issue.code === 'unrecognized_keys';

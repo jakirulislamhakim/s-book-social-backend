@@ -1,0 +1,427 @@
+[info]: timestamp:2025-06-03 00:47:09 AM traceId:[5b681ddc-7d2d-47cb-a575-5f459ac8aa22] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 00:48:15 AM traceId:[c9269113-6c8d-4139-b1da-fff69547d09b] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 00:53:45 AM traceId:[5f4f3bed-5256-4005-b4eb-3d91e69d3757] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-03 00:53:45 AM traceId:[5f4f3bed-5256-4005-b4eb-3d91e69d3757] msg: method: GET: /api/v1/users msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-03 00:54:20 AM traceId:[fca82e7b-c342-40bd-bc74-18b5cd21d37d] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-03 00:54:21 AM traceId:[fca82e7b-c342-40bd-bc74-18b5cd21d37d] msg: method: GET: /api/v1/users msg: The superAdmin is not found.
+[info]: timestamp:2025-06-03 01:00:17 AM traceId:[f942d0da-a8b5-4eb8-bf45-eab73b6ac7f0] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-03 01:00:17 AM traceId:[f942d0da-a8b5-4eb8-bf45-eab73b6ac7f0] msg: method: GET: /api/v1/users msg: The superAdmin is not found.
+[info]: timestamp:2025-06-03 01:01:10 AM traceId:[c2620c1c-f8a9-4787-b129-d160744cae8c] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-03 01:02:07 AM traceId:[d9ca01e2-74aa-45e5-a01b-b96bd55ba672] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-03 01:02:14 AM traceId:[8a5de43b-08b9-4ecf-8e5f-8da6eed2ac81] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:03:59 AM traceId:[c9984bf5-bf3f-4276-b406-497ec68e7222] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:04:05 AM traceId:[142500ea-bf1c-49fd-ba96-25ca8e153100] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:04:15 AM traceId:[79b3bd8f-bb17-49c8-b18a-7fa6bae0a707] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:04:26 AM traceId:[07c4ab16-b80c-424f-8ad8-97cbcf9d4428] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:06:14 AM traceId:[b66d104b-ba45-455a-b1ed-d98cebc7c67f] msg:Incoming request: GET /api/v1/users?searchTerm=jahi
+[info]: timestamp:2025-06-03 01:06:24 AM traceId:[21733f63-827f-4d75-8f24-764d84dcd243] msg:Incoming request: GET /api/v1/users?searchTerm=super
+[info]: timestamp:2025-06-03 01:08:02 AM traceId:[26c27c65-4137-4f58-bb5c-255337c96f13] msg:Incoming request: GET /api/v1/users?username=superadmin
+[info]: timestamp:2025-06-03 01:08:37 AM traceId:[982a472e-2b93-4f38-96f5-2f8a264f58a5] msg:Incoming request: GET /api/v1/users?username=superadmin
+[info]: timestamp:2025-06-03 01:14:27 AM traceId:[b175171c-233f-4f4f-815a-537779ead22c] msg:Incoming request: GET /api/v1/users?sort=email
+[info]: timestamp:2025-06-03 01:14:35 AM traceId:[a647b525-06df-4c92-9a13-ddb145e67ab4] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:15:10 AM traceId:[05fef272-5a49-4e99-8854-af59701f2042] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-03 01:15:21 AM traceId:[a929d00d-a3e7-4584-9b10-6ec9fcd03e92] msg:Incoming request: GET /api/v1/users?sort=email
+[info]: timestamp:2025-06-03 01:15:33 AM traceId:[68332c2e-803a-450f-b659-73bfe37aebc2] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 01:17:26 AM traceId:[b176f9b3-0c7d-4444-a7b9-7fba00694e2d] msg:Incoming request: GET /api/v1/users?sort=email,isVerified
+[info]: timestamp:2025-06-03 01:17:38 AM traceId:[084086fc-005c-4a2f-9719-8a2af8cc526e] msg:Incoming request: GET /api/v1/users?sort=isVerified
+[info]: timestamp:2025-06-03 15:13:21 PM traceId:[45fd9004-4d2c-4a92-8654-040b0c8e7936] msg:Incoming request: GET /api/v1/users?sort=isVerified
+[info]: timestamp:2025-06-03 15:13:48 PM traceId:[dd461e63-8d67-42e2-8ea0-4cf06ea02d03] msg:Incoming request: GET /api/v1/users?sort=isVerified&isVrified=true
+[info]: timestamp:2025-06-03 15:13:52 PM traceId:[ecadb94d-156c-4a48-86c7-37dc1636f664] msg:Incoming request: GET /api/v1/users?isVrified=true
+[info]: timestamp:2025-06-03 15:13:58 PM traceId:[5b6a31c8-cbe5-4b82-a0bb-e80d97852163] msg:Incoming request: GET /api/v1/users?isVerified=true
+[info]: timestamp:2025-06-03 15:14:04 PM traceId:[e04723c4-7c35-478e-851a-5f0362d1cbfd] msg:Incoming request: GET /api/v1/users?isVerified=tru
+[error]: timestamp:2025-06-03 15:14:04 PM traceId:[e04723c4-7c35-478e-851a-5f0362d1cbfd] msg: method: GET: /api/v1/users?isVerified=tru msg: Invalid mongo id
+[info]: timestamp:2025-06-03 15:14:20 PM traceId:[4c549a21-5f22-498e-99ec-14ab0af5bf1e] msg:Incoming request: GET /api/v1/users?isVerified=false
+[info]: timestamp:2025-06-03 15:14:23 PM traceId:[d495950c-58f2-4636-a392-8d141e0af7c7] msg:Incoming request: GET /api/v1/users?isVerified=fals
+[error]: timestamp:2025-06-03 15:14:23 PM traceId:[d495950c-58f2-4636-a392-8d141e0af7c7] msg: method: GET: /api/v1/users?isVerified=fals msg: Invalid mongo id
+[info]: timestamp:2025-06-03 15:15:04 PM traceId:[e96e2380-0a91-45a8-8313-07ca5515f0f7] msg:Incoming request: GET /api/v1/users?isVerified=fals
+[error]: timestamp:2025-06-03 15:15:04 PM traceId:[e96e2380-0a91-45a8-8313-07ca5515f0f7] msg: method: GET: /api/v1/users?isVerified=fals msg: Invalid mongo id
+[info]: timestamp:2025-06-03 15:15:29 PM traceId:[f6d56469-2185-4139-a5e1-8887d142f758] msg:Incoming request: GET /api/v1/users?sort=isVerified
+[info]: timestamp:2025-06-03 15:15:38 PM traceId:[7a9b7734-64f9-44f7-9c9f-da15c30835e9] msg:Incoming request: GET /api/v1/users?sort=-isVerified
+[info]: timestamp:2025-06-03 15:15:44 PM traceId:[66162ba2-5a83-48a1-9830-7f299c831840] msg:Incoming request: GET /api/v1/users?sort=-isVerified,email
+[info]: timestamp:2025-06-03 15:15:49 PM traceId:[7d7b25a8-1673-4b8e-aac1-40b56c94556b] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:17:40 PM traceId:[cf31e0f2-da8e-4210-aa6f-b32fed2f8e24] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email
+[info]: timestamp:2025-06-03 15:19:36 PM traceId:[e997e81a-dd88-4c51-b251-efefe3ae37b5] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email
+[info]: timestamp:2025-06-03 15:19:47 PM traceId:[aa609811-d467-4963-af1b-8ecf52db0050] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email&page=1
+[info]: timestamp:2025-06-03 15:19:53 PM traceId:[72a3fff3-1ac1-402f-80f9-f9722760b70d] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email&page=2
+[info]: timestamp:2025-06-03 15:20:10 PM traceId:[53329ffe-f884-456c-97e4-77345ae876a4] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:27:14 PM traceId:[47e2ed35-199c-463e-9602-7194c3602849] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:28:56 PM traceId:[858d2cf7-97cc-41b9-b491-40c3acf76ba5] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:28:58 PM traceId:[e62dc024-d1cb-413b-b770-251ce622a68a] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:29:00 PM traceId:[586907d1-c5ec-44fa-a053-c2b5b3b549bb] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:31:22 PM traceId:[22588c45-9cc3-4624-93fa-cfae072e62e0] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&fields=-email&page=2&limit=2
+[info]: timestamp:2025-06-03 15:35:46 PM traceId:[6bbe611d-60c0-496b-b605-3348c0c523f9] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email&limit=2
+[info]: timestamp:2025-06-03 15:35:54 PM traceId:[c6e08ece-f6e6-48d6-915e-81bd284bfeb4] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified,%20-email
+[error]: timestamp:2025-06-03 15:35:55 PM traceId:[c6e08ece-f6e6-48d6-915e-81bd284bfeb4] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified,%20-email msg: Invalid field "" passed to sort()
+[info]: timestamp:2025-06-03 15:36:04 PM traceId:[d93abcc6-f78d-4efb-b421-2a5d78fe2b43] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified%20,%20-email
+[error]: timestamp:2025-06-03 15:36:05 PM traceId:[d93abcc6-f78d-4efb-b421-2a5d78fe2b43] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified%20,%20-email msg: Invalid field "" passed to sort()
+[info]: timestamp:2025-06-03 15:38:26 PM traceId:[db1673b1-1716-4824-a0ad-24f79a587854] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified%20,%20-email
+[error]: timestamp:2025-06-03 15:38:26 PM traceId:[db1673b1-1716-4824-a0ad-24f79a587854] msg: method: GET: /api/v1/users?limit=2&sort=-isVerified%20,%20-email msg: Invalid field "" passed to sort()
+[info]: timestamp:2025-06-03 15:38:34 PM traceId:[2bae199c-36af-46aa-b922-009fa8465a36] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:41:47 PM traceId:[fe2c3872-13b3-465c-aa02-7cee0e3e030b] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:41:50 PM traceId:[583f0ff5-1d62-43cc-b762-a7e322f3b3f0] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:42:42 PM traceId:[ff3a1b11-f283-4dac-ab8b-5ba7698a94d6] msg:Incoming request: GET /api/v1/users?limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:42:53 PM traceId:[b260c773-113d-4aa4-b822-638e766f5c89] msg:Incoming request: GET /api/v1/users?page=2&limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:43:13 PM traceId:[c3820b86-fd77-4a45-8f87-b3813e83a72e] msg:Incoming request: GET /api/v1/users?fields=-email&page=2&limit=2&sort=-isVerified,-email
+[info]: timestamp:2025-06-03 15:43:22 PM traceId:[4cf32914-aeb5-4242-bbdb-5e810a5d5f1f] msg:Incoming request: GET /api/v1/users?username=superadmin&page=2&limit=2&sort=-isVerified,-email
+[error]: timestamp:2025-06-03 15:43:23 PM traceId:[4cf32914-aeb5-4242-bbdb-5e810a5d5f1f] msg: method: GET: /api/v1/users?username=superadmin&page=2&limit=2&sort=-isVerified,-email msg: page number 2 must be smaller than totalPage 1 
+[info]: timestamp:2025-06-03 16:02:25 PM traceId:[babd2a87-bf0e-49a5-b7f0-f53d52ca336f] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:04:03 PM traceId:[c1acb141-b922-407c-b5aa-b8994436b8c1] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:04:53 PM traceId:[daa8d4ae-c81c-460d-915f-e17542104c40] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:07:01 PM traceId:[e1eb0abb-9d05-4767-9a25-05de03bd1b73] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:17:02 PM traceId:[140355ba-4e23-4665-9190-011e5969a316] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:17:35 PM traceId:[4aad8111-6f7e-404d-9ba2-5ccd66c520ca] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:17:58 PM traceId:[bd25a6f1-0344-440e-92e5-b99c7521ac15] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:18:12 PM traceId:[33047c15-a0c9-44a6-b752-9795bd7d5e49] msg:Incoming request: GET /api/v1/users?limit=2
+[info]: timestamp:2025-06-03 16:22:01 PM traceId:[7303f748-d059-4563-8b74-0092b1940046] msg:Incoming request: GET /api/v1/users?searchTerm=altongorczany&limit=2
+[info]: timestamp:2025-06-03 16:22:12 PM traceId:[9b5a397a-6d68-49c2-a409-f7f57c80893a] msg:Incoming request: GET /api/v1/users?username=altongorczany&limit=2
+[info]: timestamp:2025-06-03 16:22:26 PM traceId:[1092daec-2cb3-4f75-ad8f-ed02b1a4edbe] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-03 16:43:56 PM traceId:[fe0edf2b-9957-45fb-9c34-46fd039dcbc2] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-03 16:47:10 PM traceId:[0c5d5a1c-d196-4835-9524-305808daaa61] msg:Incoming request: GET /api/v1/users?page=2
+[info]: timestamp:2025-06-03 16:47:20 PM traceId:[db175a53-be44-471f-bbd4-1a02e13f4f44] msg:Incoming request: GET /api/v1/users?page=1.2
+[error]: timestamp:2025-06-03 16:47:20 PM traceId:[db175a53-be44-471f-bbd4-1a02e13f4f44] msg: method: GET: /api/v1/users?page=1.2 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:27 PM traceId:[3cfe44ed-f111-4e26-9f36-69c31d49ad6d] msg:Incoming request: GET /api/v1/users?page=askfdja
+[error]: timestamp:2025-06-03 16:47:27 PM traceId:[3cfe44ed-f111-4e26-9f36-69c31d49ad6d] msg: method: GET: /api/v1/users?page=askfdja msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:29 PM traceId:[f1aeef4e-5311-41a2-b3b2-6e842f0db3c2] msg:Incoming request: GET /api/v1/users?page=askfdja
+[error]: timestamp:2025-06-03 16:47:29 PM traceId:[f1aeef4e-5311-41a2-b3b2-6e842f0db3c2] msg: method: GET: /api/v1/users?page=askfdja msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:32 PM traceId:[5c096164-32e8-4c14-9ec6-906ff34ce490] msg:Incoming request: GET /api/v1/users?page=0
+[error]: timestamp:2025-06-03 16:47:32 PM traceId:[5c096164-32e8-4c14-9ec6-906ff34ce490] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:34 PM traceId:[9c64bc0a-8119-4ee2-83e3-26bd5e7ca2ed] msg:Incoming request: GET /api/v1/users?page=0
+[error]: timestamp:2025-06-03 16:47:34 PM traceId:[9c64bc0a-8119-4ee2-83e3-26bd5e7ca2ed] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:35 PM traceId:[ae5d68e6-6648-4203-a70f-227c2f72f406] msg:Incoming request: GET /api/v1/users?page=0
+[error]: timestamp:2025-06-03 16:47:35 PM traceId:[ae5d68e6-6648-4203-a70f-227c2f72f406] msg: method: GET: /api/v1/users?page=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:47:39 PM traceId:[c9bdc845-8b4d-4f56-82de-9e39cb092ce2] msg:Incoming request: GET /api/v1/users?page=999
+[error]: timestamp:2025-06-03 16:47:40 PM traceId:[c9bdc845-8b4d-4f56-82de-9e39cb092ce2] msg: method: GET: /api/v1/users?page=999 msg: page number 999 must be smaller than totalPage 1 
+[info]: timestamp:2025-06-03 16:48:06 PM traceId:[eac6283e-7d37-4cde-8819-bbdff82bfc9a] msg:Incoming request: GET /api/v1/users?limit=2
+[info]: timestamp:2025-06-03 16:48:12 PM traceId:[641fdf99-4d20-4e86-adff-4d377527db09] msg:Incoming request: GET /api/v1/users?limit=e
+[error]: timestamp:2025-06-03 16:48:12 PM traceId:[641fdf99-4d20-4e86-adff-4d377527db09] msg: method: GET: /api/v1/users?limit=e msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:13 PM traceId:[3a5fadb0-1541-457f-87b9-b5365113a34a] msg:Incoming request: GET /api/v1/users?limit=e
+[error]: timestamp:2025-06-03 16:48:13 PM traceId:[3a5fadb0-1541-457f-87b9-b5365113a34a] msg: method: GET: /api/v1/users?limit=e msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:16 PM traceId:[0b693158-57df-464e-b362-7f10235fcc4b] msg:Incoming request: GET /api/v1/users?limit=12342341
+[error]: timestamp:2025-06-03 16:48:16 PM traceId:[0b693158-57df-464e-b362-7f10235fcc4b] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:17 PM traceId:[52a7f8a0-5432-4c76-b424-1de8ee4f7539] msg:Incoming request: GET /api/v1/users?limit=12342341
+[error]: timestamp:2025-06-03 16:48:17 PM traceId:[52a7f8a0-5432-4c76-b424-1de8ee4f7539] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:18 PM traceId:[a3451181-0842-46a6-86ee-06d0df5b9bba] msg:Incoming request: GET /api/v1/users?limit=12342341
+[error]: timestamp:2025-06-03 16:48:18 PM traceId:[a3451181-0842-46a6-86ee-06d0df5b9bba] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:57 PM traceId:[c249d330-029f-4e91-a7bd-b482e084bd49] msg:Incoming request: GET /api/v1/users?limit=12342341
+[error]: timestamp:2025-06-03 16:48:57 PM traceId:[c249d330-029f-4e91-a7bd-b482e084bd49] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:48:59 PM traceId:[9f38dc8b-9191-4097-9804-27e6630e6d3c] msg:Incoming request: GET /api/v1/users?limit=12342341
+[error]: timestamp:2025-06-03 16:48:59 PM traceId:[9f38dc8b-9191-4097-9804-27e6630e6d3c] msg: method: GET: /api/v1/users?limit=12342341 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:04 PM traceId:[9e9ecc86-e0fb-4d0e-94af-9515c425e638] msg:Incoming request: GET /api/v1/users?limit=adfa
+[error]: timestamp:2025-06-03 16:49:04 PM traceId:[9e9ecc86-e0fb-4d0e-94af-9515c425e638] msg: method: GET: /api/v1/users?limit=adfa msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:10 PM traceId:[50609aba-5651-4bc0-a789-b6cc738a931b] msg:Incoming request: GET /api/v1/users?limit=-134
+[error]: timestamp:2025-06-03 16:49:10 PM traceId:[50609aba-5651-4bc0-a789-b6cc738a931b] msg: method: GET: /api/v1/users?limit=-134 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:11 PM traceId:[a6958c95-88d5-44b5-afd6-6e7a8b2d650a] msg:Incoming request: GET /api/v1/users?limit=-134
+[error]: timestamp:2025-06-03 16:49:11 PM traceId:[a6958c95-88d5-44b5-afd6-6e7a8b2d650a] msg: method: GET: /api/v1/users?limit=-134 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:20 PM traceId:[a882ec4c-2982-4bb5-b342-172cc8e2fcef] msg:Incoming request: GET /api/v1/users?limit=0
+[error]: timestamp:2025-06-03 16:49:20 PM traceId:[a882ec4c-2982-4bb5-b342-172cc8e2fcef] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:21 PM traceId:[033b3b58-ead3-4561-af56-f1cf10681597] msg:Incoming request: GET /api/v1/users?limit=0
+[error]: timestamp:2025-06-03 16:49:21 PM traceId:[033b3b58-ead3-4561-af56-f1cf10681597] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:22 PM traceId:[c2ad87c4-69d9-4005-852e-f19db3080799] msg:Incoming request: GET /api/v1/users?limit=0
+[error]: timestamp:2025-06-03 16:49:22 PM traceId:[c2ad87c4-69d9-4005-852e-f19db3080799] msg: method: GET: /api/v1/users?limit=0 msg: Validation failed !
+[info]: timestamp:2025-06-03 16:49:42 PM traceId:[7503e46c-ec6b-4783-930a-41cde582eca6] msg:Incoming request: GET /api/v1/users?searchTerm=1234
+[error]: timestamp:2025-06-03 16:49:43 PM traceId:[7503e46c-ec6b-4783-930a-41cde582eca6] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[info]: timestamp:2025-06-03 16:49:55 PM traceId:[3564969e-59cf-4f2b-874f-4d91a534d0a6] msg:Incoming request: GET /api/v1/users?searchTerm=1234
+[error]: timestamp:2025-06-03 16:49:56 PM traceId:[3564969e-59cf-4f2b-874f-4d91a534d0a6] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[info]: timestamp:2025-06-03 16:50:10 PM traceId:[3535e818-3600-4e8c-b560-7d52ef438d08] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 16:50:14 PM traceId:[0752ca1a-7f07-4648-84ab-4ecddd54eaa3] msg:Incoming request: GET /api/v1/users?searchTerm=1234
+[error]: timestamp:2025-06-03 16:50:15 PM traceId:[0752ca1a-7f07-4648-84ab-4ecddd54eaa3] msg: method: GET: /api/v1/users?searchTerm=1234 msg: page number 1 must be smaller than totalPage 0 
+[info]: timestamp:2025-06-03 16:50:41 PM traceId:[185ae4b5-5718-4bdf-a2f1-559a5b4e4f5f] msg:Incoming request: GET /api/v1/users?searchTerm=1234
+[info]: timestamp:2025-06-03 16:51:27 PM traceId:[dbc752e0-dbba-4764-9d96-d5338c043e96] msg:Incoming request: GET /api/v1/users?searchTerm=a
+[info]: timestamp:2025-06-03 16:51:51 PM traceId:[393118f6-a81e-4600-871e-ae74f7b38f2a] msg:Incoming request: GET /api/v1/users?searchTerm=aasdfasf
+[error]: timestamp:2025-06-03 16:51:52 PM traceId:[393118f6-a81e-4600-871e-ae74f7b38f2a] msg: method: GET: /api/v1/users?searchTerm=aasdfasf msg: page number 1 must be smaller than totalPage 0 
+[info]: timestamp:2025-06-03 16:54:31 PM traceId:[e8edfd32-fd11-4f6f-91eb-bd7116b887b8] msg:Incoming request: GET /api/v1/users?searchTerm=aasdfasf
+[info]: timestamp:2025-06-03 16:54:35 PM traceId:[38f3b6d7-f005-4b1c-a46d-417db12bd263] msg:Incoming request: GET /api/v1/users?searchTerm=aasdfasf
+[info]: timestamp:2025-06-03 16:55:26 PM traceId:[2ebdac9c-c214-4b48-8532-d41acbc72e77] msg:Incoming request: GET /api/v1/users?searchTerm=aasdfasf
+[info]: timestamp:2025-06-03 16:55:29 PM traceId:[fccde8ae-6726-4069-a90a-a3aa9b5d24ec] msg:Incoming request: GET /api/v1/users?searchTerm=aasdfasf
+[info]: timestamp:2025-06-03 16:55:34 PM traceId:[751fdca2-062c-4cf4-b7df-3cf273f4d837] msg:Incoming request: GET /api/v1/users?searchTerm=a
+[info]: timestamp:2025-06-03 16:55:43 PM traceId:[d1caacb2-4cdf-4f84-9dea-2a0056d28bbc] msg:Incoming request: GET /api/v1/users?searchTerm=a
+[info]: timestamp:2025-06-03 17:00:14 PM traceId:[d3eac72d-1c1c-42a3-88cb-cef4765c8af3] msg:Incoming request: GET /api/v1/users?searchTerm=a
+[info]: timestamp:2025-06-03 17:00:21 PM traceId:[83d38a4e-9e94-4a47-acf8-b04b235fc394] msg:Incoming request: GET /api/v1/users?searchTerm=%26%26%26%26%26%26
+[info]: timestamp:2025-06-03 17:03:23 PM traceId:[1ea758ac-b513-4c06-a718-f79ac4fb0a2a] msg:Incoming request: GET /api/v1/users?fields=-email
+[info]: timestamp:2025-06-03 17:03:45 PM traceId:[a34889f7-6285-4cfa-8fee-bcba9488b9d2] msg:Incoming request: GET /api/v1/users?fields=email
+[info]: timestamp:2025-06-03 17:03:52 PM traceId:[a04f3c44-668b-4d81-86cf-ce074c037b31] msg:Incoming request: GET /api/v1/users?fields=email,-role
+[error]: timestamp:2025-06-03 17:03:52 PM traceId:[a04f3c44-668b-4d81-86cf-ce074c037b31] msg: method: GET: /api/v1/users?fields=email,-role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:04:11 PM traceId:[354d2779-5a0b-48ed-b751-576bc078d948] msg:Incoming request: GET /api/v1/users?fields=email,role
+[info]: timestamp:2025-06-03 17:04:14 PM traceId:[71960b6c-f297-4298-8f26-cb4399de2c68] msg:Incoming request: GET /api/v1/users?fields=email,%20role
+[error]: timestamp:2025-06-03 17:04:14 PM traceId:[71960b6c-f297-4298-8f26-cb4399de2c68] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:04:15 PM traceId:[074b38d8-abbd-4d9e-adb7-28929f53bf05] msg:Incoming request: GET /api/v1/users?fields=email,%20role
+[error]: timestamp:2025-06-03 17:04:15 PM traceId:[074b38d8-abbd-4d9e-adb7-28929f53bf05] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:04:17 PM traceId:[24639277-e773-4664-bf4a-ebeb4fdeba28] msg:Incoming request: GET /api/v1/users?fields=email,role
+[info]: timestamp:2025-06-03 17:04:21 PM traceId:[48dbc313-99b9-4118-819e-6a8ed86c9fa1] msg:Incoming request: GET /api/v1/users?fields=email,%20role
+[error]: timestamp:2025-06-03 17:04:21 PM traceId:[48dbc313-99b9-4118-819e-6a8ed86c9fa1] msg: method: GET: /api/v1/users?fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:04:30 PM traceId:[bad494d5-6e28-4e84-ad37-385633a87c8a] msg:Incoming request: GET /api/v1/users?sort=-isVerified,-email
+[info]: timestamp:2025-06-03 17:04:33 PM traceId:[537a65da-a156-437d-bb2f-01d60826e12a] msg:Incoming request: GET /api/v1/users?sort=-isVerified,email
+[info]: timestamp:2025-06-03 17:04:36 PM traceId:[7ff57025-e22d-4dfe-b8fb-abf349ccc982] msg:Incoming request: GET /api/v1/users?sort=-isVerified,email
+[info]: timestamp:2025-06-03 17:05:50 PM traceId:[f949d734-d40d-40ab-be81-53b629c17f27] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-03 17:06:07 PM traceId:[615fc75c-2ca0-4f9e-84a3-4ddeb4b6ba97] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-03 17:06:41 PM traceId:[07b63bd8-6f75-4c21-8020-8bfd47f39ff1] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-03 17:06:52 PM traceId:[33ba7a90-09f2-4a0d-aa13-2d372cfe08a9] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:07:07 PM traceId:[7364462a-61bc-4a5d-affd-4df68155aeef] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:08:03 PM traceId:[779a8657-16fb-41f1-9d39-cd860f295fb0] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:10:53 PM traceId:[75a756d3-7ddb-4326-88c0-2f9d979a681d] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:10:57 PM traceId:[cf1af3fe-2d41-4920-81c3-e509b8de2e59] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:11:02 PM traceId:[af79f869-7874-46e6-85e8-4bab4492b5d4] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 17:15:51 PM traceId:[7158e1d1-99a2-405f-902c-3d3bc53f7d3a] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-03 17:31:42 PM traceId:[c19d7951-516a-4345-946b-cf0a635ed28f] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,%20role
+[error]: timestamp:2025-06-03 17:31:42 PM traceId:[c19d7951-516a-4345-946b-cf0a635ed28f] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:31:45 PM traceId:[d5147954-7abe-4b30-9c1c-5c0116eed813] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=email,%20role
+[error]: timestamp:2025-06-03 17:31:45 PM traceId:[d5147954-7abe-4b30-9c1c-5c0116eed813] msg: method: GET: /api/v1/users?username=altongorczany&fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:31:54 PM traceId:[67168296-75c7-445f-a472-a2045c10b77b] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=email,role
+[info]: timestamp:2025-06-03 17:32:05 PM traceId:[59588884-d37a-4145-a7f3-b386409063e6] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=email,role
+[info]: timestamp:2025-06-03 17:32:14 PM traceId:[179003bc-86a3-495a-8d97-19755dc0a707] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,role
+[info]: timestamp:2025-06-03 17:33:29 PM traceId:[808c7ff1-37de-4270-a68c-e4fc9eb8792d] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,role
+[info]: timestamp:2025-06-03 17:36:05 PM traceId:[8f028aa3-d18e-49cd-9e94-253733525d9b] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,role
+[info]: timestamp:2025-06-03 17:36:12 PM traceId:[a79bc413-22bb-46a6-b0e6-fb2f737424e4] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,%20role
+[error]: timestamp:2025-06-03 17:36:12 PM traceId:[a79bc413-22bb-46a6-b0e6-fb2f737424e4] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:36:13 PM traceId:[2cd0ed36-36a7-4baa-86a4-0428dc28d8d1] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,%20role
+[error]: timestamp:2025-06-03 17:36:13 PM traceId:[2cd0ed36-36a7-4baa-86a4-0428dc28d8d1] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,%20role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:36:16 PM traceId:[21d0bbf2-6bb7-4f22-a5ef-ee4b2801c067] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=email,-role
+[error]: timestamp:2025-06-03 17:36:16 PM traceId:[21d0bbf2-6bb7-4f22-a5ef-ee4b2801c067] msg: method: GET: /api/v1/users?usernames=altongorczany&fields=email,-role msg: Validation failed !
+[info]: timestamp:2025-06-03 17:36:26 PM traceId:[9d2c8634-4978-4a60-8347-94a05274f2bf] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&fields=-email,-role
+[info]: timestamp:2025-06-03 17:36:32 PM traceId:[c9014094-bd7a-4ff4-86ba-7d4768dfde39] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=-email,-role
+[info]: timestamp:2025-06-03 17:36:43 PM traceId:[7f31281a-81f9-4b1d-835a-c477ca4adb1c] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=-email,-role,-_id
+[info]: timestamp:2025-06-03 17:37:24 PM traceId:[67cd9901-a482-4ba8-8283-51203a10ec82] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=-email,-role,
+[error]: timestamp:2025-06-03 17:37:24 PM traceId:[67cd9901-a482-4ba8-8283-51203a10ec82] msg: method: GET: /api/v1/users?username=altongorczany&fields=-email,-role, msg: Validation failed !
+[info]: timestamp:2025-06-03 17:37:35 PM traceId:[5c46c217-f0c5-42a1-ae21-cf35b8508e3a] msg:Incoming request: GET /api/v1/users?username=altongorczany&fields=-email,-role
+[info]: timestamp:2025-06-03 17:37:43 PM traceId:[647dfe0d-a23a-4b78-a9f5-dae4c8eb819a] msg:Incoming request: GET /api/v1/users?sort=-username
+[info]: timestamp:2025-06-03 18:11:22 PM traceId:[f0bfa547-c3f4-49a2-b341-ca0052dfb4c7] msg:Incoming request: GET /api/v1/users?username=altongorczany&sort=-username
+[info]: timestamp:2025-06-03 18:11:30 PM traceId:[3fcf7000-3557-4a8b-a617-5e42882e530c] msg:Incoming request: GET /api/v1/users?usernames=altongorczany&sort=-username
+[info]: timestamp:2025-06-03 18:11:46 PM traceId:[0b4c7618-9a4c-443c-a616-e46005eb84a8] msg:Incoming request: GET /api/v1/users?username=altongorczany&sort=-username
+[info]: timestamp:2025-06-03 18:11:57 PM traceId:[5a0e1cd6-c15a-4dfa-affa-b93bcce76ce4] msg:Incoming request: GET /api/v1/users?searchTerm=altongorczany&sort=-username
+[info]: timestamp:2025-06-03 18:12:03 PM traceId:[f6b557ec-d310-4ae6-ab88-c516cd0ee945] msg:Incoming request: GET /api/v1/users?searchTerm=altongorcza&sort=-username
+[info]: timestamp:2025-06-03 18:28:34 PM traceId:[e5a75c4d-9eb4-4847-bc2b-1e73ee81275f] msg:Incoming request: GET /api/v1/users?searchTerm=altongorcza&sort=-username
+[info]: timestamp:2025-06-03 19:28:23 PM traceId:[5bdaf104-da98-4c51-8e61-f49bbc9c9bd6] msg:Incoming request: GET /api/v1/users/23423
+[error]: timestamp:2025-06-03 19:28:23 PM traceId:[5bdaf104-da98-4c51-8e61-f49bbc9c9bd6] msg: method: GET: /api/v1/users/23423 msg: Validation failed !
+[info]: timestamp:2025-06-03 19:29:03 PM traceId:[6e0bdd4a-cd1e-4361-80b6-2c44e307411d] msg:Incoming request: GET /api/v1/users/23423
+[error]: timestamp:2025-06-03 19:29:03 PM traceId:[6e0bdd4a-cd1e-4361-80b6-2c44e307411d] msg: method: GET: /api/v1/users/23423 msg: Validation failed!
+[info]: timestamp:2025-06-03 19:29:47 PM traceId:[1dd0ed4e-44cd-4419-a66d-b95ecef485d0] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 19:29:58 PM traceId:[6967e6ff-cf35-4f67-9084-7e9ff2ca9f24] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9ecd
+[error]: timestamp:2025-06-03 19:29:58 PM traceId:[6967e6ff-cf35-4f67-9084-7e9ff2ca9f24] msg: method: GET: /api/v1/users/683df83e28220ea933ad9ecd msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-03 19:30:28 PM traceId:[4851f41a-f01a-4581-a109-b57b1394e925] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9ecd
+[error]: timestamp:2025-06-03 19:30:29 PM traceId:[4851f41a-f01a-4581-a109-b57b1394e925] msg: method: GET: /api/v1/users/683df83e28220ea933ad9ecd msg: The admin is not found.
+[info]: timestamp:2025-06-03 19:30:47 PM traceId:[3a851d07-12f3-4be4-8f88-d69d80cb4f65] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-03 19:31:05 PM traceId:[cbcb17f3-5ab5-4ab9-ac50-600b98c3e8da] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-03 19:31:06 PM traceId:[cbcb17f3-5ab5-4ab9-ac50-600b98c3e8da] msg: method: POST: /api/v1/auth/login msg: Invalid username or email. Please check your credentials or sign up.
+[info]: timestamp:2025-06-03 19:31:32 PM traceId:[d81e6702-2da8-419a-83de-6e2d4e771502] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-06-03 19:31:42 PM traceId:[84d1e515-1d87-4375-8cfc-45b6a8079fae] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-03 19:31:51 PM traceId:[f1c20a94-fe75-4ad7-af2a-e44e925bf3a7] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9ecd
+[info]: timestamp:2025-06-03 19:34:11 PM traceId:[94f04477-b373-4c77-b7a3-709c63c3b1ae] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-03 19:34:12 PM traceId:[94f04477-b373-4c77-b7a3-709c63c3b1ae] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[info]: timestamp:2025-06-03 19:34:44 PM traceId:[dbb34bcb-7a89-417c-ae81-111528467375] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-03 19:34:44 PM traceId:[dbb34bcb-7a89-417c-ae81-111528467375] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-03 19:39:11 PM traceId:[b736c19a-1c61-4efd-9cd9-e1e75ca3892d] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:39:11 PM traceId:[b736c19a-1c61-4efd-9cd9-e1e75ca3892d] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:39:50 PM traceId:[38f4ac6b-e643-4da6-bdfa-90d2495450c8] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:39:50 PM traceId:[38f4ac6b-e643-4da6-bdfa-90d2495450c8] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:40:41 PM traceId:[0c6b322d-7fdb-49d2-9959-a8035a08f1b2] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:40:41 PM traceId:[0c6b322d-7fdb-49d2-9959-a8035a08f1b2] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:41:08 PM traceId:[93061d65-ec9a-4df3-8b9f-a2a9654b7f72] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:41:09 PM traceId:[93061d65-ec9a-4df3-8b9f-a2a9654b7f72] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:41:20 PM traceId:[d9457002-98ca-4274-aad2-d9f455ba5c27] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:41:20 PM traceId:[d9457002-98ca-4274-aad2-d9f455ba5c27] msg: method: PATCH: /api/v1/users/username msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-03 19:41:54 PM traceId:[45fafd0f-625a-48ae-943d-8182e668cb8e] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:42:29 PM traceId:[8925d947-3573-4829-a4bb-036391e237ca] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:42:30 PM traceId:[8925d947-3573-4829-a4bb-036391e237ca] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:43:48 PM traceId:[56fe304b-2825-46b0-89fa-a99eb1b62bdf] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:43:49 PM traceId:[56fe304b-2825-46b0-89fa-a99eb1b62bdf] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:44:27 PM traceId:[2c0d3d87-cd46-408e-9580-b065fdad1f06] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:44:28 PM traceId:[2c0d3d87-cd46-408e-9580-b065fdad1f06] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:44:30 PM traceId:[934a9a55-f416-4231-9417-9b5e06a647fd] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:44:31 PM traceId:[934a9a55-f416-4231-9417-9b5e06a647fd] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:44:33 PM traceId:[de614d51-aadf-4e9f-8667-88391dfaf5bc] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:44:33 PM traceId:[de614d51-aadf-4e9f-8667-88391dfaf5bc] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:45:51 PM traceId:[ff66a4b4-f9dd-43cb-8d18-5e2185a0aa5f] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:45:52 PM traceId:[ff66a4b4-f9dd-43cb-8d18-5e2185a0aa5f] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:46:03 PM traceId:[1378175b-eb96-4165-83a3-4b7b5e175af4] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:46:03 PM traceId:[1378175b-eb96-4165-83a3-4b7b5e175af4] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:46:14 PM traceId:[2c42f1a4-7bb9-48c3-b938-a596821053ef] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:46:25 PM traceId:[8b72e884-c214-4130-9cdf-28d453f77e51] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:46:36 PM traceId:[a609211c-2597-459c-ab43-5e8d20acaaeb] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:46:37 PM traceId:[a609211c-2597-459c-ab43-5e8d20acaaeb] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:46:39 PM traceId:[f607fed5-83f6-46ec-b400-d1dcc000ed0f] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:46:44 PM traceId:[67f9c97c-ca9e-4b0b-b9cb-249ac3d79c80] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:46:47 PM traceId:[ff113dd0-dc53-42da-b1ad-c30f418786c4] msg:Incoming request: PATCH /api/v1/users/username
+[info]: timestamp:2025-06-03 19:52:55 PM traceId:[1fe71201-0d91-4942-ba72-747775315941] msg:Incoming request: PATCH /api/v1/users/username
+[error]: timestamp:2025-06-03 19:52:55 PM traceId:[1fe71201-0d91-4942-ba72-747775315941] msg: method: PATCH: /api/v1/users/username msg: Validation failed!
+[info]: timestamp:2025-06-03 19:54:37 PM traceId:[9e65c166-6133-4bbf-9f5a-383b1e18267c] msg:Incoming request: PATCH /api/v1/users/chane-role/683df83e28220ea933ad9eca
+[info]: timestamp:2025-06-03 19:54:43 PM traceId:[904e16b0-265c-4d10-a8a8-ea7cdb1449f7] msg:Incoming request: PATCH /api/v1/users/change-role/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-03 19:54:43 PM traceId:[904e16b0-265c-4d10-a8a8-ea7cdb1449f7] msg: method: PATCH: /api/v1/users/change-role/683df83e28220ea933ad9eca msg: Validation failed!
+[info]: timestamp:2025-06-03 20:01:08 PM traceId:[cea86a76-70a6-4db6-8e1d-f8d7a4bdac15] msg:Incoming request: PATCH /api/v1/users/change-role/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-03 20:01:08 PM traceId:[cea86a76-70a6-4db6-8e1d-f8d7a4bdac15] msg: method: PATCH: /api/v1/users/change-role/683df83e28220ea933ad9eca msg: Validation failed!
+[error]: timestamp:2025-06-04 00:48:41 AM  msg: method: PATCH: /api/v1/users/change-role msg: Unexpected token '}', "{
+    "role":
+}" is not valid JSON
+[info]: timestamp:2025-06-04 00:48:51 AM traceId:[3d760cd2-96a6-4c77-9895-2560667d981c] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 00:48:51 AM traceId:[3d760cd2-96a6-4c77-9895-2560667d981c] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[info]: timestamp:2025-06-04 00:49:20 AM traceId:[b8879a13-73fe-4edd-aa0c-caf261dd36b4] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 00:49:20 AM traceId:[b8879a13-73fe-4edd-aa0c-caf261dd36b4] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[info]: timestamp:2025-06-04 00:49:38 AM traceId:[12446ee3-5eca-41e7-8259-b5ca657ffb11] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 00:49:38 AM traceId:[12446ee3-5eca-41e7-8259-b5ca657ffb11] msg: method: PATCH: /api/v1/users/change-role msg: Validation failed!
+[info]: timestamp:2025-06-04 00:50:08 AM traceId:[df057efd-2c07-4501-a14e-ad9ae050b975] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-04 00:50:08 AM traceId:[df057efd-2c07-4501-a14e-ad9ae050b975] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-04 00:50:13 AM traceId:[e778c70b-8346-4a5c-b148-e410c9685c17] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-04 00:50:14 AM traceId:[e778c70b-8346-4a5c-b148-e410c9685c17] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[info]: timestamp:2025-06-04 00:50:19 AM traceId:[c0f59f7e-daaa-4f26-839d-49303097945e] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9eca
+[error]: timestamp:2025-06-04 00:50:20 AM traceId:[c0f59f7e-daaa-4f26-839d-49303097945e] msg: method: GET: /api/v1/users/683df83e28220ea933ad9eca msg: The user is not found
+[info]: timestamp:2025-06-04 00:50:22 AM traceId:[15251af5-883a-4db9-85d2-97ed5d29f824] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9ecd
+[info]: timestamp:2025-06-04 01:01:48 AM traceId:[2db84778-7b43-499a-8e4d-50d9322e8297] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:01:48 AM traceId:[2db84778-7b43-499a-8e4d-50d9322e8297] msg: method: PATCH: /api/v1/users/change-role msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-04 01:02:17 AM traceId:[0d7748ac-5e9c-4645-acd1-c3562517fdb4] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:02:17 AM traceId:[0d7748ac-5e9c-4645-acd1-c3562517fdb4] msg: method: PATCH: /api/v1/users/change-role msg: You have no access to this route!
+[info]: timestamp:2025-06-04 01:06:02 AM traceId:[16f2a275-a6e1-4be2-883d-389e3945c9fa] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-04 01:06:25 AM traceId:[b020c751-eb1a-488a-8b6c-f49facd7ad63] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:06:26 AM traceId:[b020c751-eb1a-488a-8b6c-f49facd7ad63] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[info]: timestamp:2025-06-04 01:07:30 AM traceId:[9166a097-e78c-424f-adc7-e8a50ab2b114] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:07:31 AM traceId:[9166a097-e78c-424f-adc7-e8a50ab2b114] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[info]: timestamp:2025-06-04 01:07:35 AM traceId:[3bea0110-cd5f-4072-b671-149a997eb67f] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:07:35 AM traceId:[3bea0110-cd5f-4072-b671-149a997eb67f] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[info]: timestamp:2025-06-04 01:07:58 AM traceId:[d9e0ef58-aec4-4280-a331-abe1d2f3a02d] msg:Incoming request: GET /api/v1/users/683df83e28220ea933ad9ecd
+[info]: timestamp:2025-06-04 01:08:08 AM traceId:[0d071903-093e-4d1a-8b19-cff5f286fa8d] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:08:09 AM traceId:[0d071903-093e-4d1a-8b19-cff5f286fa8d] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[info]: timestamp:2025-06-04 01:08:32 AM traceId:[14db88be-cc27-476f-93d6-95ce35650f33] msg:Incoming request: PATCH /api/v1/users/change-role
+[error]: timestamp:2025-06-04 01:08:32 AM traceId:[14db88be-cc27-476f-93d6-95ce35650f33] msg: method: PATCH: /api/v1/users/change-role msg: The user is not found
+[info]: timestamp:2025-06-04 01:26:38 AM traceId:[6381e79b-d2b7-4b3f-ba79-181488e3163f] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:27:39 AM traceId:[725c4e67-489c-4885-adea-cbfe50d505bf] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:27:48 AM traceId:[c61d6220-3764-4f59-a073-53b41d8b9128] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:27:54 AM traceId:[24a0fe02-1ce3-4946-a8ce-48131ca4275c] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:28:43 AM traceId:[497918ef-6bad-4089-ab87-48e70ae8eab3] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:33:33 AM traceId:[8a313a11-77ad-488e-889c-cb82b14df78e] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:37:03 AM traceId:[10204a58-f94c-4058-942c-63b6398ea376] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 01:37:25 AM traceId:[adc1fc4d-e84e-4dce-9010-21cf7dfc9cb6] msg:Incoming request: PATCH /api/v1/auth/change-role
+[error]: timestamp:2025-06-04 01:37:25 AM traceId:[adc1fc4d-e84e-4dce-9010-21cf7dfc9cb6] msg: method: PATCH: /api/v1/auth/change-role msg: Validation failed!
+[info]: timestamp:2025-06-04 01:37:28 AM traceId:[021ba199-85e0-42f9-830b-67c0f2b449c2] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 11:03:28 AM traceId:[ea2a0b09-8b16-4819-9d06-1fd95d50b006] msg:Incoming request: PATCH /api/v1/auth/change-role
+[info]: timestamp:2025-06-04 14:36:18 PM traceId:[1f42e8e5-bca8-467f-ade2-7e42bb171b75] msg:Incoming request: PATCH /api/v1/users/me/deactivate
+[error]: timestamp:2025-06-04 14:36:18 PM traceId:[1f42e8e5-bca8-467f-ade2-7e42bb171b75] msg: method: PATCH: /api/v1/users/me/deactivate msg: Access token is required start with Bearer token!
+[info]: timestamp:2025-06-04 15:10:56 PM traceId:[8a584aab-94fe-4981-85be-aee10c65fc0c] msg:Incoming request: PATCH /api/v1/users/me/deactivate
+[error]: timestamp:2025-06-04 15:10:56 PM traceId:[8a584aab-94fe-4981-85be-aee10c65fc0c] msg: method: PATCH: /api/v1/users/me/deactivate msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-04 15:11:43 PM traceId:[7629e3de-9cd6-43ed-bfb5-355dbb098acc] msg:Incoming request: PATCH /api/v1/users/me/deactivate
+[error]: timestamp:2025-06-04 15:11:43 PM traceId:[7629e3de-9cd6-43ed-bfb5-355dbb098acc] msg: method: PATCH: /api/v1/users/me/deactivate msg: Access denied. Required role(s): user, admin. Your role: superAdmin
+[info]: timestamp:2025-06-04 15:12:19 PM traceId:[fd808e07-21d7-4256-a910-013d04400f7b] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-04 15:12:32 PM traceId:[fc760f0e-88db-451a-bc9d-0f831e5f3335] msg:Incoming request: PATCH /api/v1/users/me/deactivate
+[info]: timestamp:2025-06-04 15:12:55 PM traceId:[d2f56f2e-4370-408f-980e-f8396d401866] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-04 15:13:52 PM traceId:[4ab70d11-7fa2-452e-b9c1-2ed9dbae97d8] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-04 15:15:19 PM traceId:[090ac8e0-3bf3-42cd-a1bf-837e31ba363a] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-04 15:17:04 PM traceId:[7d6eb528-c14e-481e-8e57-62ad872842a8] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:17:05 PM traceId:[7d6eb528-c14e-481e-8e57-62ad872842a8] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please contact support.
+[info]: timestamp:2025-06-04 15:19:12 PM traceId:[27a48263-3e17-42eb-88f3-c858a2de64b2] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:19:12 PM traceId:[27a48263-3e17-42eb-88f3-c858a2de64b2] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:20:05 PM traceId:[f91b8d17-df96-4d08-a32e-35eb9158809d] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:20:05 PM traceId:[f91b8d17-df96-4d08-a32e-35eb9158809d] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:20:08 PM traceId:[bb2190a8-f419-490a-bc16-6a5dc4db1757] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:20:08 PM traceId:[bb2190a8-f419-490a-bc16-6a5dc4db1757] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:20:26 PM traceId:[890e10a7-5213-4529-bb1a-87d05aec1747] msg:Incoming request: PATCH /api/v1/users/me/restore
+[error]: timestamp:2025-06-04 15:20:26 PM traceId:[890e10a7-5213-4529-bb1a-87d05aec1747] msg: method: PATCH: /api/v1/users/me/restore msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:23:19 PM traceId:[09fd9145-698c-4edf-9531-8416f95aa6a5] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:23:19 PM traceId:[09fd9145-698c-4edf-9531-8416f95aa6a5] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently active . Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:24:36 PM traceId:[6d142546-32ac-418f-ba31-2645a4eb9a35] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[info]: timestamp:2025-06-04 15:26:52 PM traceId:[c5c804fe-40b2-495d-89dc-1d4aaf89c6d9] msg:Incoming request: PATCH /api/v1/users/me/restore
+[error]: timestamp:2025-06-04 15:26:53 PM traceId:[c5c804fe-40b2-495d-89dc-1d4aaf89c6d9] msg: method: PATCH: /api/v1/users/me/restore msg: Account is currently softdeleted. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:27:41 PM traceId:[baba5f11-af38-403d-9505-1b370edcc289] msg:Incoming request: PATCH /api/v1/users/me/restore
+[info]: timestamp:2025-06-04 15:28:03 PM traceId:[ad5961f3-2f8a-4028-9241-f801e75b1cc9] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[info]: timestamp:2025-06-04 15:39:55 PM traceId:[87c23afa-38be-48ab-b0fe-3e73a1520fcf] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:39:57 PM traceId:[87c23afa-38be-48ab-b0fe-3e73a1520fcf] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently softdeleted. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:40:07 PM traceId:[ae2b7482-5917-4a90-b7d1-7bf3ce988ed2] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-04 15:40:07 PM traceId:[ae2b7482-5917-4a90-b7d1-7bf3ce988ed2] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Account is currently softdeleted. Please restore your account or contact support.
+[info]: timestamp:2025-06-04 15:42:22 PM traceId:[bad66458-74c4-4d5e-be68-f74fad66fdb2] msg:Incoming request: PATCH /api/v1/users/afasdf/suspend
+[error]: timestamp:2025-06-04 15:42:22 PM traceId:[bad66458-74c4-4d5e-be68-f74fad66fdb2] msg: method: PATCH: /api/v1/users/afasdf/suspend msg: Validation failed!
+[info]: timestamp:2025-06-04 15:43:11 PM traceId:[c7982599-113f-435a-9459-420beba56c2c] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 15:43:11 PM traceId:[c7982599-113f-435a-9459-420beba56c2c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Validation failed!
+[info]: timestamp:2025-06-04 15:43:36 PM traceId:[e3acd926-5103-45cf-97d9-39c484fd9de0] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 15:43:36 PM traceId:[e3acd926-5103-45cf-97d9-39c484fd9de0] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Validation failed!
+[info]: timestamp:2025-06-04 16:15:31 PM traceId:[c5d15b8a-1213-4d34-b010-4dde34566ff9] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 16:15:31 PM traceId:[c5d15b8a-1213-4d34-b010-4dde34566ff9] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Access denied. Required role(s): superAdmin, admin. Your role: user
+[info]: timestamp:2025-06-04 16:15:56 PM traceId:[abd82c78-52ce-4cff-a277-7d602e862dcd] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 16:15:56 PM traceId:[abd82c78-52ce-4cff-a277-7d602e862dcd] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-04 16:16:42 PM traceId:[6c61c19f-f9ff-438d-b82c-0d29a27fda8c] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 16:16:43 PM traceId:[6c61c19f-f9ff-438d-b82c-0d29a27fda8c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: Invalid mongo id
+[info]: timestamp:2025-06-04 16:17:26 PM traceId:[d18d60d8-5b6f-4b21-9679-fdba7c3861a0] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[info]: timestamp:2025-06-04 16:39:46 PM traceId:[8a59b10a-bccb-47bd-836c-01e9c82995d0] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[info]: timestamp:2025-06-04 16:40:17 PM traceId:[e632b231-62f1-4f7a-b871-902b6add1e2b] msg:Incoming request: PATCH /api/v1/users/683df4f62f2f13ef7c9d9932/suspend
+[error]: timestamp:2025-06-04 16:40:18 PM traceId:[e632b231-62f1-4f7a-b871-902b6add1e2b] msg: method: PATCH: /api/v1/users/683df4f62f2f13ef7c9d9932/suspend msg: You can't suspend an admin
+[info]: timestamp:2025-06-04 16:40:35 PM traceId:[57c22580-509c-4a5f-96c3-bc7c757f7077] msg:Incoming request: PATCH /api/v1/users/683ef9358fc661deac40eb46/suspend
+[error]: timestamp:2025-06-04 16:40:36 PM traceId:[57c22580-509c-4a5f-96c3-bc7c757f7077] msg: method: PATCH: /api/v1/users/683ef9358fc661deac40eb46/suspend msg: You can't suspend an admin
+[info]: timestamp:2025-06-04 16:45:44 PM traceId:[3f9f0c53-7296-4f1f-bda7-b86e05767723] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[info]: timestamp:2025-06-04 16:46:32 PM traceId:[e0671f24-ecac-42b4-9294-b62831a4e042] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 16:46:33 PM traceId:[e0671f24-ecac-42b4-9294-b62831a4e042] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: User is already suspended
+[info]: timestamp:2025-06-04 16:47:31 PM traceId:[efd8d116-8b9b-4e17-afbe-623afea196fd] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/restore
+[info]: timestamp:2025-06-04 16:48:22 PM traceId:[393b1621-9329-4534-827d-a525f0777e84] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/restore
+[error]: timestamp:2025-06-04 16:48:22 PM traceId:[393b1621-9329-4534-827d-a525f0777e84] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/restore msg: User is not suspended
+[info]: timestamp:2025-06-04 16:49:05 PM traceId:[34f39a7e-dff6-4a7f-86c7-ccfaae16bd9a] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[info]: timestamp:2025-06-04 16:50:18 PM traceId:[77b826de-948f-4e13-91f9-526ad7ea7057] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933a9ecd/restore
+[error]: timestamp:2025-06-04 16:50:18 PM traceId:[77b826de-948f-4e13-91f9-526ad7ea7057] msg: method: PATCH: /api/v1/users/683df83e28220ea933a9ecd/restore msg: Validation failed!
+[info]: timestamp:2025-06-04 16:50:56 PM traceId:[8b7a602e-32f8-4ed4-ae5e-5cc4872b1404] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/restore
+[info]: timestamp:2025-06-04 16:55:19 PM traceId:[fb84a3a3-f390-400d-80ac-98f35b9e755c] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/restore
+[error]: timestamp:2025-06-04 16:55:20 PM traceId:[fb84a3a3-f390-400d-80ac-98f35b9e755c] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/restore msg: User is not suspended
+[info]: timestamp:2025-06-04 16:55:47 PM traceId:[5f91e82c-ee83-49ab-8a00-93e90ae59d94] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[info]: timestamp:2025-06-04 16:55:52 PM traceId:[a386453e-7967-4ea3-a7c1-d5e739ee683f] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/suspend
+[error]: timestamp:2025-06-04 16:55:52 PM traceId:[a386453e-7967-4ea3-a7c1-d5e739ee683f] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9ecd/suspend msg: User is already suspended
+[info]: timestamp:2025-06-04 16:56:29 PM traceId:[a9ddbcb7-51b4-4c0a-a7b0-6d06ebf084ab] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9ecd/restore
+[info]: timestamp:2025-06-04 16:56:36 PM traceId:[4c4e6c9c-3e6f-4338-9909-54f2013720e3] msg:Incoming request: PATCH /api/v1/users/683df83e28220ea933ad9eca/restore
+[error]: timestamp:2025-06-04 16:56:36 PM traceId:[4c4e6c9c-3e6f-4338-9909-54f2013720e3] msg: method: PATCH: /api/v1/users/683df83e28220ea933ad9eca/restore msg: The user is not found
+[info]: timestamp:2025-06-05 01:07:43 AM traceId:[6cfb4e95-6165-4224-80aa-be7416a574cf] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[error]: timestamp:2025-06-05 01:07:43 AM traceId:[6cfb4e95-6165-4224-80aa-be7416a574cf] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[info]: timestamp:2025-06-05 01:08:22 AM traceId:[f9153620-ce20-431f-81c6-3a7cc3a954b5] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[error]: timestamp:2025-06-05 01:08:22 AM traceId:[f9153620-ce20-431f-81c6-3a7cc3a954b5] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[info]: timestamp:2025-06-05 01:08:29 AM traceId:[d48dc0b5-c825-4b7f-9680-85a929401535] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-05 01:08:59 AM traceId:[3bede2d8-75ab-4624-a21c-76da43770971] msg:Incoming request: PATCH /api/v1/users/me/deactivate
+[info]: timestamp:2025-06-05 01:09:15 AM traceId:[c67c8d5e-4bee-4ff2-ad01-01ce19010964] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-05 01:09:15 AM traceId:[c67c8d5e-4bee-4ff2-ad01-01ce19010964] msg: method: POST: /api/v1/auth/login msg: Your account is deactivated. Please reactivate your account to login.
+[info]: timestamp:2025-06-05 01:10:37 AM traceId:[05c9eb82-0a0a-4c8a-b064-5cd018af4215] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[error]: timestamp:2025-06-05 01:10:37 AM traceId:[05c9eb82-0a0a-4c8a-b064-5cd018af4215] msg: method: PATCH: /api/v1/users/me/reactive msg: Validation failed!
+[info]: timestamp:2025-06-05 01:10:52 AM traceId:[5650a722-99cc-4731-a6a4-3286097dec3f] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[error]: timestamp:2025-06-05 01:10:52 AM traceId:[5650a722-99cc-4731-a6a4-3286097dec3f] msg: method: PATCH: /api/v1/users/me/reactive msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:20:12 AM traceId:[96d57c7e-4733-4f76-bbcf-43be2efc675b] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[info]: timestamp:2025-06-05 01:56:01 AM traceId:[e565bbce-4e50-458f-aefa-f02fb763b67c] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:56:01 AM traceId:[e565bbce-4e50-458f-aefa-f02fb763b67c] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:56:05 AM traceId:[70783489-b544-4a1d-a733-548d6c79fefd] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:56:05 AM traceId:[70783489-b544-4a1d-a733-548d6c79fefd] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:56:28 AM traceId:[8d4bf621-e0f2-40a0-a6c8-7b85530ac89e] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-05 01:56:42 AM traceId:[c5299351-12fb-4982-a4a1-e5dbb604bf66] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[info]: timestamp:2025-06-05 01:56:52 AM traceId:[86b79a4c-d46a-40c3-a907-580dd232e126] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[info]: timestamp:2025-06-05 01:56:58 AM traceId:[627f4606-93c6-497a-bc30-14aba5d1b664] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[info]: timestamp:2025-06-05 01:57:01 AM traceId:[ba16b053-699f-40c1-8d93-9851b243b8f1] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-05 01:57:01 AM traceId:[ba16b053-699f-40c1-8d93-9851b243b8f1] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[info]: timestamp:2025-06-05 01:57:16 AM traceId:[76746976-2d79-458b-8d10-2966eca8d5b7] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:57:16 AM traceId:[76746976-2d79-458b-8d10-2966eca8d5b7] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:57:19 AM traceId:[5ba7f5ef-bb22-4af9-b047-de3fd32a6c19] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:57:19 AM traceId:[5ba7f5ef-bb22-4af9-b047-de3fd32a6c19] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:57:20 AM traceId:[2b61c3e2-6ad9-4191-a358-64fbedcdeae5] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:57:20 AM traceId:[2b61c3e2-6ad9-4191-a358-64fbedcdeae5] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:57:21 AM traceId:[72d7f82a-1315-407e-9174-d7fdfcd9d176] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-06-05 01:57:21 AM traceId:[72d7f82a-1315-407e-9174-d7fdfcd9d176] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-05 01:57:35 AM traceId:[f3595c48-d749-4313-bbe8-871d366475ff] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-05 01:57:35 AM traceId:[f3595c48-d749-4313-bbe8-871d366475ff] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[info]: timestamp:2025-06-05 01:57:39 AM traceId:[8a584401-9838-4e70-94ed-41fca4d899bb] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-05 01:57:39 AM traceId:[8a584401-9838-4e70-94ed-41fca4d899bb] msg: method: POST: /api/v1/auth/login msg: Your account has been deleted. Please reactivate your account to login.
+[info]: timestamp:2025-06-05 01:57:45 AM traceId:[92473290-7c55-43f8-b55c-c0f8786b2ddd] msg:Incoming request: PATCH /api/v1/users/me/reactive
+[info]: timestamp:2025-06-05 01:57:49 AM traceId:[4444483a-1189-402a-8537-787506d0d881] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-05 01:58:33 AM traceId:[4fcc0e37-594b-41c6-a047-a29b4ca92353] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-05 01:58:33 AM traceId:[4fcc0e37-594b-41c6-a047-a29b4ca92353] msg: method: GET: /api/v1/users msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[info]: timestamp:2025-06-05 01:59:03 AM traceId:[a16396aa-1365-4c9e-905a-7275af050faf] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-05 01:59:52 AM traceId:[01bebf68-c54e-4aa4-b9e0-e75786913afa] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-05 02:01:14 AM traceId:[9e312a4c-9798-446b-801b-2c901759b92b] msg:Incoming request: GET /api/v1/users?username=altongorczany
+[info]: timestamp:2025-06-05 02:01:21 AM traceId:[8f936a4e-be7d-4c49-98c7-decf6ba34144] msg:Incoming request: GET /api/v1/users?usernames=altongorczany
+[info]: timestamp:2025-06-05 02:02:15 AM traceId:[83ec862a-8a36-4888-bce3-8a4e3f481608] msg:Incoming request: GET /api/v1/users?fields=-email,role
+[error]: timestamp:2025-06-05 02:02:15 AM traceId:[83ec862a-8a36-4888-bce3-8a4e3f481608] msg: method: GET: /api/v1/users?fields=-email,role msg: Validation failed!
+[info]: timestamp:2025-06-05 02:02:42 AM traceId:[e8fb38eb-b64a-484c-a008-2be47fb879fd] msg:Incoming request: GET /api/v1/users?page=3
+[info]: timestamp:2025-06-05 02:02:52 AM traceId:[f8d9426c-9741-430c-a9bb-f07357d14620] msg:Incoming request: GET /api/v1/users?page=3&limit=20
+[info]: timestamp:2025-06-05 02:03:27 AM traceId:[38c61e56-ac31-4ca9-a4c6-2a008e9440ed] msg:Incoming request: GET /api/v1/users?page=3&limit=1
+[info]: timestamp:2025-06-05 02:03:42 AM traceId:[bcf19487-213a-4cfb-bfc5-7eb3691560e0] msg:Incoming request: GET /api/v1/users?page=3&limit=5
+[info]: timestamp:2025-06-05 02:04:55 AM traceId:[df88e914-424e-469e-a00c-d62b07519ced] msg:Incoming request: GET /api/v1/users?page=3&limit=5
+[info]: timestamp:2025-06-05 02:05:31 AM traceId:[75eb0661-6f84-4360-9a18-d6a218495afb] msg:Incoming request: GET /api/v1/users?page=3&limit=5
+[info]: timestamp:2025-06-05 02:06:23 AM traceId:[0003cb10-6a57-49a1-951c-fe99b0a0a85b] msg:Incoming request: GET /api/v1/users?page=3&limit=5
+[error]: timestamp:2025-06-05 02:06:24 AM traceId:[0003cb10-6a57-49a1-951c-fe99b0a0a85b] msg: method: GET: /api/v1/users?page=3&limit=5 msg: page number 3 must be smaller than totalPage 1 
+[info]: timestamp:2025-06-05 02:07:56 AM traceId:[320457e7-676b-48fd-8443-d11e61d9b88a] msg:Incoming request: GET /api/v1/users?page=3&limit=5
+[error]: timestamp:2025-06-05 02:07:57 AM traceId:[320457e7-676b-48fd-8443-d11e61d9b88a] msg: method: GET: /api/v1/users?page=3&limit=5 msg: Requested page number (3) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-06-05 02:10:08 AM traceId:[cb59fc77-dc1e-4747-80f6-7ce168a90ae0] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-05 02:12:19 AM traceId:[4dee366e-4b3a-4588-8698-0645eafb6850] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-05 02:12:19 AM traceId:[4dee366e-4b3a-4588-8698-0645eafb6850] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.
+[info]: timestamp:2025-06-05 02:22:18 AM traceId:[3a9365a2-8c91-4daf-8f44-addcda514f8f] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-05 02:22:19 AM traceId:[3a9365a2-8c91-4daf-8f44-addcda514f8f] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.
+[info]: timestamp:2025-06-05 02:22:26 AM traceId:[91d9efa4-d3be-44a8-9e8e-2d587f376b69] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-05 02:22:30 AM traceId:[1fb1ecd5-24cd-41a0-9f93-1ff3c553df17] msg:Incoming request: GET /api/v1/users
+[error]: timestamp:2025-06-05 02:22:31 AM traceId:[1fb1ecd5-24cd-41a0-9f93-1ff3c553df17] msg: method: GET: /api/v1/users msg: Invalid token. User with email "camden_bins60@hotmail.com" and role "admin" not found.
+[info]: timestamp:2025-06-05 02:22:41 AM traceId:[65bbf99c-5b5d-4930-87a2-129e1839e2e6] msg:Incoming request: GET /api/v1/users
+[info]: timestamp:2025-06-05 02:23:30 AM traceId:[9c7c82ce-39fe-4b10-9a73-364554c7889b] msg:Incoming request: GET /api/v1/users?role=user
+[info]: timestamp:2025-06-05 02:23:41 AM traceId:[5bf61b5c-4860-4ede-b806-d262d2841112] msg:Incoming request: GET /api/v1/users?role=user

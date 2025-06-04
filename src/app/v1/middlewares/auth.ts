@@ -6,50 +6,62 @@ import { User } from '../modules/User/user.model';
 import { TUserRole } from '../modules/User/user.interface';
 import { USER_STATUS } from '../modules/User/user.constant';
 
-export const authMiddleware = (...requiredRole: TUserRole[]) => {
+export const authMiddleware = (...requiredRoles: TUserRole[]) => {
   return catchAsync(async (req, res, next) => {
-    const token = req.headers.authorization;
+    const authHeader = req.headers.authorization;
 
-    if (!token?.startsWith('Bearer ')) {
+    if (!authHeader) {
       throw new AppError(
         httpStatus.UNAUTHORIZED,
-        'Access token is required start with Bearer token!',
+        'Authorization header is missing. Please include a Bearer token.',
       );
     }
 
-    const [, accessToken] = token.split(' ');
+    if (!authHeader.startsWith('Bearer ')) {
+      throw new AppError(
+        httpStatus.UNAUTHORIZED,
+        'Malformed authorization header. Expected format: "Bearer <token>".',
+      );
+    }
+
+    const [, accessToken] = authHeader.split(' ');
 
     const decoded = AuthUtils.decodedAccessToken(accessToken);
 
     const { email, role } = decoded;
 
     // check required role is match with jwt decoded role
-    const matchRole = requiredRole.includes(role);
-    if (!matchRole)
+    if (!requiredRoles.includes(role))
       throw new AppError(
         httpStatus.FORBIDDEN,
-        'You have no access to this route!',
+        `Access denied. Required role(s): ${requiredRoles.join(', ')}. Your role: ${role}`,
       );
 
     // check if the user exists on db
-    const user = await User.findOne({ email, role });
+    const user = await User.findOne({ email, role }).lean();
 
     if (!user) {
-      throw new AppError(401, `The ${role} is not found.`);
+      throw new AppError(
+        httpStatus.UNAUTHORIZED,
+        `Invalid token. User with email "${email}" and role "${role}" not found.`,
+      );
     }
     if (!user.isVerified) {
       throw new AppError(
-        403,
-        'Account is not verified. Please verify your email.',
+        httpStatus.FORBIDDEN,
+        'Your account is not verified. Please verify your email to continue.',
       );
     }
     if (user.status !== USER_STATUS.ACTIVE)
-      throw new AppError(403, 'Account is not active.');
+      throw new AppError(
+        httpStatus.FORBIDDEN,
+        `Account is currently ${user.status.toLowerCase()}. Please restore your account or contact support.`,
+      );
 
     if (user.passwordChangeAt > new Date(decoded.iat * 1000)) {
       throw new AppError(
         httpStatus.UNAUTHORIZED,
-        'Access token is expired! Please login again.',
+        'Access token is no longer valid. Password was changed after token was issued. Please log in again.',
       );
     }
 

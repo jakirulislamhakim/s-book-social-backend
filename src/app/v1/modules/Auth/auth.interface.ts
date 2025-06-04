@@ -25,3 +25,7 @@ export type TChangePassword = {
   oldPassword: string;
   newPassword: string;
 };
+
+export type TChangeUserRole = z.infer<
+  typeof AuthValidations.changeUserRoleSchema
+>;

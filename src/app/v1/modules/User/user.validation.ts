@@ -1,16 +1,13 @@
 import { z } from 'zod';
-import { USER_ROLE } from './user.constant';
 import { User } from './user.model';
 
-const changeUserRoleSchema = z.object({
-  role: z.enum(Object.keys(USER_ROLE) as [string, ...string[]]),
-});
-
-const usernameRegex = /^[a-z0-9._]{6,20}$/; // Like Insta: lowercase, numbers, ., _
+const usernameRegex = /^[a-z0-9._]{6,20}$/; // Like Instra: lowercase, numbers, ., _
 
 const usernameSchema = z.object({
   username: z
-    .string()
+    .string({
+      required_error: 'Username is required',
+    })
     .min(6, 'Username must be at least 6 characters')
     .max(20, 'Username must be at most 20 characters')
     .regex(
@@ -22,7 +19,15 @@ const usernameSchema = z.object({
     }),
 });
 
+const suspendUserSchema = z.object({
+  suspensionReason: z
+    .string({
+      required_error: 'Suspension reason is required',
+    })
+    .max(500, 'Suspension reason should not exceed 500 characters'),
+});
+
 export const UserValidations = {
-  changeUserRoleSchema,
   usernameSchema,
+  suspendUserSchema,
 };

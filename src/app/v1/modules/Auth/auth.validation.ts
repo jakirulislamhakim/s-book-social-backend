@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { GENDER } from '../Profile/profile.constant';
+import { USER_ROLE } from '../User/user.constant';
 
 //  Common Regex Patterns
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -82,6 +83,18 @@ const refreshTokenSchema = z.object({
   refreshToken: z.string({ required_error: 'Refresh token is required' }),
 });
 
+const changeUserRoleSchema = z.object({
+  userId: z
+    .string({
+      required_error: 'User ID is required',
+    })
+    .regex(/^[0-9a-fA-F]{24}$/, 'Invalid MongoDB ObjectId'),
+  role: z.enum([USER_ROLE.USER, USER_ROLE.ADMIN], {
+    required_error: 'Role is required',
+    invalid_type_error: "Role must be 'user' or 'admin'",
+  }),
+});
+
 //  Exporting Validation Schemas
 export const AuthValidations = {
   userRegistrationSchema,
@@ -91,4 +104,5 @@ export const AuthValidations = {
   forgetPasswordSchema,
   resetPasswordSchema,
   refreshTokenSchema,
+  changeUserRoleSchema,
 };

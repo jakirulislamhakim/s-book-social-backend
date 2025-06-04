@@ -1,13 +1,43 @@
 import { FilterQuery, Query } from 'mongoose';
 import AppError from '../errors/AppError';
 import httpStatus from 'http-status';
+import config from '../config';
 
 /**
- * QueryBuilder class for building dynamic queries using Mongoose.
- * This class allows you to chain methods for filtering, searching, sorting,
- * pagination, and selecting fields in MongoDB queries.
+ * A chainable utility to build Mongoose queries dynamically from request query parameters.
  *
- * @template T - The type of the document in the Mongoose model.
+ * Supports search, filter, sort, pagination, field selection, and metadata generation.
+ *
+ * @template T - The type of the Mongoose document.
+ *
+ * @example
+ * // In a service or controller:
+ * import QueryBuilder from './utils/QueryBuilder';
+ * import { UserModel } from './models/User.model';
+ *
+ * const queryParams = {
+ *   searchTerm: 'john',
+ *   role: 'admin',
+ *   sort: 'name,-createdAt',
+ *   page: '2',
+ *   limit: '10',
+ *   fields: 'name,email'
+ * };
+ *
+ * const queryBuilder = new QueryBuilder(UserModel.find(), queryParams)
+ *   .search(['name', 'email'])
+ *   .filter()
+ *   .sort()
+ *   .paginate()
+ *   .fields();
+ *
+ * const users = await queryBuilder.modelQuery;
+ * const meta = await queryBuilder.paginateMeta();
+ *
+ * return {
+ *   meta,
+ *   data: users,
+ * };
  */
 class QueryBuilder<T> {
   public modelQuery: Query<T[], T>;
@@ -52,14 +82,15 @@ class QueryBuilder<T> {
 
   sort() {
     const sort =
-      (this.query?.sort as string)?.split(',')?.join(' ') || '-createdAt';
+      (this.query?.sort as string)?.split(',')?.join(' ') ||
+      config.PAGINATION_DEFAULT_SORT;
     this.modelQuery = this.modelQuery.sort(sort);
 
     return this;
   }
 
   paginate() {
-    const limit = Number(this.query?.limit) || 0;
+    const limit = Number(this.query?.limit) || config.PAGINATION_DEFAULT_LIMIT;
     const page = Number(this.query?.page) || 1;
     const skip = (page - 1) * limit;
     this.modelQuery = this.modelQuery.skip(skip).limit(limit);
@@ -78,14 +109,25 @@ class QueryBuilder<T> {
   async paginateMeta() {
     const filter = this.modelQuery.getFilter();
     const totalItems = await this.modelQuery.model.countDocuments(filter);
-    const itemsPerPage = Number(this.query?.limit) || 20;
+    const itemsPerPage =
+      Number(this.query?.limit) || config.PAGINATION_DEFAULT_LIMIT;
     const currentPage = Number(this.query?.page) || 1;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    if (totalItems < currentPage) {
+    // check if no items, return empty meta without throwing
+    if (totalItems === 0) {
+      return {
+        totalItems: 0,
+        totalPages: 0,
+        currentPage: 1,
+        itemsPerPage,
+      };
+    }
+
+    if (totalPages < currentPage) {
       throw new AppError(
         httpStatus.BAD_REQUEST,
-        `page number ${currentPage} must be smaller than totalPage ${totalPages} `,
+        `Requested page number (${currentPage}) exceeds the total available pages (${totalPages}). Please provide a valid page number.`,
       );
     }
 

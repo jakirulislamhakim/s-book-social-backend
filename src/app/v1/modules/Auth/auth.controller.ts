@@ -92,8 +92,9 @@ const resetPassword = catchAsync(async (req, res) => {
   });
 });
 
+// get new access token by refresh token
 const refreshToken = catchAsync(async (req, res) => {
-  const refreshToken = req.cookies.refreshToken;
+  const { refreshToken } = req.cookies;
 
   const accessToken = await AuthServices.refreshToken(refreshToken);
 
@@ -105,12 +106,23 @@ const refreshToken = catchAsync(async (req, res) => {
   });
 });
 
+// create admin by super admin
 const createAdminBySuperAdmin = catchAsync(async (req, res) => {
   const payload = await AuthServices.createAdminByAdminIntoDB(req.body);
 
   sendApiResponse(res, {
     statusCode: httpStatus.CREATED,
     message: `Admin registered successfully`,
+    payload,
+  });
+});
+
+const changeUserRole = catchAsync(async (req, res) => {
+  const payload = await AuthServices.changeUserRoleIntoDB(req.body);
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'User role change successfully',
     payload,
   });
 });
@@ -125,4 +137,5 @@ export const AuthControllers = {
   resetPassword,
   refreshToken,
   createAdminBySuperAdmin,
+  changeUserRole,
 };
