@@ -31,13 +31,25 @@ export const parseFormDataToJSONMiddleware: RequestHandler = (
   res,
   next,
 ) => {
-  if (req.body.data) {
-    req.body = JSON.parse(req.body.data);
-    next();
-  } else {
+  const rawJson = req.body?.data;
+
+  if (!rawJson) {
     throw new AppError(
       httpStatus.BAD_REQUEST,
-      'data field is required in Form data !',
+      "Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.",
+    );
+  }
+
+  try {
+    req.body = JSON.parse(req.body.data);
+    next();
+  } catch (error) {
+    if (error instanceof Error) {
+      throw new AppError(httpStatus.BAD_REQUEST, error.message);
+    }
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      `Invalid JSON in 'data' field. Make sure you're sending a properly stringified JSON object`,
     );
   }
 };

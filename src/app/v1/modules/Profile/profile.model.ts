@@ -21,11 +21,11 @@ const profileSchema = new Schema<TProfile>(
     },
     fullName: { type: String, required: true },
     bio: { type: String, default: 'No bio!' },
-    avatarUrl: {
+    profilePhoto: {
       type: String,
       default: 'https://i.ibb.co/4jr3Rn6/no-images.png',
     },
-    coverPhotoUrl: { type: String, default: '' },
+    coverPhoto: { type: String, default: '' },
     birthdate: { type: Date },
     location: { type: String, default: '' },
     website: { type: String, default: '' },
@@ -36,7 +36,7 @@ const profileSchema = new Schema<TProfile>(
       required: true,
     },
   },
-  { timestamps: true },
+  { timestamps: true, versionKey: false },
 );
 
 export const Profile = model<TProfile>('Profile', profileSchema);

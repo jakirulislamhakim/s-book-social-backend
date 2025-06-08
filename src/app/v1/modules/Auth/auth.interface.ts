@@ -2,11 +2,11 @@ import { TUserRole } from '../User/user.interface';
 import { z } from 'zod';
 import { AuthValidations } from './auth.validation';
 
-export type TRegisterUser = z.infer<
+export type TUserRegister = z.infer<
   typeof AuthValidations.userRegistrationSchema
 >;
 
-export type TLoginUser = {
+export type TUserLogin = {
   identifier: string;
   password: string;
 };
@@ -26,6 +26,6 @@ export type TChangePassword = {
   newPassword: string;
 };
 
-export type TChangeUserRole = z.infer<
+export type TUserRoleChange = z.infer<
   typeof AuthValidations.changeUserRoleSchema
 >;

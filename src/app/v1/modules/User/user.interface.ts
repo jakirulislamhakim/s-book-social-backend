@@ -23,4 +23,4 @@ export type TUser = {
   lastLoginAt: Date;
 };
 
-export type TSuspendUser = z.infer<typeof UserValidations.suspendUserSchema>;
+export type TUserSuspend = z.infer<typeof UserValidations.suspendUserSchema>;

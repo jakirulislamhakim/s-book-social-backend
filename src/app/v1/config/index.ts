@@ -54,7 +54,4 @@ export default {
   // email send
   SENDER_EMAIL: getEnvVar('SENDER_EMAIL'),
   SENDGRID_API_KEY: getEnvVar('SENDGRID_API_KEY'),
-
-  //backend base url
-  API_BASE_URL: getEnvVar('API_BASE_URL'),
 };

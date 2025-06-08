@@ -1,10 +1,12 @@
 import { Types } from 'mongoose';
+import { z } from 'zod';
+import { ProfileValidations } from './profile.validation';
 
 export type TSocialAccounts = {
-  tiktok: string | null;
-  facebook: string | null;
-  instagram: string | null;
-  linkedin: string | null;
+  tiktok: string;
+  facebook: string;
+  instagram: string;
+  linkedin: string;
 };
 
 export type TProfile = {
@@ -12,8 +14,8 @@ export type TProfile = {
   userId: Types.ObjectId;
   fullName: string;
   bio: string;
-  avatarUrl: string;
-  coverPhotoUrl: string;
+  profilePhoto: string;
+  coverPhoto: string;
   birthdate: Date;
   location: string;
   website: string;
@@ -22,3 +24,7 @@ export type TProfile = {
   createdAt: Date;
   updatedAt: Date;
 };
+
+export type TProfileUpdate = z.infer<
+  typeof ProfileValidations.updateProfileSchema
+>;

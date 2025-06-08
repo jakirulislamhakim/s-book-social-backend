@@ -1,12 +1,12 @@
 import { AuthUtils } from './../Auth/auth.utils';
 import httpStatus from 'http-status';
 import AppError from '../../errors/AppError';
-import { TSuspendUser, TUser } from './user.interface';
+import { TUserSuspend, TUser } from './user.interface';
 import { User } from './user.model';
 import QueryBuilder from '../../builder/QueryBuilder';
 import { SEARCHABLE_FIELDS, USER_ROLE, USER_STATUS } from './user.constant';
 import { Types } from 'mongoose';
-import { TLoginUser } from '../Auth/auth.interface';
+import { TUserLogin } from '../Auth/auth.interface';
 
 const getAllUsersFromDB = async (query: Record<string, unknown>) => {
   const userQuery = new QueryBuilder(User.find(), query)
@@ -77,7 +77,7 @@ const softDeleteUserIntoDB = async (id: Types.ObjectId) => {
   return result;
 };
 
-const reactiveUserIntoDB = async (payload: TLoginUser) => {
+const reactiveUserIntoDB = async (payload: TUserLogin) => {
   const { identifier, password } = payload;
   // check user exists
   const isExistsUser = await User.findOne({
@@ -117,7 +117,7 @@ const reactiveUserIntoDB = async (payload: TLoginUser) => {
 
 const suspendUserIntoDB = async (
   userId: string,
-  { suspensionReason }: TSuspendUser,
+  { suspensionReason }: TUserSuspend,
 ) => {
   const user = await User.findById(userId).lean();
 

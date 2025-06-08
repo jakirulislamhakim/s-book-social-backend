@@ -3,9 +3,15 @@ import httpStatus from 'http-status';
 import catchAsync from '../../utils/catchAsync';
 import { sendApiResponse } from '../../utils/sendApiResponse';
 import { AuthUtils } from './auth.utils';
+import { getBaseUrl } from '../../utils/getBaseUrl';
 
 const userRegistration = catchAsync(async (req, res) => {
-  const { fullName } = await AuthServices.userRegistrationIntoDB(req.body);
+  const baseUrl = getBaseUrl(req);
+
+  const { fullName } = await AuthServices.userRegistrationIntoDB(
+    req.body,
+    baseUrl,
+  );
 
   sendApiResponse(res, {
     statusCode: httpStatus.CREATED,
@@ -15,11 +21,13 @@ const userRegistration = catchAsync(async (req, res) => {
 });
 
 const login = catchAsync(async (req, res) => {
-  const result = await AuthServices.login(req.body);
+  const baseUrl = getBaseUrl(req);
+
+  const result = await AuthServices.login(req.body, baseUrl);
 
   let message = '';
   if (result.fullName) {
-    message = `Hey${result.fullName} before you login, please check your email to verify your email`;
+    message = `Hey ${result.fullName} before you login, please check your email to verify your email`;
   } else {
     message = `Welcome back ${result.user!.fullName}!`;
   }
@@ -48,7 +56,9 @@ const verifyEmail = catchAsync(async (req, res) => {
 });
 
 const resendVerificationEmail = catchAsync(async (req, res) => {
-  await AuthServices.resendVerificationEmail(req.body.email);
+  const baseUrl = getBaseUrl(req);
+
+  await AuthServices.resendVerificationEmail(req.body.email, baseUrl);
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
@@ -70,7 +80,9 @@ const changePassword = catchAsync(async (req, res) => {
 
 // forget password
 const forgetPassword = catchAsync(async (req, res) => {
-  await AuthServices.forgetPassword(req.body);
+  const baseUrl = getBaseUrl(req);
+
+  await AuthServices.forgetPassword(req.body, baseUrl);
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
@@ -87,7 +99,7 @@ const resetPassword = catchAsync(async (req, res) => {
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message: `Password has been successfully reset.`,
+    message: `Your password has been reset. You can now log in with your new password.`,
     payload: null,
   });
 });

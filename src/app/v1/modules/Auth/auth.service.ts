@@ -3,10 +3,10 @@ import httpStatus from 'http-status';
 import { User } from '../User/user.model';
 import type {
   TChangePassword,
-  TChangeUserRole,
+  TUserRoleChange,
   TJwtPayload,
-  TLoginUser,
-  TRegisterUser,
+  TUserLogin,
+  TUserRegister,
 } from './auth.interface';
 
 import AppError from '../../errors/AppError';
@@ -30,7 +30,10 @@ const {
 } = AuthUtils;
 
 // user registration
-const userRegistrationIntoDB = async (payload: TRegisterUser) => {
+const userRegistrationIntoDB = async (
+  payload: TUserRegister,
+  baseUrl: string,
+) => {
   const session = await mongoose.startSession();
   session.startTransaction();
 
@@ -78,7 +81,7 @@ const userRegistrationIntoDB = async (payload: TRegisterUser) => {
       role: user[0].role,
     });
 
-    const verificationLink = `${config.API_BASE_URL}/auth/verify-email/${verifyToken}`;
+    const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
     await sendEmailBySendGrid({
       to: user[0].email,
@@ -103,7 +106,7 @@ const userRegistrationIntoDB = async (payload: TRegisterUser) => {
 };
 
 // user login
-const login = async (payload: TLoginUser) => {
+const login = async (payload: TUserLogin, baseUrl: string) => {
   const { identifier, password } = payload;
   // check user exists
   const isExistsUser = await User.findOne({
@@ -144,7 +147,7 @@ const login = async (payload: TLoginUser) => {
       role: isExistsUser.role,
     });
 
-    const verificationLink = `${config.API_BASE_URL}/auth/verify-email/${verifyToken}`;
+    const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
     await sendEmailBySendGrid({
       to: isExistsUser.email,
@@ -210,7 +213,7 @@ const verifyEmail = async (token: string) => {
   await User.findOneAndUpdate({ email, role }, { isVerified: true });
 };
 
-const resendVerificationEmail = async (email: string) => {
+const resendVerificationEmail = async (email: string, baseUrl: string) => {
   const user = await User.findOne({ email })
     .select('email role isVerified')
     .lean();
@@ -228,7 +231,7 @@ const resendVerificationEmail = async (email: string) => {
     role: user.role,
   });
 
-  const verificationLink = `${config.API_BASE_URL}/auth/verify-email/${verifyToken}`;
+  const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
   const profile = await Profile.findOne({ userId: user._id })
     .select('fullName')
@@ -279,7 +282,10 @@ const changePasswordIntoDB = async (
 };
 
 // forget password
-const forgetPassword = async (payload: Pick<TLoginUser, 'identifier'>) => {
+const forgetPassword = async (
+  payload: Pick<TUserLogin, 'identifier'>,
+  baseUrl: string,
+) => {
   const { identifier } = payload;
 
   const user = await User.findOne({
@@ -296,7 +302,7 @@ const forgetPassword = async (payload: Pick<TLoginUser, 'identifier'>) => {
   };
 
   const resetToken = createJwtResetToken(jwtPayload);
-  const resetUrl = `${config.API_BASE_URL}/auth/reset-password/${resetToken}`;
+  const resetUrl = `${baseUrl}/auth/reset-password/${resetToken}`;
 
   const profile = await Profile.findOne({ userId: user._id })
     .select('fullName')
@@ -353,7 +359,7 @@ const refreshToken = async (token: string) => {
   return accessToken;
 };
 
-const createAdminByAdminIntoDB = async (payload: TRegisterUser) => {
+const createAdminByAdminIntoDB = async (payload: TUserRegister) => {
   const session = await mongoose.startSession();
   session.startTransaction();
 
@@ -409,7 +415,7 @@ const createAdminByAdminIntoDB = async (payload: TRegisterUser) => {
   }
 };
 
-const changeUserRoleIntoDB = async (payload: TChangeUserRole) => {
+const changeUserRoleIntoDB = async (payload: TUserRoleChange) => {
   const { role, userId } = payload;
 
   const user = await User.findById(userId).select('role email').lean();

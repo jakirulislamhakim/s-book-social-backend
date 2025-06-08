@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { GENDER } from '../Profile/profile.constant';
+import { GENDER, ISO_DATE_REGEX } from '../Profile/profile.constant';
 import { USER_ROLE } from '../User/user.constant';
 
 //  Common Regex Patterns
@@ -7,7 +7,6 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const usernameRegex = /^[a-zA-Z0-9_.]{3,20}$/;
 const passwordRegex =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
 //  Common Validation Rules
 const fullNameSchema = z
@@ -43,7 +42,7 @@ const userRegistrationSchema = z.object({
   email: emailSchema,
   birthDate: z
     .string()
-    .refine((val) => isoDateRegex.test(val), {
+    .refine((val) => ISO_DATE_REGEX.test(val), {
       message: 'Date must be in YYYY-MM-DD format',
     })
     .refine((val) => !isNaN(Date.parse(val)), {
@@ -52,7 +51,7 @@ const userRegistrationSchema = z.object({
     .transform((val) => new Date(val)), // Now it's a Date object
   gender: z.enum(Object.values(GENDER) as [string, ...string[]], {
     required_error: 'Gender is required',
-    invalid_type_error: "Gender must be 'male' or 'female'",
+    invalid_type_error: `Gender must be ${Object.values(GENDER).join(' or ')}`,
   }),
   password: passwordSchema('Password'),
 });
