@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { AuthRoutes } from '../modules/Auth/auth.route';
 import { UserRoutes } from '../modules/User/user.route';
 import { ProfileRoutes } from '../modules/Profile/profile.route';
+import { UserBlockRoutes } from '../modules/Block/block.route';
 
 type TModulesRoutes = {
   path: string;
@@ -23,8 +24,12 @@ const moduleRoutes: TModulesRoutes[] = [
     path: '/users/profile',
     route: ProfileRoutes,
   },
+  {
+    path: '/users/block',
+    route: UserBlockRoutes,
+  },
 ];
 
-moduleRoutes.forEach((route) => router.use(route.path, route.route));
+moduleRoutes.forEach(({ path, route }) => router.use(path, route));
 
 export const V1ModulesRoutes = router;

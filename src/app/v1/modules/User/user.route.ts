@@ -18,7 +18,7 @@ router.get(
 
 router.get(
   '/:id',
-  validateReq.pathParams(ParamsValidations.pathParamsSchema),
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   UserController.getUserById,
 );
@@ -51,7 +51,7 @@ router.patch(
 // admin and super admin
 router.patch(
   '/:id/suspend',
-  validateReq.pathParams(ParamsValidations.pathParamsSchema),
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.body(UserValidations.suspendUserSchema),
   authMiddleware(USER_ROLE.SUPER_ADMIN, USER_ROLE.ADMIN),
   UserController.suspendUser,
@@ -59,7 +59,7 @@ router.patch(
 
 router.patch(
   '/:id/restore',
-  validateReq.pathParams(ParamsValidations.pathParamsSchema),
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   authMiddleware(USER_ROLE.SUPER_ADMIN, USER_ROLE.ADMIN),
   UserController.restoreSuspendUser,
 );

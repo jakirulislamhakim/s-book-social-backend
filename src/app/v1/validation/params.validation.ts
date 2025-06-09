@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import { z } from 'zod';
 
 // regex for query
@@ -53,11 +54,15 @@ const queryParamsSchema = z
   })
   .passthrough();
 
-const pathParamsSchema = z.object({
-  id: z.string().regex(/^[0-9a-fA-F]{24}$/, 'Invalid MongoDB ObjectId'),
-});
+const pathParamObjectIDSchema = (pathName = 'id') => {
+  return z.object({
+    [pathName]: z.string().refine((val) => Types.ObjectId.isValid(val), {
+      message: `Invalid '${pathName}': must be a valid Mongo ObjectId`,
+    }),
+  });
+};
 
 export const ParamsValidations = {
   queryParamsSchema,
-  pathParamsSchema,
+  pathParamObjectIDSchema,
 };
