@@ -12,6 +12,6 @@ export const USER_STATUS = {
   PERMANENT_DELETED: 'permanentDeleted',
 } as const;
 
-export const SEARCHABLE_FIELDS = ['email', 'username', 'role', 'status'];
+export const USER_SEARCHABLE_FIELDS = ['email', 'username', 'role', 'status'];
 
 export const ADMIN_BADGE = 'https://i.ibb.co/NcYMQtB/admin.jpg' as const;

@@ -947,3 +947,255 @@
 [info]: timestamp:2025-06-10 01:08:33 AM traceId:[0bebee8c-d36b-4b58-ad0f-2ea4b9ab6111] msg:Incoming request: GET /api/v1/users/block/lists
 [info]: timestamp:2025-06-10 01:08:58 AM traceId:[33f55616-1a65-492d-acdb-643f9c85021d] msg:Incoming request: GET /api/v1/users/block/lists
 [error]: timestamp:2025-06-10 01:08:58 AM traceId:[33f55616-1a65-492d-acdb-643f9c85021d] msg: method: GET: /api/v1/users/block/lists msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-11 13:54:59 PM traceId:[69a9993b-c80c-4fc1-96e3-e06b79ba5d5c] msg:Incoming request: PATCH /api/v1/users/profile/me
+[info]: timestamp:2025-06-11 13:55:14 PM traceId:[e22a2de7-f4aa-4688-bb88-40ee5038d6f7] msg:Incoming request: PATCH /api/v1/users/profile/me
+[info]: timestamp:2025-06-11 13:55:28 PM traceId:[38f167b1-d868-4e5d-905d-4eea8063ef8c] msg:Incoming request: PATCH /api/v1/users/profile/me
+[info]: timestamp:2025-06-11 13:56:32 PM traceId:[5491550c-8d9f-4904-a78a-fba8b2d1eaf8] msg:Incoming request: PATCH /api/v1/users/profile/me
+[error]: timestamp:2025-06-11 13:56:35 PM traceId:[5491550c-8d9f-4904-a78a-fba8b2d1eaf8] msg: method: PATCH: /api/v1/users/profile/me msg: Image file format pdf not allowed
+[info]: timestamp:2025-06-11 16:25:58 PM traceId:[013779fa-0973-47e6-8ff5-b996cd29760b] msg:Incoming request: PATCH /api/v1/users/profile/me
+[error]: timestamp:2025-06-11 16:26:16 PM traceId:[013779fa-0973-47e6-8ff5-b996cd29760b] msg: method: PATCH: /api/v1/users/profile/me msg: Image file format pdf not allowed
+[info]: timestamp:2025-06-11 16:32:52 PM traceId:[b2b0357e-97c6-41ac-9e31-7e82e2f8e1ce] msg:Incoming request: POST /api/v1/post
+[info]: timestamp:2025-06-11 16:32:56 PM traceId:[d8c91327-013c-4e9f-a198-dbfbaf763d8d] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:32:56 PM traceId:[d8c91327-013c-4e9f-a198-dbfbaf763d8d] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 16:35:04 PM traceId:[c0d3d323-bfa6-45a2-8031-768010b55c76] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:35:04 PM traceId:[c0d3d323-bfa6-45a2-8031-768010b55c76] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-11 16:35:15 PM traceId:[19d52536-9deb-4842-84bc-5a65bb43f834] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:35:15 PM traceId:[19d52536-9deb-4842-84bc-5a65bb43f834] msg: method: POST: /api/v1/posts msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-11 16:35:59 PM traceId:[f52fce0a-2197-46bc-920f-bd65db4af7bc] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:35:59 PM traceId:[f52fce0a-2197-46bc-920f-bd65db4af7bc] msg: method: POST: /api/v1/posts msg: Access denied. Required role(s): . Your role: user
+[info]: timestamp:2025-06-11 16:40:57 PM traceId:[90a7aec1-235c-42c0-ae98-f27c2a53c358] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 16:41:55 PM traceId:[76daecd2-b4a0-4aaa-a475-6c2544c53888] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 16:43:03 PM traceId:[08eaef7c-0345-40d8-8a78-a1ac034e2212] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:43:03 PM traceId:[08eaef7c-0345-40d8-8a78-a1ac034e2212] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-11 16:43:17 PM traceId:[7f291100-1e0a-4479-b788-34124aa87575] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:43:17 PM traceId:[7f291100-1e0a-4479-b788-34124aa87575] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-11 16:43:23 PM traceId:[07fd1437-3497-4dc9-b954-4701f52bfa13] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:43:23 PM traceId:[07fd1437-3497-4dc9-b954-4701f52bfa13] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-11 16:43:33 PM traceId:[24052798-2d32-4111-bb08-417df0298a00] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:43:33 PM traceId:[24052798-2d32-4111-bb08-417df0298a00] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-11 16:44:03 PM traceId:[99e8055e-9c75-407d-9cbe-dd8d66f2de65] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 16:44:03 PM traceId:[99e8055e-9c75-407d-9cbe-dd8d66f2de65] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-11 16:44:31 PM traceId:[18ec527c-dfc4-49c4-95aa-4c125d3a235f] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 16:45:44 PM traceId:[cee49da8-f31d-453b-9222-57eca5819ca0] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 16:46:34 PM traceId:[9f340f5a-4b85-45e8-8f65-594b8f7f3d70] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 16:51:23 PM traceId:[04a931c5-c0ba-428c-91e0-4a4421ba8f10] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 17:30:22 PM traceId:[ef00dc9b-ae66-4826-9e5e-0cdbcc1bc0aa] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 17:30:22 PM traceId:[ef00dc9b-ae66-4826-9e5e-0cdbcc1bc0aa] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 17:30:30 PM traceId:[efe77ab4-91e9-476f-84bc-719e49886150] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 17:30:30 PM traceId:[efe77ab4-91e9-476f-84bc-719e49886150] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 17:30:54 PM traceId:[561b02d1-a109-4317-9c9c-31848a1a081f] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 17:30:54 PM traceId:[561b02d1-a109-4317-9c9c-31848a1a081f] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 17:31:00 PM traceId:[4152cd68-ef99-483f-99f8-9ac7cd2751b7] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 17:31:00 PM traceId:[4152cd68-ef99-483f-99f8-9ac7cd2751b7] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 17:31:17 PM traceId:[6a72d7ee-283c-4ea8-b9e9-3bea1439289e] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-11 17:32:16 PM traceId:[6a72d7ee-283c-4ea8-b9e9-3bea1439289e] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-11 17:32:45 PM traceId:[1134dd96-6ff2-459b-8a9c-aab37e516ab4] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 17:32:56 PM traceId:[21b22ec3-d02b-43c0-a575-6735fb7df062] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-11 17:35:27 PM traceId:[9761bcdc-6e05-4b58-981b-65465cdc4ec8] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 00:46:25 AM traceId:[70dfc7b7-ec9d-4ed2-9961-9c294c243bdf] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 00:48:03 AM traceId:[e9e0453d-813f-4aa7-bfce-a1a04fc566f5] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 00:48:20 AM traceId:[28158c39-f85c-4415-b269-255aad532d5b] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:29:38 AM traceId:[9cb2a423-4933-42c0-a08d-65f8ac75f4a8] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:29:39 AM traceId:[9cb2a423-4933-42c0-a08d-65f8ac75f4a8] msg: method: POST: /api/v1/posts msg: Cannot read properties of undefined (reading 'map')
+[info]: timestamp:2025-06-12 01:30:04 AM traceId:[c030a171-95c8-4a99-80b6-e07faf619176] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:30:05 AM traceId:[c030a171-95c8-4a99-80b6-e07faf619176] msg: method: POST: /api/v1/posts msg: Cannot read properties of undefined (reading 'length')
+[info]: timestamp:2025-06-12 01:30:21 AM traceId:[9fb57ca4-3a41-4c2a-a1e8-179b0be98d58] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:31:07 AM traceId:[99c4cf34-36c0-4e3e-9b0f-47252a4cb62f] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:31:09 AM traceId:[99c4cf34-36c0-4e3e-9b0f-47252a4cb62f] msg: method: POST: /api/v1/posts msg: Please add something to your post. Try again.
+[info]: timestamp:2025-06-12 01:31:23 AM traceId:[460722dd-2e2c-4968-9aec-d4f3430670cd] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:31:24 AM traceId:[460722dd-2e2c-4968-9aec-d4f3430670cd] msg: method: POST: /api/v1/posts msg: Please add something to your post. Try again.
+[info]: timestamp:2025-06-12 01:32:35 AM traceId:[f4f5dc8e-713e-4feb-a566-5a5916e1049a] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:32:35 AM traceId:[f4f5dc8e-713e-4feb-a566-5a5916e1049a] msg: method: POST: /api/v1/posts msg: Please add something to your post and try again.
+[info]: timestamp:2025-06-12 01:34:10 AM traceId:[10bdb804-ef06-4e85-be98-d236a67a2faa] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:34:30 AM traceId:[bbd7ca0e-8087-4237-8e32-1e46511a12ed] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:35:00 AM traceId:[76fc235c-56d7-47b2-94b5-0390771d291b] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:35:58 AM traceId:[0df760e3-c021-4a0e-99d1-5310ac056b84] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:37:36 AM traceId:[8382579a-9c06-4860-bdaa-9d4015968247] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:39:18 AM traceId:[138d8ec5-37e2-41cb-9c35-8d4e092a4538] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:41:05 AM traceId:[7affe7fa-2898-45ae-81fa-05d4ea153e21] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:41:24 AM traceId:[03923c7e-d632-4330-94b2-734a7dd37741] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:41:36 AM traceId:[03923c7e-d632-4330-94b2-734a7dd37741] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-12 01:41:53 AM traceId:[82cdf834-fed9-4ccc-9287-0015a97d5fac] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:42:21 AM traceId:[b2aa4ca7-0fe0-42b3-a161-c8a2b0c7d9f0] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 01:42:33 AM traceId:[b2aa4ca7-0fe0-42b3-a161-c8a2b0c7d9f0] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 01:43:35 AM traceId:[3667db87-dbf3-4601-a959-975be8f2cad2] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:49:01 AM traceId:[50ac3d69-7e17-4888-ba76-6375b708df4b] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:50:40 AM traceId:[8efc76fa-3c85-40fb-bd76-e5f6a29c29bd] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 01:55:26 AM traceId:[f8386db4-7bcf-4944-9ab6-ab2ee3cb1f41] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:03:10 AM traceId:[fdb42eb5-7804-478a-8e70-91521d6d8694] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:05:01 AM traceId:[b6a4d891-62fa-4721-9d1c-bf00ca893c05] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:08:18 AM traceId:[a0d46305-4e3d-40cf-ba2e-10fc948caf77] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:19 AM traceId:[a0d46305-4e3d-40cf-ba2e-10fc948caf77] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[info]: timestamp:2025-06-12 02:08:52 AM traceId:[65c2f62a-2b27-447f-9534-60f917db654b] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:53 AM traceId:[65c2f62a-2b27-447f-9534-60f917db654b] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. 6849da33a09c2314e338c6d9, 6845e0584b1087facaa97123
+[info]: timestamp:2025-06-12 02:08:56 AM traceId:[37c1681a-605e-4ce0-b59d-8fa76cc9ae09] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:56 AM traceId:[37c1681a-605e-4ce0-b59d-8fa76cc9ae09] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:08:58 AM traceId:[b4cd0b14-f4eb-409d-8215-8cf4842b24f4] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:58 AM traceId:[b4cd0b14-f4eb-409d-8215-8cf4842b24f4] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:08:59 AM traceId:[429fedd8-7924-4823-b989-6cbf91f02ef5] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:59 AM traceId:[429fedd8-7924-4823-b989-6cbf91f02ef5] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:08:59 AM traceId:[b71a9e41-485b-4fab-a9f4-49998c16035a] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:08:59 AM traceId:[b71a9e41-485b-4fab-a9f4-49998c16035a] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:09:00 AM traceId:[2d5fb099-1d3e-46f6-851b-567984ca35b3] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:09:00 AM traceId:[2d5fb099-1d3e-46f6-851b-567984ca35b3] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:09:01 AM traceId:[9c3c17e8-aedb-425f-b159-97417fb79c76] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:09:01 AM traceId:[9c3c17e8-aedb-425f-b159-97417fb79c76] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:09:01 AM traceId:[e51d3e33-2a05-4cf2-a98d-d2e0e965aa12] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:09:01 AM traceId:[e51d3e33-2a05-4cf2-a98d-d2e0e965aa12] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:10:07 AM traceId:[45fd18da-8c76-4568-b82b-11d83d386a01] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:10:07 AM traceId:[45fd18da-8c76-4568-b82b-11d83d386a01] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:10:34 AM traceId:[8e3218f1-a8ca-490c-b77c-2216542b35ce] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:10:34 AM traceId:[8e3218f1-a8ca-490c-b77c-2216542b35ce] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:11:24 AM traceId:[f43122fd-617f-44c0-b438-518d59f8abc6] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:11:25 AM traceId:[f43122fd-617f-44c0-b438-518d59f8abc6] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[info]: timestamp:2025-06-12 02:11:26 AM traceId:[483e54fc-d386-4246-bef1-25216719d610] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:11:27 AM traceId:[483e54fc-d386-4246-bef1-25216719d610] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[info]: timestamp:2025-06-12 02:11:34 AM traceId:[b9512879-4da4-40eb-ab4d-e1df913ceeb6] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:11:35 AM traceId:[b9512879-4da4-40eb-ab4d-e1df913ceeb6] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. 6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111
+[info]: timestamp:2025-06-12 02:12:01 AM traceId:[284e795b-a527-486a-b9ed-9664b644d4ad] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:12:02 AM traceId:[284e795b-a527-486a-b9ed-9664b644d4ad] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. (6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111)
+[info]: timestamp:2025-06-12 02:12:33 AM traceId:[f4d57706-6f60-4d51-9dc7-7902060ba8fe] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:12:33 AM traceId:[f4d57706-6f60-4d51-9dc7-7902060ba8fe] msg: method: POST: /api/v1/posts msg: Your post 2 tags users don't exists. (6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111)
+[info]: timestamp:2025-06-12 02:13:56 AM traceId:[3566c872-3691-4c0d-b7dd-4e77959d5969] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:13:56 AM traceId:[3566c872-3691-4c0d-b7dd-4e77959d5969] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[info]: timestamp:2025-06-12 02:14:02 AM traceId:[690cde4f-0813-4ab9-9285-999095c294b4] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:02 AM traceId:[690cde4f-0813-4ab9-9285-999095c294b4] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[info]: timestamp:2025-06-12 02:14:05 AM traceId:[7cfa9a7b-90b3-4ce0-b675-2c44494548a9] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:06 AM traceId:[7cfa9a7b-90b3-4ce0-b675-2c44494548a9] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[info]: timestamp:2025-06-12 02:14:07 AM traceId:[10431607-85c9-4404-8999-47374d0f3505] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:08 AM traceId:[10431607-85c9-4404-8999-47374d0f3505] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[info]: timestamp:2025-06-12 02:14:18 AM traceId:[c2586998-8711-4f80-a544-e222b72dedfb] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:18 AM traceId:[c2586998-8711-4f80-a544-e222b72dedfb] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[info]: timestamp:2025-06-12 02:14:32 AM traceId:[3551ab4a-c0a0-44ee-b7c1-77795720a3e5] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:32 AM traceId:[3551ab4a-c0a0-44ee-b7c1-77795720a3e5] msg: method: POST: /api/v1/posts msg: Unexpected token ',', ..."ags" : [  , "6845e05"... is not valid JSON
+[info]: timestamp:2025-06-12 02:14:33 AM traceId:[fd987359-22fd-4796-a665-1db8b5e5ac72] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:14:33 AM traceId:[fd987359-22fd-4796-a665-1db8b5e5ac72] msg: method: POST: /api/v1/posts msg: Unexpected token ',', ..."ags" : [  , "6845e05"... is not valid JSON
+[info]: timestamp:2025-06-12 02:14:36 AM traceId:[6bc2233d-c39d-45d7-94aa-e49d50144a67] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:14:50 AM traceId:[92733442-2a29-4eaa-9289-04c9e9ce809d] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:21:36 AM traceId:[bed7f43b-8b4c-4997-842d-b0f490b9018b] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:21:38 AM traceId:[bed7f43b-8b4c-4997-842d-b0f490b9018b] msg: method: POST: /api/v1/posts msg: You can't tags user multiple times in a post
+[info]: timestamp:2025-06-12 02:26:02 AM traceId:[ce0106b3-0490-42bf-869f-fac472af8a4e] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:27:25 AM traceId:[7f6ca44c-463b-4408-83d0-57fd31fe1d7b] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:27:35 AM traceId:[4c0e1996-49d5-4d4d-8e76-ed79fc4dc3f7] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:30:30 AM traceId:[f518a722-57a0-42f6-aa2e-a950e07f3e1d] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:33:26 AM traceId:[31dd08f7-2116-40d7-85df-c004d4d8ae35] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:34:05 AM traceId:[31dd08f7-2116-40d7-85df-c004d4d8ae35] msg: method: POST: /api/v1/posts msg: Validation failed!
+[info]: timestamp:2025-06-12 02:34:22 AM traceId:[0ce5bf45-ca00-43e7-b751-5b8d79c9fc39] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:38:49 AM traceId:[c4b8fe85-1fff-4f3b-a53e-64de39fed2a1] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 02:43:43 AM traceId:[5da81c5c-f69c-47f6-a47a-1857a9217bd1] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:43:58 AM traceId:[5da81c5c-f69c-47f6-a47a-1857a9217bd1] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97111)
+[info]: timestamp:2025-06-12 02:54:59 AM traceId:[f1d16ffc-ee76-420d-9386-2b85f8c25e92] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 02:56:26 AM traceId:[f1d16ffc-ee76-420d-9386-2b85f8c25e92] msg: method: POST: /api/v1/posts msg: Unexpected field
+[info]: timestamp:2025-06-12 03:14:00 AM traceId:[cc8db47c-d8e5-4d36-946e-30554f373453] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 03:14:00 AM traceId:[cc8db47c-d8e5-4d36-946e-30554f373453] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-12 03:14:14 AM traceId:[55674c39-4106-4909-8cd5-148e4f9006d6] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 03:14:14 AM traceId:[55674c39-4106-4909-8cd5-148e4f9006d6] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-12 03:14:16 AM traceId:[3a199e3b-838c-4644-8144-610cf587d90f] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 03:14:16 AM traceId:[3a199e3b-838c-4644-8144-610cf587d90f] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-12 03:14:30 AM traceId:[bd636d54-c8a4-4dd8-bfbf-2a0b20735f4c] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:15:49 AM traceId:[60e9b8d4-dbc4-4a59-a6fb-b054ca752daa] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:18:15 AM traceId:[e4da13b2-914d-4f53-a8dc-c935d487c921] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:18:49 AM traceId:[42b30af8-ba4f-49ca-b319-fb053a66f37b] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 03:19:05 AM traceId:[42b30af8-ba4f-49ca-b319-fb053a66f37b] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97111)
+[info]: timestamp:2025-06-12 03:19:10 AM traceId:[14f540cb-0a2e-451a-9f8a-6a1daa089630] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 03:19:35 AM traceId:[ddbbc130-36cb-4bc8-bfd2-9b72c8051265] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:20:12 AM traceId:[f018612b-9991-4d3d-a616-e0e0b1d39f2f] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:20:36 AM traceId:[a3529dc0-b9f8-4664-8cde-384e84de25f9] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 03:20:56 AM traceId:[2aab7132-8fa5-44a4-8b01-7b5b1b57f70a] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:21:35 AM traceId:[bd00493a-f5e3-419b-ba9f-d97fe5244be4] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:22:05 AM traceId:[edb15978-cb37-44f7-bf26-944e28534314] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 03:22:09 AM traceId:[edb15978-cb37-44f7-bf26-944e28534314] msg: method: GET: /api/v1/posts/me msg: Schema hasn't been registered for model "Profile.userId".
+Use mongoose.model(name, schema)
+[info]: timestamp:2025-06-12 03:22:23 AM traceId:[cda8e2e8-ae12-4d5d-8c2e-bd207f81d023] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 03:24:10 AM traceId:[4cc01f3e-e660-42bb-b4b3-506fc182e9a1] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-12 11:21:17 AM traceId:[bcc69251-422a-4257-9796-51175a3e3733] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-12 11:21:17 AM traceId:[bcc69251-422a-4257-9796-51175a3e3733] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-12 11:21:20 AM traceId:[943380f5-21c8-4230-9891-9e658e83958c] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-12 11:21:35 AM traceId:[b0608776-816d-4090-aa0a-4755210c2632] msg:Incoming request: POST /api/v1/auth/admin-registration
+[error]: timestamp:2025-06-12 11:21:35 AM traceId:[b0608776-816d-4090-aa0a-4755210c2632] msg: method: POST: /api/v1/auth/admin-registration msg: Access token is no longer valid. Password was changed after token was issued. Please log in again.
+[info]: timestamp:2025-06-12 11:21:55 AM traceId:[ba898676-9f8f-4a62-8078-be752578b7fe] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-12 11:22:07 AM traceId:[54bbe654-8a35-4f29-8fd6-42af385eeb0c] msg:Incoming request: POST /api/v1/auth/admin-registration
+[error]: timestamp:2025-06-12 11:22:07 AM traceId:[54bbe654-8a35-4f29-8fd6-42af385eeb0c] msg: method: POST: /api/v1/auth/admin-registration msg: Validation failed!
+[info]: timestamp:2025-06-12 11:22:10 AM traceId:[10081e82-3e6f-4e74-a1d7-a83d2083535c] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-06-12 11:24:43 AM traceId:[43fe18b7-2680-45b4-b6a1-c143ea348dbd] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-12 11:24:50 AM traceId:[16bf4832-ce9d-4155-a11a-bcb405facff8] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-12 11:24:50 AM traceId:[16bf4832-ce9d-4155-a11a-bcb405facff8] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-12 11:24:52 AM traceId:[78d8a33e-d84f-4ace-a6a9-2f4d6532733e] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-12 11:24:53 AM traceId:[8c239e8d-9f07-49f5-812c-8e00e7c0a3da] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-12 11:27:26 AM traceId:[1ee59b86-0972-409e-b3e4-d015d5ae0f7e] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:27:29 AM traceId:[1ee59b86-0972-409e-b3e4-d015d5ae0f7e] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97119)
+[info]: timestamp:2025-06-12 11:32:08 AM traceId:[6b3cb8c1-fd05-4fb2-9179-4971b1af5571] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:32:09 AM traceId:[6b3cb8c1-fd05-4fb2-9179-4971b1af5571] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[info]: timestamp:2025-06-12 11:32:37 AM traceId:[b856a4f3-7e3f-4dc4-82e9-98e7b74824be] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:33:08 AM traceId:[7249da69-9076-455e-a1d4-aed66f2e2cc7] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:33:11 AM traceId:[10bb33a6-01dd-4526-9d35-68c4dfb5d13d] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:34:15 AM traceId:[ab51e5fe-cfc9-470f-84cd-77292f01f5f3] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:34:47 AM traceId:[87d37803-a53a-4da5-939a-8a6ec6e5e709] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:34:48 AM traceId:[87d37803-a53a-4da5-939a-8a6ec6e5e709] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[info]: timestamp:2025-06-12 11:37:10 AM traceId:[3db1f27f-f299-40ee-b229-ddf54adc5fc4] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:39:28 AM traceId:[afee2309-397c-494d-ab86-303cb823e79c] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:39:31 AM traceId:[afee2309-397c-494d-ab86-303cb823e79c] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a471d290920bf5c4fa)
+[info]: timestamp:2025-06-12 11:41:50 AM traceId:[643c6018-606d-4569-b72a-9a07a3690ff9] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:41:50 AM traceId:[643c6018-606d-4569-b72a-9a07a3690ff9] msg: method: POST: /api/v1/posts msg: Can't use $ex with String.
+[info]: timestamp:2025-06-12 11:42:10 AM traceId:[18a5e0f3-eb26-4941-b94a-6de2e7747b8a] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:42:12 AM traceId:[18a5e0f3-eb26-4941-b94a-6de2e7747b8a] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a471d290920bf5c4fa, 684a64a671d290920bf5c500)
+[info]: timestamp:2025-06-12 11:42:40 AM traceId:[a6d52f68-c3c5-4977-a002-aacf2fb15489] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-12 11:42:41 AM traceId:[a6d52f68-c3c5-4977-a002-aacf2fb15489] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[info]: timestamp:2025-06-12 11:43:41 AM traceId:[4cb291db-dc4a-45c8-90d8-3eae7e23455e] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:43:47 AM traceId:[2c586863-87e6-4c79-88f0-f5c33576fb56] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 11:51:42 AM traceId:[92bdf9ca-974d-43c9-b8f6-2d01518d4223] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 11:52:20 AM traceId:[4e86c205-e44d-491f-bb49-ebe777797682] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 12:02:26 PM traceId:[a8c37213-439c-4716-98db-c1985e576cb1] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 12:03:40 PM traceId:[f984d051-e780-4a76-a4f9-8794d2f59426] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 12:11:10 PM traceId:[39d2c3ab-c23b-400d-bc20-7ee233e7e88d] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 12:12:01 PM traceId:[39d2c3ab-c23b-400d-bc20-7ee233e7e88d] msg: method: GET: /api/v1/posts/me msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[info]: timestamp:2025-06-12 12:47:19 PM traceId:[90f0a5e5-771f-47a8-8de5-5615be960889] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-06-12 12:47:49 PM traceId:[90f0a5e5-771f-47a8-8de5-5615be960889] msg: method: GET: /api/v1/posts/me msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[info]: timestamp:2025-06-12 12:47:57 PM traceId:[a6040525-8f5c-43a5-bae6-552fb6d3d0ae] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 12:49:05 PM traceId:[e88794ea-e906-4dbc-a722-237fcba1e1a0] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 14:21:18 PM traceId:[9a26808e-3577-4c38-82e0-e66a70877ae3] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 14:27:39 PM traceId:[177ff021-d318-418e-9ed9-4690a3b7dac2] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-12 14:28:25 PM traceId:[76cf4db3-35e3-4c18-af9b-833d8ef89ff7] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 14:28:46 PM traceId:[f1174962-fec4-4fad-82f6-5fa63348a0bf] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 14:47:57 PM traceId:[9af22de6-80ae-43c0-a326-7d9569b152ef] msg:Incoming request: GET /api/v1/posts/684a63d191955f96690f4db
+[error]: timestamp:2025-06-12 14:47:57 PM traceId:[9af22de6-80ae-43c0-a326-7d9569b152ef] msg: method: GET: /api/v1/posts/684a63d191955f96690f4db msg: Validation failed!
+[info]: timestamp:2025-06-12 14:48:33 PM traceId:[d7d986a5-75e6-4540-a7a1-2412c522bc06] msg:Incoming request: GET /api/v1/posts/684a63d191955f96690f4db5
+[error]: timestamp:2025-06-12 14:48:34 PM traceId:[d7d986a5-75e6-4540-a7a1-2412c522bc06] msg: method: GET: /api/v1/posts/684a63d191955f96690f4db5 msg: The post is not found
+[info]: timestamp:2025-06-12 14:49:50 PM traceId:[9b66a77e-1018-474b-b08e-a1c0c7be11bd] msg:Incoming request: GET /api/v1/posts/684a8fd534537d5d67a768bc
+[info]: timestamp:2025-06-12 14:52:37 PM traceId:[e8eafc3f-d35b-45d2-947d-285f866737d9] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 14:52:53 PM traceId:[3670caa2-ce74-48a4-83e6-f44f838b8f96] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 14:53:03 PM traceId:[3adbcc9d-166e-4ac6-bf8a-c5e62f1ef445] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-12 14:53:29 PM traceId:[9baa433c-1906-4140-ba09-3972b1656b45] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 15:11:23 PM traceId:[81f9c1e4-f931-4dcc-b1db-ddd02cee1c37] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 15:47:36 PM traceId:[3bc5ce33-1bf0-40e1-a181-4a3f5107a880] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 15:50:04 PM traceId:[8c126c5b-e065-4b5e-afec-00368ffdc20c] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 15:50:18 PM traceId:[bcc6f791-9663-4914-869f-29e145e92da2] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-12 15:50:24 PM traceId:[88651759-bb0a-43c8-b1b6-b2bf28a58550] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[error]: timestamp:2025-06-12 15:50:25 PM traceId:[88651759-bb0a-43c8-b1b6-b2bf28a58550] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private
+[info]: timestamp:2025-06-12 15:52:04 PM traceId:[6fda56e7-9861-47c7-ad9d-b440e10c2aee] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[error]: timestamp:2025-06-12 15:52:05 PM traceId:[6fda56e7-9861-47c7-ad9d-b440e10c2aee] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private . You can't see the post !
+[info]: timestamp:2025-06-12 15:53:05 PM traceId:[10eb33f5-2fa7-4a08-b195-133a0280ce3b] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 15:53:28 PM traceId:[8992b2bb-4132-4990-b7c9-cbe8d0edf426] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[error]: timestamp:2025-06-12 15:53:29 PM traceId:[8992b2bb-4132-4990-b7c9-cbe8d0edf426] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is not found !
+[info]: timestamp:2025-06-12 16:01:03 PM traceId:[73005ff7-e46a-4a03-bfeb-75a16db64f04] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[error]: timestamp:2025-06-12 16:01:05 PM traceId:[73005ff7-e46a-4a03-bfeb-75a16db64f04] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is removed . You can't see the post !
+[info]: timestamp:2025-06-12 16:03:01 PM traceId:[b4493376-bb62-4b1e-8564-fda2b3eeade7] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[info]: timestamp:2025-06-12 16:03:28 PM traceId:[fd0f24f6-4db0-4876-9e19-115a833c7831] msg:Incoming request: GET /api/v1/posts/684a957637396bf10a9495a1
+[error]: timestamp:2025-06-12 16:03:29 PM traceId:[fd0f24f6-4db0-4876-9e19-115a833c7831] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private . You can't see the post !
+[info]: timestamp:2025-06-13 01:15:28 AM traceId:[67f0cd51-a120-4157-aee4-f2fac8ef90cd] msg:Incoming request: GET /api/v1/posts/user/684a63d191955f96690f4db5
+[info]: timestamp:2025-06-13 01:16:00 AM traceId:[5732aaa7-ab5d-4df8-a79a-a91d6ce6b068] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[error]: timestamp:2025-06-13 01:16:00 AM traceId:[5732aaa7-ab5d-4df8-a79a-a91d6ce6b068] msg: method: GET: /api/v1/posts/users/684a63d191955f96690f4db5 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-13 01:20:28 AM traceId:[1d940a30-1c27-4b53-9330-dfab1edc7662] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[error]: timestamp:2025-06-13 01:20:29 AM traceId:[1d940a30-1c27-4b53-9330-dfab1edc7662] msg: method: GET: /api/v1/posts/users/684a63d191955f96690f4db5 msg: Can't use $neq with String.
+[info]: timestamp:2025-06-13 01:21:15 AM traceId:[686f6b97-b8ce-4885-af75-ea277df30ea0] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[info]: timestamp:2025-06-13 01:21:32 AM traceId:[d51ff665-6e15-402f-a99a-8592eee0e426] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5?limit=2
+[info]: timestamp:2025-06-13 01:22:47 AM traceId:[2df8f2cb-e00d-4499-ae62-4b2cb7b812ab] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5?limit=2&page=2
+[info]: timestamp:2025-06-13 01:23:33 AM traceId:[866bc28d-1cc1-4586-9cdf-1f6a1965f862] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5?limit=2&page=2
+[info]: timestamp:2025-06-13 01:24:17 AM traceId:[a770c769-a5ef-48b3-85dc-ac9bbba47e67] msg:Incoming request: GET /api/v1/posts/users/684a64a671d290920bf5c500
+[error]: timestamp:2025-06-13 01:24:17 AM traceId:[a770c769-a5ef-48b3-85dc-ac9bbba47e67] msg: method: GET: /api/v1/posts/users/684a64a671d290920bf5c500 msg: You can not see your own post by yourself
+[info]: timestamp:2025-06-13 01:24:58 AM traceId:[0150e3e6-d78a-4b07-b5c5-006f1a26c270] msg:Incoming request: GET /api/v1/posts/users/684a64a471d290920bf5c4fa
+[info]: timestamp:2025-06-13 01:25:51 AM traceId:[c3e7f69e-e2cc-4d90-9c50-5b0c5bd8c56b] msg:Incoming request: GET /api/v1/posts/users/684a64a471d290920bf5c4fa
+[info]: timestamp:2025-06-13 01:26:23 AM traceId:[4d44df47-d775-4096-9cca-ee6c986c7639] msg:Incoming request: GET /api/v1/posts/users/684a64a471d290920bf5c4fa
+[error]: timestamp:2025-06-13 01:26:24 AM traceId:[4d44df47-d775-4096-9cca-ee6c986c7639] msg: method: GET: /api/v1/posts/users/684a64a471d290920bf5c4fa msg: The user is not active
+[info]: timestamp:2025-06-13 01:29:17 AM traceId:[bef7d3b5-38a9-4542-96af-d8f99b430810] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[info]: timestamp:2025-06-13 01:29:49 AM traceId:[10b8e41f-ed7a-4b26-8ec4-2afd73a44c5a] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5

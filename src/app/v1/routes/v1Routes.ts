@@ -3,6 +3,7 @@ import { AuthRoutes } from '../modules/Auth/auth.route';
 import { UserRoutes } from '../modules/User/user.route';
 import { ProfileRoutes } from '../modules/Profile/profile.route';
 import { UserBlockRoutes } from '../modules/Block/block.route';
+import { PostRoutes } from '../modules/Post/post.route';
 
 type TModulesRoutes = {
   path: string;
@@ -27,6 +28,10 @@ const moduleRoutes: TModulesRoutes[] = [
   {
     path: '/users/block',
     route: UserBlockRoutes,
+  },
+  {
+    path: '/posts',
+    route: PostRoutes,
   },
 ];
 

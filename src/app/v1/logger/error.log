@@ -311,3 +311,83 @@
 [error]: timestamp:2025-06-09 23:52:47 PM traceId:[41d10813-3e85-44ef-8734-de4433cea2a1] msg: method: POST: /api/v1/users/block msg: You can't block yourself 
 [error]: timestamp:2025-06-09 23:53:06 PM traceId:[8af53944-5d4a-4866-99a9-dc5d260e7a21] msg: method: POST: /api/v1/users/block msg: The user is already blocked
 [error]: timestamp:2025-06-10 01:08:58 AM traceId:[33f55616-1a65-492d-acdb-643f9c85021d] msg: method: GET: /api/v1/users/block/lists msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-11 13:56:35 PM traceId:[5491550c-8d9f-4904-a78a-fba8b2d1eaf8] msg: method: PATCH: /api/v1/users/profile/me msg: Image file format pdf not allowed
+[error]: timestamp:2025-06-11 16:26:16 PM traceId:[013779fa-0973-47e6-8ff5-b996cd29760b] msg: method: PATCH: /api/v1/users/profile/me msg: Image file format pdf not allowed
+[error]: timestamp:2025-06-11 16:32:56 PM traceId:[d8c91327-013c-4e9f-a198-dbfbaf763d8d] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-11 16:35:04 PM traceId:[c0d3d323-bfa6-45a2-8031-768010b55c76] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-11 16:35:15 PM traceId:[19d52536-9deb-4842-84bc-5a65bb43f834] msg: method: POST: /api/v1/posts msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-11 16:35:59 PM traceId:[f52fce0a-2197-46bc-920f-bd65db4af7bc] msg: method: POST: /api/v1/posts msg: Access denied. Required role(s): . Your role: user
+[error]: timestamp:2025-06-11 16:43:03 PM traceId:[08eaef7c-0345-40d8-8a78-a1ac034e2212] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-11 16:43:17 PM traceId:[7f291100-1e0a-4479-b788-34124aa87575] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-11 16:43:23 PM traceId:[07fd1437-3497-4dc9-b954-4701f52bfa13] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-11 16:43:33 PM traceId:[24052798-2d32-4111-bb08-417df0298a00] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-11 16:44:03 PM traceId:[99e8055e-9c75-407d-9cbe-dd8d66f2de65] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-11 17:30:22 PM traceId:[ef00dc9b-ae66-4826-9e5e-0cdbcc1bc0aa] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-11 17:30:30 PM traceId:[efe77ab4-91e9-476f-84bc-719e49886150] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-11 17:30:54 PM traceId:[561b02d1-a109-4317-9c9c-31848a1a081f] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-11 17:31:00 PM traceId:[4152cd68-ef99-483f-99f8-9ac7cd2751b7] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-11 17:32:16 PM traceId:[6a72d7ee-283c-4ea8-b9e9-3bea1439289e] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-12 01:29:39 AM traceId:[9cb2a423-4933-42c0-a08d-65f8ac75f4a8] msg: method: POST: /api/v1/posts msg: Cannot read properties of undefined (reading 'map')
+[error]: timestamp:2025-06-12 01:30:05 AM traceId:[c030a171-95c8-4a99-80b6-e07faf619176] msg: method: POST: /api/v1/posts msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-06-12 01:31:09 AM traceId:[99c4cf34-36c0-4e3e-9b0f-47252a4cb62f] msg: method: POST: /api/v1/posts msg: Please add something to your post. Try again.
+[error]: timestamp:2025-06-12 01:31:24 AM traceId:[460722dd-2e2c-4968-9aec-d4f3430670cd] msg: method: POST: /api/v1/posts msg: Please add something to your post. Try again.
+[error]: timestamp:2025-06-12 01:32:35 AM traceId:[f4f5dc8e-713e-4feb-a566-5a5916e1049a] msg: method: POST: /api/v1/posts msg: Please add something to your post and try again.
+[error]: timestamp:2025-06-12 01:41:36 AM traceId:[03923c7e-d632-4330-94b2-734a7dd37741] msg: method: POST: /api/v1/posts msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-12 01:42:33 AM traceId:[b2aa4ca7-0fe0-42b3-a161-c8a2b0c7d9f0] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:08:19 AM traceId:[a0d46305-4e3d-40cf-ba2e-10fc948caf77] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[error]: timestamp:2025-06-12 02:08:53 AM traceId:[65c2f62a-2b27-447f-9534-60f917db654b] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. 6849da33a09c2314e338c6d9, 6845e0584b1087facaa97123
+[error]: timestamp:2025-06-12 02:08:56 AM traceId:[37c1681a-605e-4ce0-b59d-8fa76cc9ae09] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:08:58 AM traceId:[b4cd0b14-f4eb-409d-8215-8cf4842b24f4] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:08:59 AM traceId:[429fedd8-7924-4823-b989-6cbf91f02ef5] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:08:59 AM traceId:[b71a9e41-485b-4fab-a9f4-49998c16035a] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:09:00 AM traceId:[2d5fb099-1d3e-46f6-851b-567984ca35b3] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:09:01 AM traceId:[9c3c17e8-aedb-425f-b159-97417fb79c76] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:09:01 AM traceId:[e51d3e33-2a05-4cf2-a98d-d2e0e965aa12] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:10:07 AM traceId:[45fd18da-8c76-4568-b82b-11d83d386a01] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:10:34 AM traceId:[8e3218f1-a8ca-490c-b77c-2216542b35ce] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:11:25 AM traceId:[f43122fd-617f-44c0-b438-518d59f8abc6] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[error]: timestamp:2025-06-12 02:11:27 AM traceId:[483e54fc-d386-4246-bef1-25216719d610] msg: method: POST: /api/v1/posts msg: Your 1 tags users don't exists. 6849da33a09c2314e338c6d9
+[error]: timestamp:2025-06-12 02:11:35 AM traceId:[b9512879-4da4-40eb-ab4d-e1df913ceeb6] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. 6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111
+[error]: timestamp:2025-06-12 02:12:02 AM traceId:[284e795b-a527-486a-b9ed-9664b644d4ad] msg: method: POST: /api/v1/posts msg: Your 2 tags users don't exists. (6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111)
+[error]: timestamp:2025-06-12 02:12:33 AM traceId:[f4d57706-6f60-4d51-9dc7-7902060ba8fe] msg: method: POST: /api/v1/posts msg: Your post 2 tags users don't exists. (6849da33a09c2314e338c6d9, 6845e0584b1087facaa97111)
+[error]: timestamp:2025-06-12 02:13:56 AM traceId:[3566c872-3691-4c0d-b7dd-4e77959d5969] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[error]: timestamp:2025-06-12 02:14:02 AM traceId:[690cde4f-0813-4ab9-9285-999095c294b4] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[error]: timestamp:2025-06-12 02:14:06 AM traceId:[7cfa9a7b-90b3-4ce0-b675-2c44494548a9] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[error]: timestamp:2025-06-12 02:14:08 AM traceId:[10431607-85c9-4404-8999-47374d0f3505] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[error]: timestamp:2025-06-12 02:14:18 AM traceId:[c2586998-8711-4f80-a544-e222b72dedfb] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6849da33a09c2314e338c6d9)
+[error]: timestamp:2025-06-12 02:14:32 AM traceId:[3551ab4a-c0a0-44ee-b7c1-77795720a3e5] msg: method: POST: /api/v1/posts msg: Unexpected token ',', ..."ags" : [  , "6845e05"... is not valid JSON
+[error]: timestamp:2025-06-12 02:14:33 AM traceId:[fd987359-22fd-4796-a665-1db8b5e5ac72] msg: method: POST: /api/v1/posts msg: Unexpected token ',', ..."ags" : [  , "6845e05"... is not valid JSON
+[error]: timestamp:2025-06-12 02:21:38 AM traceId:[bed7f43b-8b4c-4997-842d-b0f490b9018b] msg: method: POST: /api/v1/posts msg: You can't tags user multiple times in a post
+[error]: timestamp:2025-06-12 02:34:05 AM traceId:[31dd08f7-2116-40d7-85df-c004d4d8ae35] msg: method: POST: /api/v1/posts msg: Validation failed!
+[error]: timestamp:2025-06-12 02:43:58 AM traceId:[5da81c5c-f69c-47f6-a47a-1857a9217bd1] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97111)
+[error]: timestamp:2025-06-12 02:56:26 AM traceId:[f1d16ffc-ee76-420d-9386-2b85f8c25e92] msg: method: POST: /api/v1/posts msg: Unexpected field
+[error]: timestamp:2025-06-12 03:14:00 AM traceId:[cc8db47c-d8e5-4d36-946e-30554f373453] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-12 03:14:14 AM traceId:[55674c39-4106-4909-8cd5-148e4f9006d6] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-12 03:14:16 AM traceId:[3a199e3b-838c-4644-8144-610cf587d90f] msg: method: GET: /api/v1/posts/me msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-12 03:19:05 AM traceId:[42b30af8-ba4f-49ca-b319-fb053a66f37b] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97111)
+[error]: timestamp:2025-06-12 03:22:09 AM traceId:[edb15978-cb37-44f7-bf26-944e28534314] msg: method: GET: /api/v1/posts/me msg: Schema hasn't been registered for model "Profile.userId".
+Use mongoose.model(name, schema)
+[error]: timestamp:2025-06-12 11:21:17 AM traceId:[bcc69251-422a-4257-9796-51175a3e3733] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-06-12 11:21:35 AM traceId:[b0608776-816d-4090-aa0a-4755210c2632] msg: method: POST: /api/v1/auth/admin-registration msg: Access token is no longer valid. Password was changed after token was issued. Please log in again.
+[error]: timestamp:2025-06-12 11:22:07 AM traceId:[54bbe654-8a35-4f29-8fd6-42af385eeb0c] msg: method: POST: /api/v1/auth/admin-registration msg: Validation failed!
+[error]: timestamp:2025-06-12 11:24:50 AM traceId:[16bf4832-ce9d-4155-a11a-bcb405facff8] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-06-12 11:27:29 AM traceId:[1ee59b86-0972-409e-b3e4-d015d5ae0f7e] msg: method: POST: /api/v1/posts msg: Your post 1 tags users don't exists. (6845e0584b1087facaa97119)
+[error]: timestamp:2025-06-12 11:32:09 AM traceId:[6b3cb8c1-fd05-4fb2-9179-4971b1af5571] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[error]: timestamp:2025-06-12 11:34:48 AM traceId:[87d37803-a53a-4da5-939a-8a6ec6e5e709] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[error]: timestamp:2025-06-12 11:39:31 AM traceId:[afee2309-397c-494d-ab86-303cb823e79c] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a471d290920bf5c4fa)
+[error]: timestamp:2025-06-12 11:41:50 AM traceId:[643c6018-606d-4569-b72a-9a07a3690ff9] msg: method: POST: /api/v1/posts msg: Can't use $ex with String.
+[error]: timestamp:2025-06-12 11:42:12 AM traceId:[18a5e0f3-eb26-4941-b94a-6de2e7747b8a] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a471d290920bf5c4fa, 684a64a671d290920bf5c500)
+[error]: timestamp:2025-06-12 11:42:41 AM traceId:[a6d52f68-c3c5-4977-a002-aacf2fb15489] msg: method: POST: /api/v1/posts msg: The users you tags are not found. (684a64a671d290920bf5c500)
+[error]: timestamp:2025-06-12 12:12:01 PM traceId:[39d2c3ab-c23b-400d-bc20-7ee233e7e88d] msg: method: GET: /api/v1/posts/me msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[error]: timestamp:2025-06-12 12:47:49 PM traceId:[90f0a5e5-771f-47a8-8de5-5615be960889] msg: method: GET: /api/v1/posts/me msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[error]: timestamp:2025-06-12 14:47:57 PM traceId:[9af22de6-80ae-43c0-a326-7d9569b152ef] msg: method: GET: /api/v1/posts/684a63d191955f96690f4db msg: Validation failed!
+[error]: timestamp:2025-06-12 14:48:34 PM traceId:[d7d986a5-75e6-4540-a7a1-2412c522bc06] msg: method: GET: /api/v1/posts/684a63d191955f96690f4db5 msg: The post is not found
+[error]: timestamp:2025-06-12 15:50:25 PM traceId:[88651759-bb0a-43c8-b1b6-b2bf28a58550] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private
+[error]: timestamp:2025-06-12 15:52:05 PM traceId:[6fda56e7-9861-47c7-ad9d-b440e10c2aee] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private . You can't see the post !
+[error]: timestamp:2025-06-12 15:53:29 PM traceId:[8992b2bb-4132-4990-b7c9-cbe8d0edf426] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is not found !
+[error]: timestamp:2025-06-12 16:01:05 PM traceId:[73005ff7-e46a-4a03-bfeb-75a16db64f04] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is removed . You can't see the post !
+[error]: timestamp:2025-06-12 16:03:29 PM traceId:[fd0f24f6-4db0-4876-9e19-115a833c7831] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is private . You can't see the post !
+[error]: timestamp:2025-06-13 01:16:00 AM traceId:[5732aaa7-ab5d-4df8-a79a-a91d6ce6b068] msg: method: GET: /api/v1/posts/users/684a63d191955f96690f4db5 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-13 01:20:29 AM traceId:[1d940a30-1c27-4b53-9330-dfab1edc7662] msg: method: GET: /api/v1/posts/users/684a63d191955f96690f4db5 msg: Can't use $neq with String.
+[error]: timestamp:2025-06-13 01:24:17 AM traceId:[a770c769-a5ef-48b3-85dc-ac9bbba47e67] msg: method: GET: /api/v1/posts/users/684a64a671d290920bf5c500 msg: You can not see your own post by yourself
+[error]: timestamp:2025-06-13 01:26:24 AM traceId:[4d44df47-d775-4096-9cca-ee6c986c7639] msg: method: GET: /api/v1/posts/users/684a64a471d290920bf5c4fa msg: The user is not active

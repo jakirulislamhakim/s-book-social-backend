@@ -4,13 +4,17 @@ import AppError from '../../errors/AppError';
 import { TUserSuspend, TUser } from './user.interface';
 import { User } from './user.model';
 import QueryBuilder from '../../builder/QueryBuilder';
-import { SEARCHABLE_FIELDS, USER_ROLE, USER_STATUS } from './user.constant';
+import {
+  USER_SEARCHABLE_FIELDS,
+  USER_ROLE,
+  USER_STATUS,
+} from './user.constant';
 import { Types } from 'mongoose';
 import { TUserLogin } from '../Auth/auth.interface';
 
 const getAllUsersFromDB = async (query: Record<string, unknown>) => {
   const userQuery = new QueryBuilder(User.find(), query)
-    .search(SEARCHABLE_FIELDS)
+    .search(USER_SEARCHABLE_FIELDS)
     .filter()
     .sort()
     .paginate()
