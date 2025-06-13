@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import AppError from '../../errors/AppError';
 import { User } from '../User/user.model';
-import { TPostCreate } from './post.interface';
+import { TPostCreate, TPostRemove, TPostUpdate } from './post.interface';
 import { Post } from './post.model';
 import QueryBuilder from '../../builder/QueryBuilder';
 import {
@@ -111,7 +111,59 @@ const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
   return post;
 };
 
-const getPostsByUserIdFromDB = async (
+const updatePostByIdIntoDB = async (
+  userId: Types.ObjectId,
+  postId: string,
+  payload: TPostUpdate,
+) => {
+  const post = await Post.findById(postId).select('userId status').lean();
+
+  if (!post) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
+  }
+
+  if (post.userId.toString() !== userId.toString()) {
+    throw new AppError(
+      httpStatus.FORBIDDEN,
+      'You can not update other user post !',
+    );
+  }
+
+  if (post.status === POST_STATUS.REMOVED) {
+    throw new AppError(httpStatus.FORBIDDEN, 'You can not update this post !');
+  }
+
+  const updatedPost = await Post.findByIdAndUpdate(postId, payload, {
+    new: true,
+  })
+    .populate({
+      path: 'tags',
+      select: 'userId fullName profilePhoto',
+    })
+    .lean();
+
+  return updatedPost;
+};
+
+const deletePostByIdFromDB = async (userId: Types.ObjectId, postId: string) => {
+  const post = await Post.findById(postId).select('userId').lean();
+
+  if (!post) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
+  }
+
+  if (post.userId.toString() !== userId.toString()) {
+    throw new AppError(
+      httpStatus.FORBIDDEN,
+      'You can not delete other user post !',
+    );
+  }
+
+  const deletedPost = await Post.findByIdAndDelete(postId);
+  return deletedPost;
+};
+
+const getOtherUserPostsFromDB = async (
   postUserId: string,
   currentUserId: Types.ObjectId,
   query: Record<string, unknown>,
@@ -154,6 +206,7 @@ const getPostsByUserIdFromDB = async (
       path: 'tags',
       select: 'userId fullName profilePhoto',
     })
+    .select('-status -removeReason')
     .lean();
 
   const pagination = await postQuery.paginateMeta();
@@ -164,9 +217,70 @@ const getPostsByUserIdFromDB = async (
   };
 };
 
+const removePostByAdminIntoDB = async (
+  postId: string,
+  { removedReason }: TPostRemove,
+) => {
+  const post = await Post.findById(postId).select('status');
+
+  if (!post) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
+  }
+
+  if (post.status === POST_STATUS.REMOVED) {
+    throw new AppError(httpStatus.BAD_REQUEST, 'The post is already removed !');
+  }
+
+  const removedPost = await Post.findByIdAndUpdate(
+    postId,
+    {
+      status: POST_STATUS.REMOVED,
+      removedReason,
+    },
+    {
+      new: true,
+    },
+  )
+    // .select('')
+    .lean();
+
+  return removedPost;
+};
+
+const restorePostByAdminIntoDB = async (postId: string) => {
+  const post = await Post.findById(postId).select('status');
+
+  if (!post) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
+  }
+
+  if (post.status === POST_STATUS.ACTIVE) {
+    throw new AppError(httpStatus.BAD_REQUEST, 'The post is already active !');
+  }
+
+  const activePost = await Post.findByIdAndUpdate(
+    postId,
+    {
+      status: POST_STATUS.ACTIVE,
+      removedReason: '',
+    },
+    {
+      new: true,
+    },
+  )
+    // .select('')
+    .lean();
+
+  return activePost;
+};
+
 export const PostServices = {
   createPostIntoDB,
   getMyPostsFromDB,
   getPostByIdFromDB,
-  getPostsByUserIdFromDB,
+  updatePostByIdIntoDB,
+  deletePostByIdFromDB,
+  getOtherUserPostsFromDB,
+  removePostByAdminIntoDB,
+  restorePostByAdminIntoDB,
 };

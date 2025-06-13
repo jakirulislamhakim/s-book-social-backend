@@ -34,6 +34,20 @@ const createPostSchema = z.object({
   location: z.string().optional(),
 });
 
+const updatePostSchema = createPostSchema.omit({ tags: true });
+
+const removePostSchema = z.object({
+  removedReason: z
+    .string({
+      required_error: 'Post remove reason is required !',
+    })
+    .max(400, {
+      message: 'Remove reason must not exceed 400 characters',
+    }),
+});
+
 export const PostValidations = {
   createPostSchema,
+  updatePostSchema,
+  removePostSchema,
 };

@@ -34,12 +34,43 @@ router.get(
   PostControllers.getPostById,
 );
 
+router.patch(
+  '/:id',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  validateReq.body(PostValidations.updatePostSchema),
+  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.updatePostById,
+);
+
+router.delete(
+  '/:id',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.deletePostById,
+);
+
 router.get(
   '/users/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.queryParams(ParamsValidations.queryParamsSchema),
   authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.ADMIN),
-  PostControllers.getPostsByUserId,
+  PostControllers.getOtherUserPosts,
+);
+
+// admin routes 🔻
+router.patch(
+  '/:id/remove',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  validateReq.body(PostValidations.removePostSchema),
+  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.removePostByAdmin,
+);
+
+router.patch(
+  '/:id/restore',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.restorePostByAdmin,
 );
 
 export const PostRoutes = router;

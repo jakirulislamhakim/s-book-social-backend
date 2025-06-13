@@ -68,9 +68,39 @@ const getPostById = catchAsync(async (req, res) => {
   });
 });
 
-const getPostsByUserId = catchAsync(async (req, res) => {
+const updatePostById = catchAsync(async (req, res) => {
+  const { id: postId } = req.params;
+
+  const payload = await PostServices.updatePostByIdIntoDB(
+    req.user!._id,
+    postId,
+    req.body,
+  );
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Your post successfully updated',
+    payload,
+  });
+});
+
+const deletePostById = catchAsync(async (req, res) => {
+  const { id: postId } = req.params;
+  const payload = await PostServices.deletePostByIdFromDB(
+    req.user!._id,
+    postId,
+  );
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Your post successfully deleted',
+    payload,
+  });
+});
+
+const getOtherUserPosts = catchAsync(async (req, res) => {
   const { id } = req.params;
-  const { posts, pagination } = await PostServices.getPostsByUserIdFromDB(
+  const { posts, pagination } = await PostServices.getOtherUserPostsFromDB(
     id,
     req.user!._id,
     req.query,
@@ -87,9 +117,35 @@ const getPostsByUserId = catchAsync(async (req, res) => {
   });
 });
 
+const removePostByAdmin = catchAsync(async (req, res) => {
+  const { id: postId } = req.params;
+  const payload = await PostServices.removePostByAdminIntoDB(postId, req.body);
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Successfully removed the post.',
+    payload,
+  });
+});
+
+const restorePostByAdmin = catchAsync(async (req, res) => {
+  const { id: postId } = req.params;
+  const payload = await PostServices.restorePostByAdminIntoDB(postId);
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Successfully restored the post.',
+    payload,
+  });
+});
+
 export const PostControllers = {
   createPost,
   getMyPosts,
   getPostById,
-  getPostsByUserId,
+  updatePostById,
+  deletePostById,
+  getOtherUserPosts,
+  removePostByAdmin,
+  restorePostByAdmin,
 };

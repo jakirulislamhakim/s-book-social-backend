@@ -25,3 +25,7 @@ export type TPostCreate = z.infer<typeof PostValidations.createPostSchema> & {
   userId: ObjectId;
   media: string[];
 };
+
+export type TPostUpdate = z.infer<typeof PostValidations.updatePostSchema>;
+
+export type TPostRemove = z.infer<typeof PostValidations.removePostSchema>;
