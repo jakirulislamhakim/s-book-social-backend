@@ -40,18 +40,26 @@ const createPost = catchAsync(async (req, res) => {
 });
 
 const getMyPosts = catchAsync(async (req, res) => {
-  const { posts, pagination } = await PostServices.getMyPostsFromDB(
+  const { query } = req;
+
+  const { posts: payload, pagination } = await PostServices.getMyPostsFromDB(
     req.user!._id,
-    req.query,
+    query,
   );
+
+  const hasQuery = Object.keys(query).length > 0;
+  const hasResults = payload.length > 0;
+
+  const message = hasResults
+    ? 'Posts fetched successfully'
+    : hasQuery
+      ? 'No posts matched your search criteria. Please review your filters.'
+      : 'No posts available in the system.';
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message:
-      posts.length > 0
-        ? 'Your posts fetched successfully'
-        : "You haven't posted anything yet .",
-    payload: posts,
+    message,
+    payload,
     pagination,
   });
 });
@@ -130,11 +138,22 @@ const removePostByAdmin = catchAsync(async (req, res) => {
 
 const restorePostByAdmin = catchAsync(async (req, res) => {
   const { id: postId } = req.params;
-  const payload = await PostServices.restorePostByAdminIntoDB(postId);
+  const payload = await PostServices.restorePostAppealByAdmin(postId, req.body);
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
     message: 'Successfully restored the post.',
+    payload,
+  });
+});
+
+const rejectPostAppealByAdmin = catchAsync(async (req, res) => {
+  const { id: postId } = req.params;
+  const payload = await PostServices.rejectPostAppealByAdmin(postId, req.body);
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Successfully rejected the post.',
     payload,
   });
 });
@@ -148,4 +167,5 @@ export const PostControllers = {
   getOtherUserPosts,
   removePostByAdmin,
   restorePostByAdmin,
+  rejectPostAppealByAdmin,
 };

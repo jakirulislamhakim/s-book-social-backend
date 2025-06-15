@@ -33,3 +33,73 @@
 [error]: timestamp:2025-06-14 00:50:13 AM traceId:[82b89578-7156-44b0-86b3-9e3a696be362] msg: method: PATCH: /api/v1/posts/684a8fd534537d5d67a768bc/restore msg: The post is already active !
 [error]: timestamp:2025-06-14 00:52:08 AM traceId:[ac46c10e-a783-4462-bf15-f13b03a68573] msg: method: PATCH: /api/v1/posts/684a8fd534537d5d67a768bc/restore msg: The post is already active !
 [error]: timestamp:2025-06-14 00:52:11 AM traceId:[8ee0d708-aae7-49f4-a7ef-995033a827b6] msg: method: PATCH: /api/v1/posts/684a8fd534537d5d67a768bc/restore msg: The post is already active !
+[error]: timestamp:2025-06-15 00:04:41 AM traceId:[ddf3faf3-d2ec-4176-b9ee-e0cd2ff01338] msg: method: POST: /api/v1/posts/post-appeals msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-15 00:04:58 AM traceId:[fe2f0711-7888-410e-8509-b8573b8e0a3b] msg: method: POST: /api/v1/posts/post-appeals msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-06-15 00:05:58 AM traceId:[1699d6e0-08dc-4a9e-8ba9-1d797ba9ebc9] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:06:57 AM traceId:[4eee3490-584f-4f2c-8ad6-6ea01b740489] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:07:24 AM traceId:[5c5da608-2715-42b5-8057-52525188abe9] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:07:26 AM traceId:[ba927262-cd82-433f-a442-ddef1890bb1a] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:07:27 AM traceId:[09dee46e-666b-4f70-9924-4e64d2ae2b21] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:07:28 AM traceId:[1b0d6601-ad90-42a8-a93a-289b77cce1bc] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:09:22 AM traceId:[b00174b9-c870-4c7c-844a-6df53d2de6c7] msg: method: POST: /api/v1/posts/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-15 00:10:18 AM traceId:[2b1f8036-ebf8-4b32-a652-655a73d9dd9b] msg: method: POST: /api/v1/posts/post-appeals msg: Access denied. Required role(s): user. Your role: superAdmin
+[error]: timestamp:2025-06-15 00:10:42 AM traceId:[22bd9b54-8ec7-420e-bc80-0ee55635cf18] msg: method: POST: /api/v1/posts/post-appeals msg: You can not appeal for other user post !
+[error]: timestamp:2025-06-15 00:11:39 AM traceId:[6cd12302-906f-43cc-a9af-ee2ecc243a21] msg: method: POST: /api/v1/posts/post-appeals msg: You can not appeal for active post !
+[error]: timestamp:2025-06-15 00:40:35 AM traceId:[b3d307fe-5b49-478b-a318-4f42b8ed1260] msg: method: POST: /api/v1/posts/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 00:40:54 AM traceId:[2a3b7707-7db5-4007-a42b-00bfe0a53503] msg: method: POST: /api/v1/posts/post-appeals msg: The post is not found !
+[error]: timestamp:2025-06-15 00:44:34 AM traceId:[377ce8f8-1c2b-48bb-a06a-1654cc389d35] msg: method: POST: /api/v1/posts/post-appeals msg: The post is not found !
+[error]: timestamp:2025-06-15 00:46:31 AM traceId:[826614c3-09ee-4565-86d4-e510b5938a11] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:46:36 AM traceId:[4add3ea3-1a0d-460f-9203-cd4ff4293230] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:46:37 AM traceId:[090d3e42-03e1-487d-97e8-0792b76f976f] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[error]: timestamp:2025-06-15 00:47:05 AM traceId:[212a9ca8-3631-43e3-95af-3c323b872199] msg: method: GET: /api/v1/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-15 00:48:27 AM traceId:[278d5ec1-30df-4ad0-be66-407c548a589d] msg: method: GET: /api/v1/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-15 00:48:40 AM traceId:[91289e15-f8c1-470b-a601-6885d6084964] msg: method: GET: /api/v1/post-appeals msg: Malformed authorization header. Expected format: "Bearer <token>".
+[error]: timestamp:2025-06-15 00:48:55 AM traceId:[80b73c92-a0f7-4ca9-af74-68f718d6eb39] msg: method: GET: /api/v1/post-appeals msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-06-15 00:49:14 AM traceId:[a8b53f01-726f-4ca7-81cc-de2100be47eb] msg: method: GET: /api/v1/post-appeals msg: Invalid token. User with email "faustino.bins@hotmail.com" and role "admin" not found.
+[error]: timestamp:2025-06-15 02:37:07 AM traceId:[8183059c-f79c-43cc-aa53-cd56446fee0b] msg: method: PATCH: /api/v1/posts/684a955637396bf10a949599/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:38:25 AM traceId:[af3536d7-9297-49ed-abb2-5c1d56464853] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:38:49 AM traceId:[4121dae9-13bf-4228-b030-92ec97f2cd5c] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:39:10 AM traceId:[1a2a7b02-d8c2-480b-b676-afbb3a1423be] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:40:47 AM traceId:[df7ff731-4734-436c-ad74-4683a138ae58] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:41:33 AM traceId:[aa5608e7-2c9e-4208-9a38-89e4e5b40b49] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 02:42:43 AM traceId:[56db4c24-772b-4898-9516-0ca0c7cedc98] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:43:00 AM traceId:[a8930188-8c6e-4f31-9c39-d2f9529a1b06] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[error]: timestamp:2025-06-15 02:57:36 AM traceId:[d3beb7f1-0fcc-4ee2-ab0a-d2c4c3a07306] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[error]: timestamp:2025-06-15 02:58:32 AM traceId:[9a3ffe5b-deef-4a82-962c-0a943228a775] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[error]: timestamp:2025-06-15 02:58:34 AM traceId:[ab8f18a0-a089-4bd2-93e3-a22d12b2f567] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[error]: timestamp:2025-06-15 02:58:37 AM traceId:[962cc0cb-8cc1-4bce-895a-9d7f67a5364a] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 02:58:40 AM traceId:[9fbbce7d-ebb6-4af0-877d-082720471685] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[error]: timestamp:2025-06-15 03:03:32 AM traceId:[3e2ccdcb-1c38-4354-9eec-47ca8d0a1d45] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for other user post !
+[error]: timestamp:2025-06-15 03:12:32 AM traceId:[e9839de7-8562-4aa9-b1f2-54250e5a90c5] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 03:15:35 AM traceId:[895f60a3-e755-4568-b01d-dcf66281365d] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 03:16:15 AM traceId:[48008ed3-c707-441c-a797-e8209f813e6c] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 03:18:35 AM traceId:[78e23a9d-ab50-4e51-a8fc-47e4d7dae065] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 03:18:44 AM traceId:[21278b98-57f5-4586-b4dd-fd16fdda06be] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 03:18:48 AM traceId:[3af662e0-6ca9-4ff0-b11e-ec71a5589f2f] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 03:18:52 AM traceId:[47b210ef-42dc-4494-8849-dea1001be628] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 03:18:54 AM traceId:[402285ab-e907-46af-977d-389108b18a62] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 03:18:56 AM traceId:[43a1fb62-daef-4022-9a39-3f05a19966dc] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 03:19:16 AM traceId:[06ddef59-6500-4565-94b7-f35a55fc8b79] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 03:20:03 AM traceId:[88ee3fe7-f1f5-49e0-b91a-b4b9aca20326] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for other user post !
+[error]: timestamp:2025-06-15 13:48:44 PM traceId:[102fe59a-7d8f-4124-b2cb-d8fc93b6d6b3] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 13:49:06 PM traceId:[6befd9dc-ec18-4594-a444-415f4716b67b] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 13:51:01 PM traceId:[bc9c3b5f-ec75-47fd-bda6-b7acf4a193ba] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 13:59:08 PM traceId:[14a9d9ab-7a62-4261-aebd-383d16f63228] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/reject msg: The post appeal is not found !
+[error]: timestamp:2025-06-15 13:59:40 PM traceId:[a1f19b14-f8e6-46c4-b2d9-767917c1eb13] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for active post !
+[error]: timestamp:2025-06-15 14:03:30 PM traceId:[693bc92f-35f5-48b7-bb04-c8b770ba0542] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 14:03:55 PM traceId:[27ca2895-8134-4a9f-88eb-09ac2b5b6c9c] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 14:04:03 PM traceId:[328bff92-1ef0-4fc0-9a4f-dc9605038489] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 14:04:54 PM traceId:[47f763be-0fc7-4ea2-912e-10ae708968e8] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[error]: timestamp:2025-06-15 14:05:35 PM traceId:[fff0c9df-ee89-49f5-9130-dcdc04ac1976] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[error]: timestamp:2025-06-15 14:05:42 PM traceId:[d5611c14-0bea-44e1-b5be-c5be997110d7] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 14:06:52 PM traceId:[d7505778-07d9-4649-9195-45f2ee49ac26] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[error]: timestamp:2025-06-15 14:06:58 PM traceId:[55f7d088-7e01-4841-984f-e3d39566cc65] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for active post !
+[error]: timestamp:2025-06-15 14:07:08 PM traceId:[b231f485-2986-4d3d-bab5-7973374f19dd] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[error]: timestamp:2025-06-15 14:08:20 PM traceId:[4f8d233b-83c9-437f-8fd3-afb07c97e18f] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 14:08:25 PM traceId:[331b8748-27d6-48c2-b426-23b2b39e9dac] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 14:08:27 PM traceId:[9d83ade8-09e1-44c0-85bf-77032402fe53] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[error]: timestamp:2025-06-15 14:09:25 PM traceId:[8a5bb7dd-b312-4c21-95df-bfb11ae5ab1d] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: rejected
+[error]: timestamp:2025-06-15 14:09:53 PM traceId:[484ba722-dd1c-4de4-a7c5-1be2a43a8fc3] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'rejected'
+[error]: timestamp:2025-06-15 14:54:45 PM traceId:[fd7b501b-a010-4feb-96e2-603a1e37e66e] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[error]: timestamp:2025-06-15 14:55:08 PM traceId:[db57a64c-0f54-4d9a-89e6-69e2e99c19b9] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'rejected'
+[error]: timestamp:2025-06-15 15:02:45 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'pending'

@@ -7,7 +7,7 @@ export type TPostAudience = (typeof POST_AUDIENCE)[keyof typeof POST_AUDIENCE];
 
 export type TPostStatus = (typeof POST_STATUS)[keyof typeof POST_STATUS];
 
-export interface TPost {
+export type TPost = {
   _id: ObjectId;
   userId: ObjectId;
   content: string;
@@ -19,7 +19,7 @@ export interface TPost {
   removedReason: string;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
 export type TPostCreate = z.infer<typeof PostValidations.createPostSchema> & {
   userId: ObjectId;

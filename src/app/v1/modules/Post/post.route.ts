@@ -9,6 +9,7 @@ import { PostValidations } from './post.validation';
 import { USER_ROLE } from '../User/user.constant';
 import { upload } from '../../config/multer.config';
 import { ParamsValidations } from '../../validation/params.validation';
+import { PostAppealValidations } from '../PostAppeal/postAppeal.validation';
 
 const router = Router();
 
@@ -69,8 +70,17 @@ router.patch(
 router.patch(
   '/:id/restore',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  validateReq.body(PostAppealValidations.appealAdminResponseSchema),
   authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.restorePostByAdmin,
+);
+
+router.patch(
+  '/:id/reject',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
+  validateReq.body(PostAppealValidations.appealAdminResponseSchema),
+  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.rejectPostAppealByAdmin,
 );
 
 export const PostRoutes = router;

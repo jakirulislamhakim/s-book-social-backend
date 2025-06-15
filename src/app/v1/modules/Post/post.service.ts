@@ -9,8 +9,11 @@ import {
   POST_SEARCHABLE_FIELDS,
   POST_STATUS,
 } from './post.constant';
-import { Types } from 'mongoose';
+import mongoose, { Types } from 'mongoose';
 import { USER_STATUS } from '../User/user.constant';
+import { PostAppeal } from '../PostAppeal/postAppeal.model';
+import { POST_APPEAL_STATUS } from '../PostAppeal/postAppeal.constant';
+import { TPostAppealAdminResponse } from '../PostAppeal/postAppeal.interface';
 
 const createPostIntoDB = async (payload: TPostCreate) => {
   const { tags } = payload;
@@ -217,6 +220,7 @@ const getOtherUserPostsFromDB = async (
   };
 };
 
+// admin services
 const removePostByAdminIntoDB = async (
   postId: string,
   { removedReason }: TPostRemove,
@@ -239,6 +243,7 @@ const removePostByAdminIntoDB = async (
     },
     {
       new: true,
+      timestamps: false,
     },
   )
     // .select('')
@@ -247,31 +252,84 @@ const removePostByAdminIntoDB = async (
   return removedPost;
 };
 
-const restorePostByAdminIntoDB = async (postId: string) => {
-  const post = await Post.findById(postId).select('status');
+const restorePostAppealByAdmin = async (
+  postId: string,
+  { adminResponse }: TPostAppealAdminResponse,
+) => {
+  const session = await mongoose.startSession();
 
-  if (!post) {
-    throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
+  try {
+    session.startTransaction();
+
+    const post = await Post.findById(postId).select('status').session(session);
+
+    if (!post) {
+      throw new AppError(httpStatus.NOT_FOUND, 'The post is not found!');
+    }
+
+    if (post.status === POST_STATUS.ACTIVE) {
+      throw new AppError(httpStatus.BAD_REQUEST, 'The post is already active!');
+    }
+
+    const activatedPost = await Post.findByIdAndUpdate(
+      postId,
+      {
+        status: POST_STATUS.ACTIVE,
+        removedReason: '',
+      },
+      {
+        new: true,
+        session,
+      },
+    ).lean();
+
+    await PostAppeal.findOneAndUpdate(
+      { postId, status: POST_APPEAL_STATUS.PENDING },
+      {
+        status: POST_APPEAL_STATUS.APPROVED,
+        adminResponse,
+        resolvedAt: new Date(),
+      },
+      {
+        new: true,
+        session,
+      },
+    );
+
+    await session.commitTransaction();
+
+    return activatedPost;
+  } catch (error) {
+    await session.abortTransaction();
+    throw error;
+  } finally {
+    session.endSession();
   }
+};
 
-  if (post.status === POST_STATUS.ACTIVE) {
-    throw new AppError(httpStatus.BAD_REQUEST, 'The post is already active !');
-  }
-
-  const activePost = await Post.findByIdAndUpdate(
+const rejectPostAppealByAdmin = async (
+  postId: string,
+  { adminResponse }: TPostAppealAdminResponse,
+) => {
+  const existingPostAppeal = await PostAppeal.exists({
     postId,
-    {
-      status: POST_STATUS.ACTIVE,
-      removedReason: '',
-    },
-    {
-      new: true,
-    },
-  )
-    // .select('')
-    .lean();
+    status: POST_APPEAL_STATUS.PENDING,
+  });
 
-  return activePost;
+  if (!existingPostAppeal) {
+    throw new AppError(httpStatus.NOT_FOUND, 'The post appeal is not found !');
+  }
+
+  const updatedPostAppeal = await PostAppeal.findOneAndUpdate(
+    { postId, status: POST_APPEAL_STATUS.PENDING },
+    {
+      status: POST_APPEAL_STATUS.REJECTED,
+      adminResponse,
+      resolvedAt: new Date(),
+    },
+  );
+
+  return updatedPostAppeal;
 };
 
 export const PostServices = {
@@ -282,5 +340,6 @@ export const PostServices = {
   deletePostByIdFromDB,
   getOtherUserPostsFromDB,
   removePostByAdminIntoDB,
-  restorePostByAdminIntoDB,
+  restorePostAppealByAdmin,
+  rejectPostAppealByAdmin,
 };

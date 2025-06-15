@@ -97,3 +97,226 @@
 [error]: timestamp:2025-06-14 00:52:11 AM traceId:[8ee0d708-aae7-49f4-a7ef-995033a827b6] msg: method: PATCH: /api/v1/posts/684a8fd534537d5d67a768bc/restore msg: The post is already active !
 [info]: timestamp:2025-06-14 00:52:15 AM traceId:[f019986b-b2ab-4f73-a5af-010b0a93d011] msg:Incoming request: PATCH /api/v1/posts/684a955637396bf10a949599/restore
 [info]: timestamp:2025-06-14 00:53:56 AM traceId:[64a7e66a-1975-4ed1-b809-e7aa2d84c831] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[info]: timestamp:2025-06-15 00:04:41 AM traceId:[ddf3faf3-d2ec-4176-b9ee-e0cd2ff01338] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:04:41 AM traceId:[ddf3faf3-d2ec-4176-b9ee-e0cd2ff01338] msg: method: POST: /api/v1/posts/post-appeals msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-15 00:04:58 AM traceId:[fe2f0711-7888-410e-8509-b8573b8e0a3b] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:04:58 AM traceId:[fe2f0711-7888-410e-8509-b8573b8e0a3b] msg: method: POST: /api/v1/posts/post-appeals msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-06-15 00:05:58 AM traceId:[1699d6e0-08dc-4a9e-8ba9-1d797ba9ebc9] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:05:58 AM traceId:[1699d6e0-08dc-4a9e-8ba9-1d797ba9ebc9] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:06:57 AM traceId:[4eee3490-584f-4f2c-8ad6-6ea01b740489] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:06:57 AM traceId:[4eee3490-584f-4f2c-8ad6-6ea01b740489] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:07:12 AM traceId:[d6265634-47d9-48a2-9d7e-f94a25905afe] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[info]: timestamp:2025-06-15 00:07:24 AM traceId:[5c5da608-2715-42b5-8057-52525188abe9] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:07:24 AM traceId:[5c5da608-2715-42b5-8057-52525188abe9] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:07:26 AM traceId:[ba927262-cd82-433f-a442-ddef1890bb1a] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:07:26 AM traceId:[ba927262-cd82-433f-a442-ddef1890bb1a] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:07:27 AM traceId:[09dee46e-666b-4f70-9924-4e64d2ae2b21] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:07:27 AM traceId:[09dee46e-666b-4f70-9924-4e64d2ae2b21] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:07:28 AM traceId:[1b0d6601-ad90-42a8-a93a-289b77cce1bc] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:07:28 AM traceId:[1b0d6601-ad90-42a8-a93a-289b77cce1bc] msg: method: POST: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:09:22 AM traceId:[b00174b9-c870-4c7c-844a-6df53d2de6c7] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:09:22 AM traceId:[b00174b9-c870-4c7c-844a-6df53d2de6c7] msg: method: POST: /api/v1/posts/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-15 00:10:18 AM traceId:[2b1f8036-ebf8-4b32-a652-655a73d9dd9b] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:10:18 AM traceId:[2b1f8036-ebf8-4b32-a652-655a73d9dd9b] msg: method: POST: /api/v1/posts/post-appeals msg: Access denied. Required role(s): user. Your role: superAdmin
+[info]: timestamp:2025-06-15 00:10:41 AM traceId:[22bd9b54-8ec7-420e-bc80-0ee55635cf18] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:10:42 AM traceId:[22bd9b54-8ec7-420e-bc80-0ee55635cf18] msg: method: POST: /api/v1/posts/post-appeals msg: You can not appeal for other user post !
+[info]: timestamp:2025-06-15 00:11:13 AM traceId:[08ced424-5635-47d6-94f1-dd3cb3ec3d68] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-15 00:11:19 AM traceId:[748d08a1-924d-4e4e-ac75-b3684a1b2039] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-15 00:11:38 AM traceId:[6cd12302-906f-43cc-a9af-ee2ecc243a21] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:11:39 AM traceId:[6cd12302-906f-43cc-a9af-ee2ecc243a21] msg: method: POST: /api/v1/posts/post-appeals msg: You can not appeal for active post !
+[info]: timestamp:2025-06-15 00:12:52 AM traceId:[d3dbb56a-2afc-43ed-bc96-13a2d695969d] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 00:12:58 AM traceId:[e936f0c1-5e3e-4cf8-901b-27adedefdc1a] msg:Incoming request: POST /api/v1/posts/post-appeals
+[info]: timestamp:2025-06-15 00:33:39 AM traceId:[4d08a733-c77d-4715-ae4b-6996eddf0738] msg:Incoming request: POST /api/v1/posts/post-appeals
+[info]: timestamp:2025-06-15 00:33:45 AM traceId:[80c272fc-92c2-4ebf-925c-454d7e0aec8a] msg:Incoming request: POST /api/v1/posts/post-appeals
+[info]: timestamp:2025-06-15 00:40:34 AM traceId:[b3d307fe-5b49-478b-a318-4f42b8ed1260] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:40:35 AM traceId:[b3d307fe-5b49-478b-a318-4f42b8ed1260] msg: method: POST: /api/v1/posts/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 00:40:54 AM traceId:[2a3b7707-7db5-4007-a42b-00bfe0a53503] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:40:54 AM traceId:[2a3b7707-7db5-4007-a42b-00bfe0a53503] msg: method: POST: /api/v1/posts/post-appeals msg: The post is not found !
+[info]: timestamp:2025-06-15 00:44:33 AM traceId:[377ce8f8-1c2b-48bb-a06a-1654cc389d35] msg:Incoming request: POST /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:44:34 AM traceId:[377ce8f8-1c2b-48bb-a06a-1654cc389d35] msg: method: POST: /api/v1/posts/post-appeals msg: The post is not found !
+[info]: timestamp:2025-06-15 00:46:31 AM traceId:[826614c3-09ee-4565-86d4-e510b5938a11] msg:Incoming request: GET /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:46:31 AM traceId:[826614c3-09ee-4565-86d4-e510b5938a11] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:46:36 AM traceId:[4add3ea3-1a0d-460f-9203-cd4ff4293230] msg:Incoming request: GET /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:46:36 AM traceId:[4add3ea3-1a0d-460f-9203-cd4ff4293230] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:46:37 AM traceId:[090d3e42-03e1-487d-97e8-0792b76f976f] msg:Incoming request: GET /api/v1/posts/post-appeals
+[error]: timestamp:2025-06-15 00:46:37 AM traceId:[090d3e42-03e1-487d-97e8-0792b76f976f] msg: method: GET: /api/v1/posts/post-appeals msg: Validation failed!
+[info]: timestamp:2025-06-15 00:47:05 AM traceId:[212a9ca8-3631-43e3-95af-3c323b872199] msg:Incoming request: GET /api/v1/post-appeals
+[error]: timestamp:2025-06-15 00:47:05 AM traceId:[212a9ca8-3631-43e3-95af-3c323b872199] msg: method: GET: /api/v1/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-15 00:48:27 AM traceId:[278d5ec1-30df-4ad0-be66-407c548a589d] msg:Incoming request: GET /api/v1/post-appeals
+[error]: timestamp:2025-06-15 00:48:27 AM traceId:[278d5ec1-30df-4ad0-be66-407c548a589d] msg: method: GET: /api/v1/post-appeals msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-15 00:48:40 AM traceId:[91289e15-f8c1-470b-a601-6885d6084964] msg:Incoming request: GET /api/v1/post-appeals
+[error]: timestamp:2025-06-15 00:48:40 AM traceId:[91289e15-f8c1-470b-a601-6885d6084964] msg: method: GET: /api/v1/post-appeals msg: Malformed authorization header. Expected format: "Bearer <token>".
+[info]: timestamp:2025-06-15 00:48:55 AM traceId:[80b73c92-a0f7-4ca9-af74-68f718d6eb39] msg:Incoming request: GET /api/v1/post-appeals
+[error]: timestamp:2025-06-15 00:48:55 AM traceId:[80b73c92-a0f7-4ca9-af74-68f718d6eb39] msg: method: GET: /api/v1/post-appeals msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[info]: timestamp:2025-06-15 00:49:14 AM traceId:[a8b53f01-726f-4ca7-81cc-de2100be47eb] msg:Incoming request: GET /api/v1/post-appeals
+[error]: timestamp:2025-06-15 00:49:14 AM traceId:[a8b53f01-726f-4ca7-81cc-de2100be47eb] msg: method: GET: /api/v1/post-appeals msg: Invalid token. User with email "faustino.bins@hotmail.com" and role "admin" not found.
+[info]: timestamp:2025-06-15 00:49:25 AM traceId:[bc5c8f5d-156c-42f9-9105-4d88ee43a352] msg:Incoming request: GET /api/v1/post-appeals
+[info]: timestamp:2025-06-15 00:51:51 AM traceId:[51b054f1-c18e-43e3-8d61-593c29e7a8cb] msg:Incoming request: GET /api/v1/post-appeals?status=approved%20
+[info]: timestamp:2025-06-15 00:51:54 AM traceId:[a0574018-8879-46c7-915b-1b553a04f70e] msg:Incoming request: GET /api/v1/post-appeals?status=approved
+[info]: timestamp:2025-06-15 00:52:34 AM traceId:[777a7018-c938-4ad5-9557-aa14fe8235fe] msg:Incoming request: GET /api/v1/post-appeals?status=approved
+[info]: timestamp:2025-06-15 00:52:46 AM traceId:[b697c387-1861-4666-9064-305d6cefe67e] msg:Incoming request: GET /api/v1/post-appeals?status=approveds
+[info]: timestamp:2025-06-15 01:01:32 AM traceId:[7bebbc1a-bc0a-45b8-93e0-0f4429a48326] msg:Incoming request: GET /api/v1/post-appeals?status=approveds
+[info]: timestamp:2025-06-15 01:01:54 AM traceId:[6f61fc7c-a638-4cf8-a663-7f2fa9b78e58] msg:Incoming request: GET /api/v1/post-appeals
+[info]: timestamp:2025-06-15 01:02:56 AM traceId:[7f6e4f51-4cb0-429d-86ef-ee62e7bb8406] msg:Incoming request: GET /api/v1/post-appeals?sort=status
+[info]: timestamp:2025-06-15 01:03:06 AM traceId:[323078a9-00f2-467c-880c-8ea4dc6c39be] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:09:46 AM traceId:[7fbc95ec-79cf-4226-9b77-1cba5c1d9e4c] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:13:18 AM traceId:[38761b86-3edb-4eb1-b2a8-422d7522d61b] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:13:21 AM traceId:[0c259407-ba80-4773-a092-9125478f515c] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:13:24 AM traceId:[6f6534dd-ebd6-4711-8a51-890c5005165d] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:14:41 AM traceId:[b1c573ed-de9f-4cfb-96bd-e98bb57e454f] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:15:14 AM traceId:[84fe89ec-3068-41bc-9a55-7876414c8c62] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:16:46 AM traceId:[1a00ec73-0696-408f-863e-1826483f6cbe] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:17:31 AM traceId:[640db8c8-e334-4af4-b032-2e49055dfcf1] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:18:05 AM traceId:[6d233d37-a75e-45c5-bb95-508216beaa48] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:18:28 AM traceId:[ae3f6f05-d8ea-4b0d-95d8-a675e87c55e4] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 01:18:53 AM traceId:[c87f43a9-699c-4340-9860-7bff4e8056a0] msg:Incoming request: GET /api/v1/post-appeals?sort=-status&fields=-postId
+[info]: timestamp:2025-06-15 01:19:03 AM traceId:[e0e4651d-c3f4-4bec-8035-08de866ad680] msg:Incoming request: GET /api/v1/post-appeals?sort=-status&fields=-postId
+[info]: timestamp:2025-06-15 01:23:27 AM traceId:[fad4bde9-7198-4533-8f33-006bff73bb53] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 02:36:49 AM traceId:[8dfb1996-d0b1-4bd3-8612-c89b69f0c5ef] msg:Incoming request: PATCH /api/v1/posts/684a955637396bf10a949599/restore
+[info]: timestamp:2025-06-15 02:37:06 AM traceId:[8183059c-f79c-43cc-aa53-cd56446fee0b] msg:Incoming request: PATCH /api/v1/posts/684a955637396bf10a949599/approve
+[error]: timestamp:2025-06-15 02:37:07 AM traceId:[8183059c-f79c-43cc-aa53-cd56446fee0b] msg: method: PATCH: /api/v1/posts/684a955637396bf10a949599/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:37:23 AM traceId:[c9b65452-9aa0-4952-b2b2-62f6784a0da6] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/approve
+[info]: timestamp:2025-06-15 02:38:22 AM traceId:[af3536d7-9297-49ed-abb2-5c1d56464853] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/approve
+[error]: timestamp:2025-06-15 02:38:25 AM traceId:[af3536d7-9297-49ed-abb2-5c1d56464853] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:38:48 AM traceId:[4121dae9-13bf-4228-b030-92ec97f2cd5c] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/approve
+[error]: timestamp:2025-06-15 02:38:49 AM traceId:[4121dae9-13bf-4228-b030-92ec97f2cd5c] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:39:09 AM traceId:[1a2a7b02-d8c2-480b-b676-afbb3a1423be] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/approve
+[error]: timestamp:2025-06-15 02:39:10 AM traceId:[1a2a7b02-d8c2-480b-b676-afbb3a1423be] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:39:27 AM traceId:[6d987478-315e-4006-9fff-8736d15bef49] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:39:34 AM traceId:[d12d8d0a-80b2-414d-8f6b-988b169103e4] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 02:40:44 AM traceId:[df7ff731-4734-436c-ad74-4683a138ae58] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:40:47 AM traceId:[df7ff731-4734-436c-ad74-4683a138ae58] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:40:52 AM traceId:[1e47c736-68bd-4d5c-ba78-e4797cacfdb5] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:41:01 AM traceId:[1f277f27-c134-42b3-8fea-8359643725be] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 02:41:07 AM traceId:[070569f3-832d-48f4-b178-d59edeaa7e04] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:41:33 AM traceId:[aa5608e7-2c9e-4208-9a38-89e4e5b40b49] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[error]: timestamp:2025-06-15 02:41:33 AM traceId:[aa5608e7-2c9e-4208-9a38-89e4e5b40b49] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 02:41:38 AM traceId:[3acf35c1-5a8c-4716-9ff1-3ffcb4deeabf] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 02:42:39 AM traceId:[56db4c24-772b-4898-9516-0ca0c7cedc98] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:42:43 AM traceId:[56db4c24-772b-4898-9516-0ca0c7cedc98] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:42:45 AM traceId:[9348f3c2-76a9-4850-aa07-c6441790a056] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:42:48 AM traceId:[7a2eda84-1d17-43a7-9f26-252ccd96f41b] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 02:43:00 AM traceId:[a8930188-8c6e-4f31-9c39-d2f9529a1b06] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:43:00 AM traceId:[a8930188-8c6e-4f31-9c39-d2f9529a1b06] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: The post is already active !
+[info]: timestamp:2025-06-15 02:43:04 AM traceId:[467df5c5-b929-4dc9-b0b3-71aa8a334ef0] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:43:18 AM traceId:[3589b82f-27cc-4c09-b10f-f92d83f4c741] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 02:57:36 AM traceId:[d3beb7f1-0fcc-4ee2-ab0a-d2c4c3a07306] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:57:36 AM traceId:[d3beb7f1-0fcc-4ee2-ab0a-d2c4c3a07306] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[info]: timestamp:2025-06-15 02:57:41 AM traceId:[39f31997-44e4-4b7e-8b7b-6002eb5f374b] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 02:58:31 AM traceId:[9a3ffe5b-deef-4a82-962c-0a943228a775] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:58:32 AM traceId:[9a3ffe5b-deef-4a82-962c-0a943228a775] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[info]: timestamp:2025-06-15 02:58:34 AM traceId:[ab8f18a0-a089-4bd2-93e3-a22d12b2f567] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:58:34 AM traceId:[ab8f18a0-a089-4bd2-93e3-a22d12b2f567] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[info]: timestamp:2025-06-15 02:58:37 AM traceId:[962cc0cb-8cc1-4bce-895a-9d7f67a5364a] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[error]: timestamp:2025-06-15 02:58:37 AM traceId:[962cc0cb-8cc1-4bce-895a-9d7f67a5364a] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 02:58:40 AM traceId:[9fbbce7d-ebb6-4af0-877d-082720471685] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[error]: timestamp:2025-06-15 02:58:40 AM traceId:[9fbbce7d-ebb6-4af0-877d-082720471685] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/approve msg: Cannot destructure property 'adminResponse' of 'undefined' as it is undefined.
+[info]: timestamp:2025-06-15 03:01:55 AM traceId:[2e458da6-68f1-480c-b248-438642c658ac] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 03:03:15 AM traceId:[cc94079a-cf66-442b-8e6b-3eefdad938cd] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 03:03:31 AM traceId:[3e2ccdcb-1c38-4354-9eec-47ca8d0a1d45] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 03:03:32 AM traceId:[3e2ccdcb-1c38-4354-9eec-47ca8d0a1d45] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for other user post !
+[info]: timestamp:2025-06-15 03:03:52 AM traceId:[122e356c-70de-4778-806c-4a52960817ba] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-15 03:04:11 AM traceId:[58cdae50-042d-4cdb-a6d8-b19ea1207174] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 03:04:19 AM traceId:[a89c295f-daf5-426c-b0f2-4193c6acaeec] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 03:12:14 AM traceId:[e9839de7-8562-4aa9-b1f2-54250e5a90c5] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 03:12:32 AM traceId:[e9839de7-8562-4aa9-b1f2-54250e5a90c5] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 03:12:42 AM traceId:[45dfe17a-1ff9-4e08-ab66-9c24967cbc08] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/approve
+[info]: timestamp:2025-06-15 03:13:50 AM traceId:[51cee413-3a2c-4207-a39a-589366e8ae1e] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[info]: timestamp:2025-06-15 03:15:11 AM traceId:[565c8fc3-854c-4d05-b2fb-acbe3d4ff5b3] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[info]: timestamp:2025-06-15 03:15:14 AM traceId:[a7e9a899-077a-4ef0-97a4-0f7f70c867c1] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[info]: timestamp:2025-06-15 03:15:31 AM traceId:[895f60a3-e755-4568-b01d-dcf66281365d] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[error]: timestamp:2025-06-15 03:15:35 AM traceId:[895f60a3-e755-4568-b01d-dcf66281365d] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 03:16:13 AM traceId:[48008ed3-c707-441c-a797-e8209f813e6c] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[error]: timestamp:2025-06-15 03:16:15 AM traceId:[48008ed3-c707-441c-a797-e8209f813e6c] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 03:18:34 AM traceId:[78e23a9d-ab50-4e51-a8fc-47e4d7dae065] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[error]: timestamp:2025-06-15 03:18:35 AM traceId:[78e23a9d-ab50-4e51-a8fc-47e4d7dae065] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 03:18:43 AM traceId:[21278b98-57f5-4586-b4dd-fd16fdda06be] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 03:18:44 AM traceId:[21278b98-57f5-4586-b4dd-fd16fdda06be] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 03:18:48 AM traceId:[3af662e0-6ca9-4ff0-b11e-ec71a5589f2f] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/restore
+[error]: timestamp:2025-06-15 03:18:48 AM traceId:[3af662e0-6ca9-4ff0-b11e-ec71a5589f2f] msg: method: PATCH: /api/v1/posts/684a8faa34537d5d67a768b9/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 03:18:52 AM traceId:[47b210ef-42dc-4494-8849-dea1001be628] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 03:18:52 AM traceId:[47b210ef-42dc-4494-8849-dea1001be628] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 03:18:54 AM traceId:[402285ab-e907-46af-977d-389108b18a62] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 03:18:54 AM traceId:[402285ab-e907-46af-977d-389108b18a62] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 03:18:55 AM traceId:[43a1fb62-daef-4022-9a39-3f05a19966dc] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 03:18:56 AM traceId:[43a1fb62-daef-4022-9a39-3f05a19966dc] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 03:19:15 AM traceId:[06ddef59-6500-4565-94b7-f35a55fc8b79] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 03:19:16 AM traceId:[06ddef59-6500-4565-94b7-f35a55fc8b79] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 03:19:52 AM traceId:[478df117-4ad1-41e3-97c5-345eee32e1eb] msg:Incoming request: PATCH /api/v1/posts/684a8faa34537d5d67a768b9/remove
+[info]: timestamp:2025-06-15 03:20:02 AM traceId:[88ee3fe7-f1f5-49e0-b91a-b4b9aca20326] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 03:20:03 AM traceId:[88ee3fe7-f1f5-49e0-b91a-b4b9aca20326] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for other user post !
+[info]: timestamp:2025-06-15 03:20:18 AM traceId:[74e4ba78-85e6-4dc5-8fdd-3c022cde8981] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-15 03:21:46 AM traceId:[83bb1e80-1db8-4b5a-ada6-73d3817ff83e] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 03:21:53 AM traceId:[ffeca433-2bfa-4fe6-93d1-feb6d2f85ec2] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 03:22:26 AM traceId:[1d3a88ee-42a2-43b6-ba98-0cb59d64cc8a] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 03:23:01 AM traceId:[8d083536-4528-4a89-bef7-cefcf9446c4a] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 03:23:08 AM traceId:[317f3182-ff35-4373-97a8-dae652342767] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 03:23:13 AM traceId:[a6bebf67-e093-4b28-a91d-bfc6ebac5d61] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-15 03:23:26 AM traceId:[c1cfc616-a3fe-44a1-ab00-d1c00ab77554] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 03:24:50 AM traceId:[da685660-8dc0-4682-b8ae-715975cfb847] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 03:24:55 AM traceId:[45144861-4d40-4b48-b854-a0d79374aca7] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 03:25:00 AM traceId:[1128aa4b-6112-4ec8-ba5f-6bdb796c5182] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-15 03:25:14 AM traceId:[fa07ed09-4621-4f1d-afb0-5d1ae7446e14] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 13:48:43 PM traceId:[102fe59a-7d8f-4124-b2cb-d8fc93b6d6b3] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[error]: timestamp:2025-06-15 13:48:44 PM traceId:[102fe59a-7d8f-4124-b2cb-d8fc93b6d6b3] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 13:49:05 PM traceId:[6befd9dc-ec18-4594-a444-415f4716b67b] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[error]: timestamp:2025-06-15 13:49:06 PM traceId:[6befd9dc-ec18-4594-a444-415f4716b67b] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 13:50:14 PM traceId:[b9dd922e-4f60-4624-bc2a-f0e02dd117e1] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 13:50:26 PM traceId:[16d5fbbc-2068-4c8f-ae4c-b8b6f99e2f1d] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 13:51:00 PM traceId:[bc9c3b5f-ec75-47fd-bda6-b7acf4a193ba] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 13:51:01 PM traceId:[bc9c3b5f-ec75-47fd-bda6-b7acf4a193ba] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 13:58:49 PM traceId:[8adf9c9c-9141-452c-aade-911c7dea3463] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 13:59:07 PM traceId:[14a9d9ab-7a62-4261-aebd-383d16f63228] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/reject
+[error]: timestamp:2025-06-15 13:59:08 PM traceId:[14a9d9ab-7a62-4261-aebd-383d16f63228] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/reject msg: The post appeal is not found !
+[info]: timestamp:2025-06-15 13:59:40 PM traceId:[a1f19b14-f8e6-46c4-b2d9-767917c1eb13] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 13:59:40 PM traceId:[a1f19b14-f8e6-46c4-b2d9-767917c1eb13] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for active post !
+[info]: timestamp:2025-06-15 13:59:48 PM traceId:[1c8d747b-8c6a-40cd-95d5-c745f8a3e2c1] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 14:00:05 PM traceId:[aa6b5529-3260-4069-84bc-daa7eeff83eb] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:00:24 PM traceId:[30a6de49-9a4d-414f-8687-9b88132d72ec] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:00:29 PM traceId:[0a5dd267-5ec5-4e25-91d1-f4d0ec0cffdc] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:00:37 PM traceId:[737bb49e-7348-49aa-8471-483a9e4ff28b] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:01:51 PM traceId:[dfd41893-1137-48e6-8c96-18904c91a17c] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:02:45 PM traceId:[c1b79ed2-01c1-4693-9d93-8b12c18a2f01] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:02:50 PM traceId:[ae2de7d9-fc65-4cf8-91c2-70e1962b47e4] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:03:29 PM traceId:[693bc92f-35f5-48b7-bb04-c8b770ba0542] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:03:30 PM traceId:[693bc92f-35f5-48b7-bb04-c8b770ba0542] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 14:03:54 PM traceId:[27ca2895-8134-4a9f-88eb-09ac2b5b6c9c] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 14:03:55 PM traceId:[27ca2895-8134-4a9f-88eb-09ac2b5b6c9c] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 14:03:58 PM traceId:[6411e874-3af6-4855-9141-34e0ed2a1092] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 14:04:02 PM traceId:[328bff92-1ef0-4fc0-9a4f-dc9605038489] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:04:03 PM traceId:[328bff92-1ef0-4fc0-9a4f-dc9605038489] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 14:04:44 PM traceId:[84dfa26e-a5df-473a-a8cb-d57683d1ccf8] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/reject
+[info]: timestamp:2025-06-15 14:04:53 PM traceId:[47f763be-0fc7-4ea2-912e-10ae708968e8] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:04:54 PM traceId:[47f763be-0fc7-4ea2-912e-10ae708968e8] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[info]: timestamp:2025-06-15 14:05:34 PM traceId:[fff0c9df-ee89-49f5-9130-dcdc04ac1976] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:05:35 PM traceId:[fff0c9df-ee89-49f5-9130-dcdc04ac1976] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[info]: timestamp:2025-06-15 14:05:41 PM traceId:[d5611c14-0bea-44e1-b5be-c5be997110d7] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 14:05:42 PM traceId:[d5611c14-0bea-44e1-b5be-c5be997110d7] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 14:05:53 PM traceId:[1b7ccd4a-2310-449a-b9fd-f77504767b86] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 14:06:48 PM traceId:[d7505778-07d9-4649-9195-45f2ee49ac26] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[error]: timestamp:2025-06-15 14:06:52 PM traceId:[d7505778-07d9-4649-9195-45f2ee49ac26] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/restore msg: The post is already active!
+[info]: timestamp:2025-06-15 14:06:57 PM traceId:[55f7d088-7e01-4841-984f-e3d39566cc65] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:06:58 PM traceId:[55f7d088-7e01-4841-984f-e3d39566cc65] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for active post !
+[info]: timestamp:2025-06-15 14:07:03 PM traceId:[df9eaf40-ec26-4076-bdd1-311ffc03e32f] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 14:07:07 PM traceId:[b231f485-2986-4d3d-bab5-7973374f19dd] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:07:08 PM traceId:[b231f485-2986-4d3d-bab5-7973374f19dd] msg: method: POST: /api/v1/post-appeals msg: The post already verified by admin! You can not appeal again !
+[info]: timestamp:2025-06-15 14:08:19 PM traceId:[4f8d233b-83c9-437f-8fd3-afb07c97e18f] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:08:20 PM traceId:[4f8d233b-83c9-437f-8fd3-afb07c97e18f] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 14:08:24 PM traceId:[331b8748-27d6-48c2-b426-23b2b39e9dac] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:08:25 PM traceId:[331b8748-27d6-48c2-b426-23b2b39e9dac] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 14:08:26 PM traceId:[9d83ade8-09e1-44c0-85bf-77032402fe53] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:08:27 PM traceId:[9d83ade8-09e1-44c0-85bf-77032402fe53] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post !
+[info]: timestamp:2025-06-15 14:09:21 PM traceId:[8a5bb7dd-b312-4c21-95df-bfb11ae5ab1d] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:09:25 PM traceId:[8a5bb7dd-b312-4c21-95df-bfb11ae5ab1d] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: rejected
+[info]: timestamp:2025-06-15 14:09:48 PM traceId:[484ba722-dd1c-4de4-a7c5-1be2a43a8fc3] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:09:53 PM traceId:[484ba722-dd1c-4de4-a7c5-1be2a43a8fc3] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'rejected'
+[info]: timestamp:2025-06-15 14:50:03 PM traceId:[7c875b61-30e5-40ec-8fda-f9cc0e5fb647] msg:Incoming request: GET /api/v1/post-appeals?sort=-status
+[info]: timestamp:2025-06-15 14:54:44 PM traceId:[fd7b501b-a010-4feb-96e2-603a1e37e66e] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[error]: timestamp:2025-06-15 14:54:45 PM traceId:[fd7b501b-a010-4feb-96e2-603a1e37e66e] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
+[info]: timestamp:2025-06-15 14:54:52 PM traceId:[5fc16bf6-2e3a-418c-96e7-13e741fd95d9] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/restore
+[info]: timestamp:2025-06-15 14:54:59 PM traceId:[c72b1eca-73e5-4e57-8d89-ceeee4c010e8] msg:Incoming request: PATCH /api/v1/posts/684dbb48f7232b3360a8637f/remove
+[info]: timestamp:2025-06-15 14:55:07 PM traceId:[db57a64c-0f54-4d9a-89e6-69e2e99c19b9] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 14:55:08 PM traceId:[db57a64c-0f54-4d9a-89e6-69e2e99c19b9] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'rejected'
+[info]: timestamp:2025-06-15 14:55:31 PM traceId:[235e9a39-5d18-44c5-b21c-1d5ce2e7b4ce] msg:Incoming request: POST /api/v1/post-appeals
+[info]: timestamp:2025-06-15 15:02:44 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg:Incoming request: POST /api/v1/post-appeals
+[error]: timestamp:2025-06-15 15:02:45 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'pending'
