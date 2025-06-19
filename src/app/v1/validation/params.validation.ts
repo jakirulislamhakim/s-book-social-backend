@@ -54,10 +54,10 @@ const queryParamsSchema = z
   })
   .passthrough();
 
-const pathParamObjectIDSchema = (pathName = 'id') => {
+const pathParamObjectIDSchema = (pathParamName = 'id') => {
   return z.object({
-    [pathName]: z.string().refine((val) => Types.ObjectId.isValid(val), {
-      message: `Invalid '${pathName}': must be a valid Mongo ObjectId`,
+    [pathParamName]: z.string().refine((val) => Types.ObjectId.isValid(val), {
+      message: `Invalid '${pathParamName}': must be a valid Mongo ObjectId`,
     }),
   });
 };

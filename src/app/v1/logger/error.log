@@ -103,3 +103,127 @@
 [error]: timestamp:2025-06-15 14:54:45 PM traceId:[fd7b501b-a010-4feb-96e2-603a1e37e66e] msg: method: PATCH: /api/v1/posts/684dbb48f7232b3360a8637f/remove msg: The post is already removed !
 [error]: timestamp:2025-06-15 14:55:08 PM traceId:[db57a64c-0f54-4d9a-89e6-69e2e99c19b9] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'rejected'
 [error]: timestamp:2025-06-15 15:02:45 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'pending'
+[error]: timestamp:2025-06-16 14:29:23 PM traceId:[9d67ed9e-94a4-4f92-9f3e-aa8db5b22cbe] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-06-16 14:30:12 PM traceId:[c0c0f295-fbe5-44cc-a82b-715caafef3a2] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-06-16 14:30:16 PM traceId:[161311ce-5a9c-4d3a-9ec1-7f3431b8b882] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-06-16 14:30:29 PM traceId:[3b79f137-fcc2-42b8-8db9-6f14fd669ee5] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-06-16 14:31:31 PM traceId:[1facd846-5936-43e3-af98-5ef9b5f1390d] msg: method: POST: /api/v1/friends/requests msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-16 14:32:35 PM traceId:[6fb40b0f-03e7-4375-8542-37c5b29893c5] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-16 14:35:12 PM traceId:[2d4d79c8-04bd-4228-9890-eed153c57944] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-06-16 14:39:11 PM traceId:[a45b2d20-a1e7-4f60-be0e-8c85081e0c6d] msg: method: POST: /api/v1/friends/requests msg: The user is not found
+[error]: timestamp:2025-06-16 14:39:49 PM traceId:[5b3d11a6-db5f-42d2-9212-6f9d4c944d36] msg: method: POST: /api/v1/friends/requests msg: The user is not active
+[error]: timestamp:2025-06-16 14:42:12 PM traceId:[a6733c28-2c39-4bc5-ac13-dca488e59f91] msg: method: POST: /api/v1/friends/requests msg: The user is not active. You can not send friend request
+[error]: timestamp:2025-06-16 14:42:19 PM traceId:[3a5fe640-e413-454c-ba89-aec5c974de8e] msg: method: POST: /api/v1/friends/requests msg: The friend request user is not found
+[error]: timestamp:2025-06-16 14:43:54 PM traceId:[2abc7176-a81c-4e17-94e0-ac313f30ad05] msg: method: POST: /api/v1/friends/requests msg: The user is not found
+[error]: timestamp:2025-06-16 14:46:19 PM traceId:[59c15735-ecd9-4612-a7a2-c976bedd4a82] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found
+[error]: timestamp:2025-06-16 14:46:54 PM traceId:[d1fd31b8-682d-403b-97f2-e0a986fbaf20] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 15:39:48 PM traceId:[2c6f1ce6-0032-4eb6-9b59-f3b9566cf1f2] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 15:52:30 PM traceId:[307d2655-28bf-4b55-8cbc-a1d4beb617d8] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 15:52:35 PM traceId:[bad6747b-e832-4a3e-9230-537527f00fcd] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[error]: timestamp:2025-06-16 15:53:33 PM traceId:[9c51c479-dd8d-4ba7-bda0-bd4dd521c5cb] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[error]: timestamp:2025-06-16 15:54:21 PM traceId:[81f57a0a-d5c7-463e-a3f3-4a6c3b730d32] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[error]: timestamp:2025-06-16 15:55:41 PM traceId:[ddbb8f93-9b78-4f8f-bdee-63d03931a588] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-06-16 15:57:57 PM traceId:[068996fd-a9f0-463f-8e24-bee27e2e5eb4] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-06-16 16:02:28 PM traceId:[0c99e6be-1c53-4f92-82ea-b065126b21d8] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-06-16 16:02:42 PM traceId:[2364980b-20bb-499e-af86-d48387dedbdb] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[error]: timestamp:2025-06-16 16:02:54 PM traceId:[0a52f95e-13db-4429-ad95-60904d2124c6] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 16:04:40 PM traceId:[0d4b405b-6365-4f12-a199-d35607830655] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 16:05:47 PM traceId:[a0b8243b-80a5-4457-bac7-dd8cc35a0ad4] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 16:06:27 PM traceId:[4e5d094c-988a-4f9d-82b7-821f43a3ca3b] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-06-16 16:06:34 PM traceId:[853cd488-bd43-4295-990e-2565c1073ff6] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[error]: timestamp:2025-06-16 16:06:44 PM traceId:[9962dcb1-1100-48da-a9b9-2c1a5b7be9e9] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-06-16 16:56:28 PM traceId:[16f2e6e3-5098-4c55-8d70-a9f9fef4f6e4] msg: method: PATCH: /api/v1/friends/requests/id/accept msg: Validation failed!
+[error]: timestamp:2025-06-16 16:56:35 PM traceId:[49e7f05c-3deb-47a9-b8dc-51e11b62a53c] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-16 16:57:33 PM traceId:[4b975b49-81ba-462a-ac42-87ee7cdfe734] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-16 16:57:44 PM traceId:[465e351a-0550-4bd0-bb26-7b395830a65b] msg: method: PATCH: /api/v1/friends/requests/reqeustID/accept msg: Validation failed!
+[error]: timestamp:2025-06-16 16:58:08 PM traceId:[f78ea860-faf3-453f-a018-4947e2b41e1a] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-16 16:58:20 PM traceId:[1fe3923e-910b-4ae6-b9ba-ec1c1f178a7f] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request is not found
+[error]: timestamp:2025-06-16 17:05:55 PM traceId:[565c1ba5-6b4f-411a-98c8-b5055c2bc1cf] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-16 17:08:48 PM traceId:[96d54df6-fba4-4bf1-96b4-181293b39e79] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-16 17:09:41 PM traceId:[d4139840-2d6c-41a5-b8ba-e4e66ca23dd7] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-06-16 17:10:25 PM traceId:[c4df73d5-752c-49fb-b5c6-62ad402f8564] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-06-16 17:10:58 PM traceId:[16a7a59c-1065-41ac-be90-8cf38d169520] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-06-16 17:12:01 PM traceId:[9ca698b8-4736-4e46-bf0d-a9c1d7f96b1c] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:51:03 PM traceId:[6243b2c9-44f2-41a8-a585-e500dd9cb238] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You are already friends
+[error]: timestamp:2025-06-16 17:52:24 PM traceId:[6ec1074e-d76e-472f-915f-d7cf6e3779cc] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:53:16 PM traceId:[7b61034f-7de8-45f4-b4c8-a7493a2b6778] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:53:34 PM traceId:[dd874e92-6217-43a4-9e21-0ef6b6be5a0d] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:54:59 PM traceId:[b711730e-0ded-4ff3-9cdc-0bb14aa4f566] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:55:12 PM traceId:[f8513061-3cd2-4670-8a1d-ca2c37c3214b] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:55:19 PM traceId:[6588699d-b8c2-42b9-97ce-aa2fc94d569d] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-16 17:55:29 PM traceId:[6aa17fec-5d51-438e-ab96-f4c8d3a7f95f] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You are already friends
+[error]: timestamp:2025-06-16 17:56:06 PM traceId:[931e37d4-e0f4-4f1f-ba39-772424c2e469] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You have already rejected the friend request
+[error]: timestamp:2025-06-16 17:59:34 PM traceId:[528020b2-e783-4250-80f8-75629a3191c2] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You are already friends
+[error]: timestamp:2025-06-16 18:00:40 PM traceId:[5ffe3d4e-70e4-4e83-bd83-ee594fafae5f] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[error]: timestamp:2025-06-16 18:04:08 PM traceId:[8760fdf8-eb84-4af1-8ea2-97b81fd997d5] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-16 18:24:42 PM traceId:[05dafd6c-d1db-4bcd-8bba-3c55a9819121] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/reject msg: The friend request is not found
+[error]: timestamp:2025-06-16 18:25:04 PM traceId:[2b335181-d5f8-4297-badd-4206eeef547b] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[error]: timestamp:2025-06-16 18:25:38 PM traceId:[36d0a60a-e5b0-442b-a059-714d27e65951] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-16 18:25:48 PM traceId:[27515a18-bc1b-4f72-9ec1-a84c6832a3fe] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[error]: timestamp:2025-06-16 18:27:15 PM traceId:[25c3a773-c899-4b55-a94f-7ac19d9fda38] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[error]: timestamp:2025-06-16 18:27:48 PM traceId:[b6621917-6529-4ef6-a5aa-b523d5bcc348] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[error]: timestamp:2025-06-16 18:28:23 PM traceId:[1ed3dd32-3ab2-4dda-860d-3b6ab8ca3e36] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[error]: timestamp:2025-06-16 18:30:20 PM traceId:[574d63d8-b699-4f6c-beb5-26baa4ae07a6] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[error]: timestamp:2025-06-16 18:31:10 PM traceId:[6453947b-5fd4-4017-8422-b49627706d63] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[error]: timestamp:2025-06-16 18:32:13 PM traceId:[41bae4a7-54fe-4340-b472-020f8394ad26] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[error]: timestamp:2025-06-16 19:24:01 PM traceId:[e41e3f97-b08e-4a0c-9391-21bc31269081] msg: method: GET: /api/v1/friends/requests/received msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-16 19:39:47 PM traceId:[a4990e58-9769-4993-bb5b-81b07a940f10] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-06-16 19:41:08 PM traceId:[a7fc721f-f17f-423e-b8c7-54dcd8b187df] msg: method: POST: /api/v1/friends/requests msg: Invalid token. User with email "faustino.bins@hotmail.com" and role "admin" not found.
+[error]: timestamp:2025-06-16 19:41:24 PM traceId:[0eb60949-7173-4565-af9b-6e2334ab4a89] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-17 00:48:22 AM traceId:[bb64da57-56a3-4d7e-869c-49b5e06f0738] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-17 00:48:46 AM traceId:[611cf28e-886c-4ca6-ba40-1c9dda429321] msg: method: POST: /api/v1/friends/requests msg: The user has already sent you a friend request. You can accept or reject this friend request
+[error]: timestamp:2025-06-17 01:02:35 AM traceId:[2207f891-c77c-4781-b000-814b6eba312c] msg: method: POST: /api/v1/friends/requests msg: Access token is no longer valid. Password was changed after token was issued. Please log in again.
+[error]: timestamp:2025-06-17 01:24:14 AM traceId:[a526ce9a-f2d8-4f1e-8d9b-84e34ab685d7] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-06-17 01:24:27 AM traceId:[7e2e681e-cd7c-4c46-ac69-d9efb9646d03] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-06-17 01:28:02 AM traceId:[25983d21-0b02-4714-942f-aa95f17abceb] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-06-17 01:29:19 AM traceId:[7c6f16a1-ee9e-4fa5-8961-b463df098b94] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-06-17 02:32:04 AM traceId:[54c9362e-a9dc-4d0b-9d9e-a36607e76f4d] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[error]: timestamp:2025-06-17 02:32:31 AM traceId:[cb24d108-5771-4cc5-900e-be10ddd3b68b] msg: method: POST: /api/v1/friends/requests msg: The user you sent friend request is not active
+[error]: timestamp:2025-06-17 02:33:15 AM traceId:[c6f5ea6c-ccd0-4c9a-acef-de0c5596c4be] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-06-17 02:33:22 AM traceId:[26fa175d-0b30-4196-a029-b04a4920ffd7] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[error]: timestamp:2025-06-17 02:35:07 AM traceId:[22fffcc4-30cc-480e-9a57-eeeca659c317] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-17 02:37:19 AM traceId:[e0ac7d21-dd2b-415a-9f48-08548915e704] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-17 02:38:02 AM traceId:[30d92abc-a365-4d8e-b566-00b21d79a497] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-06-17 02:38:07 AM traceId:[6ac1df2b-cb93-4d3e-a5b0-30364fcedfc9] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-06-17 02:42:12 AM traceId:[aa2e881e-88dc-422d-8348-a0a20eef9832] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-06-17 02:42:45 AM traceId:[5ba5e141-2f19-46e2-a8f7-c5194c3374f9] msg: method: POST: /api/v1/friends/requests msg: The user has already sent you a friend request. You can accept or reject this friend request
+[error]: timestamp:2025-06-17 02:52:35 AM traceId:[32e900f8-4255-4177-b6bf-eae432f86040] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-06-17 12:20:01 PM traceId:[a9d4947c-82f2-4dbc-b280-0b2ab72edf7f] msg: method: GET: /api/v1/friends/requests/received msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-06-18 00:29:10 AM traceId:[40e57ad2-2748-420c-a2ba-9e0d1c9eb8e1] msg: method: GET: /api/v1/friends/requests/received msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-06-18 00:40:38 AM traceId:[5d31c6b0-8fef-428c-9b91-9f873e978ca0] msg: method: GET: /api/v1/friends/requests/received msg: invalid argument to $skip stage: Expected an integer, but found NaN in: $skip: nan.0
+[error]: timestamp:2025-06-18 17:54:02 PM traceId:[0a27497c-61d6-4bfc-afb2-eb989359a21a] msg: method: GET: /api/v1/friends/requests/received?page=1&limit=-1 msg: Validation failed!
+[error]: timestamp:2025-06-18 17:54:21 PM traceId:[c1ab0643-3f63-4c4a-b8aa-dfacf709befd] msg: method: GET: /api/v1/friends/requests/received?page=1&limit=9999 msg: Validation failed!
+[error]: timestamp:2025-06-18 17:56:13 PM traceId:[bddab10c-a938-4060-b170-d86f46799889] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=createdAT msg: Validation failed!
+[error]: timestamp:2025-06-18 17:57:46 PM traceId:[c70a3b6f-d87d-4f12-9538-8f411f527cb2] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort= msg: Validation failed!
+[error]: timestamp:2025-06-18 17:58:09 PM traceId:[e6bdfff4-2062-4c61-99a5-08ce0395888d] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort= msg: Validation failed!
+[error]: timestamp:2025-06-18 17:58:18 PM traceId:[fe5bb777-1452-452c-9a48-144b77a78e1d] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=asda msg: Validation failed!
+[error]: timestamp:2025-06-18 18:41:40 PM traceId:[6d6ef590-53d3-4fd0-9bc7-186e0a587fda] msg: method: GET: /api/v1/friends/requests/sent msg: Illegal key in $sort specification: requestedAt: null
+[error]: timestamp:2025-06-18 19:17:43 PM traceId:[a6f5d230-3e8d-4981-9dc7-fc07b72f9849] msg: method: GET: /api/v1/friends/requests/sent?pages=2 msg: Validation failed!
+[error]: timestamp:2025-06-18 19:24:33 PM traceId:[9dd064bd-b978-418b-910e-f6653b38a7a4] msg: method: GET: /api/v1/friends msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-18 19:27:44 PM traceId:[7864e74c-8322-494c-8f42-ad67bc056876] msg: method: GET: /api/v1/friends msg: Validation failed!
+[error]: timestamp:2025-06-18 19:27:46 PM traceId:[b49eaecb-a940-41d1-abb9-ddbcf3dd9af2] msg: method: GET: /api/v1/friends msg: Validation failed!
+[error]: timestamp:2025-06-18 19:30:51 PM traceId:[f37aafc6-b756-40cd-b97e-b2867cc7a808] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-18 19:33:04 PM traceId:[41b0d433-8520-48eb-9463-df775a3ec9a7] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-18 19:35:49 PM traceId:[6263cee1-fea0-443c-9e55-9f5a2d0f4be1] msg: method: GET: /api/v1/friends msg: Cannot destructure property 'page' of 'query' as it is undefined.
+[error]: timestamp:2025-06-18 19:44:48 PM traceId:[f272689d-0255-4935-937c-7b459b086e46] msg: method: PATCH: /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-06-18 23:41:59 PM traceId:[e1e40fad-f7e4-4b5e-bbc1-ee70eb8b4361] msg: method: GET: /api/v1/friends msg: Cannot read properties of undefined (reading '0')
+[error]: timestamp:2025-06-18 23:43:01 PM traceId:[76c67cef-b200-4f7e-b9d0-b5bc9f1baea9] msg: method: GET: /api/v1/friends msg: Cannot read properties of undefined (reading '0')
+[error]: timestamp:2025-06-18 23:49:04 PM traceId:[9549b5fe-d4d1-463d-9654-e963d9b2fd72] msg: method: GET: /api/v1/friends?limit=1&page=2&sort=1ada msg: Validation failed!
+[error]: timestamp:2025-06-18 23:51:46 PM traceId:[019904d7-5d10-402c-99f5-0aa8bc391771] msg: method: GET: /api/v1/friends?limit=1&page=2&sort=1ada msg: Validation failed!
+[error]: timestamp:2025-06-19 01:50:30 AM traceId:[9653fcc8-ec47-4467-b911-67089dd45bdf] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Validation failed!
+[error]: timestamp:2025-06-19 01:55:38 AM traceId:[1e80dad4-29ac-41bc-94a1-99b20fadc5be] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-19 01:56:01 AM traceId:[3f539375-f5d1-4760-b74c-653f68080f36] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-06-19 01:56:14 AM traceId:[cd34e0fd-09c3-4822-9605-2886c5b8b5bb] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: The user you want to delete from your friend list is not found
+[error]: timestamp:2025-06-19 01:56:43 AM traceId:[3ea49510-7793-4ef9-bfb4-927a2985e35f] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: The user you want to delete from your friend list is not found
+[error]: timestamp:2025-06-19 01:58:17 AM traceId:[1fe67da5-95d2-494c-bd1d-9489c82ac6a2] msg: method: DELETE: /api/v1/friends/685080d3edef447dcf3fa7d5 msg: The user you want to delete from your friend list is not found
+[error]: timestamp:2025-06-19 01:58:50 AM traceId:[1d37e7d6-d721-4bde-ad76-196856c85210] msg: method: DELETE: /api/v1/friends/685080d3edef447dcf3fa7d5 msg: You cannot delete yourself
+[error]: timestamp:2025-06-19 02:01:45 AM traceId:[9de3d90f-3424-4e35-a2a7-34f759723e42] msg: method: PATCH: /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-06-19 15:39:02 PM traceId:[1d904355-faec-45e2-99f2-8213cce582e0] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-06-19 15:42:10 PM traceId:[10e52276-aaeb-4b51-8d6e-7fb2e4e22031] msg: method: DELETE: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/undo msg: The friend request you want to undo is not found
+[error]: timestamp:2025-06-19 15:42:59 PM traceId:[9bfcb7f4-8715-4441-9297-e7815545d560] msg: method: DELETE: /api/v1/friends/requests/6850833bed281925dfb18468/undo msg: The friend request you want to undo is not found
+[error]: timestamp:2025-06-19 15:43:37 PM traceId:[d3e5b9b0-9e15-4c14-805d-691f1275f0e8] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: You can't undo other users friend request
+[error]: timestamp:2025-06-19 15:44:47 PM traceId:[9951363f-8fc2-419d-a322-aa46c8327297] msg: method: DELETE: /api/v1/friends/requests/6850833bed281925dfb18468/undo msg: The friend request you want to undo is not found
+[error]: timestamp:2025-06-19 15:45:04 PM traceId:[6f674faa-a8af-4e4f-a0ad-25a53991bbd0] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: You can't undo other users friend request
+[error]: timestamp:2025-06-19 15:46:11 PM traceId:[f4035ba1-b9c6-4614-84dc-df552bcd12e2] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: The friend request you want to undo is not found
+[error]: timestamp:2025-06-19 15:46:26 PM traceId:[f61cae48-a178-4dd2-86b5-7a57e5eb27bc] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: You are already friends
+[error]: timestamp:2025-06-19 15:46:45 PM traceId:[089baf06-1a77-4688-872b-df29268b6f27] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: The friend request is already rejected by the user

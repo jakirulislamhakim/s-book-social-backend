@@ -320,3 +320,502 @@
 [info]: timestamp:2025-06-15 14:55:31 PM traceId:[235e9a39-5d18-44c5-b21c-1d5ce2e7b4ce] msg:Incoming request: POST /api/v1/post-appeals
 [info]: timestamp:2025-06-15 15:02:44 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg:Incoming request: POST /api/v1/post-appeals
 [error]: timestamp:2025-06-15 15:02:45 PM traceId:[a62317e7-38e2-4d6e-a52f-39bd34ea3f16] msg: method: POST: /api/v1/post-appeals msg: You already appealed for this post! Your appeal status: 'pending'
+[info]: timestamp:2025-06-16 14:29:15 PM traceId:[c835a671-a8ac-4cda-8174-a86ceb1f0174] msg:Incoming request: POST /api/v1/friends/request
+[info]: timestamp:2025-06-16 14:29:23 PM traceId:[9d67ed9e-94a4-4f92-9f3e-aa8db5b22cbe] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:29:23 PM traceId:[9d67ed9e-94a4-4f92-9f3e-aa8db5b22cbe] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-06-16 14:30:12 PM traceId:[c0c0f295-fbe5-44cc-a82b-715caafef3a2] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:30:12 PM traceId:[c0c0f295-fbe5-44cc-a82b-715caafef3a2] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-06-16 14:30:16 PM traceId:[161311ce-5a9c-4d3a-9ec1-7f3431b8b882] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:30:16 PM traceId:[161311ce-5a9c-4d3a-9ec1-7f3431b8b882] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-06-16 14:30:29 PM traceId:[3b79f137-fcc2-42b8-8db9-6f14fd669ee5] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:30:29 PM traceId:[3b79f137-fcc2-42b8-8db9-6f14fd669ee5] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-06-16 14:31:31 PM traceId:[1facd846-5936-43e3-af98-5ef9b5f1390d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:31:31 PM traceId:[1facd846-5936-43e3-af98-5ef9b5f1390d] msg: method: POST: /api/v1/friends/requests msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-16 14:32:01 PM traceId:[caafa520-0355-4c1a-8fe5-4678c342c51f] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-16 14:32:35 PM traceId:[6fb40b0f-03e7-4375-8542-37c5b29893c5] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:32:35 PM traceId:[6fb40b0f-03e7-4375-8542-37c5b29893c5] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-16 14:35:11 PM traceId:[2d4d79c8-04bd-4228-9890-eed153c57944] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:35:12 PM traceId:[2d4d79c8-04bd-4228-9890-eed153c57944] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-16 14:37:59 PM traceId:[aabc93f1-c5ff-4359-b3e0-056f315a4b2c] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-16 14:39:11 PM traceId:[a45b2d20-a1e7-4f60-be0e-8c85081e0c6d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:39:11 PM traceId:[a45b2d20-a1e7-4f60-be0e-8c85081e0c6d] msg: method: POST: /api/v1/friends/requests msg: The user is not found
+[info]: timestamp:2025-06-16 14:39:48 PM traceId:[5b3d11a6-db5f-42d2-9212-6f9d4c944d36] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:39:49 PM traceId:[5b3d11a6-db5f-42d2-9212-6f9d4c944d36] msg: method: POST: /api/v1/friends/requests msg: The user is not active
+[info]: timestamp:2025-06-16 14:42:11 PM traceId:[a6733c28-2c39-4bc5-ac13-dca488e59f91] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:42:12 PM traceId:[a6733c28-2c39-4bc5-ac13-dca488e59f91] msg: method: POST: /api/v1/friends/requests msg: The user is not active. You can not send friend request
+[info]: timestamp:2025-06-16 14:42:18 PM traceId:[3a5fe640-e413-454c-ba89-aec5c974de8e] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:42:19 PM traceId:[3a5fe640-e413-454c-ba89-aec5c974de8e] msg: method: POST: /api/v1/friends/requests msg: The friend request user is not found
+[info]: timestamp:2025-06-16 14:43:53 PM traceId:[2abc7176-a81c-4e17-94e0-ac313f30ad05] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:43:54 PM traceId:[2abc7176-a81c-4e17-94e0-ac313f30ad05] msg: method: POST: /api/v1/friends/requests msg: The user is not found
+[info]: timestamp:2025-06-16 14:46:18 PM traceId:[59c15735-ecd9-4612-a7a2-c976bedd4a82] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:46:19 PM traceId:[59c15735-ecd9-4612-a7a2-c976bedd4a82] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found
+[info]: timestamp:2025-06-16 14:46:53 PM traceId:[d1fd31b8-682d-403b-97f2-e0a986fbaf20] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 14:46:54 PM traceId:[d1fd31b8-682d-403b-97f2-e0a986fbaf20] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 15:39:48 PM traceId:[2c6f1ce6-0032-4eb6-9b59-f3b9566cf1f2] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:39:48 PM traceId:[2c6f1ce6-0032-4eb6-9b59-f3b9566cf1f2] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 15:52:29 PM traceId:[307d2655-28bf-4b55-8cbc-a1d4beb617d8] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:52:30 PM traceId:[307d2655-28bf-4b55-8cbc-a1d4beb617d8] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 15:52:34 PM traceId:[bad6747b-e832-4a3e-9230-537527f00fcd] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:52:35 PM traceId:[bad6747b-e832-4a3e-9230-537527f00fcd] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[info]: timestamp:2025-06-16 15:53:32 PM traceId:[9c51c479-dd8d-4ba7-bda0-bd4dd521c5cb] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:53:33 PM traceId:[9c51c479-dd8d-4ba7-bda0-bd4dd521c5cb] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[info]: timestamp:2025-06-16 15:54:21 PM traceId:[81f57a0a-d5c7-463e-a3f3-4a6c3b730d32] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:54:21 PM traceId:[81f57a0a-d5c7-463e-a3f3-4a6c3b730d32] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[info]: timestamp:2025-06-16 15:54:52 PM traceId:[59873c1b-69d3-4904-bc21-90e1848273ea] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-16 15:55:40 PM traceId:[ddbb8f93-9b78-4f8f-bdee-63d03931a588] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:55:41 PM traceId:[ddbb8f93-9b78-4f8f-bdee-63d03931a588] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-16 15:57:56 PM traceId:[068996fd-a9f0-463f-8e24-bee27e2e5eb4] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 15:57:57 PM traceId:[068996fd-a9f0-463f-8e24-bee27e2e5eb4] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-16 16:02:27 PM traceId:[0c99e6be-1c53-4f92-82ea-b065126b21d8] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:02:28 PM traceId:[0c99e6be-1c53-4f92-82ea-b065126b21d8] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-16 16:02:42 PM traceId:[2364980b-20bb-499e-af86-d48387dedbdb] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:02:42 PM traceId:[2364980b-20bb-499e-af86-d48387dedbdb] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[info]: timestamp:2025-06-16 16:02:53 PM traceId:[0a52f95e-13db-4429-ad95-60904d2124c6] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:02:54 PM traceId:[0a52f95e-13db-4429-ad95-60904d2124c6] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 16:04:40 PM traceId:[0d4b405b-6365-4f12-a199-d35607830655] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:04:40 PM traceId:[0d4b405b-6365-4f12-a199-d35607830655] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 16:05:47 PM traceId:[a0b8243b-80a5-4457-bac7-dd8cc35a0ad4] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:05:47 PM traceId:[a0b8243b-80a5-4457-bac7-dd8cc35a0ad4] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 16:06:26 PM traceId:[4e5d094c-988a-4f9d-82b7-821f43a3ca3b] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:06:27 PM traceId:[4e5d094c-988a-4f9d-82b7-821f43a3ca3b] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[info]: timestamp:2025-06-16 16:06:34 PM traceId:[853cd488-bd43-4295-990e-2565c1073ff6] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:06:34 PM traceId:[853cd488-bd43-4295-990e-2565c1073ff6] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not active
+[info]: timestamp:2025-06-16 16:06:44 PM traceId:[9962dcb1-1100-48da-a9b9-2c1a5b7be9e9] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 16:06:44 PM traceId:[9962dcb1-1100-48da-a9b9-2c1a5b7be9e9] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-16 16:54:01 PM traceId:[1036dcaa-adcd-49f5-858f-03c3336ecd1a] msg:Incoming request: PATCH /api/v1/friends/requests/id/accept
+[info]: timestamp:2025-06-16 16:54:18 PM traceId:[36a1d77e-f4d8-4a83-b7e6-c04184f127ef] msg:Incoming request: PATCH /api/v1/friends/requests/id/accept
+[info]: timestamp:2025-06-16 16:54:38 PM traceId:[ac6eec3d-b761-439b-a57e-e7f9094a726b] msg:Incoming request: PATCH /api/v1/friends/requests
+[info]: timestamp:2025-06-16 16:55:03 PM traceId:[827f21a4-12d6-472e-a2a7-426c1800dae8] msg:Incoming request: PATCH /api/v1/friends/requests/id/accept
+[info]: timestamp:2025-06-16 16:55:18 PM traceId:[5002b647-4f2c-4a62-9754-d3d5210bab5c] msg:Incoming request: PATCH /api/v1/friends/requests/id/accept
+[info]: timestamp:2025-06-16 16:56:04 PM traceId:[609d3f5d-d390-4ca4-977f-f5159a125711] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[info]: timestamp:2025-06-16 16:56:28 PM traceId:[16f2e6e3-5098-4c55-8d70-a9f9fef4f6e4] msg:Incoming request: PATCH /api/v1/friends/requests/id/accept
+[error]: timestamp:2025-06-16 16:56:28 PM traceId:[16f2e6e3-5098-4c55-8d70-a9f9fef4f6e4] msg: method: PATCH: /api/v1/friends/requests/id/accept msg: Validation failed!
+[info]: timestamp:2025-06-16 16:56:35 PM traceId:[49e7f05c-3deb-47a9-b8dc-51e11b62a53c] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 16:56:35 PM traceId:[49e7f05c-3deb-47a9-b8dc-51e11b62a53c] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-16 16:57:33 PM traceId:[4b975b49-81ba-462a-ac42-87ee7cdfe734] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 16:57:33 PM traceId:[4b975b49-81ba-462a-ac42-87ee7cdfe734] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-16 16:57:44 PM traceId:[465e351a-0550-4bd0-bb26-7b395830a65b] msg:Incoming request: PATCH /api/v1/friends/requests/reqeustID/accept
+[error]: timestamp:2025-06-16 16:57:44 PM traceId:[465e351a-0550-4bd0-bb26-7b395830a65b] msg: method: PATCH: /api/v1/friends/requests/reqeustID/accept msg: Validation failed!
+[info]: timestamp:2025-06-16 16:58:08 PM traceId:[f78ea860-faf3-453f-a018-4947e2b41e1a] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 16:58:08 PM traceId:[f78ea860-faf3-453f-a018-4947e2b41e1a] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-16 16:58:19 PM traceId:[1fe3923e-910b-4ae6-b9ba-ec1c1f178a7f] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 16:58:20 PM traceId:[1fe3923e-910b-4ae6-b9ba-ec1c1f178a7f] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request is not found
+[info]: timestamp:2025-06-16 17:05:52 PM traceId:[565c1ba5-6b4f-411a-98c8-b5055c2bc1cf] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 17:05:55 PM traceId:[565c1ba5-6b4f-411a-98c8-b5055c2bc1cf] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-16 17:08:48 PM traceId:[96d54df6-fba4-4bf1-96b4-181293b39e79] msg:Incoming request: PATCH /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept
+[error]: timestamp:2025-06-16 17:08:48 PM traceId:[96d54df6-fba4-4bf1-96b4-181293b39e79] msg: method: PATCH: /api/v1/friends/requests/684a64a471d290920bf5c4aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-16 17:09:16 PM traceId:[8909883e-f358-4da2-a7f7-274e638013b6] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-16 17:09:40 PM traceId:[d4139840-2d6c-41a5-b8ba-e4e66ca23dd7] msg:Incoming request: PATCH /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept
+[error]: timestamp:2025-06-16 17:09:41 PM traceId:[d4139840-2d6c-41a5-b8ba-e4e66ca23dd7] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[info]: timestamp:2025-06-16 17:10:21 PM traceId:[c4df73d5-752c-49fb-b5c6-62ad402f8564] msg:Incoming request: PATCH /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept
+[error]: timestamp:2025-06-16 17:10:25 PM traceId:[c4df73d5-752c-49fb-b5c6-62ad402f8564] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[info]: timestamp:2025-06-16 17:10:57 PM traceId:[16a7a59c-1065-41ac-be90-8cf38d169520] msg:Incoming request: PATCH /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept
+[error]: timestamp:2025-06-16 17:10:58 PM traceId:[16a7a59c-1065-41ac-be90-8cf38d169520] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: Cannot read properties of undefined (reading 'toString')
+[info]: timestamp:2025-06-16 17:11:59 PM traceId:[9ca698b8-4736-4e46-bf0d-a9c1d7f96b1c] msg:Incoming request: PATCH /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept
+[error]: timestamp:2025-06-16 17:12:01 PM traceId:[9ca698b8-4736-4e46-bf0d-a9c1d7f96b1c] msg: method: PATCH: /api/v1/friends/requests/684ffb5d23e6dc008e7a89b1/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:51:02 PM traceId:[6243b2c9-44f2-41a8-a585-e500dd9cb238] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:51:03 PM traceId:[6243b2c9-44f2-41a8-a585-e500dd9cb238] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You are already friends
+[info]: timestamp:2025-06-16 17:52:23 PM traceId:[6ec1074e-d76e-472f-915f-d7cf6e3779cc] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:52:24 PM traceId:[6ec1074e-d76e-472f-915f-d7cf6e3779cc] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:53:15 PM traceId:[7b61034f-7de8-45f4-b4c8-a7493a2b6778] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:53:16 PM traceId:[7b61034f-7de8-45f4-b4c8-a7493a2b6778] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:53:31 PM traceId:[dd874e92-6217-43a4-9e21-0ef6b6be5a0d] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:53:34 PM traceId:[dd874e92-6217-43a4-9e21-0ef6b6be5a0d] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:53:53 PM traceId:[3fa96823-a9d7-4bcd-8576-116d2c3e6c7e] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[info]: timestamp:2025-06-16 17:54:58 PM traceId:[b711730e-0ded-4ff3-9cdc-0bb14aa4f566] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:54:59 PM traceId:[b711730e-0ded-4ff3-9cdc-0bb14aa4f566] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:55:11 PM traceId:[f8513061-3cd2-4670-8a1d-ca2c37c3214b] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:55:12 PM traceId:[f8513061-3cd2-4670-8a1d-ca2c37c3214b] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:55:18 PM traceId:[6588699d-b8c2-42b9-97ce-aa2fc94d569d] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/accept
+[error]: timestamp:2025-06-16 17:55:19 PM traceId:[6588699d-b8c2-42b9-97ce-aa2fc94d569d] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-16 17:55:28 PM traceId:[6aa17fec-5d51-438e-ab96-f4c8d3a7f95f] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[error]: timestamp:2025-06-16 17:55:29 PM traceId:[6aa17fec-5d51-438e-ab96-f4c8d3a7f95f] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You are already friends
+[info]: timestamp:2025-06-16 17:56:05 PM traceId:[931e37d4-e0f4-4f1f-ba39-772424c2e469] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[error]: timestamp:2025-06-16 17:56:06 PM traceId:[931e37d4-e0f4-4f1f-ba39-772424c2e469] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You have already rejected the friend request
+[info]: timestamp:2025-06-16 17:57:42 PM traceId:[f0c3702b-da8e-465a-b266-6d90fdb81dbf] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[info]: timestamp:2025-06-16 17:59:32 PM traceId:[528020b2-e783-4250-80f8-75629a3191c2] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[error]: timestamp:2025-06-16 17:59:34 PM traceId:[528020b2-e783-4250-80f8-75629a3191c2] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: You are already friends
+[info]: timestamp:2025-06-16 18:00:02 PM traceId:[5ffe3d4e-70e4-4e83-bd83-ee594fafae5f] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept
+[error]: timestamp:2025-06-16 18:00:40 PM traceId:[5ffe3d4e-70e4-4e83-bd83-ee594fafae5f] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/accept msg: getaddrinfo ENOTFOUND ac-u8vxmyt-shard-00-00.5prtsfh.mongodb.net
+[info]: timestamp:2025-06-16 18:04:05 PM traceId:[8760fdf8-eb84-4af1-8ea2-97b81fd997d5] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept
+[error]: timestamp:2025-06-16 18:04:08 PM traceId:[8760fdf8-eb84-4af1-8ea2-97b81fd997d5] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-16 18:24:41 PM traceId:[05dafd6c-d1db-4bcd-8bba-3c55a9819121] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403aa/reject
+[error]: timestamp:2025-06-16 18:24:42 PM traceId:[05dafd6c-d1db-4bcd-8bba-3c55a9819121] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/reject msg: The friend request is not found
+[info]: timestamp:2025-06-16 18:25:03 PM traceId:[2b335181-d5f8-4297-badd-4206eeef547b] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/reject
+[error]: timestamp:2025-06-16 18:25:04 PM traceId:[2b335181-d5f8-4297-badd-4206eeef547b] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[info]: timestamp:2025-06-16 18:25:37 PM traceId:[36d0a60a-e5b0-442b-a059-714d27e65951] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept
+[error]: timestamp:2025-06-16 18:25:38 PM traceId:[36d0a60a-e5b0-442b-a059-714d27e65951] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-16 18:25:47 PM traceId:[27515a18-bc1b-4f72-9ec1-a84c6832a3fe] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/reject
+[error]: timestamp:2025-06-16 18:25:48 PM traceId:[27515a18-bc1b-4f72-9ec1-a84c6832a3fe] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[info]: timestamp:2025-06-16 18:27:14 PM traceId:[25c3a773-c899-4b55-a94f-7ac19d9fda38] msg:Incoming request: PATCH /api/v1/friends/requests/684fd682b9309601e4e5e845/reject
+[error]: timestamp:2025-06-16 18:27:15 PM traceId:[25c3a773-c899-4b55-a94f-7ac19d9fda38] msg: method: PATCH: /api/v1/friends/requests/684fd682b9309601e4e5e845/reject msg: You can't reject other users friend request
+[info]: timestamp:2025-06-16 18:27:24 PM traceId:[9a7d1a2c-60b3-4eac-acc5-0b2e21840e03] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[info]: timestamp:2025-06-16 18:27:44 PM traceId:[b6621917-6529-4ef6-a5aa-b523d5bcc348] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[error]: timestamp:2025-06-16 18:27:48 PM traceId:[b6621917-6529-4ef6-a5aa-b523d5bcc348] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[info]: timestamp:2025-06-16 18:28:22 PM traceId:[1ed3dd32-3ab2-4dda-860d-3b6ab8ca3e36] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[error]: timestamp:2025-06-16 18:28:23 PM traceId:[1ed3dd32-3ab2-4dda-860d-3b6ab8ca3e36] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[info]: timestamp:2025-06-16 18:29:27 PM traceId:[5fded93e-e0cc-42e6-9e2a-eadf1671a25e] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[info]: timestamp:2025-06-16 18:30:19 PM traceId:[574d63d8-b699-4f6c-beb5-26baa4ae07a6] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[error]: timestamp:2025-06-16 18:30:20 PM traceId:[574d63d8-b699-4f6c-beb5-26baa4ae07a6] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[info]: timestamp:2025-06-16 18:31:09 PM traceId:[6453947b-5fd4-4017-8422-b49627706d63] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject
+[error]: timestamp:2025-06-16 18:31:10 PM traceId:[6453947b-5fd4-4017-8422-b49627706d63] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/reject msg: You have already rejected the friend request
+[info]: timestamp:2025-06-16 18:32:12 PM traceId:[41bae4a7-54fe-4340-b472-020f8394ad26] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 18:32:13 PM traceId:[41bae4a7-54fe-4340-b472-020f8394ad26] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[info]: timestamp:2025-06-16 18:41:52 PM traceId:[6d4350b6-d90d-49b1-aef0-06a492794377] msg:Incoming request: GET /api/v1/friends/requests
+[info]: timestamp:2025-06-16 18:42:09 PM traceId:[f8e12ad2-f345-4f41-9942-ffb6884b64dd] msg:Incoming request: GET /api/v1/friends/requests/recived
+[info]: timestamp:2025-06-16 19:23:50 PM traceId:[f4dd2dd2-e36f-43b3-9d47-d1537a880372] msg:Incoming request: GET /api/v1/friends/requests/recived
+[info]: timestamp:2025-06-16 19:24:01 PM traceId:[e41e3f97-b08e-4a0c-9391-21bc31269081] msg:Incoming request: GET /api/v1/friends/requests/received
+[error]: timestamp:2025-06-16 19:24:01 PM traceId:[e41e3f97-b08e-4a0c-9391-21bc31269081] msg: method: GET: /api/v1/friends/requests/received msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-16 19:24:24 PM traceId:[2bd2bf04-600b-47dc-905c-d9572c3612af] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:25:46 PM traceId:[780d757a-f074-46c5-8920-4e316d9a063e] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:26:05 PM traceId:[c6637d87-7671-40ab-b4b1-311797e6c05a] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:26:54 PM traceId:[e4b00a4d-61b8-431f-87af-3b9e799b74d8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:27:32 PM traceId:[4d23c313-eb03-4d58-87ff-49744497f9e9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:28:14 PM traceId:[a59a23e2-3807-4ddb-b957-3a96467ae5e8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-16 19:39:47 PM traceId:[a4990e58-9769-4993-bb5b-81b07a940f10] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-16 19:39:47 PM traceId:[a4990e58-9769-4993-bb5b-81b07a940f10] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-16 19:39:49 PM traceId:[4a595016-ef86-4d13-a4fd-4e9fd991760d] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-16 19:40:26 PM traceId:[8bb40ecf-0a23-40cc-919e-6be24b8bca16] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-16 19:40:37 PM traceId:[92b44015-82a6-4de0-9159-3b779031f631] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-16 19:41:05 PM traceId:[a7fc721f-f17f-423e-b8c7-54dcd8b187df] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 19:41:08 PM traceId:[a7fc721f-f17f-423e-b8c7-54dcd8b187df] msg: method: POST: /api/v1/friends/requests msg: Invalid token. User with email "faustino.bins@hotmail.com" and role "admin" not found.
+[info]: timestamp:2025-06-16 19:41:24 PM traceId:[0eb60949-7173-4565-af9b-6e2334ab4a89] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-16 19:41:24 PM traceId:[0eb60949-7173-4565-af9b-6e2334ab4a89] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-16 19:41:33 PM traceId:[917fd005-665d-48c3-b5e6-49e2dd8f026a] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 00:48:08 AM traceId:[7912163d-87bb-459e-928e-0d9f1c5b6895] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 00:48:21 AM traceId:[bb64da57-56a3-4d7e-869c-49b5e06f0738] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 00:48:22 AM traceId:[bb64da57-56a3-4d7e-869c-49b5e06f0738] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-17 00:48:45 AM traceId:[611cf28e-886c-4ca6-ba40-1c9dda429321] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 00:48:46 AM traceId:[611cf28e-886c-4ca6-ba40-1c9dda429321] msg: method: POST: /api/v1/friends/requests msg: The user has already sent you a friend request. You can accept or reject this friend request
+[info]: timestamp:2025-06-17 00:50:55 AM traceId:[00ed2981-dd7e-4cbc-93b8-1aaf60b0682e] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:56:47 AM traceId:[f17e56d9-0668-427c-9644-d4f1d0e2efd7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:57:07 AM traceId:[546621fd-7b8c-4a00-9e31-0b45521b7750] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:57:59 AM traceId:[53528ac0-d89a-4f89-9d53-8e9281acf686] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:58:59 AM traceId:[b04b7671-fddc-401f-8d30-c4153dbda38c] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:59:14 AM traceId:[86fc67bd-9592-4174-86ae-98afd86f20fc] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 00:59:35 AM traceId:[56ac44de-4480-4be0-b027-79467e856da0] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:00:02 AM traceId:[d39c12b8-007a-4bab-9bf2-397ae74220ee] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:02:05 AM traceId:[ba631ef3-2500-4293-ba1c-e53b8054319d] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:02:08 AM traceId:[cb061da9-e857-43bd-b23c-74691fa91d52] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:02:34 AM traceId:[2207f891-c77c-4781-b000-814b6eba312c] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 01:02:35 AM traceId:[2207f891-c77c-4781-b000-814b6eba312c] msg: method: POST: /api/v1/friends/requests msg: Access token is no longer valid. Password was changed after token was issued. Please log in again.
+[info]: timestamp:2025-06-17 01:02:57 AM traceId:[2cf8721c-b95a-4ff4-b979-1d923cad87b6] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-17 01:03:06 AM traceId:[b0de6385-56de-42a6-9e16-3d96bf9278cf] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 01:03:18 AM traceId:[1165abcf-91b9-4e6e-8fed-dc7b05eef0a9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:03:37 AM traceId:[2af39696-eb00-467c-be85-4bb9dbe4f4c7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:06:17 AM traceId:[5e10dd37-60a9-41da-b43d-4cf6d5e6776f] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:23:16 AM traceId:[13fcafe6-449b-4f30-bd91-9634eb20fc01] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:23:45 AM traceId:[c7dec0e9-902d-4f78-8e71-f3dce65e02de] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:23:59 AM traceId:[1e0c101e-365e-4908-a7ed-f7eb4b6345aa] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:24:13 AM traceId:[a526ce9a-f2d8-4f1e-8d9b-84e34ab685d7] msg:Incoming request: GET /api/v1/friends/requests/received?page=2
+[error]: timestamp:2025-06-17 01:24:14 AM traceId:[a526ce9a-f2d8-4f1e-8d9b-84e34ab685d7] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-06-17 01:24:26 AM traceId:[7e2e681e-cd7c-4c46-ac69-d9efb9646d03] msg:Incoming request: GET /api/v1/friends/requests/received?page=2
+[error]: timestamp:2025-06-17 01:24:27 AM traceId:[7e2e681e-cd7c-4c46-ac69-d9efb9646d03] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-06-17 01:28:01 AM traceId:[25983d21-0b02-4714-942f-aa95f17abceb] msg:Incoming request: GET /api/v1/friends/requests/received?page=2
+[error]: timestamp:2025-06-17 01:28:02 AM traceId:[25983d21-0b02-4714-942f-aa95f17abceb] msg: method: GET: /api/v1/friends/requests/received?page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-06-17 01:28:09 AM traceId:[bc891d73-50ff-4d81-8e31-3fedc6418f8d] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:29:11 AM traceId:[e9cde7bd-e3b7-40ad-a330-e003a7fd97bd] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:29:17 AM traceId:[7c6f16a1-ee9e-4fa5-8961-b463df098b94] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 01:29:19 AM traceId:[7c6f16a1-ee9e-4fa5-8961-b463df098b94] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-17 01:29:27 AM traceId:[2dc782e4-a3a7-441c-843e-8a18892cbc04] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:29:37 AM traceId:[e83508cb-c455-477d-9747-b5cb9c09bea7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:30:18 AM traceId:[2a7e50d0-7a5f-4a32-a553-ac1aef535932] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:31:02 AM traceId:[a5e276ea-b208-46e4-966f-952f3e21fd42] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 01:31:11 AM traceId:[69a60abd-2326-45c1-80d6-4ce6559fc804] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:00:04 AM traceId:[ab500a5a-4fe9-42be-afee-9709c568b349] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:23:13 AM traceId:[0d7e4a5b-85d9-487d-99a4-b3c7fcb7284f] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:23:28 AM traceId:[73266003-1f7d-4dd9-a5c2-63590263b909] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:24:13 AM traceId:[9310bf3e-c1d6-43eb-b373-8f3ef5b9d34f] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:24:17 AM traceId:[e4af227e-02db-4af2-b16a-0b30ab6fb821] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:24:43 AM traceId:[bc81b24c-2168-4eda-9ec9-0d8e66644642] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:25:42 AM traceId:[33663099-05a9-4d2a-b9fc-a6ab211f65b6] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:31:19 AM traceId:[73037b5a-df19-4a01-a2a7-aef291a598c4] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:32:03 AM traceId:[54c9362e-a9dc-4d0b-9d9e-a36607e76f4d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:32:04 AM traceId:[54c9362e-a9dc-4d0b-9d9e-a36607e76f4d] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[info]: timestamp:2025-06-17 02:32:23 AM traceId:[423c28cb-e3de-4f75-bb92-e6e5631e589b] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:32:31 AM traceId:[cb24d108-5771-4cc5-900e-be10ddd3b68b] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:32:31 AM traceId:[cb24d108-5771-4cc5-900e-be10ddd3b68b] msg: method: POST: /api/v1/friends/requests msg: The user you sent friend request is not active
+[info]: timestamp:2025-06-17 02:32:38 AM traceId:[ba06794d-2938-4135-888e-f824ff79d159] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:33:13 AM traceId:[c6f5ea6c-ccd0-4c9a-acef-de0c5596c4be] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:33:15 AM traceId:[c6f5ea6c-ccd0-4c9a-acef-de0c5596c4be] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-17 02:33:21 AM traceId:[26fa175d-0b30-4196-a029-b04a4920ffd7] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:33:22 AM traceId:[26fa175d-0b30-4196-a029-b04a4920ffd7] msg: method: POST: /api/v1/friends/requests msg: The previous friend request was rejected. Please wait for 7 days to send again new friend request
+[info]: timestamp:2025-06-17 02:33:38 AM traceId:[970b488b-1e25-4470-8999-e08e86e75adb] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:35:07 AM traceId:[22fffcc4-30cc-480e-9a57-eeeca659c317] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:35:07 AM traceId:[22fffcc4-30cc-480e-9a57-eeeca659c317] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-17 02:36:25 AM traceId:[f0ce104d-857b-433e-8d45-5cf721f3510d] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:37:14 AM traceId:[f56f45a0-e9ce-46bd-9dca-7ab3c24c66f0] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:37:18 AM traceId:[e0ac7d21-dd2b-415a-9f48-08548915e704] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:37:19 AM traceId:[e0ac7d21-dd2b-415a-9f48-08548915e704] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-17 02:37:56 AM traceId:[b2408a6c-0516-4dab-8fc8-d94a299b4f31] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-17 02:38:02 AM traceId:[30d92abc-a365-4d8e-b566-00b21d79a497] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-17 02:38:02 AM traceId:[30d92abc-a365-4d8e-b566-00b21d79a497] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-17 02:38:04 AM traceId:[4fefc5cc-db9e-4394-9ddc-a232a6593c0d] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-17 02:38:07 AM traceId:[6ac1df2b-cb93-4d3e-a5b0-30364fcedfc9] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-17 02:38:07 AM traceId:[6ac1df2b-cb93-4d3e-a5b0-30364fcedfc9] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-17 02:38:10 AM traceId:[80e6e3ed-083e-4383-81e5-52185610a9f2] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-17 02:40:03 AM traceId:[4da6f838-d96d-4d0d-bbb7-02d6af510d57] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-17 02:40:09 AM traceId:[32009260-de19-4108-b64f-e96cc2ac3e10] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-17 02:40:23 AM traceId:[945b8ca4-ffd3-41a3-815a-9cc11fee50b8] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-06-17 02:40:29 AM traceId:[3146988b-c263-4084-9081-8ee176d382c4] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-17 02:41:45 AM traceId:[a1db7253-da74-43b7-b2e4-d0f22174f55c] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:41:53 AM traceId:[c4277e84-2847-4f59-a1d3-9d9ee73a8bc6] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:42:00 AM traceId:[540f6f74-626b-47e8-b6e3-7b2226609776] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:42:11 AM traceId:[aa2e881e-88dc-422d-8348-a0a20eef9832] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:42:12 AM traceId:[aa2e881e-88dc-422d-8348-a0a20eef9832] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-06-17 02:42:21 AM traceId:[23052b16-9afd-4942-8e3f-e592f94606cf] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:42:44 AM traceId:[5ba5e141-2f19-46e2-a8f7-c5194c3374f9] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:42:45 AM traceId:[5ba5e141-2f19-46e2-a8f7-c5194c3374f9] msg: method: POST: /api/v1/friends/requests msg: The user has already sent you a friend request. You can accept or reject this friend request
+[info]: timestamp:2025-06-17 02:43:36 AM traceId:[5f9e8556-09e4-4421-ba81-cd18117d0ec1] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:44:09 AM traceId:[ca2254f5-f51a-4ad9-82f1-e1ffa2902bdf] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:44:20 AM traceId:[5e291404-28b7-4649-bedb-bcee35093196] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:44:33 AM traceId:[32ce4595-3a7d-4314-b388-f0813e8c46e5] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:44:47 AM traceId:[7de0ea3c-6016-43aa-be98-ba793ac83728] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:44:53 AM traceId:[12599038-5d03-41de-8ca6-10f48c5c95b2] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:48:29 AM traceId:[4b17f4a8-fedf-4648-a4bd-8f5dd8ae53e5] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:48:32 AM traceId:[2c296965-031f-4e82-9ef4-c8f6312759a8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:48:44 AM traceId:[662a53f3-37c6-4786-b069-72f6c8adbd03] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:48:48 AM traceId:[d11e3ba1-f51b-457d-b891-dd8677cbd450] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:48:58 AM traceId:[c4ed51c4-210e-4d35-95ae-92bfcf81fa10] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-06-17 02:49:06 AM traceId:[483178e2-cdf4-4a0f-b2d4-65c41364ba64] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-17 02:49:11 AM traceId:[8acf6eae-99fd-4294-9873-28cc85133c9a] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:49:37 AM traceId:[3a8ce56a-1406-47c8-b012-f6953474d650] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:50:16 AM traceId:[c9f701ea-b788-4a5e-ab17-2fef809b3e4d] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:50:27 AM traceId:[1d00d8bf-e1ce-4d6a-a627-128f48301613] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-17 02:50:30 AM traceId:[e75ff47b-9e04-46ba-9788-c798eeb716ec] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 02:50:38 AM traceId:[36fe69f4-a819-457f-ae8a-d9e67ec257e3] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 02:52:34 AM traceId:[32e900f8-4255-4177-b6bf-eae432f86040] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-17 02:52:35 AM traceId:[32e900f8-4255-4177-b6bf-eae432f86040] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-17 02:52:38 AM traceId:[6db9ea2c-66b8-499b-bc42-37ab8cb0b722] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-17 03:00:05 AM traceId:[d9e324f6-e6d4-4ca5-ba83-6c34b0bbdc12] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:01:23 AM traceId:[aed215a6-dfb2-4906-bd6a-797cb0b0f06d] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:02:53 AM traceId:[b74ff0c5-8803-462a-ad0c-1a2665eb1f09] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:03:09 AM traceId:[7fe181e9-b7b6-4393-914e-9e73b01d644c] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:03:37 AM traceId:[da2bad47-6771-4931-8673-006a89796031] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:03:41 AM traceId:[cb7dfc5e-0ab2-4bb2-a690-c0ce66c8c634] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:04:05 AM traceId:[d7a699b5-5613-4852-a8eb-dd0ac729926d] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:16:13 AM traceId:[fa76ef6a-9a3e-4c8c-9cda-6a55270a7d4c] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:16:28 AM traceId:[476d243e-edf1-482d-a4d5-cee97ee577c9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:16:44 AM traceId:[9cac0327-8651-4992-9c65-1d039badadf8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:18:51 AM traceId:[a9f23b56-dbaf-4d9c-9a38-63f82abf0fc7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:19:58 AM traceId:[b24d66e4-40c4-4add-8a8a-c7efeb552c40] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 03:20:31 AM traceId:[1690adde-b66a-4582-9d3f-e24ab9fa1c6a] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 11:59:51 AM traceId:[db8d5d63-3aae-414c-bec7-4bcd6fdd29bc] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:00:24 PM traceId:[72210d25-d74d-422c-aa69-b98de78a9557] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:02:51 PM traceId:[8509b009-f8e0-48eb-bd2e-4759f1387aa8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:06:33 PM traceId:[897339f2-0592-4f95-b632-23ecb88d5857] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:08:09 PM traceId:[b7bdd5f6-7bf8-4135-8a6b-07908c21a240] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:11:21 PM traceId:[33f5a102-4cd0-4d13-a897-3968df864337] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:12:13 PM traceId:[067b8b34-9b8a-45b7-80aa-8143cc58aa96] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:14:51 PM traceId:[0d1737d4-6a8d-4a8f-901f-62a4754a5fa7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:15:25 PM traceId:[39f059d7-18b3-42f6-a68e-6d0ef0eb4ad3] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:15:45 PM traceId:[45460378-6475-4965-b15d-59a35bb731c8] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:18:14 PM traceId:[77b0a604-5110-4bd0-86e0-07cbad9ef983] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:18:19 PM traceId:[8e43cec4-98b4-475a-82b0-d22779ada972] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:19:59 PM traceId:[a9d4947c-82f2-4dbc-b280-0b2ab72edf7f] msg:Incoming request: GET /api/v1/friends/requests/received
+[error]: timestamp:2025-06-17 12:20:01 PM traceId:[a9d4947c-82f2-4dbc-b280-0b2ab72edf7f] msg: method: GET: /api/v1/friends/requests/received msg: Cannot read properties of undefined (reading 'length')
+[info]: timestamp:2025-06-17 12:20:58 PM traceId:[523622cb-91c5-4101-8bc4-b92c9f73acf3] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 12:21:31 PM traceId:[ce960b2c-686a-48d9-a1d8-6364b390d561] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:05:44 PM traceId:[db40086b-49fa-4ebc-b737-6f1880be839e] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:05:52 PM traceId:[c53f549a-0c11-40f2-bcd0-50544a8b9f87] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:10:33 PM traceId:[c5fc1bc0-f434-4d39-b7f1-5ffeb01989af] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:10:36 PM traceId:[e961c06c-7ef3-4726-80e5-80631b70e761] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:35:45 PM traceId:[430d5c2c-f7d9-4869-8134-339c4450e29a] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:36:45 PM traceId:[926f75ea-156a-45cd-89b1-6c682747fa22] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:37:29 PM traceId:[5f8db49f-33bc-4d82-bab8-dd96763eb955] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:37:52 PM traceId:[e79604f0-b56a-49e1-96f7-72869544e984] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:38:55 PM traceId:[e4a2f08e-34cd-415c-b547-6f8db7cbcafb] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:41:52 PM traceId:[847e64bb-293b-455d-93ad-469d882db4e6] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:44:21 PM traceId:[c7f86466-e244-4ce6-87bc-2eb63a693d11] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:45:16 PM traceId:[09f24ab6-b2e6-4bca-b331-4fc6d47565ed] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:45:39 PM traceId:[38ca99b5-e577-408d-8e68-82a856cdd2fc] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-17 23:46:49 PM traceId:[a2d5c144-3b2f-4377-aa16-2c1e318854e7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:29:10 AM traceId:[40e57ad2-2748-420c-a2ba-9e0d1c9eb8e1] msg:Incoming request: GET /api/v1/friends/requests/received
+[error]: timestamp:2025-06-18 00:29:10 AM traceId:[40e57ad2-2748-420c-a2ba-9e0d1c9eb8e1] msg: method: GET: /api/v1/friends/requests/received msg: Cannot read properties of undefined (reading 'length')
+[info]: timestamp:2025-06-18 00:29:33 AM traceId:[89fbb348-fa8c-4987-9909-0466d34775c1] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:32:06 AM traceId:[2a53ddfd-dd96-4f16-97ca-638792083dcb] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:34:51 AM traceId:[764d599d-efd4-483d-809f-30d7f2dbd6c9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:35:07 AM traceId:[b91f4852-243e-4bf9-b21b-772fec49e6e7] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:40:37 AM traceId:[5d31c6b0-8fef-428c-9b91-9f873e978ca0] msg:Incoming request: GET /api/v1/friends/requests/received
+[error]: timestamp:2025-06-18 00:40:38 AM traceId:[5d31c6b0-8fef-428c-9b91-9f873e978ca0] msg: method: GET: /api/v1/friends/requests/received msg: invalid argument to $skip stage: Expected an integer, but found NaN in: $skip: nan.0
+[info]: timestamp:2025-06-18 00:40:56 AM traceId:[71ba6134-d37e-47f8-99f5-8a4b44689704] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:41:40 AM traceId:[31937aa3-86e2-4374-b8e6-4bc457141559] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:55:20 AM traceId:[bef7083e-8326-448c-b110-ddcaf51024d6] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 00:55:48 AM traceId:[b6e8e247-549c-40db-9bf2-3e915a2077a6] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:36:40 AM traceId:[660fef16-c725-431e-a79a-b90ec67610d4] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:37:14 AM traceId:[c1d04193-f9ea-4cff-ba3c-75058cfdb73a] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:37:35 AM traceId:[d1646f31-3d8d-4a4d-a2dc-3354b339bcac] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:37:58 AM traceId:[be4ca3cd-5da5-42f9-8e8d-ac04a3e4ec6e] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:38:22 AM traceId:[236e8609-8fdf-42c1-a69c-b77ec1df0e64] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:38:35 AM traceId:[5c2e0e22-9e4e-4cf4-bda6-9e7ba1015160] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 01:58:56 AM traceId:[d6a5d2ff-14f0-4c16-a9ca-25511cb22a4f] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 16:24:30 PM traceId:[bf1eb5b9-ce96-46ac-94ff-8f2241062f99] msg:Incoming request: GET /api/v1/users?role=user
+[info]: timestamp:2025-06-18 16:24:46 PM traceId:[8885ce81-d912-431b-8403-4c94597e20a9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 16:25:07 PM traceId:[de9c970e-9599-407b-963e-6212c04c2c78] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 16:25:13 PM traceId:[dcadfbdb-2e64-4ac2-bb66-c6f560c7fe37] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 16:25:41 PM traceId:[89d2a0b9-197e-4791-9e1f-b4ac8a082f35] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 16:37:26 PM traceId:[d4c8aafc-f03f-4a0b-af48-665378fd07c6] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 17:49:17 PM traceId:[3121f830-8f48-4796-ae11-f6c0231376fa] msg:Incoming request: GET /api/v1/friends/requests/received?page=2
+[info]: timestamp:2025-06-18 17:52:49 PM traceId:[0c869bab-8b14-420e-a575-ec14e5c76ade] msg:Incoming request: GET /api/v1/friends/requests/received?page=1
+[info]: timestamp:2025-06-18 17:54:02 PM traceId:[0a27497c-61d6-4bfc-afb2-eb989359a21a] msg:Incoming request: GET /api/v1/friends/requests/received?page=1&limit=-1
+[error]: timestamp:2025-06-18 17:54:02 PM traceId:[0a27497c-61d6-4bfc-afb2-eb989359a21a] msg: method: GET: /api/v1/friends/requests/received?page=1&limit=-1 msg: Validation failed!
+[info]: timestamp:2025-06-18 17:54:21 PM traceId:[c1ab0643-3f63-4c4a-b8aa-dfacf709befd] msg:Incoming request: GET /api/v1/friends/requests/received?page=1&limit=9999
+[error]: timestamp:2025-06-18 17:54:21 PM traceId:[c1ab0643-3f63-4c4a-b8aa-dfacf709befd] msg: method: GET: /api/v1/friends/requests/received?page=1&limit=9999 msg: Validation failed!
+[info]: timestamp:2025-06-18 17:54:24 PM traceId:[fc1491f8-14fd-4057-b7ba-a8fd73788381] msg:Incoming request: GET /api/v1/friends/requests/received?page=1&limit=999
+[info]: timestamp:2025-06-18 17:54:37 PM traceId:[deec964f-628d-4116-8809-b764c9cdd60a] msg:Incoming request: GET /api/v1/friends/requests/received?page=1&limit=1
+[info]: timestamp:2025-06-18 17:55:47 PM traceId:[f0ab2858-2761-408e-8160-396373963579] msg:Incoming request: GET /api/v1/friends/requests/received?page=1&limit=1
+[info]: timestamp:2025-06-18 17:55:58 PM traceId:[9786bdf7-8177-43c7-9fae-d24d96493a43] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1
+[info]: timestamp:2025-06-18 17:56:13 PM traceId:[bddab10c-a938-4060-b170-d86f46799889] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=createdAT
+[error]: timestamp:2025-06-18 17:56:13 PM traceId:[bddab10c-a938-4060-b170-d86f46799889] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=createdAT msg: Validation failed!
+[info]: timestamp:2025-06-18 17:57:46 PM traceId:[c70a3b6f-d87d-4f12-9538-8f411f527cb2] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=
+[error]: timestamp:2025-06-18 17:57:46 PM traceId:[c70a3b6f-d87d-4f12-9538-8f411f527cb2] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort= msg: Validation failed!
+[info]: timestamp:2025-06-18 17:58:09 PM traceId:[e6bdfff4-2062-4c61-99a5-08ce0395888d] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=
+[error]: timestamp:2025-06-18 17:58:09 PM traceId:[e6bdfff4-2062-4c61-99a5-08ce0395888d] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort= msg: Validation failed!
+[info]: timestamp:2025-06-18 17:58:18 PM traceId:[fe5bb777-1452-452c-9a48-144b77a78e1d] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=asda
+[error]: timestamp:2025-06-18 17:58:18 PM traceId:[fe5bb777-1452-452c-9a48-144b77a78e1d] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=asda msg: Validation failed!
+[info]: timestamp:2025-06-18 17:58:21 PM traceId:[1855deb4-4636-40e8-9058-4afe01228d24] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 17:59:36 PM traceId:[5ad66101-cdc7-47a6-b85c-6ea0cc3741dc] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 18:35:24 PM traceId:[02a7c6e6-0ac7-4891-9dcb-b815027946fc] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:36:14 PM traceId:[c658ebc3-4132-4011-a581-47452ad934c9] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:36:58 PM traceId:[ea9013c3-6566-4c47-9c8b-1521db1f2099] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:37:18 PM traceId:[e1d596d3-6716-4ae4-8218-d1e88d28eb7c] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:37:52 PM traceId:[0107a4ac-aee9-4983-a6be-6faced06e7ba] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:38:38 PM traceId:[52c181f9-2243-436f-938e-0f98c928f553] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:39:14 PM traceId:[dc8c4516-d5a0-4198-b074-e7d40b9d0a8f] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:40:11 PM traceId:[40732725-318c-4f8b-ba55-fe8a0fc95447] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 18:40:42 PM traceId:[a88d3601-6f8b-424c-8b72-583b40695a2e] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:41:08 PM traceId:[ab6393c0-0d0a-4187-b34f-3cedf8445ed8] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:41:39 PM traceId:[6d6ef590-53d3-4fd0-9bc7-186e0a587fda] msg:Incoming request: GET /api/v1/friends/requests/sent
+[error]: timestamp:2025-06-18 18:41:40 PM traceId:[6d6ef590-53d3-4fd0-9bc7-186e0a587fda] msg: method: GET: /api/v1/friends/requests/sent msg: Illegal key in $sort specification: requestedAt: null
+[info]: timestamp:2025-06-18 18:42:15 PM traceId:[3ccd545d-83df-42dc-b863-5ecf95d15dee] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:42:41 PM traceId:[f69e735a-daa4-4cc1-a438-50fd4278e8a3] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:42:44 PM traceId:[e8f8e464-f261-4fed-939e-db15b17425fe] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2
+[info]: timestamp:2025-06-18 18:47:14 PM traceId:[27088338-e4e6-4956-8581-5d4e81173d97] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2
+[info]: timestamp:2025-06-18 18:47:22 PM traceId:[eea314e6-72d1-4b9a-931b-3f4ef78d08e6] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 18:47:45 PM traceId:[320e04d4-7623-4b30-a801-04a4aed791d3] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 18:48:07 PM traceId:[241a1c3f-1395-4be6-92ba-2c59b512805e] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 18:48:11 PM traceId:[e7479368-fbe3-4ea3-9515-8f3214680813] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 19:17:37 PM traceId:[354f7a07-aa83-4b64-9ef9-0cda9c0ab13e] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-18 19:17:43 PM traceId:[a6f5d230-3e8d-4981-9dc7-fc07b72f9849] msg:Incoming request: GET /api/v1/friends/requests/sent?pages=2
+[error]: timestamp:2025-06-18 19:17:43 PM traceId:[a6f5d230-3e8d-4981-9dc7-fc07b72f9849] msg: method: GET: /api/v1/friends/requests/sent?pages=2 msg: Validation failed!
+[info]: timestamp:2025-06-18 19:24:33 PM traceId:[9dd064bd-b978-418b-910e-f6653b38a7a4] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 19:24:33 PM traceId:[9dd064bd-b978-418b-910e-f6653b38a7a4] msg: method: GET: /api/v1/friends msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-18 19:26:36 PM traceId:[09989bcb-61bd-468f-a8ca-7616c12ea937] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:27:44 PM traceId:[7864e74c-8322-494c-8f42-ad67bc056876] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 19:27:44 PM traceId:[7864e74c-8322-494c-8f42-ad67bc056876] msg: method: GET: /api/v1/friends msg: Validation failed!
+[info]: timestamp:2025-06-18 19:27:46 PM traceId:[b49eaecb-a940-41d1-abb9-ddbcf3dd9af2] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 19:27:46 PM traceId:[b49eaecb-a940-41d1-abb9-ddbcf3dd9af2] msg: method: GET: /api/v1/friends msg: Validation failed!
+[info]: timestamp:2025-06-18 19:29:51 PM traceId:[66326748-1b8d-4a43-939d-15a6e13be998] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:30:40 PM traceId:[d890035f-e53c-4a85-a2e6-dfc087742a70] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:30:50 PM traceId:[f37aafc6-b756-40cd-b97e-b2867cc7a808] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept
+[error]: timestamp:2025-06-18 19:30:51 PM traceId:[f37aafc6-b756-40cd-b97e-b2867cc7a808] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-18 19:32:09 PM traceId:[b5a4bccc-6b97-4656-bf55-f483d4c8e2b1] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-18 19:33:03 PM traceId:[41b0d433-8520-48eb-9463-df775a3ec9a7] msg:Incoming request: PATCH /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept
+[error]: timestamp:2025-06-18 19:33:04 PM traceId:[41b0d433-8520-48eb-9463-df775a3ec9a7] msg: method: PATCH: /api/v1/friends/requests/684fe9edfb992b99ed2403aa/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-18 19:33:09 PM traceId:[e92da88c-da45-463a-a20f-a063cbda93d3] msg:Incoming request: PATCH /api/v1/friends/requests/6852bfdb8495c0629605fa42/accept
+[info]: timestamp:2025-06-18 19:33:22 PM traceId:[76e82d07-dd08-4607-bfe1-1c4bc86330ca] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:33:55 PM traceId:[0b09fd92-0711-401e-aa3e-f2b2243df5ce] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:34:24 PM traceId:[2070bad4-4f04-4440-9158-401f8ea44ec7] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:35:49 PM traceId:[6263cee1-fea0-443c-9e55-9f5a2d0f4be1] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 19:35:49 PM traceId:[6263cee1-fea0-443c-9e55-9f5a2d0f4be1] msg: method: GET: /api/v1/friends msg: Cannot destructure property 'page' of 'query' as it is undefined.
+[info]: timestamp:2025-06-18 19:36:11 PM traceId:[680ccf3a-ff03-42de-b877-87f47c61bacb] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:37:48 PM traceId:[b369ac9c-4ccc-43a9-b970-15c600b2cb57] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:43:34 PM traceId:[ef30b19b-627d-4c46-b42f-fd2861384bc5] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:44:24 PM traceId:[492186f2-0cf6-44a2-b11f-b01f1dd580aa] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-18 19:44:47 PM traceId:[f272689d-0255-4935-937c-7b459b086e46] msg:Incoming request: PATCH /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept
+[error]: timestamp:2025-06-18 19:44:48 PM traceId:[f272689d-0255-4935-937c-7b459b086e46] msg: method: PATCH: /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-18 19:44:55 PM traceId:[dc9338eb-6405-4639-9ff3-14318072c604] msg:Incoming request: PATCH /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept
+[info]: timestamp:2025-06-18 19:45:00 PM traceId:[650efe75-2248-479c-b6d4-0dcf1c7a0416] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:45:48 PM traceId:[4ec85a4c-34a3-40e6-8a44-b6736b3027f8] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:47:48 PM traceId:[e839a8d2-fc13-4995-ae1b-372da187ea13] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:48:26 PM traceId:[f37dbfd9-de74-4c36-95b5-1728417ae6ff] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:50:53 PM traceId:[542a1786-43d9-47be-91ae-5bb4a1a5b9f9] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:51:41 PM traceId:[92f04e64-ea76-48cd-839e-922b6478f250] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:52:52 PM traceId:[53495282-7476-464b-a5e0-bd020c293715] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:55:56 PM traceId:[9fbf9154-aa24-4b22-85e4-2b7f8648fc5f] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:56:19 PM traceId:[de22dbe6-fbe0-44b2-9b01-db68bd4162e8] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 19:58:53 PM traceId:[32728076-3074-45df-ab53-bba282942484] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:09:26 PM traceId:[f63b4835-f29f-4110-905d-ac167a2f81f0] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:10:38 PM traceId:[36c87843-5169-4910-8a48-6996c53f46fd] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:11:23 PM traceId:[9fdaa226-f38e-4cc6-ba15-d1964fac5f34] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:11:50 PM traceId:[643588b5-cce4-46f1-8186-7e42664b90f6] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:13:32 PM traceId:[11eb1b2b-f782-4478-9206-970b8f67b8b0] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:15:38 PM traceId:[e9596f43-9212-40d2-a21a-a4d144ea0a3b] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:15:47 PM traceId:[3cc56d98-04ca-4b55-bf40-a9387ec17f3b] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:16:29 PM traceId:[75b754a3-15b7-4a69-8f1e-2eed3f4ec83d] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:16:55 PM traceId:[4e1a8c4e-76a0-4fe9-9e4a-7def8ab1201f] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:22:11 PM traceId:[21f3d24d-d691-428a-8c1a-355caf3e51f3] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 20:22:21 PM traceId:[dffd4a63-af03-4982-ba7c-1a82b4a9a15f] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-18 20:22:28 PM traceId:[4cc8cb36-47e7-4681-a33f-e9bb66e2b25d] msg:Incoming request: GET /api/v1/friends/requests/received?limit=1&sort=1
+[info]: timestamp:2025-06-18 23:41:05 PM traceId:[b483639e-166b-4700-b688-702d7dd2ba59] msg:Incoming request: GET /api/v1/friends/requests/received?limit=1&sort=1
+[info]: timestamp:2025-06-18 23:41:16 PM traceId:[c9866326-ef19-4014-8f37-f64025fd7c98] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-18 23:41:24 PM traceId:[193ccf38-a35e-42b8-b890-6cedb49cf127] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:41:57 PM traceId:[e1e40fad-f7e4-4b5e-bbc1-ee70eb8b4361] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 23:41:59 PM traceId:[e1e40fad-f7e4-4b5e-bbc1-ee70eb8b4361] msg: method: GET: /api/v1/friends msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-18 23:42:59 PM traceId:[76c67cef-b200-4f7e-b9d0-b5bc9f1baea9] msg:Incoming request: GET /api/v1/friends
+[error]: timestamp:2025-06-18 23:43:01 PM traceId:[76c67cef-b200-4f7e-b9d0-b5bc9f1baea9] msg: method: GET: /api/v1/friends msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-18 23:45:17 PM traceId:[e1fd4dd1-60e5-4be3-86aa-6c50b5dcbd7f] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:45:42 PM traceId:[449f9300-bb65-49fd-b35a-d39064d3f553] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:46:20 PM traceId:[a0f26aeb-4a21-4626-86dd-16befe6348a1] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:46:37 PM traceId:[d6fe917a-dee6-4c58-88c5-afe3e489e673] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:47:44 PM traceId:[566c34a4-5ac8-4e00-a9f6-a4b804c3e16f] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-06-18 23:47:54 PM traceId:[97938faf-50ed-444e-aa07-d229296506da] msg:Incoming request: GET /api/v1/friends?limit1
+[info]: timestamp:2025-06-18 23:48:00 PM traceId:[3fe7a658-89aa-472f-bb84-0a45b11a16c0] msg:Incoming request: GET /api/v1/friends?limit=1
+[info]: timestamp:2025-06-18 23:48:13 PM traceId:[5cc0120d-ff8a-403a-ba84-0766c44d93e8] msg:Incoming request: GET /api/v1/friends?limit=1&page=2
+[info]: timestamp:2025-06-18 23:48:23 PM traceId:[61f80b47-d6a6-44c0-8ebd-7526af613164] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1
+[info]: timestamp:2025-06-18 23:48:35 PM traceId:[2ba0bc0d-b17d-455c-b643-5197d059bd54] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=-1
+[info]: timestamp:2025-06-18 23:48:46 PM traceId:[c6cd652f-fbdd-461c-93d8-85a556cc507f] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1
+[info]: timestamp:2025-06-18 23:48:58 PM traceId:[1f80847b-5d31-4e3f-b5e7-f5b6ead41edc] msg:Incoming request: GET /api/v1/friends?limit=1&page=2
+[info]: timestamp:2025-06-18 23:49:04 PM traceId:[9549b5fe-d4d1-463d-9654-e963d9b2fd72] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1ada
+[error]: timestamp:2025-06-18 23:49:04 PM traceId:[9549b5fe-d4d1-463d-9654-e963d9b2fd72] msg: method: GET: /api/v1/friends?limit=1&page=2&sort=1ada msg: Validation failed!
+[info]: timestamp:2025-06-18 23:51:46 PM traceId:[019904d7-5d10-402c-99f5-0aa8bc391771] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1ada
+[error]: timestamp:2025-06-18 23:51:46 PM traceId:[019904d7-5d10-402c-99f5-0aa8bc391771] msg: method: GET: /api/v1/friends?limit=1&page=2&sort=1ada msg: Validation failed!
+[info]: timestamp:2025-06-18 23:51:52 PM traceId:[bdc4a088-7c34-42bf-8291-cdc6bdd01e55] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1
+[info]: timestamp:2025-06-18 23:53:02 PM traceId:[4902f472-88c9-473e-a9ce-a7b0fc1966a9] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-19 01:29:38 AM traceId:[b829b097-192f-4571-b6e7-e03583d1eb43] msg:Incoming request: GET /api/v1/friends?limit=1&page=2&sort=1
+[info]: timestamp:2025-06-19 01:30:00 AM traceId:[cd3162de-f765-4af6-90bb-fdea78b0e51c] msg:Incoming request: GET /api/v1/friends?page=2&sort=1
+[info]: timestamp:2025-06-19 01:30:03 AM traceId:[12035018-1a92-4bda-8e17-2e026e09d9ef] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-19 01:50:30 AM traceId:[9653fcc8-ec47-4467-b911-67089dd45bdf] msg:Incoming request: DELETE /api/v1/friends/685080a5cd1def5ce7828477
+[error]: timestamp:2025-06-19 01:50:30 AM traceId:[9653fcc8-ec47-4467-b911-67089dd45bdf] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Validation failed!
+[info]: timestamp:2025-06-19 01:55:38 AM traceId:[1e80dad4-29ac-41bc-94a1-99b20fadc5be] msg:Incoming request: DELETE /api/v1/friends/685080a5cd1def5ce7828477
+[error]: timestamp:2025-06-19 01:55:38 AM traceId:[1e80dad4-29ac-41bc-94a1-99b20fadc5be] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-19 01:56:01 AM traceId:[3f539375-f5d1-4760-b74c-653f68080f36] msg:Incoming request: DELETE /api/v1/friends/685080a5cd1def5ce7828477
+[error]: timestamp:2025-06-19 01:56:01 AM traceId:[3f539375-f5d1-4760-b74c-653f68080f36] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-19 01:56:13 AM traceId:[cd34e0fd-09c3-4822-9605-2886c5b8b5bb] msg:Incoming request: DELETE /api/v1/friends/685080a5cd1def5ce7828477
+[error]: timestamp:2025-06-19 01:56:14 AM traceId:[cd34e0fd-09c3-4822-9605-2886c5b8b5bb] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: The user you want to delete from your friend list is not found
+[info]: timestamp:2025-06-19 01:56:43 AM traceId:[3ea49510-7793-4ef9-bfb4-927a2985e35f] msg:Incoming request: DELETE /api/v1/friends/685080a5cd1def5ce7828477
+[error]: timestamp:2025-06-19 01:56:43 AM traceId:[3ea49510-7793-4ef9-bfb4-927a2985e35f] msg: method: DELETE: /api/v1/friends/685080a5cd1def5ce7828477 msg: The user you want to delete from your friend list is not found
+[info]: timestamp:2025-06-19 01:57:02 AM traceId:[8eb38e95-3e23-4dd0-a231-acd89d208888] msg:Incoming request: DELETE /api/v1/friends/685080b2cd1def5ce7828483
+[info]: timestamp:2025-06-19 01:58:16 AM traceId:[1fe67da5-95d2-494c-bd1d-9489c82ac6a2] msg:Incoming request: DELETE /api/v1/friends/685080d3edef447dcf3fa7d5
+[error]: timestamp:2025-06-19 01:58:17 AM traceId:[1fe67da5-95d2-494c-bd1d-9489c82ac6a2] msg: method: DELETE: /api/v1/friends/685080d3edef447dcf3fa7d5 msg: The user you want to delete from your friend list is not found
+[info]: timestamp:2025-06-19 01:58:49 AM traceId:[1d37e7d6-d721-4bde-ad76-196856c85210] msg:Incoming request: DELETE /api/v1/friends/685080d3edef447dcf3fa7d5
+[error]: timestamp:2025-06-19 01:58:50 AM traceId:[1d37e7d6-d721-4bde-ad76-196856c85210] msg: method: DELETE: /api/v1/friends/685080d3edef447dcf3fa7d5 msg: You cannot delete yourself
+[info]: timestamp:2025-06-19 01:59:04 AM traceId:[fa889f74-8e68-4af8-bff7-06d482427c51] msg:Incoming request: DELETE /api/v1/friends/6850833bed281925dfb18468
+[info]: timestamp:2025-06-19 02:01:39 AM traceId:[89a2e030-ad21-4aab-8769-71384f2f9a3d] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-19 02:01:44 AM traceId:[9de3d90f-3424-4e35-a2a7-34f759723e42] msg:Incoming request: PATCH /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept
+[error]: timestamp:2025-06-19 02:01:45 AM traceId:[9de3d90f-3424-4e35-a2a7-34f759723e42] msg: method: PATCH: /api/v1/friends/requests/6852c2b92c6ce7425d25009f/accept msg: The friend request you want to accept is not found
+[info]: timestamp:2025-06-19 02:02:03 AM traceId:[360a9d7a-1b62-4c57-b40a-031aa12ec43a] msg:Incoming request: PATCH /api/v1/friends/requests/68531b24855e51979dbeaef8/accept
+[info]: timestamp:2025-06-19 02:02:15 AM traceId:[d9510dd4-bbc1-4972-a25a-bfe6de3551d6] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-19 02:02:38 AM traceId:[ee922ca5-6aa2-4efb-b122-4ccda3306ce9] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-19 02:02:47 AM traceId:[8b2e8c76-0a01-4593-9728-795544eba4f3] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-19 15:39:01 PM traceId:[1d904355-faec-45e2-99f2-8213cce582e0] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-19 15:39:02 PM traceId:[1d904355-faec-45e2-99f2-8213cce582e0] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-19 15:40:55 PM traceId:[5a832b1d-3fce-4067-ae18-84e0f532883e] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-19 15:42:09 PM traceId:[10e52276-aaeb-4b51-8d6e-7fb2e4e22031] msg:Incoming request: DELETE /api/v1/friends/requests/684fe9edfb992b99ed2403a9/undo
+[error]: timestamp:2025-06-19 15:42:10 PM traceId:[10e52276-aaeb-4b51-8d6e-7fb2e4e22031] msg: method: DELETE: /api/v1/friends/requests/684fe9edfb992b99ed2403a9/undo msg: The friend request you want to undo is not found
+[info]: timestamp:2025-06-19 15:42:58 PM traceId:[9bfcb7f4-8715-4441-9297-e7815545d560] msg:Incoming request: DELETE /api/v1/friends/requests/6850833bed281925dfb18468/undo
+[error]: timestamp:2025-06-19 15:42:59 PM traceId:[9bfcb7f4-8715-4441-9297-e7815545d560] msg: method: DELETE: /api/v1/friends/requests/6850833bed281925dfb18468/undo msg: The friend request you want to undo is not found
+[info]: timestamp:2025-06-19 15:43:37 PM traceId:[d3e5b9b0-9e15-4c14-805d-691f1275f0e8] msg:Incoming request: DELETE /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo
+[error]: timestamp:2025-06-19 15:43:37 PM traceId:[d3e5b9b0-9e15-4c14-805d-691f1275f0e8] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: You can't undo other users friend request
+[info]: timestamp:2025-06-19 15:44:46 PM traceId:[9951363f-8fc2-419d-a322-aa46c8327297] msg:Incoming request: DELETE /api/v1/friends/requests/6850833bed281925dfb18468/undo
+[error]: timestamp:2025-06-19 15:44:47 PM traceId:[9951363f-8fc2-419d-a322-aa46c8327297] msg: method: DELETE: /api/v1/friends/requests/6850833bed281925dfb18468/undo msg: The friend request you want to undo is not found
+[info]: timestamp:2025-06-19 15:45:03 PM traceId:[6f674faa-a8af-4e4f-a0ad-25a53991bbd0] msg:Incoming request: DELETE /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo
+[error]: timestamp:2025-06-19 15:45:04 PM traceId:[6f674faa-a8af-4e4f-a0ad-25a53991bbd0] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: You can't undo other users friend request
+[info]: timestamp:2025-06-19 15:45:17 PM traceId:[b375f4b7-bd69-4c61-881f-a0c5cae55669] msg:Incoming request: DELETE /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo
+[info]: timestamp:2025-06-19 15:45:38 PM traceId:[eba0532a-7da5-461a-b1f8-6ba0c69de5f6] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-19 15:46:10 PM traceId:[f4035ba1-b9c6-4614-84dc-df552bcd12e2] msg:Incoming request: DELETE /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo
+[error]: timestamp:2025-06-19 15:46:11 PM traceId:[f4035ba1-b9c6-4614-84dc-df552bcd12e2] msg: method: DELETE: /api/v1/friends/requests/6853db2947a2f5c6688c3ba5/undo msg: The friend request you want to undo is not found
+[info]: timestamp:2025-06-19 15:46:25 PM traceId:[f61cae48-a178-4dd2-86b5-7a57e5eb27bc] msg:Incoming request: DELETE /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo
+[error]: timestamp:2025-06-19 15:46:26 PM traceId:[f61cae48-a178-4dd2-86b5-7a57e5eb27bc] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: You are already friends
+[info]: timestamp:2025-06-19 15:46:44 PM traceId:[089baf06-1a77-4688-872b-df29268b6f27] msg:Incoming request: DELETE /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo
+[error]: timestamp:2025-06-19 15:46:45 PM traceId:[089baf06-1a77-4688-872b-df29268b6f27] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: The friend request is already rejected by the user

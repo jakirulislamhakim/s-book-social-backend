@@ -46,6 +46,7 @@ export const seedSuperAdminIntoDB = async () => {
       await Profile.create(
         [
           {
+            _id: superAdmin[0]._id,
             userId: superAdmin[0]._id,
             fullName: config.SUPER_ADMIN_FULLNAME,
             gender: config.SUPER_ADMIN_GENDER,

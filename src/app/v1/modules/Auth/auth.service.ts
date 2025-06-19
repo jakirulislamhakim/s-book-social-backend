@@ -398,6 +398,7 @@ const createAdminByAdminIntoDB = async (payload: TUserRegister) => {
     await Profile.create(
       [
         {
+          _id: user[0]._id,
           userId: user[0]._id,
           ...remainingPayload,
         },

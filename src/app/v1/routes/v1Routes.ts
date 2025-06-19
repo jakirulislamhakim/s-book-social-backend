@@ -5,6 +5,7 @@ import { ProfileRoutes } from '../modules/Profile/profile.route';
 import { UserBlockRoutes } from '../modules/Block/block.route';
 import { PostRoutes } from '../modules/Post/post.route';
 import { PostAppealRoutes } from '../modules/PostAppeal/postAppeal.route';
+import { FriendRoutes } from '../modules/Friend/friend.route';
 
 type TModulesRoutes = {
   path: string;
@@ -37,6 +38,10 @@ const moduleRoutes: TModulesRoutes[] = [
   {
     path: '/post-appeals',
     route: PostAppealRoutes,
+  },
+  {
+    path: '/friends',
+    route: FriendRoutes,
   },
 ];
 

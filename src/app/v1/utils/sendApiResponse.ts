@@ -7,7 +7,7 @@ type TLinks = {
   };
 };
 
-type TPagination = {
+export type TPagination = {
   totalPages: number;
   totalItems: number;
   currentPage: number;
