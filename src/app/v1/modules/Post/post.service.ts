@@ -14,13 +14,23 @@ import { USER_STATUS } from '../User/user.constant';
 import { PostAppeal } from '../PostAppeal/postAppeal.model';
 import { POST_APPEAL_STATUS } from '../PostAppeal/postAppeal.constant';
 import { TPostAppealAdminResponse } from '../PostAppeal/postAppeal.interface';
+import { Friend } from '../Friend/friend.model';
+import { FRIEND_STATUS } from '../Friend/friend.constant';
 
 const createPostIntoDB = async (payload: TPostCreate) => {
-  const { tags } = payload;
+  const { tags, userId } = payload;
 
   // check tags users exists or not
   if (tags && tags.length > 0) {
+    if (tags.includes(userId.toString())) {
+      throw new AppError(
+        httpStatus.BAD_REQUEST,
+        'You can not tag yourself in your post . Please remove yourself from tags',
+      );
+    }
+
     // check duplicate users tags
+
     if (new Set(tags).size !== tags.length) {
       throw new AppError(
         httpStatus.BAD_REQUEST,
@@ -33,7 +43,7 @@ const createPostIntoDB = async (payload: TPostCreate) => {
       isVerified: true,
       status: { $eq: USER_STATUS.ACTIVE },
     })
-      .select('_id status')
+      .select('_id')
       .lean();
 
     const foundUserIds = existingUsers.map((user) => user._id.toString());
@@ -43,11 +53,23 @@ const createPostIntoDB = async (payload: TPostCreate) => {
     if (notFoundUser.length > 0) {
       throw new AppError(
         httpStatus.NOT_FOUND,
-        `The users you tags are not found. (${notFoundUser.join(', ')})`,
+        `Some users you are trying to tag could not be found: ${notFoundUser.join(', ')}`,
       );
     }
 
-    // fixme (friends) : need to check tags users is their must be friends
+    const isTagUserFriends = await Friend.find({
+      $or: [{ senderId: { $in: tags } }, { receiverId: { $in: tags } }],
+      status: { $eq: FRIEND_STATUS.ACCEPTED },
+    })
+      .select('_id')
+      .lean();
+
+    if (isTagUserFriends.length !== tags.length) {
+      throw new AppError(
+        httpStatus.BAD_REQUEST,
+        'You can only tag users who are your friends. Some selected users are not in your friend list.',
+      );
+    }
   }
 
   const post = await Post.create(payload);
@@ -107,7 +129,7 @@ const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
   if (post.status === POST_STATUS.REMOVED && isNotPostOwner) {
     throw new AppError(
       httpStatus.FORBIDDEN,
-      "The post is removed . You can't see the post !",
+      "The post is removed by admin . You can't see the post !",
     );
   }
 
@@ -188,13 +210,23 @@ const getOtherUserPostsFromDB = async (
     throw new AppError(httpStatus.BAD_REQUEST, 'The user is not active');
   }
 
-  // fixme (friends): check post audience and filter  who can see post which type public only or friends &  public (currentUser & postUser relation)
+  const isFriend = await Friend.exists({
+    $or: [
+      { senderId: currentUserId, receiverId: postUserId },
+      { senderId: postUserId, receiverId: currentUserId },
+    ],
+    status: { $eq: FRIEND_STATUS.ACCEPTED },
+  }).lean();
+
+  const visibleAudience = isFriend
+    ? [POST_AUDIENCE.PUBLIC, POST_AUDIENCE.FRIENDS]
+    : [POST_AUDIENCE.PUBLIC];
 
   const postQuery = new QueryBuilder(
     Post.find({
       userId: postUserId,
       status: { $eq: POST_STATUS.ACTIVE },
-      audience: { $ne: POST_AUDIENCE.PRIVATE }, // fixme:
+      audience: { $in: visibleAudience },
     }),
     query,
   )

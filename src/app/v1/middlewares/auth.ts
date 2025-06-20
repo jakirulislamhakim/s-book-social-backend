@@ -6,7 +6,7 @@ import { User } from '../modules/User/user.model';
 import { TUserRole } from '../modules/User/user.interface';
 import { USER_STATUS } from '../modules/User/user.constant';
 
-export const authMiddleware = (...requiredRoles: TUserRole[]) => {
+export const authorizeRoles = (...requiredRoles: TUserRole[]) => {
   if (requiredRoles.length === 0) {
     throw new Error(
       '⚠ At least one role is required to use this authMiddleware. ⚠',

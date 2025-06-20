@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { PostControllers } from './post.controller';
 import {
-  authMiddleware,
+  authorizeRoles,
   parseFormDataToJSONMiddleware,
   validateReq,
 } from '../../middlewares';
@@ -18,20 +18,20 @@ router.post(
   upload.array('media', 10),
   parseFormDataToJSONMiddleware,
   validateReq.body(PostValidations.createPostSchema),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.createPost,
 );
 
 router.get(
   '/me',
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.getMyPosts,
 );
 
 router.get(
   '/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.getPostById,
 );
 
@@ -39,14 +39,14 @@ router.patch(
   '/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.body(PostValidations.updatePostSchema),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.updatePostById,
 );
 
 router.delete(
   '/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.deletePostById,
 );
 
@@ -54,7 +54,7 @@ router.get(
   '/users/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.queryParams(ParamsValidations.queryParamsSchema),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.getOtherUserPosts,
 );
 
@@ -63,7 +63,7 @@ router.patch(
   '/:id/remove',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.body(PostValidations.removePostSchema),
-  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.removePostByAdmin,
 );
 
@@ -71,7 +71,7 @@ router.patch(
   '/:id/restore',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.body(PostAppealValidations.appealAdminResponseSchema),
-  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.restorePostByAdmin,
 );
 
@@ -79,7 +79,7 @@ router.patch(
   '/:id/reject',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   validateReq.body(PostAppealValidations.appealAdminResponseSchema),
-  authMiddleware(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.rejectPostAppealByAdmin,
 );
 

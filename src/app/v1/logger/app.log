@@ -819,3 +819,109 @@
 [error]: timestamp:2025-06-19 15:46:26 PM traceId:[f61cae48-a178-4dd2-86b5-7a57e5eb27bc] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: You are already friends
 [info]: timestamp:2025-06-19 15:46:44 PM traceId:[089baf06-1a77-4688-872b-df29268b6f27] msg:Incoming request: DELETE /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo
 [error]: timestamp:2025-06-19 15:46:45 PM traceId:[089baf06-1a77-4688-872b-df29268b6f27] msg: method: DELETE: /api/v1/friends/requests/6853dc44964c4f0f6d97d070/undo msg: The friend request is already rejected by the user
+[info]: timestamp:2025-06-20 18:00:09 PM traceId:[26b3a9b0-7d25-4cb4-b188-dfcac4e47dec] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-20 18:00:09 PM traceId:[26b3a9b0-7d25-4cb4-b188-dfcac4e47dec] msg: method: POST: /api/v1/auth/login msg: Invalid username or email. Please check your credentials or sign up.
+[info]: timestamp:2025-06-20 18:00:51 PM traceId:[68ae2531-c7cf-471a-942c-b21cf9703f76] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-20 18:01:30 PM traceId:[19ec2576-7dac-4ed5-9abd-ce40de088360] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-20 18:03:38 PM traceId:[a3b13f60-0c95-4238-a546-b35b55de7162] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-20 18:03:38 PM traceId:[a3b13f60-0c95-4238-a546-b35b55de7162] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-20 18:03:40 PM traceId:[2c8418b5-d4c8-4e4c-9e24-855fa5fc865c] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-20 18:04:47 PM traceId:[41bbd41d-5795-41e4-aee1-77c385a91e6a] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-20 18:05:30 PM traceId:[f64b6fab-2696-4c54-9b4e-bfccd8f99b9c] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-06-20 18:05:30 PM traceId:[f64b6fab-2696-4c54-9b4e-bfccd8f99b9c] msg: method: POST: /api/v1/auth/login msg: Invalid username or email. Please check your credentials or sign up.
+[info]: timestamp:2025-06-20 18:05:34 PM traceId:[374ea567-a2d3-4f7c-86af-f27f61275707] msg:Incoming request: POST /api/v1/auth/admin-registration
+[error]: timestamp:2025-06-20 18:05:34 PM traceId:[374ea567-a2d3-4f7c-86af-f27f61275707] msg: method: POST: /api/v1/auth/admin-registration msg: Validation failed!
+[info]: timestamp:2025-06-20 18:05:37 PM traceId:[7d266ede-4019-4fc3-a684-4829240f7885] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-06-20 18:07:08 PM traceId:[768fb930-be95-4a06-bdf8-cfa01aa44a28] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-06-20 18:07:08 PM traceId:[768fb930-be95-4a06-bdf8-cfa01aa44a28] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-06-20 18:07:10 PM traceId:[d755ceab-6155-47d8-8ae5-7a381aa494f3] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-06-20 18:07:29 PM traceId:[cb8a9bb8-8d27-4e7a-848e-6eb388857601] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-20 18:08:42 PM traceId:[3130d33b-f03e-4a37-9f80-9869c9978392] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-20 18:09:06 PM traceId:[d98e1462-99df-4bcd-a940-826beef2126d] msg:Incoming request: PATCH /api/v1/friends/requests/68554f4be1557582022c710b/accept
+[info]: timestamp:2025-06-20 18:09:23 PM traceId:[2ef36527-605d-4b7c-a370-2cad536cbefa] msg:Incoming request: GET /api/v1/friends?sort=1
+[error]: timestamp:2025-06-20 18:09:23 PM traceId:[2ef36527-605d-4b7c-a370-2cad536cbefa] msg: method: GET: /api/v1/friends?sort=1 msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-20 18:09:28 PM traceId:[85adec27-8910-46f4-8c54-26587e640a8f] msg:Incoming request: GET /api/v1/friends?sort=1
+[error]: timestamp:2025-06-20 18:09:28 PM traceId:[85adec27-8910-46f4-8c54-26587e640a8f] msg: method: GET: /api/v1/friends?sort=1 msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-20 18:09:29 PM traceId:[78249d53-2e78-4546-80b3-4cfdaa5d93f6] msg:Incoming request: GET /api/v1/friends?sort=1
+[error]: timestamp:2025-06-20 18:09:29 PM traceId:[78249d53-2e78-4546-80b3-4cfdaa5d93f6] msg: method: GET: /api/v1/friends?sort=1 msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-20 18:09:30 PM traceId:[8a11522f-0d8f-45bf-a7f9-2ebecd80192d] msg:Incoming request: GET /api/v1/friends?sort=1
+[error]: timestamp:2025-06-20 18:09:30 PM traceId:[8a11522f-0d8f-45bf-a7f9-2ebecd80192d] msg: method: GET: /api/v1/friends?sort=1 msg: Invalid access token. Please provide valid authentication credentials.
+[info]: timestamp:2025-06-20 18:09:37 PM traceId:[e0bef7ca-e6ef-4237-bd04-a8235e592102] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-06-20 18:09:43 PM traceId:[d9c7f1cc-d401-41a9-b4f5-05a5a39c8f50] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-20 18:09:59 PM traceId:[49d54add-dcf4-4d76-9959-0277882f8104] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-20 18:12:57 PM traceId:[3a8cff49-aef8-440d-916a-ee9ff52180c4] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-20 18:14:00 PM traceId:[8b3986a8-70bf-4af9-8def-88aeab49b0eb] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:14:27 PM traceId:[5765839b-83f9-4e0b-8ddc-1474fa9aa925] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:15:33 PM traceId:[c2b480a0-ad47-462a-8852-41b9947d8148] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:22:50 PM traceId:[0ce2207b-6ce1-4209-ba14-6145983dad2e] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:23:45 PM traceId:[f012c3cf-d39a-4fcb-917a-0b083cfa0f74] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:32:59 PM traceId:[2c825f78-e5ed-4077-8094-3c06924b491b] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 18:33:29 PM traceId:[2d0463f3-71c8-42fc-b777-d801a90df14e] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:20:53 PM traceId:[75eb65cf-0026-498c-bfcf-67493108a163] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-20 19:20:55 PM traceId:[75eb65cf-0026-498c-bfcf-67493108a163] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-20 19:21:01 PM traceId:[5d41c576-b498-4498-8706-638f92f9bf57] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:21:22 PM traceId:[b4868b0a-8612-4521-b9d2-25edd4f249a9] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-20 19:21:23 PM traceId:[b4868b0a-8612-4521-b9d2-25edd4f249a9] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[info]: timestamp:2025-06-20 19:22:17 PM traceId:[52dc2aab-796a-48d7-8fb8-edfb7121ffcc] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-20 19:22:46 PM traceId:[6c43a386-ed72-4a3d-aceb-e6d567156fa3] msg:Incoming request: PATCH /api/v1/friends/requests/6855608db247272ad68cc0bd/accept
+[error]: timestamp:2025-06-20 19:22:47 PM traceId:[6c43a386-ed72-4a3d-aceb-e6d567156fa3] msg: method: PATCH: /api/v1/friends/requests/6855608db247272ad68cc0bd/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-06-20 19:23:49 PM traceId:[4f1c0b88-30d5-4c7d-ad0d-28b69e3aabe5] msg:Incoming request: PATCH /api/v1/friends/requests/6855608db247272ad68cc0bd/accept
+[info]: timestamp:2025-06-20 19:23:56 PM traceId:[6437b9ae-aa7e-445b-a336-8ce5e46c1499] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:23:57 PM traceId:[6437b9ae-aa7e-445b-a336-8ce5e46c1499] msg: method: POST: /api/v1/posts msg: You want to tag someone who is not your friend
+[info]: timestamp:2025-06-20 19:25:33 PM traceId:[1a510698-2532-43a6-b54c-ff7ab48767fc] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:25:35 PM traceId:[1a510698-2532-43a6-b54c-ff7ab48767fc] msg: method: POST: /api/v1/posts msg: You want to tag someone who is not your friend. Please select only users who are your friends.
+[info]: timestamp:2025-06-20 19:28:38 PM traceId:[c5ad7e2b-c814-4d2e-8c05-19f26d45e31e] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:29:41 PM traceId:[0c376c0f-44a6-4b03-95e5-2c62bcd15746] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:29:42 PM traceId:[0c376c0f-44a6-4b03-95e5-2c62bcd15746] msg: method: POST: /api/v1/posts msg: The users you want to tag are not found. (6855608db247272ad68cc0ba)
+[info]: timestamp:2025-06-20 19:29:54 PM traceId:[9a1cd34d-eb2b-469f-9aeb-7d4d4bd66a85] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:29:55 PM traceId:[9a1cd34d-eb2b-469f-9aeb-7d4d4bd66a85] msg: method: POST: /api/v1/posts msg: The users you want to tag are not found. (6855608db247272ad68cc0ba)
+[info]: timestamp:2025-06-20 19:31:21 PM traceId:[269d1a9a-f3f1-45d8-9f29-e7dfe26f78eb] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:31:21 PM traceId:[269d1a9a-f3f1-45d8-9f29-e7dfe26f78eb] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 6855608db247272ad68cc0ba
+[info]: timestamp:2025-06-20 19:31:45 PM traceId:[1a75d586-06bb-4ac6-93f1-f697983cc631] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:31:46 PM traceId:[1a75d586-06bb-4ac6-93f1-f697983cc631] msg: method: POST: /api/v1/posts msg: You can't tags user multiple times in a post
+[info]: timestamp:2025-06-20 19:32:08 PM traceId:[9ecf8cb6-cb2b-4cba-90ce-d7f0553750b3] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:32:09 PM traceId:[9ecf8cb6-cb2b-4cba-90ce-d7f0553750b3] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[info]: timestamp:2025-06-20 19:33:57 PM traceId:[2fed34a8-84ac-4f0a-9eca-808de5249d4e] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:33:59 PM traceId:[2fed34a8-84ac-4f0a-9eca-808de5249d4e] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[info]: timestamp:2025-06-20 19:34:49 PM traceId:[323ccc16-08a7-48db-8b0f-315232f87416] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:35:17 PM traceId:[c7bc07ea-3f0e-479e-b0c2-09393779b74f] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:38:13 PM traceId:[3258d2db-c0fc-424f-b10a-14535a396316] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:38:15 PM traceId:[3258d2db-c0fc-424f-b10a-14535a396316] msg: method: POST: /api/v1/posts msg: You can not tag yourself in a post
+[info]: timestamp:2025-06-20 19:38:32 PM traceId:[9fee3b02-dc07-4e9f-ba50-8da5a8ad4711] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:38:35 PM traceId:[9fee3b02-dc07-4e9f-ba50-8da5a8ad4711] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post
+[info]: timestamp:2025-06-20 19:40:46 PM traceId:[299af143-2fdb-461e-a02d-dcdfcaf3885b] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:40:47 PM traceId:[299af143-2fdb-461e-a02d-dcdfcaf3885b] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[info]: timestamp:2025-06-20 19:50:57 PM traceId:[33933cb5-79c7-4a8a-99c2-f7f16b6bc5c1] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:50:57 PM traceId:[33933cb5-79c7-4a8a-99c2-f7f16b6bc5c1] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post
+[info]: timestamp:2025-06-20 19:51:23 PM traceId:[a2d2965e-032e-4cfa-afc2-4b3021218620] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:51:24 PM traceId:[a2d2965e-032e-4cfa-afc2-4b3021218620] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:51:33 PM traceId:[debf5653-c2ce-4fb4-b8d0-f0b8949f789a] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:51:33 PM traceId:[debf5653-c2ce-4fb4-b8d0-f0b8949f789a] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:51:35 PM traceId:[31e89ac2-e8a8-469a-9c53-c3e8edbd6cb6] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:51:35 PM traceId:[31e89ac2-e8a8-469a-9c53-c3e8edbd6cb6] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:51:56 PM traceId:[85e5d5ce-6cde-40bd-9af7-6d04d0b345f5] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:51:56 PM traceId:[85e5d5ce-6cde-40bd-9af7-6d04d0b345f5] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:52:14 PM traceId:[a32d6e49-fde8-4c76-a793-1c0e3feb3b36] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:52:14 PM traceId:[a32d6e49-fde8-4c76-a793-1c0e3feb3b36] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:53:37 PM traceId:[65b365be-8abf-4db7-871b-5bdccdc2923b] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-06-20 19:53:38 PM traceId:[65b365be-8abf-4db7-871b-5bdccdc2923b] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[info]: timestamp:2025-06-20 19:53:48 PM traceId:[c7194af2-84a2-4637-8384-7788efd87aa0] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:54:26 PM traceId:[55289d7c-bf63-4a3a-92d2-c0c6b4a9900a] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-06-20 19:55:10 PM traceId:[392ad4b4-c113-4fd6-b731-56f2093efe2d] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-06-20 20:01:25 PM traceId:[b7c01c29-11cb-44ce-86e3-f8f01df9ebcf] msg:Incoming request: GET /api/v1/posts/users/684a63d191955f96690f4db5
+[error]: timestamp:2025-06-20 20:01:26 PM traceId:[b7c01c29-11cb-44ce-86e3-f8f01df9ebcf] msg: method: GET: /api/v1/posts/users/684a63d191955f96690f4db5 msg: The user is not found
+[info]: timestamp:2025-06-20 20:01:38 PM traceId:[ff6a9a71-3af8-419e-b15a-c81155f0864b] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[error]: timestamp:2025-06-20 20:01:38 PM traceId:[ff6a9a71-3af8-419e-b15a-c81155f0864b] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: You can not see your own post by yourself
+[info]: timestamp:2025-06-20 20:01:51 PM traceId:[d6e127c4-71c0-4aad-a33b-74de9f1a810f] msg:Incoming request: GET /api/v1/posts/users/68554e92e1557582022c70fa
+[info]: timestamp:2025-06-20 20:02:08 PM traceId:[a979e378-1ac6-43da-ba8d-439005ff351e] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[error]: timestamp:2025-06-20 20:02:08 PM traceId:[a979e378-1ac6-43da-ba8d-439005ff351e] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: You can not see your own post by yourself
+[info]: timestamp:2025-06-20 20:02:15 PM traceId:[7faaf911-2cdb-4a65-852b-d1f3df9f25b3] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[error]: timestamp:2025-06-20 20:02:15 PM traceId:[7faaf911-2cdb-4a65-852b-d1f3df9f25b3] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: Access denied. Required role(s): user, admin, admin. Your role: superAdmin
+[info]: timestamp:2025-06-20 20:03:10 PM traceId:[169967a4-4891-43c0-9d79-21794d53410a] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-20 20:12:21 PM traceId:[d85e8abc-b631-4094-86de-c01574edb939] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-20 20:13:14 PM traceId:[3bccc35b-7b01-4550-a9aa-6401f4d48cee] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-20 20:16:33 PM traceId:[49dc9fa8-9c8c-4eb3-a4c8-7aa4a63a6101] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[error]: timestamp:2025-06-20 20:16:33 PM traceId:[49dc9fa8-9c8c-4eb3-a4c8-7aa4a63a6101] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: Access denied. Required role(s): user, admin, admin. Your role: superAdmin
+[info]: timestamp:2025-06-20 20:28:02 PM traceId:[efd7f0c9-190c-4e39-a92f-adbb1c2fd165] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-20 20:28:18 PM traceId:[e062a089-030d-4c1f-a38a-557228112fef] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-20 20:28:58 PM traceId:[b317dff6-9584-4ef0-b3dc-1c0261d3ea2f] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100

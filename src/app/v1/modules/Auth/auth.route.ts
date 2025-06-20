@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { AuthControllers } from './auth.controller';
 import { AuthValidations } from './auth.validation';
 import { USER_ROLE } from '../User/user.constant';
-import { authMiddleware, validateReq } from '../../middlewares';
+import { authorizeRoles, validateReq } from '../../middlewares';
 
 const router = Router();
 
@@ -29,7 +29,7 @@ router.post(
 router.post(
   '/change-password',
   validateReq.body(AuthValidations.changePasswordSchema),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   AuthControllers.changePassword,
 );
 
@@ -54,14 +54,14 @@ router.post(
 router.post(
   '/admin-registration',
   validateReq.body(AuthValidations.userRegistrationSchema),
-  authMiddleware(USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.SUPER_ADMIN),
   AuthControllers.createAdminBySuperAdmin,
 );
 
 router.patch(
   '/change-role',
   validateReq.body(AuthValidations.changeUserRoleSchema),
-  authMiddleware(USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.SUPER_ADMIN),
   AuthControllers.changeUserRole,
 );
 

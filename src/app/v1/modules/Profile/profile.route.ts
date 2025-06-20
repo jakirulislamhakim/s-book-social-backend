@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import {
-  authMiddleware,
+  authorizeRoles,
   parseFormDataToJSONMiddleware,
   validateReq,
 } from '../../middlewares';
@@ -13,7 +13,7 @@ const router = Router();
 
 router.get(
   '/me',
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   ProfileControllers.getMyProfile,
 );
 
@@ -25,7 +25,7 @@ router.patch(
   ]),
   parseFormDataToJSONMiddleware,
   validateReq.body(ProfileValidations.updateProfileSchema),
-  authMiddleware(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   ProfileControllers.updateMyProfile,
 );
 
