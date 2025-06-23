@@ -89,6 +89,13 @@ const acceptFriendRequest = async (
   requestId: string,
   receiverId: Types.ObjectId,
 ) => {
+  if (requestId === receiverId.toString()) {
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      'You can not accept friend request to yourself',
+    );
+  }
+
   const friendRequest = await Friend.findById(requestId)
     .select('status receiverId')
     .lean();
@@ -136,6 +143,13 @@ const rejectFriendRequest = async (
   requestId: string,
   receiverId: Types.ObjectId,
 ) => {
+  if (requestId === receiverId.toString()) {
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      'You can not reject friend request to yourself',
+    );
+  }
+
   const friendRequest = await Friend.findById(requestId)
     .select('status receiverId')
     .lean();
@@ -183,6 +197,13 @@ const undoFriendRequest = async (
   requestId: string,
   senderId: Types.ObjectId,
 ) => {
+  if (requestId === senderId.toString()) {
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      'You can not undo friend request to yourself',
+    );
+  }
+
   const friendRequest = await Friend.findById(requestId)
     .select('status senderId')
     .lean();
@@ -277,11 +298,26 @@ const getMyReceivedFriendRequests = async (
   const receivedFriendRequests = results[0].paginatedResults;
   const totalCount = results[0].totalCount[0]?.count ?? 0;
 
+  const totalPages = Math.ceil(totalCount / limit);
+
+  if (totalPages > 0 && page > totalPages) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'The requested page number does not exist. Please check the pagination parameters.',
+    );
+  }
+  if (totalPages === 0 && page > 1) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'No results found. The requested page number does not exist.',
+    );
+  }
+
   const pagination: TPagination = {
     currentPage: page,
     itemsPerPage: limit,
     totalItems: totalCount,
-    totalPages: Math.ceil(totalCount / limit),
+    totalPages,
   };
 
   return {
@@ -350,11 +386,26 @@ const getMySentFriendRequests = async (
   const sentFriendRequests = result[0].paginatedResults;
   const totalCount = result[0].totalCount[0]?.count ?? 0;
 
+  const totalPages = Math.ceil(totalCount / limit);
+
+  if (totalPages > 0 && page > totalPages) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'The requested page number does not exist. Please check the pagination parameters.',
+    );
+  }
+  if (totalPages === 0 && page > 1) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'No results found. The requested page number does not exist.',
+    );
+  }
+
   const pagination: TPagination = {
     currentPage: page,
     itemsPerPage: limit,
     totalItems: totalCount,
-    totalPages: Math.ceil(totalCount / limit),
+    totalPages,
   };
 
   return {
@@ -445,11 +496,27 @@ const getMyFriends = async (
   const friends = result[0].paginatedResults;
 
   const totalCount = result[0].totalCount[0]?.count ?? 0;
+
+  const totalPages = Math.ceil(totalCount / limit);
+
+  if (totalPages > 0 && page > totalPages) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'The requested page number does not exist. Please check the pagination parameters.',
+    );
+  }
+  if (totalPages === 0 && page > 1) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      'No results found. The requested page number does not exist.',
+    );
+  }
+
   const pagination: TPagination = {
     currentPage: query.page,
     itemsPerPage: query.limit,
     totalItems: totalCount,
-    totalPages: Math.ceil(totalCount / query.limit),
+    totalPages,
   };
 
   return {
@@ -483,7 +550,10 @@ const deleteFriendByUserId = async (
   }
 
   if (hasFriend.status !== FRIEND_STATUS.ACCEPTED) {
-    throw new AppError(httpStatus.BAD_REQUEST, 'The user is not your friend');
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      'The user you want to delete from your friend list is not your friend',
+    );
   }
 
   await Friend.findByIdAndDelete(hasFriend._id);

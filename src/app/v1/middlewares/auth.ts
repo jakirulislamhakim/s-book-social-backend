@@ -9,7 +9,13 @@ import { USER_STATUS } from '../modules/User/user.constant';
 export const authorizeRoles = (...requiredRoles: TUserRole[]) => {
   if (requiredRoles.length === 0) {
     throw new Error(
-      '⚠ At least one role is required to use this authMiddleware. ⚠',
+      '⚠ At least one role is required to use this Authorization Middleware. ⚠',
+    );
+  }
+
+  if (new Set(requiredRoles).size !== requiredRoles.length) {
+    throw new Error(
+      '⚠ Duplicate roles are not allowed in Authorization Middleware. ⚠',
     );
   }
 

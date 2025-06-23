@@ -126,7 +126,7 @@ class QueryBuilder<T> {
 
     if (totalPages < currentPage) {
       throw new AppError(
-        httpStatus.BAD_REQUEST,
+        httpStatus.NOT_FOUND,
         `Requested page number (${currentPage}) exceeds the total available pages (${totalPages}). Please provide a valid page number.`,
       );
     }

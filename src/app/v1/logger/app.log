@@ -925,3 +925,395 @@
 [info]: timestamp:2025-06-20 20:28:02 PM traceId:[efd7f0c9-190c-4e39-a92f-adbb1c2fd165] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
 [info]: timestamp:2025-06-20 20:28:18 PM traceId:[e062a089-030d-4c1f-a38a-557228112fef] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
 [info]: timestamp:2025-06-20 20:28:58 PM traceId:[b317dff6-9584-4ef0-b3dc-1c0261d3ea2f] msg:Incoming request: GET /api/v1/posts/users/68554eefe1557582022c7100
+[info]: timestamp:2025-06-21 12:36:16 PM traceId:[20715ddc-1c5a-4043-832f-2d50ab4b2104] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-21 12:37:12 PM traceId:[a8c104d0-1988-4952-b435-9a868e7635f5] msg:Incoming request: GET /api/v1/friends/requests/received?page=2
+[info]: timestamp:2025-06-21 13:00:26 PM traceId:[baae647a-c309-494e-ad76-6ddd4ca0731f] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-21 13:02:03 PM traceId:[c307df1c-f8b5-405c-b685-9c2b18a11ace] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-21 13:26:16 PM traceId:[cd7b341d-6bb5-442d-a793-6131307fb1ec] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-21 13:27:18 PM traceId:[923e7faa-ef39-40f0-9d45-27a7ae831d06] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-21 13:27:55 PM traceId:[65315814-58f9-4128-b72c-249b39f5701f] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-06-21 13:27:56 PM traceId:[65315814-58f9-4128-b72c-249b39f5701f] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-06-21 13:28:06 PM traceId:[088ca7fa-a198-4309-ae08-ecfa189b0052] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-06-21 13:28:18 PM traceId:[e965c740-7d54-419f-9c73-6928281485cf] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1
+[info]: timestamp:2025-06-21 13:28:41 PM traceId:[d5f810f4-e266-45f2-99b0-ba5136073fa0] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1
+[error]: timestamp:2025-06-21 13:28:41 PM traceId:[d5f810f4-e266-45f2-99b0-ba5136073fa0] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-21 13:29:03 PM traceId:[9b4822ee-e9bd-4335-b0ec-962450fdac2d] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1
+[info]: timestamp:2025-06-21 13:29:08 PM traceId:[e2b3305c-f085-4a92-9d80-9a896b06ff3d] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=asc
+[error]: timestamp:2025-06-21 13:29:08 PM traceId:[e2b3305c-f085-4a92-9d80-9a896b06ff3d] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=asc msg: Validation failed!
+[info]: timestamp:2025-06-21 13:29:52 PM traceId:[9da6ba42-a36b-45f8-b188-6bf3098f3fd7] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-06-21 13:30:14 PM traceId:[6c5d8562-c35a-4ed4-a817-6fbf0bf94cf2] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-21 13:30:26 PM traceId:[a0470deb-6f75-4f55-b6a6-43d811062cce] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-06-21 13:31:34 PM traceId:[b4890869-eb77-4cea-b4b7-62db86b571f1] msg:Incoming request: GET /api/v1/friends/requests/sent
+[error]: timestamp:2025-06-21 13:31:34 PM traceId:[b4890869-eb77-4cea-b4b7-62db86b571f1] msg: method: GET: /api/v1/friends/requests/sent msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-21 13:31:52 PM traceId:[83ba9615-59b9-44ee-a851-2eb42ec76d19] msg:Incoming request: GET /api/v1/friends/requests/sent?pages=2
+[info]: timestamp:2025-06-21 13:32:10 PM traceId:[28f637f7-a4d7-4e9f-9b06-ac339c24e1c0] msg:Incoming request: GET /api/v1/friends/requests/sent?pages=2
+[info]: timestamp:2025-06-21 13:32:18 PM traceId:[10847743-37ca-4522-b82e-3fae07552dc0] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2
+[info]: timestamp:2025-06-21 13:32:35 PM traceId:[b48ccb5d-33d5-4b28-b41d-95c737f30102] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2&limit=1
+[info]: timestamp:2025-06-21 13:33:23 PM traceId:[be3dd28a-466d-4063-9008-cb3ab6b1a2d9] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2&limit=1&sort=asc
+[error]: timestamp:2025-06-21 13:33:23 PM traceId:[be3dd28a-466d-4063-9008-cb3ab6b1a2d9] msg: method: GET: /api/v1/friends/requests/sent?page=2&limit=1&sort=asc msg: Validation failed!
+[info]: timestamp:2025-06-21 13:33:57 PM traceId:[54b721ca-7059-4568-b79e-dbe7002cb181] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2&limit=1&sort=1
+[info]: timestamp:2025-06-21 13:34:37 PM traceId:[faeb0687-20f1-40a0-960d-75120cb2aa06] msg:Incoming request: GET /api/v1/friends?sort=1
+[info]: timestamp:2025-06-21 13:34:51 PM traceId:[cb87b6eb-e358-4e4c-a1c1-8b1ac3ca17de] msg:Incoming request: GET /api/v1/friends?sort=asc
+[error]: timestamp:2025-06-21 13:34:51 PM traceId:[cb87b6eb-e358-4e4c-a1c1-8b1ac3ca17de] msg: method: GET: /api/v1/friends?sort=asc msg: Validation failed!
+[info]: timestamp:2025-06-21 13:43:16 PM traceId:[054b8da3-714a-43b8-af0b-290b39e2a647] msg:Incoming request: DELETE /api/v1/friends/6856588ed16e2f9e66721b13
+[error]: timestamp:2025-06-21 13:43:17 PM traceId:[054b8da3-714a-43b8-af0b-290b39e2a647] msg: method: DELETE: /api/v1/friends/6856588ed16e2f9e66721b13 msg: The user you want to delete from your friend list is not found
+[info]: timestamp:2025-06-21 13:43:30 PM traceId:[1246468f-0284-4b36-b422-a5c279aae38b] msg:Incoming request: DELETE /api/v1/friends/68554d5ae1557582022c70df
+[error]: timestamp:2025-06-21 13:43:31 PM traceId:[1246468f-0284-4b36-b422-a5c279aae38b] msg: method: DELETE: /api/v1/friends/68554d5ae1557582022c70df msg: You cannot delete yourself
+[info]: timestamp:2025-06-21 13:43:39 PM traceId:[c3f62bcb-331d-426b-8e47-51222eba1ff2] msg:Incoming request: DELETE /api/v1/friends/68554d5ae1557582022c70df
+[error]: timestamp:2025-06-21 13:43:40 PM traceId:[c3f62bcb-331d-426b-8e47-51222eba1ff2] msg: method: DELETE: /api/v1/friends/68554d5ae1557582022c70df msg: The user is not your friend
+[info]: timestamp:2025-06-21 13:44:34 PM traceId:[3e027f45-6619-4978-b3d0-382aae915f3d] msg:Incoming request: DELETE /api/v1/friends/68554d5ae1557582022c70df
+[error]: timestamp:2025-06-21 13:44:35 PM traceId:[3e027f45-6619-4978-b3d0-382aae915f3d] msg: method: DELETE: /api/v1/friends/68554d5ae1557582022c70df msg: The user you want to delete is not a friend
+[info]: timestamp:2025-06-21 13:46:01 PM traceId:[5f2b41b6-fd11-4bfd-8f98-c30b1f34731d] msg:Incoming request: DELETE /api/v1/friends/68554d5ae1557582022c70df
+[error]: timestamp:2025-06-21 13:46:01 PM traceId:[5f2b41b6-fd11-4bfd-8f98-c30b1f34731d] msg: method: DELETE: /api/v1/friends/68554d5ae1557582022c70df msg: The user you want to delete from your friend list is not your friend
+[info]: timestamp:2025-06-21 19:47:32 PM traceId:[7a9e62dd-4b60-4b91-9fe1-4c23889616a5] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:47:32 PM traceId:[7a9e62dd-4b60-4b91-9fe1-4c23889616a5] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-21 19:48:05 PM traceId:[d0e239c3-4499-417f-8eb0-922705cbb9f3] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:48:05 PM traceId:[d0e239c3-4499-417f-8eb0-922705cbb9f3] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-21 19:48:13 PM traceId:[25aec288-d000-433e-a296-648d5ee11ec5] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:48:13 PM traceId:[25aec288-d000-433e-a296-648d5ee11ec5] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-21 19:48:45 PM traceId:[9a8205fb-e08d-48ce-ac6e-6cf8665b1f0b] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:48:45 PM traceId:[9a8205fb-e08d-48ce-ac6e-6cf8665b1f0b] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-21 19:48:56 PM traceId:[74efbe62-fe3e-4fb5-b069-e027fe5fcb03] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:48:56 PM traceId:[74efbe62-fe3e-4fb5-b069-e027fe5fcb03] msg: method: PATCH: /api/v1/reactions msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-21 19:52:57 PM traceId:[5b33f0a9-1e29-4d73-80fa-bd4447291791] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:52:57 PM traceId:[5b33f0a9-1e29-4d73-80fa-bd4447291791] msg: method: PATCH: /api/v1/reactions msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-21 19:53:05 PM traceId:[8400435e-53f7-4b28-973e-17b1e010e70a] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:53:06 PM traceId:[8400435e-53f7-4b28-973e-17b1e010e70a] msg: method: PATCH: /api/v1/reactions msg: The post is not found !
+[info]: timestamp:2025-06-21 19:53:36 PM traceId:[8a0d5c23-fab1-4672-a64f-900f1c6b6dfe] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:53:38 PM traceId:[8a0d5c23-fab1-4672-a64f-900f1c6b6dfe] msg: method: PATCH: /api/v1/reactions msg: You haven't reacted to this post yet.
+[info]: timestamp:2025-06-21 19:54:25 PM traceId:[f101f5d7-861e-4c3e-8b96-11bc33b369ef] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 19:54:29 PM traceId:[f101f5d7-861e-4c3e-8b96-11bc33b369ef] msg: method: PATCH: /api/v1/reactions msg: You haven't reacted to this post yet. Please react first
+[info]: timestamp:2025-06-21 19:56:05 PM traceId:[0264a025-5151-43c2-8cb1-31267526440c] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-21 19:56:27 PM traceId:[00e93778-1316-45a7-b43a-bc36c479ea91] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-21 19:57:38 PM traceId:[058d4b54-4b3f-4474-9618-caa8f372d233] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-21 19:57:44 PM traceId:[d3a4d13e-eee6-438d-928a-cc647bdac770] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-21 19:58:17 PM traceId:[48b8d23c-2d95-420c-9b3d-d314ceb04ed8] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-21 20:00:27 PM traceId:[2bd0d524-ceb1-4b4d-a132-6629d8cd3c1f] msg:Incoming request: PATCH /api/v1/reactions
+[error]: timestamp:2025-06-21 20:00:28 PM traceId:[2bd0d524-ceb1-4b4d-a132-6629d8cd3c1f] msg: method: PATCH: /api/v1/reactions msg: You haven't reacted to this post yet. Please react first
+[info]: timestamp:2025-06-21 20:00:40 PM traceId:[16ddb9b5-0fc5-4559-997a-e1900e1850d6] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:43:37 AM traceId:[d8da8029-5d24-4974-8687-23652ed5fc91] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:43:48 AM traceId:[6e9e6105-b952-45e9-8a8e-2e1b07d8dd7d] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:44:38 AM traceId:[80bfa07c-31c3-4748-99b5-3968722f7f60] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:44:45 AM traceId:[b7516b70-1111-4e71-bdad-697cd5e107e6] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:45:03 AM traceId:[f58276c7-bc7e-447c-a26c-83e8064fe17e] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 01:46:16 AM traceId:[6b7a87db-e30d-4330-85da-e1f96937e41a] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 02:02:36 AM traceId:[dca27cf4-b741-482f-987b-e8eb89bf0578] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 02:07:53 AM traceId:[f8907b54-a250-4020-b2be-331e063ea013] msg:Incoming request: GET /api/v1/reactions
+[info]: timestamp:2025-06-22 02:07:58 AM traceId:[ce72ecff-f9b6-451a-b7ac-d80497526a03] msg:Incoming request: GET /api/v1/reactions?
+[info]: timestamp:2025-06-22 02:08:05 AM traceId:[b1a8a459-2c01-4a30-9dd4-a746579c0b84] msg:Incoming request: GET /api/v1/reactions?post=get
+[info]: timestamp:2025-06-22 02:08:11 AM traceId:[642e25e5-ff42-41d3-a508-ab52340764e9] msg:Incoming request: GET /api/v1/reactions?type
+[info]: timestamp:2025-06-22 02:12:46 AM traceId:[423c4c52-10ea-41f2-a47b-b5aa2e0c5545] msg:Incoming request: GET /api/v1/reactions?type=posts
+[error]: timestamp:2025-06-22 02:12:46 AM traceId:[423c4c52-10ea-41f2-a47b-b5aa2e0c5545] msg: method: GET: /api/v1/reactions?type=posts msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:52 AM traceId:[741ef9f6-b158-41ce-bc6a-a61b8402f3a2] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:52 AM traceId:[741ef9f6-b158-41ce-bc6a-a61b8402f3a2] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:54 AM traceId:[5e1da7ad-0e22-4a19-9431-654493ee4477] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:54 AM traceId:[5e1da7ad-0e22-4a19-9431-654493ee4477] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:54 AM traceId:[8d6be062-dd24-4582-8c20-1c1ca4c7a001] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:54 AM traceId:[8d6be062-dd24-4582-8c20-1c1ca4c7a001] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:55 AM traceId:[a3b15d60-4f54-4929-9302-5c6375b6ec8e] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:55 AM traceId:[a3b15d60-4f54-4929-9302-5c6375b6ec8e] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:56 AM traceId:[dcffc1dc-b0a8-4c18-a2a9-17d4df446d3e] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:56 AM traceId:[dcffc1dc-b0a8-4c18-a2a9-17d4df446d3e] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:12:57 AM traceId:[76b3e334-a17b-41a1-9a3c-6c069a5b1454] msg:Incoming request: GET /api/v1/reactions
+[error]: timestamp:2025-06-22 02:12:57 AM traceId:[76b3e334-a17b-41a1-9a3c-6c069a5b1454] msg: method: GET: /api/v1/reactions msg: Validation failed!
+[info]: timestamp:2025-06-22 02:13:34 AM traceId:[9ff4345c-eb43-4244-9798-77c3e2b4f278] msg:Incoming request: GET /api/v1/reactions?typetargetType=post
+[error]: timestamp:2025-06-22 02:13:34 AM traceId:[9ff4345c-eb43-4244-9798-77c3e2b4f278] msg: method: GET: /api/v1/reactions?typetargetType=post msg: Validation failed!
+[info]: timestamp:2025-06-22 02:13:48 AM traceId:[e1467c82-1561-4ad2-83fe-3f116ecfbad5] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=aedas
+[error]: timestamp:2025-06-22 02:13:48 AM traceId:[e1467c82-1561-4ad2-83fe-3f116ecfbad5] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=aedas msg: Validation failed!
+[info]: timestamp:2025-06-22 02:13:59 AM traceId:[6603e327-33d1-40a0-8ebd-b8625bf5c525] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=aedas
+[error]: timestamp:2025-06-22 02:13:59 AM traceId:[6603e327-33d1-40a0-8ebd-b8625bf5c525] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=aedas msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:00 AM traceId:[530065a5-7f77-4b4c-a8eb-5372e7c4a59a] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=aedas
+[error]: timestamp:2025-06-22 02:14:00 AM traceId:[530065a5-7f77-4b4c-a8eb-5372e7c4a59a] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=aedas msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:01 AM traceId:[9ac480b8-c992-4182-b53f-e196a3fd1a4a] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=aedas
+[error]: timestamp:2025-06-22 02:14:01 AM traceId:[9ac480b8-c992-4182-b53f-e196a3fd1a4a] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=aedas msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:14 AM traceId:[b21ad8e1-c7f8-4fb2-bfff-277331ac0aa0] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=targetId
+[error]: timestamp:2025-06-22 02:14:14 AM traceId:[b21ad8e1-c7f8-4fb2-bfff-277331ac0aa0] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=targetId msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:25 AM traceId:[4fc7639e-42dd-406e-bffc-b489fd0ade21] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:14:25 AM traceId:[4fc7639e-42dd-406e-bffc-b489fd0ade21] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:41 AM traceId:[d0e2be84-8d7f-4ab1-a74e-2528d3cf1d97] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:14:41 AM traceId:[d0e2be84-8d7f-4ab1-a74e-2528d3cf1d97] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:42 AM traceId:[c419876b-e731-4424-aabe-c1adfa6c5e51] msg:Incoming request: GET /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:14:42 AM traceId:[c419876b-e731-4424-aabe-c1adfa6c5e51] msg: method: GET: /api/v1/reactions?typetargetType=post&targetId=685567ed1be5189a030f685d msg: Validation failed!
+[info]: timestamp:2025-06-22 02:14:50 AM traceId:[caca93ba-2769-4f02-a832-05dd422dcc02] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:14:50 AM traceId:[caca93ba-2769-4f02-a832-05dd422dcc02] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-22 02:14:58 AM traceId:[80f0666b-bede-48ab-83e7-090b9d9a7120] msg:Incoming request: GET /api/v1/reactions?targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:14:58 AM traceId:[80f0666b-bede-48ab-83e7-090b9d9a7120] msg: method: GET: /api/v1/reactions?targetId=685567ed1be5189a030f685d msg: Validation failed!
+[info]: timestamp:2025-06-22 02:15:17 AM traceId:[df0a48ab-e0b0-46c3-adde-7fa93f0bd9e0] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 02:15:17 AM traceId:[df0a48ab-e0b0-46c3-adde-7fa93f0bd9e0] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-06-22 02:15:53 AM traceId:[97e4f305-579f-42f5-ba86-679141a5d6e9] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 02:22:23 AM traceId:[c0ca4e65-6c2c-48cc-9929-cfd3d0ba326d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 02:22:35 AM traceId:[16d821a3-3d54-4145-bfcc-bdaffff099df] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 02:22:39 AM traceId:[9300c1a9-b0cf-4576-ae03-c4e511ee678a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:24:15 AM traceId:[1e2b4c11-4fe4-4455-9ecd-9c3bf2d893ca] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:24:32 AM traceId:[a1c384b1-a340-463b-83b7-29b4dc6cb942] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:24:55 AM traceId:[29ce168d-daa9-4ccd-b98e-ad3b88916a89] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:25:12 AM traceId:[f329c95a-7a13-495d-a07a-04b6da10278c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:25:33 AM traceId:[676bd42a-7c6f-4973-b4e6-58b3dc6c1589] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:25:48 AM traceId:[e01d3db4-2adb-441b-a3f2-0878abcf7059] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:32:34 AM traceId:[08d11030-df8f-4881-9569-50780b67cc75] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 02:32:38 AM traceId:[40037a7b-d9cb-4b21-b4ea-8c499b72efb0] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoes
+[info]: timestamp:2025-06-22 02:32:43 AM traceId:[1076af3a-f495-406d-9472-ca34c93a897d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 02:32:48 AM traceId:[86187c5b-19bb-4c47-9324-679258550b15] msg:Incoming request: GET /api/v1/reactions?targetType=post&type=love
+[info]: timestamp:2025-06-22 02:32:52 AM traceId:[b50f8fd3-6ce2-4bf1-9bdb-da02160a3a70] msg:Incoming request: GET /api/v1/reactions?targetType=post
+[info]: timestamp:2025-06-22 02:33:12 AM traceId:[f24de0ab-3336-42aa-be08-041449ea47e5] msg:Incoming request: GET /api/v1/reactions?targetType=post
+[error]: timestamp:2025-06-22 02:33:12 AM traceId:[f24de0ab-3336-42aa-be08-041449ea47e5] msg: method: GET: /api/v1/reactions?targetType=post msg: Validation failed!
+[info]: timestamp:2025-06-22 02:33:15 AM traceId:[5907b376-7bba-4ae3-95f7-11ba018c6aca] msg:Incoming request: GET /api/v1/reactions?targetType=post
+[error]: timestamp:2025-06-22 02:33:15 AM traceId:[5907b376-7bba-4ae3-95f7-11ba018c6aca] msg: method: GET: /api/v1/reactions?targetType=post msg: Validation failed!
+[info]: timestamp:2025-06-22 02:33:18 AM traceId:[30d03a83-39bf-4ade-a7e1-7d13bb959169] msg:Incoming request: GET /api/v1/reactions?targetType=post&type=love
+[error]: timestamp:2025-06-22 02:33:18 AM traceId:[30d03a83-39bf-4ade-a7e1-7d13bb959169] msg: method: GET: /api/v1/reactions?targetType=post&type=love msg: Validation failed!
+[info]: timestamp:2025-06-22 02:33:22 AM traceId:[3c47dfc2-fe30-4c88-bdeb-b26cb9d2066a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 02:36:04 AM traceId:[955a5216-a112-4adc-a8db-463e8094659d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&searchTerm=o
+[info]: timestamp:2025-06-22 02:36:36 AM traceId:[da7f8e12-a0a4-4d7f-9597-1c057b9dbde7] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&searchTerm=o
+[info]: timestamp:2025-06-22 02:39:43 AM traceId:[e28f653f-cd69-4b58-bfc8-846580340404] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 02:39:49 AM traceId:[98454ccd-176d-43de-9dd9-bba3c251cfa9] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 02:51:11 AM traceId:[73001421-39e0-402b-80b0-c44d812bc874] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 02:51:22 AM traceId:[129a82c0-06cc-49be-83c0-0f3fdb72c0e4] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:55:21 AM traceId:[c4db6c8e-fff0-4c8e-89a9-fd72af975866] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:55:31 AM traceId:[9b1af667-c8ee-4b93-86c5-b4c4ace5a73b] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 11:55:46 AM traceId:[5ca3320b-b3f9-4ece-9301-1f254e04b3c1] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:56:57 AM traceId:[0e0f0f7c-b215-40b7-93a3-5f1d4744f883] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 11:56:57 AM traceId:[0e0f0f7c-b215-40b7-93a3-5f1d4744f883] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-22 11:57:08 AM traceId:[2d01b630-2691-47de-8b85-da23b0f69d5c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 11:57:09 AM traceId:[2d01b630-2691-47de-8b85-da23b0f69d5c] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Account is currently deactivated. Please restore your account or contact support.
+[info]: timestamp:2025-06-22 11:57:42 AM traceId:[5c5e2fbf-6249-453a-85c0-8b98a9c2daf0] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 11:58:08 AM traceId:[28131775-aa03-4e18-8322-2949b44f8f9b] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 11:58:13 AM traceId:[bd05c98c-1131-481a-ae69-d2c8052de9f0] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:58:38 AM traceId:[c6e25dde-5657-4463-9c84-35305dfe8e2c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:58:42 AM traceId:[d68d75b6-3aa1-46ae-bd49-3fae29eadd21] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:59:33 AM traceId:[1dc772ee-4728-450e-a135-58bfc28cb502] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 11:59:51 AM traceId:[4a1ab082-41b7-4032-8c9b-ab44990a91f5] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:00:16 PM traceId:[284c98c3-8c1c-41c5-bf9f-bf52b99bc704] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:00:53 PM traceId:[61e880d4-2326-4748-afb1-eaa1a5101104] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:00:59 PM traceId:[18b374d0-51b2-4cb7-a2fc-390def6bc19a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:10:40 PM traceId:[fffe10f5-696e-4c78-bd47-84c954813270] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:11:32 PM traceId:[55499057-7dbb-4492-8af1-40424803e1d5] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:11:40 PM traceId:[3ab9341c-a0c2-4a3d-8b40-bcb890869483] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:11:43 PM traceId:[27379555-3add-44b8-8583-b57c5df7af32] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:12:48 PM traceId:[bcb74559-e050-4547-8785-3af7871506ef] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:15:23 PM traceId:[801b77d8-4a23-46c8-88e1-fa9700d2f256] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:15:32 PM traceId:[958d5708-6af2-41bb-beb1-2156fdaf9ce6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:15:47 PM traceId:[443e9766-289c-417a-b1f0-f43a4846154b] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:15:51 PM traceId:[a87eae13-f974-4739-87ee-31f9c4de5533] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:16:49 PM traceId:[e4dad514-1d68-4f66-8065-31b8f7ccd9fb] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:16:53 PM traceId:[d68208ad-0077-423a-aff1-7080fe04a2ff] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:17:54 PM traceId:[e41898dd-5c33-4108-88db-a40d900d2cc3] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:18:31 PM traceId:[2bf014f1-8151-4404-aba9-899c86bbfeb6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:20:46 PM traceId:[754a0ed1-e39d-4389-afaa-401faf1a06f3] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 12:20:47 PM traceId:[754a0ed1-e39d-4389-afaa-401faf1a06f3] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot set property _id of [object Object] which has only a getter
+[info]: timestamp:2025-06-22 12:21:04 PM traceId:[0504a1b7-a0f8-4814-81e1-8fc6634f1a2d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:25:27 PM traceId:[da283345-0b86-40eb-acc5-6292e4f0cedc] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:26:04 PM traceId:[f21911e2-834a-43fc-8dfd-776cb375f064] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:26:55 PM traceId:[e20a583a-b7ab-4eb6-b6c4-fbe37bb0df34] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 12:27:40 PM traceId:[2fddc89f-678c-4a20-a624-4cabb45cae2a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 12:27:40 PM traceId:[2fddc89f-678c-4a20-a624-4cabb45cae2a] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot populate path `userId.userId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+[info]: timestamp:2025-06-22 12:28:07 PM traceId:[d4de65b8-9448-4af4-839f-155d9ee16497] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 12:28:08 PM traceId:[d4de65b8-9448-4af4-839f-155d9ee16497] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot populate path `userId.user._id` because it is not in your schema. Set the `strictPopulate` option to false to override.
+[info]: timestamp:2025-06-22 12:28:25 PM traceId:[5484bd56-dac1-4429-80f5-0f7c99cf0e2d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 12:28:27 PM traceId:[5484bd56-dac1-4429-80f5-0f7c99cf0e2d] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot populate path `userId.userId._id` because it is not in your schema. Set the `strictPopulate` option to false to override.
+[info]: timestamp:2025-06-22 12:28:47 PM traceId:[2ca1a61a-f0bf-411b-a0bc-f55a6e14cbef] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:14:06 PM traceId:[074e0d03-92c4-41b2-8848-c7fc35510687] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:15:02 PM traceId:[c2e38ca1-361f-4d1b-ac94-5ddb01a600c3] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 15:15:03 PM traceId:[c2e38ca1-361f-4d1b-ac94-5ddb01a600c3] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot populate path `userId.userId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+[info]: timestamp:2025-06-22 15:15:36 PM traceId:[cdfa5e7b-e374-49dc-885a-4b0a5e7a0681] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:18:58 PM traceId:[f5694b54-7c73-48a4-b1ee-442179a197b4] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 15:18:59 PM traceId:[f5694b54-7c73-48a4-b1ee-442179a197b4] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading 'length')
+[info]: timestamp:2025-06-22 15:19:20 PM traceId:[29dab39f-3b81-4510-b8cd-d1c0c181f151] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 15:19:22 PM traceId:[29dab39f-3b81-4510-b8cd-d1c0c181f151] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading 'length')
+[info]: timestamp:2025-06-22 15:19:41 PM traceId:[5def145e-3a3d-4e17-bc40-d48cdb61f858] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 15:19:44 PM traceId:[5def145e-3a3d-4e17-bc40-d48cdb61f858] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot destructure property 'reactions' of '(intermediate value)' as it is undefined.
+[info]: timestamp:2025-06-22 15:27:53 PM traceId:[aaf68f68-f8d2-483d-b675-815cf6e31635] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:28:15 PM traceId:[b2b2ee9f-f430-49f7-8d5e-bc49779a26ac] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 15:28:24 PM traceId:[7dd5724d-6c3a-4b8c-a240-874daa1af086] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=haha
+[info]: timestamp:2025-06-22 15:28:40 PM traceId:[53914b0a-61bd-4452-94e4-4105191e4a0f] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=haha
+[info]: timestamp:2025-06-22 15:28:56 PM traceId:[f8befe03-4c9e-49dc-a215-ee24dea0782a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=type
+[info]: timestamp:2025-06-22 15:29:05 PM traceId:[d5f024ab-c5de-4e10-8970-b090df521292] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 15:29:26 PM traceId:[6600e533-1961-4847-ad45-54c7b468df5f] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:29:34 PM traceId:[3fe00739-143a-4044-9bd1-b436bd0c15f7] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:30:17 PM traceId:[6d55570f-00fc-4b41-bf7f-1e5254a3a72c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:31:10 PM traceId:[89329596-e3bb-4e9d-b4f4-2b3f3c22ac76] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:48:24 PM traceId:[ad789c59-570a-4f7f-92e5-26173c6847c6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:50:16 PM traceId:[bce65e20-8a51-471e-aac8-cbf2b00a5dcf] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:52:13 PM traceId:[5c2cedf7-c72e-488e-bad7-9a0f2c5878dc] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:52:51 PM traceId:[30d0b894-042c-42d0-a2e8-dcf1194ce9de] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:57:25 PM traceId:[737391df-d241-4564-b75b-caa468079149] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:58:10 PM traceId:[207f2330-66d2-4d43-89dd-4e72206ac2ad] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:58:33 PM traceId:[45c62f3e-05ea-49ca-baeb-77397e833a8a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:58:36 PM traceId:[d857c6e8-9329-4873-b340-a55514ae6fa6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:59:10 PM traceId:[1666e2a9-6772-439c-bc97-39c54ca0c957] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:59:14 PM traceId:[7dc7d38a-c26e-46c1-a9f3-0dc36d4953fe] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 15:59:27 PM traceId:[103ae651-9776-4314-beff-eb2086d75415] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:07:40 PM traceId:[052748ab-62cb-4117-a816-72ef7dec9963] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:11:32 PM traceId:[8e022232-9d94-4ddb-bf0f-7c75aa662eab] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:23:50 PM traceId:[b37a3eaf-8138-4acd-9b3b-810df9873d0c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 16:23:52 PM traceId:[b37a3eaf-8138-4acd-9b3b-810df9873d0c] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-22 16:24:32 PM traceId:[71a6ed84-2967-4195-b754-a13b9153142e] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 16:24:34 PM traceId:[71a6ed84-2967-4195-b754-a13b9153142e] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-22 16:25:59 PM traceId:[2b3d3a4e-3ac9-4daf-8abb-f505756e09ad] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 16:26:00 PM traceId:[2b3d3a4e-3ac9-4daf-8abb-f505756e09ad] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-22 16:26:38 PM traceId:[42b93a14-e10e-42bf-b386-f62b3a068682] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 16:26:39 PM traceId:[42b93a14-e10e-42bf-b386-f62b3a068682] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading '0')
+[info]: timestamp:2025-06-22 16:27:27 PM traceId:[0b21c1c7-ff23-4f74-929d-0aef5c6c74ba] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:27:46 PM traceId:[5d23a46a-5fbe-4303-99b0-8bb29801387f] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:36:44 PM traceId:[e93915e5-f713-4161-a3f9-484a146c6647] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 16:38:24 PM traceId:[fce235c6-de15-455b-a3c3-e6aeaf3cb9c1] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:37:04 PM traceId:[0f787281-2dc3-4622-8b18-e3d2ce03906d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 19:37:10 PM traceId:[bc7e1371-7b5b-4ab3-8a7b-d8348a602431] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:38:07 PM traceId:[a6aa2e54-3d35-4cd3-9869-4d010926dd38] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:38:15 PM traceId:[50c60a79-e6ec-407b-b1ec-ca8ffb593c48] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:38:46 PM traceId:[42f4f2f7-49d5-41f3-8340-f6e8f2d7fed3] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:38:52 PM traceId:[46c9549e-27a4-4e04-870d-fe3e4603d726] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 19:38:59 PM traceId:[baa4c69c-6343-45b2-b1b4-b36c6fb6d203] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:39:04 PM traceId:[21d3794f-f261-44ce-ab49-f40db404039a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:39:09 PM traceId:[8d81dba0-960c-452a-b7b8-ed6914d9df6f] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=sho
+[error]: timestamp:2025-06-22 19:39:09 PM traceId:[8d81dba0-960c-452a-b7b8-ed6914d9df6f] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=sho msg: Validation failed!
+[info]: timestamp:2025-06-22 19:40:22 PM traceId:[0483e96d-cf2b-49ae-b904-a9121a1076d2] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=shoe
+[info]: timestamp:2025-06-22 19:40:31 PM traceId:[5d1093ec-0feb-4538-8bdf-17f1a420a1ff] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 19:40:41 PM traceId:[981dc136-89d2-4a53-8da9-e222aae267bb] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=2
+[info]: timestamp:2025-06-22 19:41:02 PM traceId:[a23175e5-0206-4680-a064-ec57044365da] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=2&limit=1
+[info]: timestamp:2025-06-22 19:42:23 PM traceId:[59047b6b-bd7c-459e-8c67-4c3028ca5a89] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=2&limit=1
+[info]: timestamp:2025-06-22 19:42:29 PM traceId:[76337f43-2a2c-4dc9-ade7-cd0b2ef21c33] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=3&limit=1
+[error]: timestamp:2025-06-22 19:42:29 PM traceId:[76337f43-2a2c-4dc9-ade7-cd0b2ef21c33] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=3&limit=1 msg: Page not found
+[info]: timestamp:2025-06-22 19:44:42 PM traceId:[e5df6d78-24d1-466a-82ff-c07515da6f07] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=3&limit=1
+[error]: timestamp:2025-06-22 19:44:43 PM traceId:[e5df6d78-24d1-466a-82ff-c07515da6f07] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=3&limit=1 msg: The requested page number does not exist. Please check the pagination parameters.
+[info]: timestamp:2025-06-22 19:44:47 PM traceId:[9f01f476-01a8-4625-9bd3-0b6646342bb6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=2&limit=1
+[info]: timestamp:2025-06-22 19:44:51 PM traceId:[7b0fd8a5-2cce-4987-a5b9-c8088b098a1b] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1
+[info]: timestamp:2025-06-22 19:48:39 PM traceId:[5241d4c2-bebd-4f85-a660-13bb65564b50] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1
+[info]: timestamp:2025-06-22 19:48:44 PM traceId:[24108556-5910-4111-b2ac-9653cc653505] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1&limit=1
+[info]: timestamp:2025-06-22 19:49:05 PM traceId:[b1521142-8f0e-439e-a445-a53ae345fc82] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1
+[info]: timestamp:2025-06-22 19:49:09 PM traceId:[ab24a1f8-6e29-41c5-addc-15fb57aa4acf] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2
+[error]: timestamp:2025-06-22 19:49:09 PM traceId:[ab24a1f8-6e29-41c5-addc-15fb57aa4acf] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2 msg: No results found. The requested page number does not exist.
+[info]: timestamp:2025-06-22 19:49:27 PM traceId:[4455579d-c7bc-44e0-ba3d-8b8c9d331032] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2
+[error]: timestamp:2025-06-22 19:49:28 PM traceId:[4455579d-c7bc-44e0-ba3d-8b8c9d331032] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2 msg: The requested page number does not exist. Please check the pagination parameters.
+[info]: timestamp:2025-06-22 19:49:32 PM traceId:[0f1b9d18-cae1-4699-8314-8a378d4fc6a6] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2
+[error]: timestamp:2025-06-22 19:49:33 PM traceId:[0f1b9d18-cae1-4699-8314-8a378d4fc6a6] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2 msg: The requested page number does not exist. Please check the pagination parameters.
+[info]: timestamp:2025-06-22 19:49:34 PM traceId:[5c7edf5a-7ece-4db2-8516-23a1f732e283] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2
+[error]: timestamp:2025-06-22 19:49:35 PM traceId:[5c7edf5a-7ece-4db2-8516-23a1f732e283] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2 msg: The requested page number does not exist. Please check the pagination parameters.
+[info]: timestamp:2025-06-22 19:49:38 PM traceId:[363756a9-4d4c-49eb-b44e-2784d2f7eccd] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1
+[error]: timestamp:2025-06-22 19:49:39 PM traceId:[363756a9-4d4c-49eb-b44e-2784d2f7eccd] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1 msg: The requested page number does not exist. Please check the pagination parameters.
+[info]: timestamp:2025-06-22 19:49:41 PM traceId:[d8f4e932-e51f-43dd-b88c-5575db1c35ab] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=0
+[error]: timestamp:2025-06-22 19:49:41 PM traceId:[d8f4e932-e51f-43dd-b88c-5575db1c35ab] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=0 msg: Validation failed!
+[info]: timestamp:2025-06-22 19:49:55 PM traceId:[5b3d7bc0-7148-464c-bc8e-f314afb82656] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=
+[error]: timestamp:2025-06-22 19:49:55 PM traceId:[5b3d7bc0-7148-464c-bc8e-f314afb82656] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page= msg: Validation failed!
+[info]: timestamp:2025-06-22 19:49:58 PM traceId:[622acad6-401c-43e0-80f9-4994ec903016] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1
+[info]: timestamp:2025-06-22 19:50:09 PM traceId:[f254fb24-205c-46eb-aa00-3ffa2c546337] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2
+[error]: timestamp:2025-06-22 19:50:09 PM traceId:[f254fb24-205c-46eb-aa00-3ffa2c546337] msg: method: GET: /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=2 msg: No results found. The requested page number does not exist.
+[info]: timestamp:2025-06-22 19:51:31 PM traceId:[4e2dad72-4312-4d73-b2f5-ae5492c373b0] msg:Incoming request: GET /api/v1/reactions?targetType=post&type=love&page=2
+[error]: timestamp:2025-06-22 19:51:31 PM traceId:[4e2dad72-4312-4d73-b2f5-ae5492c373b0] msg: method: GET: /api/v1/reactions?targetType=post&type=love&page=2 msg: Validation failed!
+[info]: timestamp:2025-06-22 19:51:37 PM traceId:[3b71aac8-bb7e-4e0e-8a2f-39a803d62aa2] msg:Incoming request: GET /api/v1/reactions?targetType=post&type=love
+[error]: timestamp:2025-06-22 19:51:37 PM traceId:[3b71aac8-bb7e-4e0e-8a2f-39a803d62aa2] msg: method: GET: /api/v1/reactions?targetType=post&type=love msg: Validation failed!
+[info]: timestamp:2025-06-22 19:51:44 PM traceId:[5c36f633-94bf-4c5e-917c-417ec58d9c87] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love
+[info]: timestamp:2025-06-22 19:51:52 PM traceId:[53f9f787-a517-4260-b638-69283da8d92c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1&limit=1
+[info]: timestamp:2025-06-22 19:52:34 PM traceId:[cf5b36a1-c809-4187-8aba-4a2e75db44c7] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&type=love&page=1&limit=1
+[info]: timestamp:2025-06-22 19:52:37 PM traceId:[7103c16c-3b77-48d1-ae2b-c9d6ccf3ce9a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1
+[info]: timestamp:2025-06-22 19:52:54 PM traceId:[6408f928-d340-4384-88c0-adced2ac85fe] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=1
+[info]: timestamp:2025-06-22 19:52:56 PM traceId:[7fd65a78-698d-4940-8bd5-526d748369cd] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=1
+[info]: timestamp:2025-06-22 19:52:57 PM traceId:[aefe9c51-ed48-4f9f-b63c-e5a3a765ada7] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=1
+[info]: timestamp:2025-06-22 19:53:29 PM traceId:[03fb671a-e39d-4463-b77e-ebf337642db4] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 19:53:40 PM traceId:[6e038ad8-0025-4d5a-9e19-2ea4a788e04c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=1
+[info]: timestamp:2025-06-22 19:54:19 PM traceId:[dea716ac-abfb-4df9-9f66-fb8e35a66f2e] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-22 19:54:31 PM traceId:[3267ba20-7857-4ede-89b4-6717366bc420] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=1
+[info]: timestamp:2025-06-22 19:54:39 PM traceId:[9945aaf1-3c8f-49ea-b86a-0499863e56b4] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-22 23:15:01 PM traceId:[f179afa0-bbbc-46d4-9b1d-8f321ad1c0aa] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-22 23:15:07 PM traceId:[671e0d42-4306-426c-9815-79e7761a670c] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-22 23:21:43 PM traceId:[c39b9837-ecb1-4422-8ff0-1c97c1eba207] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:21:56 PM traceId:[ca513c1b-a2e5-4b85-b345-6fd9b8d580ed] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 23:21:57 PM traceId:[ca513c1b-a2e5-4b85-b345-6fd9b8d580ed] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: Illegal key in $sort specification: createdAt: null
+[info]: timestamp:2025-06-22 23:22:31 PM traceId:[6c3205e8-8a62-4883-95f7-ff0ff933e4be] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-22 23:22:33 PM traceId:[6c3205e8-8a62-4883-95f7-ff0ff933e4be] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: Illegal key in $sort specification: createdAt: null
+[info]: timestamp:2025-06-22 23:23:41 PM traceId:[f2540002-9bf8-4c96-bda3-547ad812f73d] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:24:27 PM traceId:[d0e43dc1-475e-46ed-bb07-a0c38887e062] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:26:09 PM traceId:[61c35d27-7b8e-471b-afef-d05100800256] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:26:48 PM traceId:[4325a045-3dbb-4a97-a258-49070b842c27] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:29:09 PM traceId:[d24ce24a-19c0-4b10-99bd-2fc21f5eba58] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:30:31 PM traceId:[8542284c-e0fb-4aff-a666-90cb27982ead] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:31:20 PM traceId:[531cf9d0-f70e-49b5-a063-2b31ee46eef2] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:31:54 PM traceId:[7b8a0cf1-d538-4dd9-9a41-b8a441d343c5] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:33:33 PM traceId:[23c0aedd-d542-4080-868f-4920578e8ef4] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:38:05 PM traceId:[8cffaf12-320f-4369-8e38-880eab6188ed] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:38:51 PM traceId:[af4c0c18-c6de-4a50-8795-b5230cc684d3] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:40:51 PM traceId:[beceb1f5-d46a-441f-bb26-4b3c5da23144] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:44:02 PM traceId:[74d19c94-1892-4367-9c91-f431c3174951] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:52:47 PM traceId:[26724a4a-d72b-47c2-a287-50d8958a2283] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:54:26 PM traceId:[126e0295-a626-4f63-b6a0-066cf57a76f4] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:55:10 PM traceId:[c6f38f8e-8a6a-4eff-a288-c1b46eb1fd3a] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-22 23:55:31 PM traceId:[5d34b779-5081-4cd3-bead-25afcff0bfb7] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 00:06:01 AM traceId:[4e50d659-6250-47db-b73c-46264170950c] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 00:06:17 AM traceId:[a29ae017-11b7-4ed4-a6f2-ad521e232a41] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-23 00:06:43 AM traceId:[a29ae017-11b7-4ed4-a6f2-ad521e232a41] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: read ECONNRESET
+[info]: timestamp:2025-06-23 00:07:31 AM traceId:[59591d3c-3f25-4e61-b71c-6ea39f3d86be] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:16:35 AM traceId:[0ea8d7f9-fc3b-4a81-84a9-38cfc052eac3] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:17:55 AM traceId:[13347f58-da83-41cd-836b-be6ed7bebe27] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:18:16 AM traceId:[8c6a65d8-e4d4-4157-9502-196ed6910309] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:18:57 AM traceId:[014f31bb-5368-4cac-95a4-5b751db39088] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:14 AM traceId:[73415fd5-5dbd-4984-af6d-711c20f369cb] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:17 AM traceId:[29acdb5e-8d67-48a9-b94b-731a225e07eb] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:19 AM traceId:[023a6e73-bea5-422a-9180-9b322db24326] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:21 AM traceId:[6b14026d-14fc-473a-b545-f5e373b83def] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:23 AM traceId:[e258c6eb-8a65-4502-848a-845ff14e96c7] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:25 AM traceId:[3e6b90c9-4e7e-467f-84a5-3cb0e28b3cc3] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:27 AM traceId:[ccaf2241-2d9e-4fe2-8410-92d29c98dc94] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:30 AM traceId:[d9b7a01b-76f0-46fc-8472-4c9d637ffb3a] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:33 AM traceId:[1ebcc7d4-3e63-4485-8d44-0c6a0adeba7c] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:19:36 AM traceId:[fc0958c9-732b-4db5-9be6-2fe0d4b1b760] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:20:27 AM traceId:[29496b89-af6f-4436-b5a7-621871b1fb61] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:20:59 AM traceId:[b393ba55-c7ec-4ac8-a037-a232f51524de] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:21:04 AM traceId:[7013c321-281a-49a9-b273-db5b953d5c44] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:21:55 AM traceId:[2d991ff2-415a-4812-80b7-03ef414223df] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:21:59 AM traceId:[4d6f642c-6ae0-46bc-aeab-2f42bea5ef94] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:22:38 AM traceId:[1f7907e9-d0a2-4e83-afe2-c2776f62a4a4] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:26:15 AM traceId:[5436b16b-bb27-47e7-a5fa-0c0856e0bc68] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:29:20 AM traceId:[bb8a6d77-5bfb-4401-b3ad-fa61a3d98179] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:29:25 AM traceId:[bae6b382-a358-42db-a984-afc71b06b072] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:29:28 AM traceId:[410f1f42-60b6-44f7-b855-6e187b7cf082] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:30:22 AM traceId:[4f8a4df4-42ee-4a46-9530-0de2b204964f] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:30:29 AM traceId:[32beff84-a0e6-4c03-b5c5-10205f9f50b6] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:30:44 AM traceId:[920a6ce4-3d53-4bd1-87d3-23cb6d18e61a] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-23 01:32:22 AM traceId:[2d90dfe9-2931-491a-9aca-efae2637561b] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:32:51 AM traceId:[2cd349bc-a34c-4836-8e6e-794fe7105eed] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:33:06 AM traceId:[46d3e0ae-9be9-4e40-9c54-752ac5be42e2] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:33:16 AM traceId:[d9f507a1-1f78-4d3b-981b-ecbb50abf5fa] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:33:30 AM traceId:[be4a638e-cc71-4643-b253-3ba2cd1a765c] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:33:46 AM traceId:[25f248ba-ca0e-4286-a181-928c5082e8d4] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:34:16 AM traceId:[4c7e5971-ed51-4be2-9176-4208a0b33bc2] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:34:55 AM traceId:[969d65b2-0184-4b97-9d84-a4387ad03772] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 01:35:12 AM traceId:[1411204e-f7a7-4362-ae6b-90b6c9eb9de9] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:36:19 AM traceId:[80e9a37d-62af-4352-8156-430917a114d5] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:36:51 AM traceId:[26c6dc63-ffce-412a-9e15-a05c8c9ba35c] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:40:01 AM traceId:[a024e3c0-edca-4598-9dc9-b522d0cd531f] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:41:58 AM traceId:[bf4012a3-c85f-473a-8852-77386fdfa353] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:42:42 AM traceId:[98177bf8-796a-4e06-9275-87d5aa77d6fe] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:43:50 AM traceId:[dbd4f2a2-bb1c-4aae-9d52-295b2c135f64] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:44:27 AM traceId:[c079f106-0024-401c-a942-ce1e3308b85b] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:44:48 AM traceId:[c87347c6-47b8-4417-ae35-223e4e04b47f] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:45:32 AM traceId:[c0582605-3430-4a30-accd-26f3cf2d9544] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:45:46 AM traceId:[c6fcd316-d82f-4db6-8628-89c4aa57560e] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:46:02 AM traceId:[d7594d0b-7073-4043-ac69-38b27db57fb0] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:47:08 AM traceId:[e5fcedb4-f520-45d6-ab83-5103013f68dc] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:49:05 AM traceId:[ec29afb4-29ed-4ff9-9ba7-77a1fae3e79f] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:52:06 AM traceId:[5253ae8b-f162-4e56-8d7a-ba10817f6bcf] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:52:40 AM traceId:[90edf936-c885-4613-bf4a-0ba716f2778b] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 01:54:56 AM traceId:[a0e0043a-8634-42b4-9553-fde5aaae6c08] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 15:45:49 PM traceId:[d44f68c1-9edf-441b-a5d1-df481146f4ad] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-23 17:04:06 PM traceId:[27fe9643-b231-4901-ac40-a6a022a37973] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-23 17:04:23 PM traceId:[a5c77f6b-52d1-47c8-8d9b-9aa002194582] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 17:04:40 PM traceId:[0606d6c1-cc01-4ece-b3cd-3f40ae784df5] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 17:09:21 PM traceId:[ccdc01c9-9e93-49f7-afe6-b1788fda63c6] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[error]: timestamp:2025-06-23 17:09:22 PM traceId:[ccdc01c9-9e93-49f7-afe6-b1788fda63c6] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading 'fullName')
+[info]: timestamp:2025-06-23 17:09:35 PM traceId:[e280555e-9c18-4e29-9ac3-62b48f454219] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:17:16 PM traceId:[9cb9bf58-9747-45e9-96e8-410e79bf71cd] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:17:42 PM traceId:[93918995-a438-4e5e-b0cb-574d3d50d56e] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:18:17 PM traceId:[7a274cd1-0b77-4dae-a936-a3014ea652cc] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:18:21 PM traceId:[2174de4d-e09c-4a39-94e0-56ad2660d395] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:18:29 PM traceId:[635db65b-cab3-4ee9-8c19-7121280188c9] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 18:18:47 PM traceId:[4d5eabf6-2d12-4684-a6e2-d48bcfbd8282] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 18:18:57 PM traceId:[504ae6f9-1f9b-42fb-9e50-04eb6893f613] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:20:05 PM traceId:[01da482c-94df-4cb0-8747-6bbf9db30a55] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:21:42 PM traceId:[86a87409-6dfb-4124-8eea-87bf55eb645b] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:21:47 PM traceId:[b444d68b-b689-45e3-a936-2ca1a3e18b54] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:21:59 PM traceId:[9240e34d-ea39-4a8f-a159-09abfbd8f53a] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:22:09 PM traceId:[0d2ee121-9315-47bc-93ec-340fd5ac7e78] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 18:22:22 PM traceId:[efa4df0a-c363-407b-b5de-b15aef8e55d7] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 18:22:26 PM traceId:[a74d051f-5ec4-4fa5-b1ca-3397cc5a048d] msg:Incoming request: GET /api/v1/reactions?targetType=post&targetId=685567ed1be5189a030f685d&page=1&limit=1&sort=-1
+[info]: timestamp:2025-06-23 18:22:29 PM traceId:[08379d89-eed2-4238-a5da-1d9d88d25f87] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-06-23 18:23:14 PM traceId:[cf27c4d4-5c0e-4a2f-b67e-c95f71fbf0ff] msg:Incoming request: PATCH /api/v1/reactions
+[info]: timestamp:2025-06-23 18:23:20 PM traceId:[e17554fd-d852-44d2-b527-f710e25214dc] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
