@@ -336,3 +336,126 @@
 [error]: timestamp:2025-06-22 23:22:33 PM traceId:[6c3205e8-8a62-4883-95f7-ff0ff933e4be] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: Illegal key in $sort specification: createdAt: null
 [error]: timestamp:2025-06-23 00:06:43 AM traceId:[a29ae017-11b7-4ed4-a6f2-ad521e232a41] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: read ECONNRESET
 [error]: timestamp:2025-06-23 17:09:22 PM traceId:[ccdc01c9-9e93-49f7-afe6-b1788fda63c6] msg: method: GET: /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d msg: Cannot read properties of undefined (reading 'fullName')
+[error]: timestamp:2025-07-08 23:29:35 PM traceId:[8e91e503-af3c-41e9-b2b9-2fc29b5aceee] msg: method: POST: /api/v1/comments msg: Validation failed!
+[error]: timestamp:2025-07-08 23:29:56 PM traceId:[0b2e5b64-8d7f-4639-a87b-75b313840bb5] msg: method: POST: /api/v1/comments msg: Validation failed!
+[error]: timestamp:2025-07-08 23:30:11 PM traceId:[6fd18ac4-f7a6-4bdf-bd2d-0c792960c3ab] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-07-08 23:34:03 PM traceId:[ee470af1-e92a-4773-a663-426813e83f8d] msg: method: POST: /api/v1/friends/requests msg: Access token has expired.
+[error]: timestamp:2025-07-08 23:34:10 PM traceId:[813ccb8d-c376-4f61-b0e9-b901e3cc3d21] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[error]: timestamp:2025-07-08 23:46:29 PM traceId:[8ed2e6f1-b418-43f4-8491-f5467de880de] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[error]: timestamp:2025-07-08 23:46:37 PM traceId:[04d8ea29-e967-44c2-9743-6720f390b366] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[error]: timestamp:2025-07-08 23:48:20 PM traceId:[44b788f2-48d7-4beb-81d3-e88461c5709e] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-08 23:48:26 PM traceId:[e4c3947b-8807-4096-a384-d8e081d67dcd] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[error]: timestamp:2025-07-08 23:49:22 PM traceId:[755963e2-382c-4a20-b0eb-b9bf7271031e] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[error]: timestamp:2025-07-08 23:50:10 PM traceId:[88ded482-467f-4caa-b1b1-e94cdcee2fc7] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[error]: timestamp:2025-07-08 23:50:24 PM traceId:[8ecaac9c-77fa-4434-8503-e3b86c8dc727] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[error]: timestamp:2025-07-08 23:50:25 PM traceId:[a217eca4-d24d-4789-96b9-9d071e75b955] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-08 23:50:26 PM traceId:[3307656f-534a-4237-97d1-a89f3a6656e6] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-08 23:50:27 PM traceId:[07eb4cfa-adab-4fd3-8cb8-eba91fb5c34d] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-08 23:50:30 PM traceId:[a650f6bb-abe6-4903-a3f1-2e9e38d34ae2] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[error]: timestamp:2025-07-09 00:00:13 AM traceId:[6692d099-8246-4d2f-b070-85b41e1fe63e] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[error]: timestamp:2025-07-09 00:55:28 AM traceId:[7758139e-a656-4a1f-adba-50c358be2b51] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-09 00:55:31 AM traceId:[290f4651-a5e9-4d0e-bfc0-aa1dcf03d08e] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-07-09 00:59:01 AM traceId:[4d815245-8f0c-409b-ab82-6f5d448e8e86] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 68554d5ae1557582022c70df, 68554e92e1557582022c70fa
+[error]: timestamp:2025-07-09 01:07:43 AM traceId:[8e5b584d-0c5f-4cf8-bf25-959027518847] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 68554d5ae1557582022c70df, 68554e92e1557582022c70fa
+[error]: timestamp:2025-07-09 01:09:00 AM traceId:[ffc61a1e-5384-4a8c-bf59-f66eef4a011b] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-07-09 01:10:33 AM traceId:[a6fe122d-cb73-4162-8094-d6c9e0b9e472] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-07-09 01:10:42 AM traceId:[f5e77851-62ef-46df-865f-489203e50284] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-07-09 01:10:44 AM traceId:[74867e3b-f452-4d6b-941e-e8c0ebf9ed80] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-07-09 01:11:22 AM traceId:[73f32f00-da70-4b82-8bd4-5c3e0fabddfa] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 686d6ce86d44a03f71c038a7, 686d6cd96d44a03f71c038a1
+[error]: timestamp:2025-07-09 01:14:36 AM traceId:[cb9b2fe1-84af-4065-8e84-9cf424e6d109] msg: method: POST: /api/v1/comments msg: Validation failed!
+[error]: timestamp:2025-07-09 01:18:06 AM traceId:[ce2c16a4-a641-45ff-9593-b54bd52de987] msg: method: POST: /api/v1/comments msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-07-09 01:18:26 AM traceId:[8e4d6754-9264-4097-acf6-d58794d8b11b] msg: method: POST: /api/v1/comments msg: Validation failed!
+[error]: timestamp:2025-07-09 01:18:39 AM traceId:[57ac5f79-0077-48ee-bf7b-4d8332f9a0a3] msg: method: POST: /api/v1/comments msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-07-09 03:30:51 AM traceId:[a61592f8-429d-440a-bd64-4a0b06eecd77] msg: method: POST: /api/v1/comments msg: unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[error]: timestamp:2025-07-09 03:41:54 AM traceId:[e7289418-ba88-44d9-a076-7fc15823a2d7] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-07-09 03:48:04 AM traceId:[ce09995d-7ff2-4a56-87e4-63ae64d0891d] msg: method: POST: /api/v1/comments msg: Invalid mongo id
+[error]: timestamp:2025-07-09 03:53:22 AM traceId:[5a6f064c-17af-47a9-89ff-32f22838cdf2] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-09 19:06:41 PM traceId:[b427c10a-1d7c-4edb-9a65-403d9b763132] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-07-09 19:07:37 PM traceId:[0b89ce7d-f1eb-443a-bb23-c5604411abd5] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-07-09 19:46:56 PM traceId:[27f18726-388a-4d7a-8b30-3cc9cc988ac3] msg: method: POST: /api/v1/comments msg: The post is not found !
+[error]: timestamp:2025-07-09 19:48:55 PM traceId:[282f32e7-23a3-41be-b151-ad5ea57a2271] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-09 19:52:50 PM traceId:[796f083e-7782-4e16-88f2-5b7ca7e9afd1] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-09 19:59:26 PM traceId:[5a1bc955-c204-4766-b8c0-0703aaece2a4] msg: method: POST: /api/v1/comments msg: The post is not found !
+[error]: timestamp:2025-07-09 20:00:00 PM traceId:[3b62cb61-272e-42ab-81f6-8fc01fdf2d01] msg: method: POST: /api/v1/comments msg: The post is not found !
+[error]: timestamp:2025-07-09 20:26:40 PM traceId:[a0f76d01-fbb7-4d90-8036-48fcb199af96] msg: method: POST: /api/v1/comments msg: You can not reply on reply comment
+[error]: timestamp:2025-07-09 20:30:07 PM traceId:[ed71448d-c5ec-4e2f-bf21-b551e916933b] msg: method: POST: /api/v1/comments msg: You can not reply on reply comment. You can reply only top level comment
+[error]: timestamp:2025-07-09 20:39:45 PM traceId:[175dddf6-d4df-454c-9302-d0129c3d39e2] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-09 20:40:42 PM traceId:[99c3d5c9-76f7-4b18-a1e4-5d9ee4691170] msg: method: POST: /api/v1/comments msg: The user is not your friend. You can not comment on this post
+[error]: timestamp:2025-07-09 20:44:02 PM traceId:[c94b9bcb-55e6-4140-9018-267ccfc2d6b9] msg: method: POST: /api/v1/comments msg: The post audience is friends. You can not comment on this post
+[error]: timestamp:2025-07-09 20:44:40 PM traceId:[e55773ea-19b9-4d1c-901f-b988845ed4a3] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[error]: timestamp:2025-07-09 20:44:56 PM traceId:[461a8ab8-5fe2-4283-92c5-04f495102a32] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[error]: timestamp:2025-07-09 20:51:54 PM traceId:[ef67cd9c-bd80-40e8-8117-c1f4a6d0e23a] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[error]: timestamp:2025-07-10 00:13:05 AM traceId:[ba5a6170-318e-4f6d-bfb7-20c42bed7bf2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:15:45 AM traceId:[43f7ee8a-aade-47f2-aa2b-e090cc49d74a] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:16:27 AM traceId:[0466755f-4df3-4e49-a5d3-42ea09388b03] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:16:29 AM traceId:[5a421b43-760b-4189-a0d9-5ed132be9dd6] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:17:40 AM traceId:[6e4d3680-923b-4bac-ad78-da507c804c79] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:17:44 AM traceId:[7a5e469b-4973-4ed6-9f0c-eabc7e4cea21] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:17:45 AM traceId:[3452b5a9-2c36-4b65-93b7-2f80e2254451] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:18:01 AM traceId:[41a44416-3141-4ea6-b5cb-1c2840c4347d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:10 AM traceId:[9813124b-65f2-45a2-b038-3df791ee3462] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:11 AM traceId:[873d2bcf-8643-428a-8fa3-f90c1b47499d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:30 AM traceId:[d57a2726-dd95-49eb-83d0-6f97deec946d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:31 AM traceId:[3ee5fc2a-8340-46b1-8a98-160dd62ab8b4] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:32 AM traceId:[d15e65a6-df0a-4b11-80f7-92a17a025c44] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:32 AM traceId:[e65de315-5922-4b3d-9223-593b11c33698] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:33 AM traceId:[f22aefe7-c847-49dc-b9f6-0f3b2827e744] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:33 AM traceId:[e938b8a7-b85f-4d1b-b201-8eb08068b3ac] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:34 AM traceId:[306b0f4d-8d69-4c2d-816a-45cabdc3986e] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:34 AM traceId:[f709babe-3b71-4fdf-9baf-2a3a868730f5] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:35 AM traceId:[f102967a-c48a-4149-a334-9148e80f54b7] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:47 AM traceId:[8fb6d06e-bba6-4dcd-be50-7f6b4a453634] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:48 AM traceId:[f13e8a09-de8d-4ce9-8cf2-b84a7e058b31] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:49 AM traceId:[d45e2f48-8627-4e63-8f7e-e402a5699f4b] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:50 AM traceId:[3b0ebf88-29ac-4310-8efe-64f5d9ac375b] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[error]: timestamp:2025-07-10 00:19:59 AM traceId:[e9febc5c-434e-49a3-9a55-254f53d9f4fa] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:20:50 AM traceId:[56d0ff66-255d-4b6f-b04b-cdb0e4c31bc4] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:21:11 AM traceId:[d3c5fe54-356b-4db0-992f-934a99fedf38] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:21:33 AM traceId:[9ff4a032-62de-4622-950d-53474c3d2a75] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:21:41 AM traceId:[d30de936-ef6f-42bc-ae85-b431cb7cfb9d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[error]: timestamp:2025-07-10 00:21:54 AM traceId:[ec2ee99a-e9e8-4515-a948-c9fe8e44f9a8] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:21:55 AM traceId:[f567f05e-6e79-45fb-9e12-0cbb1f228494] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[error]: timestamp:2025-07-10 00:21:59 AM traceId:[dd4c2505-f0af-486d-b8d4-253aeaf18c22] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[error]: timestamp:2025-07-10 00:22:14 AM traceId:[c50e6b37-4420-48d5-b661-2b48300d48b2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822ca msg: The comment is not found !
+[error]: timestamp:2025-07-10 00:22:35 AM traceId:[1d9d73ca-c700-4370-8aeb-6c846c40c0e2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[error]: timestamp:2025-07-10 00:23:57 AM traceId:[8105f2dc-eadd-4038-8cbc-7f79ece759d7] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[error]: timestamp:2025-07-10 00:24:55 AM traceId:[f01742af-7e5c-4325-bf88-29690664c3b2] msg: method: POST: /api/v1/comments msg: The post audience is friends. You can not comment on this post
+[error]: timestamp:2025-07-10 00:27:11 AM traceId:[69ca8667-be7e-434d-a18e-1eff066f2eba] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[error]: timestamp:2025-07-10 00:27:33 AM traceId:[2ef4d35a-7cca-4989-96d4-167a403ca4c1] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[error]: timestamp:2025-07-11 02:36:19 AM traceId:[470f13b4-96bf-4e47-8e68-d5a0acd5ebd7] msg: method: DELETE: /api/v1/comments/686eb411601674953fcd2ebc msg: You are not authorized to delete this comment!
+[error]: timestamp:2025-07-11 02:37:07 AM traceId:[e123cb97-6baf-4092-b401-727946a447a8] msg: method: DELETE: /api/v1/comments/686eb411601674953fcd2ebc msg: You can not delete other user comment !
+[error]: timestamp:2025-07-11 02:38:20 AM traceId:[015c3ab8-a453-488e-9a67-40e8fe40a50f] msg: method: DELETE: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not delete other user comment !
+[error]: timestamp:2025-07-11 02:41:11 AM traceId:[69994743-db78-4efb-bb13-e3f22bb057a7] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-11 02:42:47 AM traceId:[990a1e91-170d-43ea-8168-e9fd25f6edc4] msg: method: POST: /api/v1/comments msg: read ECONNRESET
+[error]: timestamp:2025-07-11 02:55:38 AM traceId:[b6a18eba-e252-4681-a392-697943e13b76] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6d msg: The comment you want to delete is not found !
+[error]: timestamp:2025-07-11 03:00:32 AM traceId:[aa058a65-447d-4d13-bccc-31589f31fbff] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6 msg: Validation failed!
+[error]: timestamp:2025-07-19 12:44:52 PM traceId:[00d526df-89ec-4f10-85cd-d53bb7448566] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[error]: timestamp:2025-07-20 19:31:13 PM traceId:[2092e5cf-4b9d-444c-9e86-a423b70f3347] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[error]: timestamp:2025-07-20 19:31:14 PM traceId:[ddf05241-65dc-4f97-89fa-17f8d667a262] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[error]: timestamp:2025-07-20 19:31:16 PM traceId:[862a5448-ae18-4baf-ae12-79ceb5979906] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[error]: timestamp:2025-07-20 23:41:04 PM traceId:[1cdee09a-c9f9-4493-afc1-1a4a9879ac30] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt%20dsfkja msg: Validation failed!
+[error]: timestamp:2025-07-20 23:56:09 PM traceId:[b53e115e-4bb9-452b-8e9b-c087d7527a4b] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-07-21 00:01:59 AM traceId:[36b66751-2ea0-4e24-bd55-24fd7f53cb02] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038be msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-07-21 00:05:50 AM traceId:[723df14a-369f-4fba-8848-5a55f1589aad] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038be msg: The post is not found !
+[error]: timestamp:2025-07-21 00:06:59 AM traceId:[89c62374-d3dc-4579-8ff4-20a8364a4e90] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038 msg: Validation failed!
+[error]: timestamp:2025-07-21 01:56:35 AM traceId:[1100b32e-9414-4209-aaf5-a78433e9bf7d] msg: method: GET: /api/v1/comments/687cd5fe7a9297e55ce55457/replies msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-07-21 01:58:15 AM traceId:[f493a595-019a-4cfa-9af0-8ebaed10086a] msg: method: GET: /api/v1/comments/687d2a82a31eb92cea3dc10c/replies msg: This comment has no replies
+[error]: timestamp:2025-07-21 01:58:36 AM traceId:[cf2728fc-409e-436d-8243-a52442349d74] msg: method: GET: /api/v1/comments/687d2a82a31eb92cea3dc10a/replies msg: The comment is not found !
+[error]: timestamp:2025-07-21 02:10:14 AM traceId:[c8413399-1cab-43f4-85f8-b44f7c86f8a6] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6 msg: Validation failed!
+[error]: timestamp:2025-07-21 02:10:22 AM traceId:[bb94c7f0-83e4-4aca-a096-ca90a54684c7] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6a msg: The comment you want to delete is not found !
+[error]: timestamp:2025-07-21 02:10:24 AM traceId:[1601f060-f807-4012-a5d8-b629349f8e36] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6a msg: The comment you want to delete is not found !
+[error]: timestamp:2025-07-21 17:52:28 PM traceId:[84d90447-a6e9-46a3-9f5a-a8c792f4c37a] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038ba msg: The post is not found !
+[error]: timestamp:2025-07-21 17:52:34 PM traceId:[15f62656-ec5a-44f1-814b-6d9b658a4055] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038b msg: Validation failed!
+[error]: timestamp:2025-07-21 17:53:21 PM traceId:[2a80fed5-c954-455e-99a8-3ee11d1c77e9] msg: method: GET: /api/v1/comments/687cd5fe7a9297e55ce55457/replies msg: The comment is not found !

@@ -1317,3 +1317,397 @@
 [info]: timestamp:2025-06-23 18:22:29 PM traceId:[08379d89-eed2-4238-a5da-1d9d88d25f87] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
 [info]: timestamp:2025-06-23 18:23:14 PM traceId:[cf27c4d4-5c0e-4a2f-b67e-c95f71fbf0ff] msg:Incoming request: PATCH /api/v1/reactions
 [info]: timestamp:2025-06-23 18:23:20 PM traceId:[e17554fd-d852-44d2-b527-f710e25214dc] msg:Incoming request: GET /api/v1/reactions/counts?targetType=post&targetId=685567ed1be5189a030f685d
+[info]: timestamp:2025-07-08 23:29:30 PM traceId:[6d4536d7-b50b-4b9e-975c-a2ac637a07d1] msg:Incoming request: POST /api/v1/comments%20
+[info]: timestamp:2025-07-08 23:29:35 PM traceId:[8e91e503-af3c-41e9-b2b9-2fc29b5aceee] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-08 23:29:35 PM traceId:[8e91e503-af3c-41e9-b2b9-2fc29b5aceee] msg: method: POST: /api/v1/comments msg: Validation failed!
+[info]: timestamp:2025-07-08 23:29:56 PM traceId:[0b2e5b64-8d7f-4639-a87b-75b313840bb5] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-08 23:29:56 PM traceId:[0b2e5b64-8d7f-4639-a87b-75b313840bb5] msg: method: POST: /api/v1/comments msg: Validation failed!
+[info]: timestamp:2025-07-08 23:30:11 PM traceId:[6fd18ac4-f7a6-4bdf-bd2d-0c792960c3ab] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-07-08 23:30:11 PM traceId:[6fd18ac4-f7a6-4bdf-bd2d-0c792960c3ab] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-07-08 23:34:03 PM traceId:[ee470af1-e92a-4773-a663-426813e83f8d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-07-08 23:34:03 PM traceId:[ee470af1-e92a-4773-a663-426813e83f8d] msg: method: POST: /api/v1/friends/requests msg: Access token has expired.
+[info]: timestamp:2025-07-08 23:34:10 PM traceId:[813ccb8d-c376-4f61-b0e9-b901e3cc3d21] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-07-08 23:34:10 PM traceId:[813ccb8d-c376-4f61-b0e9-b901e3cc3d21] msg: method: POST: /api/v1/friends/requests msg: Validation failed!
+[info]: timestamp:2025-07-08 23:46:27 PM traceId:[8ed2e6f1-b418-43f4-8491-f5467de880de] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:46:29 PM traceId:[8ed2e6f1-b418-43f4-8491-f5467de880de] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[info]: timestamp:2025-07-08 23:46:35 PM traceId:[04d8ea29-e967-44c2-9743-6720f390b366] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:46:37 PM traceId:[04d8ea29-e967-44c2-9743-6720f390b366] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[info]: timestamp:2025-07-08 23:48:13 PM traceId:[bd68832b-a8e8-496f-a72c-51d3735059aa] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-07-08 23:48:20 PM traceId:[44b788f2-48d7-4beb-81d3-e88461c5709e] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:48:20 PM traceId:[44b788f2-48d7-4beb-81d3-e88461c5709e] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-08 23:48:23 PM traceId:[e4c3947b-8807-4096-a384-d8e081d67dcd] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:48:26 PM traceId:[e4c3947b-8807-4096-a384-d8e081d67dcd] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[info]: timestamp:2025-07-08 23:49:19 PM traceId:[755963e2-382c-4a20-b0eb-b9bf7271031e] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:49:22 PM traceId:[755963e2-382c-4a20-b0eb-b9bf7271031e] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized
+[info]: timestamp:2025-07-08 23:50:08 PM traceId:[88ded482-467f-4caa-b1b1-e94cdcee2fc7] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:10 PM traceId:[88ded482-467f-4caa-b1b1-e94cdcee2fc7] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[info]: timestamp:2025-07-08 23:50:21 PM traceId:[8ecaac9c-77fa-4434-8503-e3b86c8dc727] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:24 PM traceId:[8ecaac9c-77fa-4434-8503-e3b86c8dc727] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[info]: timestamp:2025-07-08 23:50:25 PM traceId:[a217eca4-d24d-4789-96b9-9d071e75b955] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:25 PM traceId:[a217eca4-d24d-4789-96b9-9d071e75b955] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-08 23:50:26 PM traceId:[3307656f-534a-4237-97d1-a89f3a6656e6] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:26 PM traceId:[3307656f-534a-4237-97d1-a89f3a6656e6] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-08 23:50:27 PM traceId:[07eb4cfa-adab-4fd3-8cb8-eba91fb5c34d] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:27 PM traceId:[07eb4cfa-adab-4fd3-8cb8-eba91fb5c34d] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-08 23:50:28 PM traceId:[a650f6bb-abe6-4903-a3f1-2e9e38d34ae2] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-08 23:50:30 PM traceId:[a650f6bb-abe6-4903-a3f1-2e9e38d34ae2] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[info]: timestamp:2025-07-09 00:00:06 AM traceId:[6692d099-8246-4d2f-b070-85b41e1fe63e] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-09 00:00:13 AM traceId:[6692d099-8246-4d2f-b070-85b41e1fe63e] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Unauthorized (401)
+  Maximum credits exceeded
+    null
+    null
+[info]: timestamp:2025-07-09 00:32:06 AM traceId:[60abe98b-4118-4261-b9af-2a2c8d09f9c3] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-07-09 00:54:13 AM traceId:[058e8d35-51a6-4067-b2c7-ecab677d1537] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-07-09 00:55:28 AM traceId:[7758139e-a656-4a1f-adba-50c358be2b51] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-09 00:55:28 AM traceId:[7758139e-a656-4a1f-adba-50c358be2b51] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-09 00:55:31 AM traceId:[290f4651-a5e9-4d0e-bfc0-aa1dcf03d08e] msg:Incoming request: POST /api/v1/auth/registration
+[error]: timestamp:2025-07-09 00:55:31 AM traceId:[290f4651-a5e9-4d0e-bfc0-aa1dcf03d08e] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[info]: timestamp:2025-07-09 00:55:33 AM traceId:[231c7e4d-aed5-42f2-b9e9-0d71f3519fce] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-07-09 00:55:51 AM traceId:[30dd27dd-bb60-4f28-a258-6f3770508ad6] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-07-09 00:56:02 AM traceId:[39775fb1-c557-4a76-b9ab-93ee0f7a600e] msg:Incoming request: POST /api/v1/auth/admin-registration
+[info]: timestamp:2025-07-09 00:56:07 AM traceId:[94cb5301-3a29-489d-8aea-4971efe85934] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-07-09 00:58:30 AM traceId:[4d815245-8f0c-409b-ab82-6f5d448e8e86] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-07-09 00:59:01 AM traceId:[4d815245-8f0c-409b-ab82-6f5d448e8e86] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 68554d5ae1557582022c70df, 68554e92e1557582022c70fa
+[info]: timestamp:2025-07-09 01:07:42 AM traceId:[8e5b584d-0c5f-4cf8-bf25-959027518847] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-07-09 01:07:43 AM traceId:[8e5b584d-0c5f-4cf8-bf25-959027518847] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 68554d5ae1557582022c70df, 68554e92e1557582022c70fa
+[info]: timestamp:2025-07-09 01:09:00 AM traceId:[ffc61a1e-5384-4a8c-bf59-f66eef4a011b] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-07-09 01:09:00 AM traceId:[ffc61a1e-5384-4a8c-bf59-f66eef4a011b] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-07-09 01:09:12 AM traceId:[9061d380-3941-4f6c-9420-1324b6fbd028] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-07-09 01:09:26 AM traceId:[516dfd69-3e79-4b11-a534-1c6e857f3c99] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-07-09 01:09:56 AM traceId:[1684bcf4-100d-4b3b-a4cb-70fb44ee1e9d] msg:Incoming request: PATCH /api/v1/friends/requests/686d6cd96d44a03f71c038a1/accept
+[info]: timestamp:2025-07-09 01:10:33 AM traceId:[a6fe122d-cb73-4162-8094-d6c9e0b9e472] msg:Incoming request: PATCH /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept
+[error]: timestamp:2025-07-09 01:10:33 AM traceId:[a6fe122d-cb73-4162-8094-d6c9e0b9e472] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-07-09 01:10:41 AM traceId:[f5e77851-62ef-46df-865f-489203e50284] msg:Incoming request: PATCH /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept
+[error]: timestamp:2025-07-09 01:10:42 AM traceId:[f5e77851-62ef-46df-865f-489203e50284] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-07-09 01:10:43 AM traceId:[74867e3b-f452-4d6b-941e-e8c0ebf9ed80] msg:Incoming request: PATCH /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept
+[error]: timestamp:2025-07-09 01:10:44 AM traceId:[74867e3b-f452-4d6b-941e-e8c0ebf9ed80] msg: method: PATCH: /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-07-09 01:10:48 AM traceId:[6344de87-c43a-49d7-bff8-3d3ed9d8b9dc] msg:Incoming request: PATCH /api/v1/friends/requests/686d6ce86d44a03f71c038a7/accept
+[info]: timestamp:2025-07-09 01:11:22 AM traceId:[73f32f00-da70-4b82-8bd4-5c3e0fabddfa] msg:Incoming request: POST /api/v1/posts
+[error]: timestamp:2025-07-09 01:11:22 AM traceId:[73f32f00-da70-4b82-8bd4-5c3e0fabddfa] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 686d6ce86d44a03f71c038a7, 686d6cd96d44a03f71c038a1
+[info]: timestamp:2025-07-09 01:11:43 AM traceId:[b45a8167-9927-41d3-82a8-b1f2155141e9] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-07-09 01:12:25 AM traceId:[d90c137e-3d20-475c-b016-45501a4d0382] msg:Incoming request: POST /api/v1/posts
+[info]: timestamp:2025-07-09 01:14:36 AM traceId:[cb9b2fe1-84af-4065-8e84-9cf424e6d109] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 01:14:36 AM traceId:[cb9b2fe1-84af-4065-8e84-9cf424e6d109] msg: method: POST: /api/v1/comments msg: Validation failed!
+[info]: timestamp:2025-07-09 01:18:06 AM traceId:[ce2c16a4-a641-45ff-9593-b54bd52de987] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 01:18:06 AM traceId:[ce2c16a4-a641-45ff-9593-b54bd52de987] msg: method: POST: /api/v1/comments msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-07-09 01:18:26 AM traceId:[8e4d6754-9264-4097-acf6-d58794d8b11b] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 01:18:26 AM traceId:[8e4d6754-9264-4097-acf6-d58794d8b11b] msg: method: POST: /api/v1/comments msg: Validation failed!
+[info]: timestamp:2025-07-09 01:18:39 AM traceId:[57ac5f79-0077-48ee-bf7b-4d8332f9a0a3] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 01:18:39 AM traceId:[57ac5f79-0077-48ee-bf7b-4d8332f9a0a3] msg: method: POST: /api/v1/comments msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-07-09 01:18:59 AM traceId:[623ca971-c91d-4e82-8032-a1056c0abe82] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 01:22:47 AM traceId:[8b5e9c19-171c-4749-91b2-0f21c7a62ad2] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:18:49 AM traceId:[28fb41a9-3d4a-462e-ad8a-e3feebf43223] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:19:28 AM traceId:[8306794a-35de-4793-9aaa-7dc0a6af036c] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:19:50 AM traceId:[bf181252-8696-438f-be63-dd64f8e46b41] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:19:56 AM traceId:[fd8a3773-4fc0-4650-95c8-052b4cc53da9] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:23:47 AM traceId:[5180e0bd-997f-4eb8-8c03-c5f3612e57e8] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:30:49 AM traceId:[a61592f8-429d-440a-bd64-4a0b06eecd77] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 03:30:51 AM traceId:[a61592f8-429d-440a-bd64-4a0b06eecd77] msg: method: POST: /api/v1/comments msg: unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[info]: timestamp:2025-07-09 03:31:21 AM traceId:[7dfabddd-71e5-4de6-876a-ad523dffa8fd] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:35:03 AM traceId:[ee8ff9be-a0ea-480f-aecc-2a2d75b8f1c8] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:38:43 AM traceId:[8fdaed7b-f1c2-4e43-b439-43283ed6525a] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:39:16 AM traceId:[7f9dfbb6-f7f7-457c-875e-b7934a095e0b] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:41:53 AM traceId:[e7289418-ba88-44d9-a076-7fc15823a2d7] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 03:41:54 AM traceId:[e7289418-ba88-44d9-a076-7fc15823a2d7] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[info]: timestamp:2025-07-09 03:45:52 AM traceId:[4489bd05-8d9c-4a7f-8455-c1ef3861baec] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:47:35 AM traceId:[033a31bd-53f1-46fc-9202-a3b687a1b271] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:48:03 AM traceId:[ce09995d-7ff2-4a56-87e4-63ae64d0891d] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 03:48:04 AM traceId:[ce09995d-7ff2-4a56-87e4-63ae64d0891d] msg: method: POST: /api/v1/comments msg: Invalid mongo id
+[info]: timestamp:2025-07-09 03:48:50 AM traceId:[0711d038-3abf-4df7-b0a6-497898b9fd6b] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:52:48 AM traceId:[39cc8825-a36d-4ffa-859e-0bc71c4172f0] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:53:07 AM traceId:[d39f0d8e-8e55-447e-b954-953325dfc048] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 03:53:21 AM traceId:[5a6f064c-17af-47a9-89ff-32f22838cdf2] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 03:53:22 AM traceId:[5a6f064c-17af-47a9-89ff-32f22838cdf2] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-09 03:53:34 AM traceId:[e4fb9cc0-e20c-4ff3-b0d0-5fe3c2d289be] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 18:28:44 PM traceId:[fee5d985-6fc3-49d1-81e1-9d70078df414] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 18:30:53 PM traceId:[44441bcc-b9f1-44e1-8653-4cd78fd12d4a] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 18:31:15 PM traceId:[427ee423-cad9-47eb-9ef9-73c8e66cbe6e] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:03:09 PM traceId:[fa409e89-fef2-4c13-bf51-c992bbd60edf] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:04:09 PM traceId:[e4ca0d17-9bab-4b06-9f47-f7725132a19f] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:04:26 PM traceId:[f27ca748-67f3-4b63-908d-97e44982cffc] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:04:44 PM traceId:[6f2525f5-705a-46cd-8415-e8745e584a1d] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:06:40 PM traceId:[b427c10a-1d7c-4edb-9a65-403d9b763132] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:06:41 PM traceId:[b427c10a-1d7c-4edb-9a65-403d9b763132] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[info]: timestamp:2025-07-09 19:07:34 PM traceId:[0b89ce7d-f1eb-443a-bb23-c5604411abd5] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:07:37 PM traceId:[0b89ce7d-f1eb-443a-bb23-c5604411abd5] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[info]: timestamp:2025-07-09 19:10:13 PM traceId:[5ed924e3-a628-49cb-9444-68190e8c3060] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:12:18 PM traceId:[c31765ff-5c3e-4bec-9892-66c3e1a50a91] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:14:51 PM traceId:[18ee037f-3631-4c1f-b204-91ea1bab18e6] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:14:54 PM traceId:[67ee5f87-d2b1-4ceb-812a-5efeebfd4d65] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:15:08 PM traceId:[9610c143-26f6-4a64-b77f-23766df172df] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:16:03 PM traceId:[b8f07073-19f5-4fb5-b5b0-4f44547d65b0] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:20:48 PM traceId:[18a38408-1aba-458c-8f9d-57bc75c587d3] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:21:16 PM traceId:[b0b054fa-e49f-4ef3-b3f8-bb92cb80a737] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:21:34 PM traceId:[12ed4d9e-2a38-48eb-b5e7-dc618dc14fd8] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:46:56 PM traceId:[27f18726-388a-4d7a-8b30-3cc9cc988ac3] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:46:56 PM traceId:[27f18726-388a-4d7a-8b30-3cc9cc988ac3] msg: method: POST: /api/v1/comments msg: The post is not found !
+[info]: timestamp:2025-07-09 19:47:20 PM traceId:[7dd60029-4df6-4c74-a451-e835bc730e76] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:48:54 PM traceId:[282f32e7-23a3-41be-b151-ad5ea57a2271] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:48:55 PM traceId:[282f32e7-23a3-41be-b151-ad5ea57a2271] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-09 19:52:48 PM traceId:[796f083e-7782-4e16-88f2-5b7ca7e9afd1] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:52:50 PM traceId:[796f083e-7782-4e16-88f2-5b7ca7e9afd1] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-09 19:52:55 PM traceId:[d33dbf46-ce53-47a8-b489-fcc3619b8366] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:55:13 PM traceId:[3dec4135-b0bd-4092-89ec-6b81c1247ff6] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:55:52 PM traceId:[9cfb8ea1-4b52-416e-9d6a-c4d99410000b] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 19:59:25 PM traceId:[5a1bc955-c204-4766-b8c0-0703aaece2a4] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 19:59:26 PM traceId:[5a1bc955-c204-4766-b8c0-0703aaece2a4] msg: method: POST: /api/v1/comments msg: The post is not found !
+[info]: timestamp:2025-07-09 20:00:00 PM traceId:[3b62cb61-272e-42ab-81f6-8fc01fdf2d01] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:00:00 PM traceId:[3b62cb61-272e-42ab-81f6-8fc01fdf2d01] msg: method: POST: /api/v1/comments msg: The post is not found !
+[info]: timestamp:2025-07-09 20:00:09 PM traceId:[d94fddbc-e1d7-411e-929c-f058d3e81033] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:23:48 PM traceId:[6c0fa2d3-1004-4a47-b9a9-222ec2028930] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:24:17 PM traceId:[f8ab16e7-756c-493a-80cc-c8db0ad92b49] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:24:43 PM traceId:[474a5bff-4f1c-43b3-9284-4a3262cf8e98] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:25:12 PM traceId:[f204ec40-d269-40ad-ab96-8dc733f226ac] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:25:23 PM traceId:[a4cb7575-12ae-40e0-b6c2-c9badd2ec2d9] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:26:12 PM traceId:[87f9b0f0-6c08-46d5-b858-f7e6c1bbd43f] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:26:37 PM traceId:[a0f76d01-fbb7-4d90-8036-48fcb199af96] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:26:40 PM traceId:[a0f76d01-fbb7-4d90-8036-48fcb199af96] msg: method: POST: /api/v1/comments msg: You can not reply on reply comment
+[info]: timestamp:2025-07-09 20:30:06 PM traceId:[ed71448d-c5ec-4e2f-bf21-b551e916933b] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:30:07 PM traceId:[ed71448d-c5ec-4e2f-bf21-b551e916933b] msg: method: POST: /api/v1/comments msg: You can not reply on reply comment. You can reply only top level comment
+[info]: timestamp:2025-07-09 20:39:43 PM traceId:[175dddf6-d4df-454c-9302-d0129c3d39e2] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:39:45 PM traceId:[175dddf6-d4df-454c-9302-d0129c3d39e2] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-09 20:40:17 PM traceId:[619f9516-1618-4962-9654-56f82c9af89f] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-09 20:40:41 PM traceId:[99c3d5c9-76f7-4b18-a1e4-5d9ee4691170] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:40:42 PM traceId:[99c3d5c9-76f7-4b18-a1e4-5d9ee4691170] msg: method: POST: /api/v1/comments msg: The user is not your friend. You can not comment on this post
+[info]: timestamp:2025-07-09 20:43:58 PM traceId:[c94b9bcb-55e6-4140-9018-267ccfc2d6b9] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:44:02 PM traceId:[c94b9bcb-55e6-4140-9018-267ccfc2d6b9] msg: method: POST: /api/v1/comments msg: The post audience is friends. You can not comment on this post
+[info]: timestamp:2025-07-09 20:44:39 PM traceId:[e55773ea-19b9-4d1c-901f-b988845ed4a3] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:44:40 PM traceId:[e55773ea-19b9-4d1c-901f-b988845ed4a3] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[info]: timestamp:2025-07-09 20:44:56 PM traceId:[461a8ab8-5fe2-4283-92c5-04f495102a32] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:44:56 PM traceId:[461a8ab8-5fe2-4283-92c5-04f495102a32] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[info]: timestamp:2025-07-09 20:51:50 PM traceId:[ef67cd9c-bd80-40e8-8117-c1f4a6d0e23a] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-09 20:51:54 PM traceId:[ef67cd9c-bd80-40e8-8117-c1f4a6d0e23a] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[info]: timestamp:2025-07-10 00:01:34 AM traceId:[b1893f75-9080-44eb-afbd-57fb6e61c3b2] msg:Incoming request: PATCH /api/v1/comments
+[info]: timestamp:2025-07-10 00:13:05 AM traceId:[ba5a6170-318e-4f6d-bfb7-20c42bed7bf2] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:13:05 AM traceId:[ba5a6170-318e-4f6d-bfb7-20c42bed7bf2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:15:45 AM traceId:[43f7ee8a-aade-47f2-aa2b-e090cc49d74a] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:15:45 AM traceId:[43f7ee8a-aade-47f2-aa2b-e090cc49d74a] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:16:27 AM traceId:[0466755f-4df3-4e49-a5d3-42ea09388b03] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:16:27 AM traceId:[0466755f-4df3-4e49-a5d3-42ea09388b03] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:16:29 AM traceId:[5a421b43-760b-4189-a0d9-5ed132be9dd6] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:16:29 AM traceId:[5a421b43-760b-4189-a0d9-5ed132be9dd6] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:17:40 AM traceId:[6e4d3680-923b-4bac-ad78-da507c804c79] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:17:40 AM traceId:[6e4d3680-923b-4bac-ad78-da507c804c79] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:17:44 AM traceId:[7a5e469b-4973-4ed6-9f0c-eabc7e4cea21] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:17:44 AM traceId:[7a5e469b-4973-4ed6-9f0c-eabc7e4cea21] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:17:45 AM traceId:[3452b5a9-2c36-4b65-93b7-2f80e2254451] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:17:45 AM traceId:[3452b5a9-2c36-4b65-93b7-2f80e2254451] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:18:01 AM traceId:[41a44416-3141-4ea6-b5cb-1c2840c4347d] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:18:01 AM traceId:[41a44416-3141-4ea6-b5cb-1c2840c4347d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:10 AM traceId:[9813124b-65f2-45a2-b038-3df791ee3462] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:10 AM traceId:[9813124b-65f2-45a2-b038-3df791ee3462] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:11 AM traceId:[873d2bcf-8643-428a-8fa3-f90c1b47499d] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:11 AM traceId:[873d2bcf-8643-428a-8fa3-f90c1b47499d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:30 AM traceId:[d57a2726-dd95-49eb-83d0-6f97deec946d] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:30 AM traceId:[d57a2726-dd95-49eb-83d0-6f97deec946d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:31 AM traceId:[3ee5fc2a-8340-46b1-8a98-160dd62ab8b4] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:31 AM traceId:[3ee5fc2a-8340-46b1-8a98-160dd62ab8b4] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:32 AM traceId:[d15e65a6-df0a-4b11-80f7-92a17a025c44] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:32 AM traceId:[d15e65a6-df0a-4b11-80f7-92a17a025c44] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:32 AM traceId:[e65de315-5922-4b3d-9223-593b11c33698] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:32 AM traceId:[e65de315-5922-4b3d-9223-593b11c33698] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:33 AM traceId:[f22aefe7-c847-49dc-b9f6-0f3b2827e744] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:33 AM traceId:[f22aefe7-c847-49dc-b9f6-0f3b2827e744] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:33 AM traceId:[e938b8a7-b85f-4d1b-b201-8eb08068b3ac] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:33 AM traceId:[e938b8a7-b85f-4d1b-b201-8eb08068b3ac] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:34 AM traceId:[306b0f4d-8d69-4c2d-816a-45cabdc3986e] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:34 AM traceId:[306b0f4d-8d69-4c2d-816a-45cabdc3986e] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:34 AM traceId:[f709babe-3b71-4fdf-9baf-2a3a868730f5] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:34 AM traceId:[f709babe-3b71-4fdf-9baf-2a3a868730f5] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:35 AM traceId:[f102967a-c48a-4149-a334-9148e80f54b7] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:35 AM traceId:[f102967a-c48a-4149-a334-9148e80f54b7] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:43 AM traceId:[0dc116f9-de56-4c10-aceb-f018e7f8f1b6] msg:Incoming request: PATCH /api/v1/comments
+[info]: timestamp:2025-07-10 00:19:44 AM traceId:[9a5689fd-ab50-4aeb-a6ad-ef49826c7822] msg:Incoming request: PATCH /api/v1/comments/
+[info]: timestamp:2025-07-10 00:19:47 AM traceId:[8fb6d06e-bba6-4dcd-be50-7f6b4a453634] msg:Incoming request: PATCH /api/v1/comments/asd
+[error]: timestamp:2025-07-10 00:19:47 AM traceId:[8fb6d06e-bba6-4dcd-be50-7f6b4a453634] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:48 AM traceId:[f13e8a09-de8d-4ce9-8cf2-b84a7e058b31] msg:Incoming request: PATCH /api/v1/comments/asd
+[error]: timestamp:2025-07-10 00:19:48 AM traceId:[f13e8a09-de8d-4ce9-8cf2-b84a7e058b31] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:49 AM traceId:[d45e2f48-8627-4e63-8f7e-e402a5699f4b] msg:Incoming request: PATCH /api/v1/comments/asd
+[error]: timestamp:2025-07-10 00:19:49 AM traceId:[d45e2f48-8627-4e63-8f7e-e402a5699f4b] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:50 AM traceId:[3b0ebf88-29ac-4310-8efe-64f5d9ac375b] msg:Incoming request: PATCH /api/v1/comments/asd
+[error]: timestamp:2025-07-10 00:19:50 AM traceId:[3b0ebf88-29ac-4310-8efe-64f5d9ac375b] msg: method: PATCH: /api/v1/comments/asd msg: Validation failed!
+[info]: timestamp:2025-07-10 00:19:59 AM traceId:[e9febc5c-434e-49a3-9a55-254f53d9f4fa] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:19:59 AM traceId:[e9febc5c-434e-49a3-9a55-254f53d9f4fa] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:20:50 AM traceId:[56d0ff66-255d-4b6f-b04b-cdb0e4c31bc4] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:20:50 AM traceId:[56d0ff66-255d-4b6f-b04b-cdb0e4c31bc4] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:21:11 AM traceId:[d3c5fe54-356b-4db0-992f-934a99fedf38] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:11 AM traceId:[d3c5fe54-356b-4db0-992f-934a99fedf38] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:21:33 AM traceId:[9ff4a032-62de-4622-950d-53474c3d2a75] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:33 AM traceId:[9ff4a032-62de-4622-950d-53474c3d2a75] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:21:41 AM traceId:[d30de936-ef6f-42bc-ae85-b431cb7cfb9d] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:41 AM traceId:[d30de936-ef6f-42bc-ae85-b431cb7cfb9d] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[info]: timestamp:2025-07-10 00:21:54 AM traceId:[ec2ee99a-e9e8-4515-a948-c9fe8e44f9a8] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:54 AM traceId:[ec2ee99a-e9e8-4515-a948-c9fe8e44f9a8] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:21:55 AM traceId:[f567f05e-6e79-45fb-9e12-0cbb1f228494] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:55 AM traceId:[f567f05e-6e79-45fb-9e12-0cbb1f228494] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: Validation failed!
+[info]: timestamp:2025-07-10 00:21:58 AM traceId:[dd4c2505-f0af-486d-b8d4-253aeaf18c22] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:21:59 AM traceId:[dd4c2505-f0af-486d-b8d4-253aeaf18c22] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[info]: timestamp:2025-07-10 00:22:13 AM traceId:[c50e6b37-4420-48d5-b661-2b48300d48b2] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822ca
+[error]: timestamp:2025-07-10 00:22:14 AM traceId:[c50e6b37-4420-48d5-b661-2b48300d48b2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822ca msg: The comment is not found !
+[info]: timestamp:2025-07-10 00:22:34 AM traceId:[1d9d73ca-c700-4370-8aeb-6c846c40c0e2] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:22:35 AM traceId:[1d9d73ca-c700-4370-8aeb-6c846c40c0e2] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[info]: timestamp:2025-07-10 00:23:56 AM traceId:[8105f2dc-eadd-4038-8cbc-7f79ece759d7] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-10 00:23:57 AM traceId:[8105f2dc-eadd-4038-8cbc-7f79ece759d7] msg: method: POST: /api/v1/comments msg: You can not comment on this post
+[info]: timestamp:2025-07-10 00:24:54 AM traceId:[f01742af-7e5c-4325-bf88-29690664c3b2] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-10 00:24:55 AM traceId:[f01742af-7e5c-4325-bf88-29690664c3b2] msg: method: POST: /api/v1/comments msg: The post audience is friends. You can not comment on this post
+[info]: timestamp:2025-07-10 00:25:20 AM traceId:[1eff4e48-1a39-4c47-bd7a-650fed8dd6db] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-10 00:27:11 AM traceId:[69ca8667-be7e-434d-a18e-1eff066f2eba] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:27:11 AM traceId:[69ca8667-be7e-434d-a18e-1eff066f2eba] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[info]: timestamp:2025-07-10 00:27:32 AM traceId:[2ef4d35a-7cca-4989-96d4-167a403ca4c1] msg:Incoming request: PATCH /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-10 00:27:33 AM traceId:[2ef4d35a-7cca-4989-96d4-167a403ca4c1] msg: method: PATCH: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not update other user comment !
+[info]: timestamp:2025-07-10 00:27:46 AM traceId:[989227e8-f9d1-4c5b-81e3-2d3158a0086d] msg:Incoming request: PATCH /api/v1/comments/686eb411601674953fcd2ebc
+[info]: timestamp:2025-07-10 00:28:47 AM traceId:[b96e7bde-24c9-4e56-8d91-a06156e7402f] msg:Incoming request: PATCH /api/v1/comments/686eb411601674953fcd2ebc
+[info]: timestamp:2025-07-10 00:47:21 AM traceId:[185b6916-6ca7-4f1d-bcad-ebd01c3985c1] msg:Incoming request: PATCH /api/v1/comments/686eb411601674953fcd2ebc
+[info]: timestamp:2025-07-10 00:47:38 AM traceId:[ecaf0cf4-093e-4503-9452-2628f772074e] msg:Incoming request: PATCH /api/v1/comments/686eb411601674953fcd2ebc
+[info]: timestamp:2025-07-11 02:36:18 AM traceId:[470f13b4-96bf-4e47-8e68-d5a0acd5ebd7] msg:Incoming request: DELETE /api/v1/comments/686eb411601674953fcd2ebc
+[error]: timestamp:2025-07-11 02:36:19 AM traceId:[470f13b4-96bf-4e47-8e68-d5a0acd5ebd7] msg: method: DELETE: /api/v1/comments/686eb411601674953fcd2ebc msg: You are not authorized to delete this comment!
+[info]: timestamp:2025-07-11 02:37:05 AM traceId:[e123cb97-6baf-4092-b401-727946a447a8] msg:Incoming request: DELETE /api/v1/comments/686eb411601674953fcd2ebc
+[error]: timestamp:2025-07-11 02:37:07 AM traceId:[e123cb97-6baf-4092-b401-727946a447a8] msg: method: DELETE: /api/v1/comments/686eb411601674953fcd2ebc msg: You can not delete other user comment !
+[info]: timestamp:2025-07-11 02:37:23 AM traceId:[273a2cf0-3223-42a4-8a67-4ecc427f6d69] msg:Incoming request: DELETE /api/v1/comments/686eb411601674953fcd2ebc
+[info]: timestamp:2025-07-11 02:37:47 AM traceId:[5b5cdfb8-7092-4367-b508-0debe52a59bf] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:37:50 AM traceId:[220d4386-fe69-410c-bcbf-ca57a1bb3c7a] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:37:53 AM traceId:[24025706-3af5-4bc9-bdd3-a882889c21cb] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:38:19 AM traceId:[015c3ab8-a453-488e-9a67-40e8fe40a50f] msg:Incoming request: DELETE /api/v1/comments/686e7f53fca25f31493822cb
+[error]: timestamp:2025-07-11 02:38:20 AM traceId:[015c3ab8-a453-488e-9a67-40e8fe40a50f] msg: method: DELETE: /api/v1/comments/686e7f53fca25f31493822cb msg: You can not delete other user comment !
+[info]: timestamp:2025-07-11 02:39:15 AM traceId:[fb578ac7-6ec0-4f88-8973-145bfda59bca] msg:Incoming request: DELETE /api/v1/comments/686e7f53fca25f31493822cb
+[info]: timestamp:2025-07-11 02:40:50 AM traceId:[85d8a29f-55bc-469e-b454-32f1754d4617] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:41:09 AM traceId:[69994743-db78-4efb-bb13-e3f22bb057a7] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-11 02:41:11 AM traceId:[69994743-db78-4efb-bb13-e3f22bb057a7] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-11 02:42:21 AM traceId:[990a1e91-170d-43ea-8168-e9fd25f6edc4] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-11 02:42:47 AM traceId:[990a1e91-170d-43ea-8168-e9fd25f6edc4] msg: method: POST: /api/v1/comments msg: read ECONNRESET
+[info]: timestamp:2025-07-11 02:43:35 AM traceId:[a2d7a2b7-c73e-46eb-b9d6-7f9a85e9923e] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:45:48 AM traceId:[5713f876-487b-4a3d-98f9-c8002dc193ad] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:46:28 AM traceId:[387d31a6-6e55-4540-a902-ec76fc83adbf] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:47:07 AM traceId:[64102940-62d1-45b6-957b-d019b6823544] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-11 02:47:38 AM traceId:[85ec276e-21d9-46dd-a60b-1bd6434e5c61] msg:Incoming request: DELETE /api/v1/comments/687026a61263152100c0fb73
+[info]: timestamp:2025-07-11 02:48:35 AM traceId:[e9c5b12a-899a-4585-ad26-b301ffaf7ad4] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6d
+[info]: timestamp:2025-07-11 02:55:37 AM traceId:[b6a18eba-e252-4681-a392-697943e13b76] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6d
+[error]: timestamp:2025-07-11 02:55:38 AM traceId:[b6a18eba-e252-4681-a392-697943e13b76] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6d msg: The comment you want to delete is not found !
+[info]: timestamp:2025-07-11 03:00:32 AM traceId:[aa058a65-447d-4d13-bccc-31589f31fbff] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6
+[error]: timestamp:2025-07-11 03:00:32 AM traceId:[aa058a65-447d-4d13-bccc-31589f31fbff] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6 msg: Validation failed!
+[info]: timestamp:2025-07-19 12:44:30 PM traceId:[1bbdf134-4f97-46a1-868e-618f3cc1a286] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-19 12:44:51 PM traceId:[00d526df-89ec-4f10-85cd-d53bb7448566] msg:Incoming request: POST /api/v1/comments
+[error]: timestamp:2025-07-19 12:44:52 PM traceId:[00d526df-89ec-4f10-85cd-d53bb7448566] msg: method: POST: /api/v1/comments msg: You can't reply non existing comment!
+[info]: timestamp:2025-07-19 12:45:02 PM traceId:[a67da422-cf03-4e0c-b945-82fc56967ad2] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-19 12:52:53 PM traceId:[f8548891-8339-425e-9f95-e9f0763925fb] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-07-19 12:53:04 PM traceId:[d28d0a52-1992-4cdf-84f3-6c42218d1107] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-07-19 12:53:45 PM traceId:[3ea0f9c3-f289-4a5e-8407-944cc55d0fdf] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-07-19 12:54:37 PM traceId:[c51061ca-6ef7-4663-8d64-e08aeac0e3a9] msg:Incoming request: GET /api/v1/posts/me
+[info]: timestamp:2025-07-19 16:25:54 PM traceId:[1571532e-c236-4791-8936-ee7d56cf7896] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-19 17:46:06 PM traceId:[575ee0ef-fff7-44a2-a1a6-7189e58caee7] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-19 17:46:56 PM traceId:[7746db8f-3312-44e4-a388-2cc238cb7fcc] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 16:56:56 PM traceId:[7ec83c15-5f8a-49bf-b99a-a5fd2964eca8] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 17:03:42 PM traceId:[48d07a8d-4137-473f-aa5d-3ef9f8fcba32] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 17:41:49 PM traceId:[72fe56a2-9ed9-4c7b-bee4-716147f37ae8] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-20 17:44:06 PM traceId:[86f7b041-9843-4295-a08f-9513500ee203] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-20 17:44:18 PM traceId:[eb38a3d8-c0c7-4025-bdee-d4902d89d285] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 17:44:44 PM traceId:[39d0474b-a2eb-4623-8474-2383a49f3453] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 17:46:21 PM traceId:[d1ca1ddb-ca56-43ed-ba81-de3f26a89664] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:30:44 PM traceId:[dc9bcba2-0109-4239-8ca0-857e9971fc7b] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:31:12 PM traceId:[2092e5cf-4b9d-444c-9e86-a423b70f3347] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[error]: timestamp:2025-07-20 19:31:13 PM traceId:[2092e5cf-4b9d-444c-9e86-a423b70f3347] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[info]: timestamp:2025-07-20 19:31:14 PM traceId:[ddf05241-65dc-4f97-89fa-17f8d667a262] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[error]: timestamp:2025-07-20 19:31:14 PM traceId:[ddf05241-65dc-4f97-89fa-17f8d667a262] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[info]: timestamp:2025-07-20 19:31:15 PM traceId:[862a5448-ae18-4baf-ae12-79ceb5979906] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[error]: timestamp:2025-07-20 19:31:16 PM traceId:[862a5448-ae18-4baf-ae12-79ceb5979906] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Account is currently delete. Please restore your account or contact support.
+[info]: timestamp:2025-07-20 19:31:59 PM traceId:[3c207143-2bc3-4c88-9c7c-307c1109b31b] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:32:24 PM traceId:[b38ca5d8-5125-4c8a-b703-34f059a71f27] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:32:31 PM traceId:[5ee0270a-139b-40e8-abe8-66799a9dae77] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:34:47 PM traceId:[c69b453a-3c05-4571-a02a-98032f88dfa0] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:34:50 PM traceId:[116db119-5219-4b88-a326-3210cc3a4361] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 19:34:52 PM traceId:[f90975b9-3491-44e5-b7a6-a340d0aa793e] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:34:04 PM traceId:[ff41e182-f7a5-4bad-a1c8-56e86805599f] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:35:23 PM traceId:[b4ef69fa-9047-4bf1-a494-bfb4206a38f0] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:36:00 PM traceId:[9c917f58-e640-4a29-ba9b-da32db290c8e] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:36:24 PM traceId:[7d6a701d-9a30-4166-8c3e-2662598db989] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:36:37 PM traceId:[21cc70cd-7638-42a8-b4cb-3249465c92f1] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:36:39 PM traceId:[96cea13c-04fe-4a31-ad99-d659ce7e7415] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:36:53 PM traceId:[06af4d0e-5e84-410e-9731-e4228ca9004f] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:37:35 PM traceId:[a4851a54-80ac-4592-a681-d0c3daedb373] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:40:23 PM traceId:[9cba8a14-8aea-4241-b8e9-243b7d4480b2] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:40:58 PM traceId:[7174adf2-7f6b-42b9-928d-f2efcaf7240a] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:41:04 PM traceId:[1cdee09a-c9f9-4493-afc1-1a4a9879ac30] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt%20dsfkja
+[error]: timestamp:2025-07-20 23:41:04 PM traceId:[1cdee09a-c9f9-4493-afc1-1a4a9879ac30] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt%20dsfkja msg: Validation failed!
+[info]: timestamp:2025-07-20 23:41:52 PM traceId:[eda5a8e6-a309-478c-a0a1-bfd9734de0f2] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:42:25 PM traceId:[af6b0012-8660-4cc4-839f-68625fb87ea7] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-20 23:42:38 PM traceId:[e34a78f3-99cd-472e-8876-536028201ee1] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:42:50 PM traceId:[e91e7298-3d69-4a98-a04f-425d963ef6ae] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=createdAt
+[info]: timestamp:2025-07-20 23:43:03 PM traceId:[ee6c3e26-ecb2-4ae6-acc7-0d25cc75d709] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=createdAt
+[info]: timestamp:2025-07-20 23:51:51 PM traceId:[74725252-b0a0-4e6c-a2bb-d1a0caf82696] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=createdAt
+[info]: timestamp:2025-07-20 23:52:03 PM traceId:[0353f46d-61b3-4ca4-a691-6647627f8e52] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:53:21 PM traceId:[a73fc096-e08b-45e8-bae4-3ef65f19f52d] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=-createdAt
+[info]: timestamp:2025-07-20 23:53:57 PM traceId:[71126f86-ca1b-414b-992f-0d454e244243] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:54:01 PM traceId:[4e760995-be88-4718-88a6-ccd8ea2916b4] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-20 23:55:38 PM traceId:[866c8880-8700-4c84-9428-d3b725a101ab] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-20 23:56:09 PM traceId:[b53e115e-4bb9-452b-8e9b-c087d7527a4b] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[error]: timestamp:2025-07-20 23:56:09 PM traceId:[b53e115e-4bb9-452b-8e9b-c087d7527a4b] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038bf msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-07-21 00:01:59 AM traceId:[36b66751-2ea0-4e24-bd55-24fd7f53cb02] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038be
+[error]: timestamp:2025-07-21 00:01:59 AM traceId:[36b66751-2ea0-4e24-bd55-24fd7f53cb02] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038be msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-07-21 00:02:02 AM traceId:[f0b3cf48-ee9e-40e7-a0c7-50c7fb23008d] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038be
+[info]: timestamp:2025-07-21 00:02:27 AM traceId:[d31117ef-3b4b-43a8-8d76-787d1a20557e] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038be
+[info]: timestamp:2025-07-21 00:05:49 AM traceId:[723df14a-369f-4fba-8848-5a55f1589aad] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038be
+[error]: timestamp:2025-07-21 00:05:50 AM traceId:[723df14a-369f-4fba-8848-5a55f1589aad] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038be msg: The post is not found !
+[info]: timestamp:2025-07-21 00:06:59 AM traceId:[89c62374-d3dc-4579-8ff4-20a8364a4e90] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038
+[error]: timestamp:2025-07-21 00:06:59 AM traceId:[89c62374-d3dc-4579-8ff4-20a8364a4e90] msg: method: GET: /api/v1/comments/686d6da46d44a03f71c038 msg: Validation failed!
+[info]: timestamp:2025-07-21 00:07:18 AM traceId:[daa35381-ac94-4c32-ab67-4ac7771bb8cf] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=createdAt
+[info]: timestamp:2025-07-21 01:08:38 AM traceId:[9ef63c56-5b7e-43f1-9d8d-7fb2e855c6c5] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf?sort=createdAt
+[info]: timestamp:2025-07-21 01:09:03 AM traceId:[e11c249d-6979-49cd-8657-bbec905908c4] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:09:09 AM traceId:[72cf2638-ac00-4d19-9232-d81dce66aa0c] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:30:33 AM traceId:[79fd5487-ea1e-49b3-bb45-6b402352b1ae] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:30:36 AM traceId:[d62c6dfe-1983-417d-9809-e288eabef5b3] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:31:08 AM traceId:[4dfb4682-d319-4c3c-9e31-76e6e0febf88] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:31:38 AM traceId:[4dde7dad-35bb-4e07-956e-ed9e44b2dad9] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:31:43 AM traceId:[5b7f044b-4872-4ff5-87c3-755482262d39] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:33:16 AM traceId:[1c1c7982-213a-43cc-84d0-4bcd0cd4e677] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:33:42 AM traceId:[ba01130d-d3be-4d35-b067-7f8390b7c63e] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:34:10 AM traceId:[e6c40b24-6c8d-45e1-947b-0dda815e7e47] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:34:43 AM traceId:[f6c0672d-58af-40f5-ad10-781108eeda9a] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:36:05 AM traceId:[9f322d6e-bb83-4576-a42b-c4e133168dd7] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:38:11 AM traceId:[a3ae942a-5a54-4562-b47a-2e17097e4cdc] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:38:58 AM traceId:[13481246-11f0-471a-915f-7950da30881d] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:39:30 AM traceId:[ba8a1762-551f-48f8-9949-1004d2a49504] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:43:29 AM traceId:[fb21c571-a905-4ff4-893f-af796e772f3d] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:43:35 AM traceId:[046a4a85-8e8d-44d2-992e-beea22be694e] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:43:47 AM traceId:[1725aa05-f54e-4e14-81c0-bf798ebacb18] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:50:34 AM traceId:[bc078cf0-14df-49f7-85ea-a940b1820b92] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 01:56:35 AM traceId:[1100b32e-9414-4209-aaf5-a78433e9bf7d] msg:Incoming request: GET /api/v1/comments/687cd5fe7a9297e55ce55457/replies
+[error]: timestamp:2025-07-21 01:56:35 AM traceId:[1100b32e-9414-4209-aaf5-a78433e9bf7d] msg: method: GET: /api/v1/comments/687cd5fe7a9297e55ce55457/replies msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-07-21 01:57:05 AM traceId:[424c6bd4-5452-401f-a8c7-a4ef1b5b31c1] msg:Incoming request: GET /api/v1/comments/687cd5fe7a9297e55ce55457/replies
+[info]: timestamp:2025-07-21 01:58:15 AM traceId:[f493a595-019a-4cfa-9af0-8ebaed10086a] msg:Incoming request: GET /api/v1/comments/687d2a82a31eb92cea3dc10c/replies
+[error]: timestamp:2025-07-21 01:58:15 AM traceId:[f493a595-019a-4cfa-9af0-8ebaed10086a] msg: method: GET: /api/v1/comments/687d2a82a31eb92cea3dc10c/replies msg: This comment has no replies
+[info]: timestamp:2025-07-21 01:58:35 AM traceId:[cf2728fc-409e-436d-8243-a52442349d74] msg:Incoming request: GET /api/v1/comments/687d2a82a31eb92cea3dc10a/replies
+[error]: timestamp:2025-07-21 01:58:36 AM traceId:[cf2728fc-409e-436d-8243-a52442349d74] msg: method: GET: /api/v1/comments/687d2a82a31eb92cea3dc10a/replies msg: The comment is not found !
+[info]: timestamp:2025-07-21 01:59:08 AM traceId:[aa26fee2-c79e-4bd8-a051-c24659b66961] msg:Incoming request: GET /api/v1/comments/687cd5fe7a9297e55ce55457/replies
+[info]: timestamp:2025-07-21 02:00:35 AM traceId:[5c4c124a-f4ad-48e9-9cf9-e0c2e6bba4bd] msg:Incoming request: POST /api/v1/comments
+[info]: timestamp:2025-07-21 02:00:43 AM traceId:[e71c5af1-0692-49f3-9cfc-f0f053f03583] msg:Incoming request: GET /api/v1/comments/687cd5fe7a9297e55ce55457/replies
+[info]: timestamp:2025-07-21 02:02:34 AM traceId:[6cd11de8-6e97-4218-acd4-20457cb1b4bc] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 02:04:21 AM traceId:[73dbca4c-ab30-4d16-9ed5-ddb103c3adcf] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 02:10:14 AM traceId:[c8413399-1cab-43f4-85f8-b44f7c86f8a6] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6
+[error]: timestamp:2025-07-21 02:10:14 AM traceId:[c8413399-1cab-43f4-85f8-b44f7c86f8a6] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6 msg: Validation failed!
+[info]: timestamp:2025-07-21 02:10:21 AM traceId:[bb94c7f0-83e4-4aca-a096-ca90a54684c7] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6a
+[error]: timestamp:2025-07-21 02:10:22 AM traceId:[bb94c7f0-83e4-4aca-a096-ca90a54684c7] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6a msg: The comment you want to delete is not found !
+[info]: timestamp:2025-07-21 02:10:23 AM traceId:[1601f060-f807-4012-a5d8-b629349f8e36] msg:Incoming request: DELETE /api/v1/comments/6870267e1263152100c0fb6a
+[error]: timestamp:2025-07-21 02:10:24 AM traceId:[1601f060-f807-4012-a5d8-b629349f8e36] msg: method: DELETE: /api/v1/comments/6870267e1263152100c0fb6a msg: The comment you want to delete is not found !
+[info]: timestamp:2025-07-21 17:50:32 PM traceId:[53a22f94-6498-4d91-aac4-15d1dff28c61] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:51:20 PM traceId:[8df21af0-0652-4b8e-a82f-dab0bf1aa04b] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:51:28 PM traceId:[6590d267-310c-4068-a9d1-e9688f80a4d6] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:51:29 PM traceId:[6b78b2e5-e75c-4c51-aa51-f8b979a3925c] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:51:30 PM traceId:[2c3f69b4-01a7-435d-85c4-f915a2b7b3d6] msg:Incoming request: GET /api/v1/comments/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:51:32 PM traceId:[5475a207-6009-4d37-96c8-5cb8f918b8af] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:52:20 PM traceId:[db1fc6d2-9fc6-44cf-9405-9159e53ed3d2] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:52:27 PM traceId:[84d90447-a6e9-46a3-9f5a-a8c792f4c37a] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038ba
+[error]: timestamp:2025-07-21 17:52:28 PM traceId:[84d90447-a6e9-46a3-9f5a-a8c792f4c37a] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038ba msg: The post is not found !
+[info]: timestamp:2025-07-21 17:52:34 PM traceId:[15f62656-ec5a-44f1-814b-6d9b658a4055] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038b
+[error]: timestamp:2025-07-21 17:52:34 PM traceId:[15f62656-ec5a-44f1-814b-6d9b658a4055] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038b msg: Validation failed!
+[info]: timestamp:2025-07-21 17:52:37 PM traceId:[b70cff3f-66d7-4589-8400-fead7d78b197] msg:Incoming request: GET /api/v1/comments/post/686d6da46d44a03f71c038bf
+[info]: timestamp:2025-07-21 17:53:20 PM traceId:[2a80fed5-c954-455e-99a8-3ee11d1c77e9] msg:Incoming request: GET /api/v1/comments/687cd5fe7a9297e55ce55457/replies
+[error]: timestamp:2025-07-21 17:53:21 PM traceId:[2a80fed5-c954-455e-99a8-3ee11d1c77e9] msg: method: GET: /api/v1/comments/687cd5fe7a9297e55ce55457/replies msg: The comment is not found !

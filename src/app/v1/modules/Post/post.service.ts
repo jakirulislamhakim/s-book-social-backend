@@ -87,6 +87,8 @@ const getMyPostsFromDB = async (
     .paginate()
     .fields();
 
+  // fixme: populate also post owner details
+
   const posts = await postQuery.modelQuery
     .populate({
       path: 'tags',
@@ -102,6 +104,7 @@ const getMyPostsFromDB = async (
 };
 
 const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
+  // fixme: populate also post owner details
   const post = await Post.findById(postId)
     .populate({
       path: 'tags',
@@ -236,6 +239,7 @@ const getOtherUserPostsFromDB = async (
     .paginate()
     .fields();
 
+  // fixme: populate also post owner details
   const posts = await postQuery.modelQuery
     .populate({
       path: 'tags',

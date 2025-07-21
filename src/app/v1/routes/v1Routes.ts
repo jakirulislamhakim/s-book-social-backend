@@ -7,6 +7,7 @@ import { PostRoutes } from '../modules/Post/post.route';
 import { PostAppealRoutes } from '../modules/PostAppeal/postAppeal.route';
 import { FriendRoutes } from '../modules/Friend/friend.route';
 import { ReactionRoutes } from '../modules/Reaction/reaction.route';
+import { CommentRoutes } from '../modules/Comment/comment.route';
 
 type TModulesRoutes = {
   path: string;
@@ -47,6 +48,10 @@ const moduleRoutes: TModulesRoutes[] = [
   {
     path: '/reactions',
     route: ReactionRoutes,
+  },
+  {
+    path: '/comments',
+    route: CommentRoutes,
   },
 ];
 

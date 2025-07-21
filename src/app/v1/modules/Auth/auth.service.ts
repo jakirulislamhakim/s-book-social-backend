@@ -12,7 +12,7 @@ import type {
 import AppError from '../../errors/AppError';
 import { UserUtils } from '../User/user.util';
 import config from '../../config';
-import { sendEmailBySendGrid } from '../../utils/sendEmailSendGrid';
+// import { sendEmailBySendGrid } from '../../utils/sendEmailSendGrid';
 import { Profile } from '../Profile/profile.model';
 import mongoose from 'mongoose';
 import { ADMIN_BADGE, USER_ROLE, USER_STATUS } from '../User/user.constant';
@@ -84,15 +84,20 @@ const userRegistrationIntoDB = async (
 
     const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
-    await sendEmailBySendGrid({
-      to: user[0].email,
-      subject: 'Verify Your Email',
-      templateName: 'verify-email',
-      emailData: {
-        verificationLink,
-        name: profile[0].fullName,
-      },
-    });
+    console.log({ verificationLink, profile: profile[0].fullName });
+
+    // fixme : send grid use for production & enterprise software
+    //! my sendgrid account free trail validity expired
+
+    // await sendEmailBySendGrid({
+    //   to: user[0].email,
+    //   subject: 'Verify Your Email',
+    //   templateName: 'verify-email',
+    //   emailData: {
+    //     verificationLink,
+    //     name: profile[0].fullName,
+    //   },
+    // });
 
     // Commit the transaction
     await session.commitTransaction();
@@ -150,15 +155,17 @@ const login = async (payload: TUserLogin, baseUrl: string) => {
 
     const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
-    await sendEmailBySendGrid({
-      to: isExistsUser.email,
-      subject: 'Verify Your Email',
-      templateName: 'verify-email',
-      emailData: {
-        verificationLink,
-        name: profile!.fullName,
-      },
-    });
+    console.log({ verificationLink });
+
+    // await sendEmailBySendGrid({
+    //   to: isExistsUser.email,
+    //   subject: 'Verify Your Email',
+    //   templateName: 'verify-email',
+    //   emailData: {
+    //     verificationLink,
+    //     name: profile!.fullName,
+    //   },
+    // });
 
     return { fullName: profile!.fullName };
   }
@@ -238,15 +245,17 @@ const resendVerificationEmail = async (email: string, baseUrl: string) => {
     .select('fullName')
     .lean();
 
-  await sendEmailBySendGrid({
-    to: user.email,
-    subject: 'Verify Your Email',
-    templateName: 'verify-email',
-    emailData: {
-      verificationLink,
-      name: profile!.fullName,
-    },
-  });
+  console.log({ verificationLink, profile: profile?.fullName });
+
+  //   await sendEmailBySendGrid({
+  //     to: user.email,
+  //     subject: 'Verify Your Email',
+  //     templateName: 'verify-email',
+  //     emailData: {
+  //       verificationLink,
+  //       name: profile!.fullName,
+  //     },
+  //   });
 };
 
 // change password
@@ -309,15 +318,20 @@ const forgetPassword = async (
     .select('fullName')
     .lean();
 
-  await sendEmailBySendGrid({
-    to: user.email,
-    subject: 'Reset Your Password',
-    templateName: 'reset-password',
-    emailData: {
-      resetUrl,
-      name: profile!.fullName,
-    },
+  console.log({
+    resetUrl,
+    profile: profile?.fullName,
   });
+
+  // await sendEmailBySendGrid({
+  //   to: user.email,
+  //   subject: 'Reset Your Password',
+  //   templateName: 'reset-password',
+  //   emailData: {
+  //     resetUrl,
+  //     name: profile!.fullName,
+  //   },
+  // });
 };
 
 // reset password

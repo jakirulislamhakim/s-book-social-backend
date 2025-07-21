@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { User } from './user.model';
 
-const usernameRegex = /^[a-z0-9._]{6,20}$/; // Like Instra: lowercase, numbers, ., _
+export const usernameRegex = /^[a-z0-9._]{6,20}$/; // Like Instra: lowercase, numbers, ., _
 
 const usernameSchema = z.object({
   username: z
