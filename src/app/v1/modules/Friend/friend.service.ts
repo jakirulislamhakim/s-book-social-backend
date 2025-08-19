@@ -8,6 +8,12 @@ import { User } from '../User/user.model';
 import { USER_STATUS } from '../User/user.constant';
 import { TPagination } from '../../utils/sendApiResponse';
 import { Profile } from '../Profile/profile.model';
+import { NotificationUtils } from '../Notification/notification.utils';
+import {
+  NOTIFICATION_ACTION,
+  NOTIFICATION_TARGET_TYPE,
+  NOTIFICATION_URL_METHOD,
+} from '../Notification/notification.constant';
 
 const sendFriendRequest = async (
   senderId: Types.ObjectId,
@@ -82,6 +88,22 @@ const sendFriendRequest = async (
     status: FRIEND_STATUS.PENDING,
   });
 
+  // send notification
+  const profile = await Profile.findOne({ userId: senderId })
+    .select('fullName')
+    .lean();
+
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.FRIEND_REQUEST,
+    targetType: NOTIFICATION_TARGET_TYPE.FRIEND,
+    senderId,
+    receiverId: new Types.ObjectId(receiverId),
+    targetId: sendRequest._id,
+    message: `${profile?.fullName} sent you a friend request`,
+    url: `/friends/requests/received`,
+    url_method: NOTIFICATION_URL_METHOD.GET,
+  });
+
   return sendRequest;
 };
 
@@ -97,7 +119,7 @@ const acceptFriendRequest = async (
   }
 
   const friendRequest = await Friend.findById(requestId)
-    .select('status receiverId')
+    .select('status senderId receiverId')
     .lean();
 
   if (!friendRequest) {
@@ -135,6 +157,22 @@ const acceptFriendRequest = async (
       new: true,
     },
   );
+
+  // send notification
+  const profile = await Profile.findOne({ userId: receiverId })
+    .select('fullName')
+    .lean();
+
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.FRIEND_REQUEST_ACCEPTED,
+    targetType: NOTIFICATION_TARGET_TYPE.FRIEND,
+    senderId: receiverId,
+    receiverId: friendRequest.senderId,
+    targetId: friendRequest._id,
+    message: `${profile?.fullName} accepted your friend request`,
+    url: `/users/profile/${receiverId}`,
+    url_method: NOTIFICATION_URL_METHOD.GET,
+  });
 
   return acceptFriendRequest;
 };

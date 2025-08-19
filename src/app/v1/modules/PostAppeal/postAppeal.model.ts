@@ -11,7 +11,7 @@ const postAppealSchema = new Schema<TPostAppeal>(
     },
     userId: {
       type: Schema.Types.ObjectId,
-      ref: 'User', // optional, if you're referencing users
+      ref: 'User',
       required: true,
     },
     message: {

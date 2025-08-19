@@ -6,12 +6,22 @@ import { POST_AUDIENCE, POST_STATUS } from '../Post/post.constant';
 import { Comment } from './comment.model';
 import { Friend } from '../Friend/friend.model';
 import { FRIEND_STATUS } from '../Friend/friend.constant';
-import { CommentUtils } from './comment.utils';
 import { Types } from 'mongoose';
 import { USER_STATUS } from '../User/user.constant';
+import { getMentionUserIdsFromContent } from '../../utils/getMentionUserIdsFromContent';
+import {
+  NOTIFICATION_ACTION,
+  NOTIFICATION_TARGET_TYPE,
+  NOTIFICATION_URL_METHOD,
+} from '../Notification/notification.constant';
+import { NotificationUtils } from '../Notification/notification.utils';
+import { Profile } from '../Profile/profile.model';
+import { TNotificationCreate } from '../Notification/notification.interface';
 
 const createOrReplyComment = async (payload: TCommentCreate) => {
-  const { postId, content, parentId, authorId } = payload;
+  const { postId, content, parentId, authorId: commentAuthorId } = payload;
+
+  // todo use transactions for create comment and notification
 
   const existingPost = await Post.findOne({
     _id: postId,
@@ -24,11 +34,11 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
     throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
   }
 
-  const { audience, userId } = existingPost;
+  const { audience, userId: postAuthorId } = existingPost;
 
   if (
     audience === POST_AUDIENCE.PRIVATE &&
-    authorId.toString() !== userId.toString()
+    commentAuthorId.toString() !== postAuthorId.toString()
   ) {
     throw new AppError(
       httpStatus.FORBIDDEN,
@@ -39,8 +49,8 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
   if (audience === POST_AUDIENCE.FRIENDS) {
     const isFriend = await Friend.exists({
       $or: [
-        { senderId: authorId, receiverId: userId },
-        { senderId: userId, receiverId: authorId },
+        { senderId: commentAuthorId, receiverId: postAuthorId },
+        { senderId: postAuthorId, receiverId: commentAuthorId },
       ],
       status: { $eq: FRIEND_STATUS.ACCEPTED },
     });
@@ -53,14 +63,26 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
     }
   }
 
-  const mentionUsernames = CommentUtils.extractMentionsFromContent(content);
+  const mentions = await getMentionUserIdsFromContent(content);
 
-  //* only mention at a time one user
-  // const mentions = await User.find({
-  //   username: { $in: mentionUsernames },
-  // }).select('_id');
+  const profile = await Profile.findOne({ userId: commentAuthorId })
+    .select('fullName')
+    .lean();
 
-  const mentions = await CommentUtils.getMentionsUserIds(mentionUsernames);
+  if (mentions.length > 0) {
+    const data: TNotificationCreate[] = mentions.map((mentionUserId) => ({
+      action: NOTIFICATION_ACTION.MENTIONED,
+      message: `${profile?.fullName} mentioned you in a comment`,
+      receiverId: mentionUserId,
+      senderId: commentAuthorId,
+      targetType: NOTIFICATION_TARGET_TYPE.POST,
+      targetId: new Types.ObjectId(postId),
+      url: `/posts/${postId}`,
+      url_method: NOTIFICATION_URL_METHOD.GET,
+    }));
+
+    await NotificationUtils.createNotification(data);
+  }
 
   // check parent comment exist or not then increment reply count & create reply comment
   if (parentId) {
@@ -75,7 +97,7 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
       },
     )
       .lean()
-      .select('_id parentId');
+      .select('_id parentId authorId');
 
     if (!existingParentComment) {
       throw new AppError(
@@ -96,6 +118,20 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
       mentions,
     });
 
+    if (
+      existingParentComment.authorId.toString() !== commentAuthorId.toString()
+    ) {
+      await NotificationUtils.createNotification({
+        action: NOTIFICATION_ACTION.REPLIED,
+        message: `${profile?.fullName} replied on your comment`,
+        receiverId: existingParentComment.authorId,
+        senderId: commentAuthorId,
+        targetType: NOTIFICATION_TARGET_TYPE.POST,
+        targetId: new Types.ObjectId(postId),
+        url: `/posts/${postId}`,
+        url_method: NOTIFICATION_URL_METHOD.GET,
+      });
+    }
     return createCommentReply;
   }
 
@@ -103,6 +139,19 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
     ...payload,
     mentions,
   });
+
+  if (commentAuthorId.toString() !== postAuthorId.toString()) {
+    await NotificationUtils.createNotification({
+      action: NOTIFICATION_ACTION.COMMENTED,
+      message: `${profile?.fullName} commented on your post`,
+      receiverId: postAuthorId,
+      senderId: commentAuthorId,
+      targetType: NOTIFICATION_TARGET_TYPE.POST,
+      targetId: new Types.ObjectId(postId),
+      url: `/posts/${postId}`,
+      url_method: NOTIFICATION_URL_METHOD.GET,
+    });
+  }
 
   return createComment;
 };
@@ -190,9 +239,7 @@ const updateComment = async (
     );
   }
 
-  const mentionUsernames = CommentUtils.extractMentionsFromContent(content);
-
-  const mentions = await CommentUtils.getMentionsUserIds(mentionUsernames);
+  const mentions = await getMentionUserIdsFromContent(content);
 
   const updateComment = await Comment.findByIdAndUpdate(
     commentId,
@@ -206,6 +253,25 @@ const updateComment = async (
       runValidators: true,
     },
   );
+
+  const profile = await Profile.findOne({ userId: authorId })
+    .select('fullName')
+    .lean();
+
+  if (mentions.length > 0) {
+    const data: TNotificationCreate[] = mentions.map((mentionUserId) => ({
+      action: NOTIFICATION_ACTION.MENTIONED,
+      message: `${profile?.fullName} mentioned you in a comment`,
+      receiverId: mentionUserId,
+      senderId: authorId,
+      targetType: NOTIFICATION_TARGET_TYPE.COMMENT,
+      targetId: new Types.ObjectId(commentId),
+      url: `/posts/${existingComment.postId}`,
+      url_method: NOTIFICATION_URL_METHOD.GET,
+    }));
+
+    await NotificationUtils.createNotification(data);
+  }
 
   return updateComment;
 };

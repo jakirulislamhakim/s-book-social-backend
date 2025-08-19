@@ -10,7 +10,7 @@ const router = Router();
 router.post(
   '/',
   validateReq.body(PostAppealValidations.createPostAppealSchema),
-  authorizeRoles(USER_ROLE.USER),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostAppealControllers.createPostAppeal,
 );
 

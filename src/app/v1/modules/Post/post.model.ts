@@ -1,11 +1,11 @@
-import { Schema, model, Types } from 'mongoose';
+import { Schema, model } from 'mongoose';
 import { TPost } from './post.interface';
 import { POST_STATUS, POST_AUDIENCE } from './post.constant';
 
 const postSchema = new Schema<TPost>(
   {
     userId: {
-      type: Types.ObjectId,
+      type: Schema.Types.ObjectId,
       required: true,
       ref: 'User',
     },
@@ -19,7 +19,7 @@ const postSchema = new Schema<TPost>(
       default: [],
     },
     tags: {
-      type: [Types.ObjectId],
+      type: [Schema.Types.ObjectId],
       default: [],
       ref: 'Profile',
     },

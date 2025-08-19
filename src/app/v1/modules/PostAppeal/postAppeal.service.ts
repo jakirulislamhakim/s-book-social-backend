@@ -10,6 +10,12 @@ import {
   POST_APPEAL_SEARCHABLE_FIELDS,
   POST_APPEAL_STATUS,
 } from './postAppeal.constant';
+import { NotificationUtils } from '../Notification/notification.utils';
+import {
+  NOTIFICATION_ACTION,
+  NOTIFICATION_TARGET_TYPE,
+  NOTIFICATION_URL_METHOD,
+} from '../Notification/notification.constant';
 
 const createPostAppealIntoDB = async (
   payload: TPostAppealCreate,
@@ -55,6 +61,20 @@ const createPostAppealIntoDB = async (
   const createPostAppeal = await PostAppeal.create({
     ...payload,
     userId,
+  });
+
+  // send notification
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.POST_APPEAL,
+    message:
+      'Your post has been appealed. Post will be reviewed by our team and you will be notified.',
+    receiverId: userId,
+    senderId: null,
+    targetType: NOTIFICATION_TARGET_TYPE.POST,
+    targetId: new Types.ObjectId(payload.postId),
+    url: '/post-appeals',
+    url_method: NOTIFICATION_URL_METHOD.GET,
+    isFromSystem: true,
   });
 
   return createPostAppeal;

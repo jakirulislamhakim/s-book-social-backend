@@ -7,6 +7,14 @@ import AppError from '../../errors/AppError';
 import httpStatus from 'http-status';
 import { USER_STATUS } from '../User/user.constant';
 import { TPagination } from '../../utils/sendApiResponse';
+import { NotificationUtils } from '../Notification/notification.utils';
+import {
+  NOTIFICATION_ACTION,
+  NOTIFICATION_URL_METHOD,
+} from '../Notification/notification.constant';
+import { Profile } from '../Profile/profile.model';
+import { Comment } from '../Comment/comment.model';
+import { Notification } from '../Notification/notification.model';
 
 // create or update reaction if exist & type is provided then remove reaction
 const toggleReaction = async (
@@ -17,19 +25,28 @@ const toggleReaction = async (
 
   let message = '';
 
+  let targetEntity = null;
+  let notificationReceiverId: Types.ObjectId | undefined;
+
   if (targetType === REACTION_TARGET_TYPE.POST) {
-    const post = await Post.exists({ _id: targetId }).lean();
+    targetEntity = await Post.findById(targetId).select('userId').lean();
 
-    if (!post) {
-      throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
-    }
+    notificationReceiverId = new Types.ObjectId(
+      targetEntity?.userId.toString(),
+    );
+  } else if (targetType === REACTION_TARGET_TYPE.COMMENT) {
+    targetEntity = await Comment.findById(targetId).select('authorId').lean();
 
-    /* //! FIXME 
-    -  i can do more validation : like userId & post userId is not friend user only give reaction only public post
-    -  i avoid this validation bcz when i querying post i have to check if post is public or not and which user can see the post
-    */
+    notificationReceiverId = targetEntity?.authorId;
   }
-  // TODO : Extend this to check COMMENT and STORY targets
+  // TODO : Extend this to check  STORY targets
+
+  if (!targetEntity) {
+    throw new AppError(
+      httpStatus.NOT_FOUND,
+      `The ${targetType} is not found !`,
+    );
+  }
 
   const existReaction = await Reaction.findOne({
     userId,
@@ -58,6 +75,13 @@ const toggleReaction = async (
     await Reaction.findByIdAndDelete(existReaction._id);
     message = `Your reaction has been removed from this ${targetType}.`;
 
+    await Notification.deleteOne({
+      targetType,
+      targetId: new Types.ObjectId(targetId),
+      action: NOTIFICATION_ACTION.REACTED,
+      senderId: userId,
+    });
+
     return message;
   }
 
@@ -81,6 +105,28 @@ const toggleReaction = async (
     .lean();
 
   message = `You have reacted ${type} to this ${targetType}.`;
+
+  // send notification
+  const profile = await Profile.findOne({ userId }).select('fullName').lean();
+
+  await Notification.deleteOne({
+    targetType,
+    targetId: new Types.ObjectId(targetId),
+    action: NOTIFICATION_ACTION.REACTED,
+    senderId: userId,
+  });
+
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.REACTED,
+    message: `${profile?.fullName} reacted ${type} to your ${targetType}.`,
+    receiverId: notificationReceiverId as Types.ObjectId,
+    senderId: userId,
+    targetType,
+    targetId: new Types.ObjectId(targetId),
+    isFromSystem: true,
+    url: `/${targetType === REACTION_TARGET_TYPE.POST ? 'posts' : 'stories'}/${targetId}`,
+    url_method: NOTIFICATION_URL_METHOD.GET,
+  });
 
   return message;
 };

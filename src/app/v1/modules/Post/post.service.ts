@@ -16,6 +16,14 @@ import { POST_APPEAL_STATUS } from '../PostAppeal/postAppeal.constant';
 import { TPostAppealAdminResponse } from '../PostAppeal/postAppeal.interface';
 import { Friend } from '../Friend/friend.model';
 import { FRIEND_STATUS } from '../Friend/friend.constant';
+import { NotificationUtils } from '../Notification/notification.utils';
+import {
+  NOTIFICATION_ACTION,
+  NOTIFICATION_TARGET_TYPE,
+  NOTIFICATION_URL_METHOD,
+} from '../Notification/notification.constant';
+import { TNotificationCreate } from '../Notification/notification.interface';
+import { Profile } from '../Profile/profile.model';
 
 const createPostIntoDB = async (payload: TPostCreate) => {
   const { tags, userId } = payload;
@@ -30,7 +38,6 @@ const createPostIntoDB = async (payload: TPostCreate) => {
     }
 
     // check duplicate users tags
-
     if (new Set(tags).size !== tags.length) {
       throw new AppError(
         httpStatus.BAD_REQUEST,
@@ -38,7 +45,7 @@ const createPostIntoDB = async (payload: TPostCreate) => {
       );
     }
 
-    const existingUsers = await User.find({
+    const existingTagUsers = await User.find({
       _id: { $in: tags },
       isVerified: true,
       status: { $eq: USER_STATUS.ACTIVE },
@@ -46,14 +53,14 @@ const createPostIntoDB = async (payload: TPostCreate) => {
       .select('_id')
       .lean();
 
-    const foundUserIds = existingUsers.map((user) => user._id.toString());
+    const foundTagUserIds = existingTagUsers.map((user) => user._id.toString());
 
-    const notFoundUser = tags.filter((id) => !foundUserIds.includes(id));
+    const notFoundTagUser = tags.filter((id) => !foundTagUserIds.includes(id));
 
-    if (notFoundUser.length > 0) {
+    if (notFoundTagUser.length > 0) {
       throw new AppError(
         httpStatus.NOT_FOUND,
-        `Some users you are trying to tag could not be found: ${notFoundUser.join(', ')}`,
+        `Some users you are trying to tag could not be found: ${notFoundTagUser.join(', ')}`,
       );
     }
 
@@ -72,8 +79,28 @@ const createPostIntoDB = async (payload: TPostCreate) => {
     }
   }
 
-  const post = await Post.create(payload);
-  return post;
+  // todo: add mentions filed in post model & mentions content & add notification for mention user
+
+  const createPost = await Post.create(payload);
+
+  const profile = await Profile.findById(userId).select('fullName').lean();
+
+  if (tags && tags.length > 0) {
+    const notificationData: TNotificationCreate[] = tags.map((tagId) => ({
+      action: NOTIFICATION_ACTION.TAGGED,
+      message: `${profile?.fullName} tagged you in a post`,
+      receiverId: new Types.ObjectId(tagId),
+      senderId: userId,
+      targetType: NOTIFICATION_TARGET_TYPE.POST,
+      targetId: new Types.ObjectId(createPost._id),
+      url: `/posts/${createPost._id}`,
+      url_method: NOTIFICATION_URL_METHOD.GET,
+    }));
+
+    await NotificationUtils.createNotification(notificationData);
+  }
+
+  return createPost;
 };
 
 const getMyPostsFromDB = async (
@@ -261,7 +288,7 @@ const removePostByAdminIntoDB = async (
   postId: string,
   { removedReason }: TPostRemove,
 ) => {
-  const post = await Post.findById(postId).select('status');
+  const post = await Post.findById(postId).select('userId status').lean();
 
   if (!post) {
     throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
@@ -285,6 +312,19 @@ const removePostByAdminIntoDB = async (
     // .select('')
     .lean();
 
+  // send notification
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.POST_REMOVED,
+    message: `Your post has been removed for the following reason: ${removedReason}`,
+    receiverId: new Types.ObjectId(post.userId.toString()),
+    senderId: null,
+    targetType: NOTIFICATION_TARGET_TYPE.POST,
+    targetId: new Types.ObjectId(postId),
+    isFromSystem: true,
+    url: `/post-appeals`,
+    url_method: NOTIFICATION_URL_METHOD.GET,
+  });
+
   return removedPost;
 };
 
@@ -297,7 +337,9 @@ const restorePostAppealByAdmin = async (
   try {
     session.startTransaction();
 
-    const post = await Post.findById(postId).select('status').session(session);
+    const post = await Post.findById(postId)
+      .select('status userId')
+      .session(session);
 
     if (!post) {
       throw new AppError(httpStatus.NOT_FOUND, 'The post is not found!');
@@ -334,6 +376,19 @@ const restorePostAppealByAdmin = async (
 
     await session.commitTransaction();
 
+    // send notification
+    await NotificationUtils.createNotification({
+      action: NOTIFICATION_ACTION.POST_APPEAL,
+      message: `Your post has been restored! ${adminResponse ?? 'Please check it out.'}`,
+      receiverId: new Types.ObjectId(post.userId.toString()),
+      senderId: null,
+      targetType: NOTIFICATION_TARGET_TYPE.POST,
+      targetId: new Types.ObjectId(postId),
+      isFromSystem: true,
+      url: `/posts/${postId}`,
+      url_method: NOTIFICATION_URL_METHOD.GET,
+    });
+
     return activatedPost;
   } catch (error) {
     await session.abortTransaction();
@@ -347,10 +402,12 @@ const rejectPostAppealByAdmin = async (
   postId: string,
   { adminResponse }: TPostAppealAdminResponse,
 ) => {
-  const existingPostAppeal = await PostAppeal.exists({
+  const existingPostAppeal = await PostAppeal.findOne({
     postId,
     status: POST_APPEAL_STATUS.PENDING,
-  });
+  })
+    .select('userId')
+    .lean();
 
   if (!existingPostAppeal) {
     throw new AppError(httpStatus.NOT_FOUND, 'The post appeal is not found !');
@@ -364,6 +421,19 @@ const rejectPostAppealByAdmin = async (
       resolvedAt: new Date(),
     },
   );
+
+  // send notification
+  await NotificationUtils.createNotification({
+    action: NOTIFICATION_ACTION.POST_APPEAL,
+    message: `Your post appeal has been rejected for the following reason: ${adminResponse}`,
+    receiverId: existingPostAppeal.userId,
+    senderId: null,
+    targetType: NOTIFICATION_TARGET_TYPE.POST,
+    targetId: new Types.ObjectId(postId),
+    isFromSystem: true,
+    url: `/posts/${postId}`,
+    url_method: NOTIFICATION_URL_METHOD.GET,
+  });
 
   return updatedPostAppeal;
 };

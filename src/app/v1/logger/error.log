@@ -459,3 +459,66 @@
 [error]: timestamp:2025-07-21 17:52:28 PM traceId:[84d90447-a6e9-46a3-9f5a-a8c792f4c37a] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038ba msg: The post is not found !
 [error]: timestamp:2025-07-21 17:52:34 PM traceId:[15f62656-ec5a-44f1-814b-6d9b658a4055] msg: method: GET: /api/v1/comments/post/686d6da46d44a03f71c038b msg: Validation failed!
 [error]: timestamp:2025-07-21 17:53:21 PM traceId:[2a80fed5-c954-455e-99a8-3ee11d1c77e9] msg: method: GET: /api/v1/comments/687cd5fe7a9297e55ce55457/replies msg: The comment is not found !
+[error]: timestamp:2025-07-23 02:21:08 AM traceId:[17daf646-8324-4bdb-8bc1-924bbf259058] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-07-23 02:21:14 AM traceId:[820c3862-47dc-4712-8f90-fed7917e2d0d] msg: method: POST: /api/v1/friends/requests msg: The user is already your friend
+[error]: timestamp:2025-07-24 01:56:19 AM traceId:[b65ac630-1f46-4a9f-898c-89fee9f09d30] msg: method: PATCH: /api/v1/friends/requests/686d5962ed217a8e7a2c2000/accept msg: The friend request you want to accept is not found
+[error]: timestamp:2025-07-24 16:28:26 PM  msg: method: POST: /api/v1/comments msg: Expected ',' or '}' after property value in JSON at position 94
+[error]: timestamp:2025-07-24 18:38:19 PM traceId:[f7987eee-3d75-4290-9476-00a1f29c8b39] msg: method: PATCH: /api/v1/posts/686d6da46d44a03f71c038bf/restore msg: The post is already active!
+[error]: timestamp:2025-07-24 18:38:32 PM traceId:[9587a807-a538-4ab3-9b6d-a51322200d60] msg: method: PATCH: /api/v1/posts/686d6da46d44a03f71c038bf/reject msg: The post appeal is not found !
+[error]: timestamp:2025-07-24 18:39:24 PM traceId:[6a607bd3-f379-45fe-82e4-6a6c18b890c7] msg: method: PATCH: /api/v1/posts/686d6da46d44a03f71c038bf/reject msg: The post appeal is not found !
+[error]: timestamp:2025-07-24 18:39:27 PM traceId:[d2c8c713-db75-42ef-af4f-dc300698cfee] msg: method: PATCH: /api/v1/posts/686d6da46d44a03f71c038bf/reject msg: The post appeal is not found !
+[error]: timestamp:2025-07-24 18:40:50 PM traceId:[3dbb27de-2fee-48b9-8ee1-29c4ac788da8] msg: method: POST: /api/v1/post-appeals msg: You can not appeal for other user post !
+[error]: timestamp:2025-07-24 18:41:00 PM traceId:[d948caad-555c-4dfb-a2db-8469351d5375] msg: method: POST: /api/v1/post-appeals msg: Access denied. Required role(s): user. Your role: superAdmin
+[error]: timestamp:2025-07-25 01:25:52 AM traceId:[c3041711-a2f9-4f59-a88d-30347071543d] msg: method: PATCH: /api/v1/posts/686d6da46d44a03f71c038bf/remove msg: The post is already removed !
+[error]: timestamp:2025-07-25 03:23:34 AM traceId:[22794268-b47a-4de3-ace1-4ca74c3b4031] msg: method: PATCH: /api/v1/reactions msg: Cannot read properties of null (reading 'userId')
+[error]: timestamp:2025-07-25 03:24:01 AM traceId:[5b22eb53-1f29-42ee-8094-ee5b9faa8f7d] msg: method: PATCH: /api/v1/reactions msg: The post is not found !
+[error]: timestamp:2025-07-25 03:24:04 AM traceId:[914de29b-28ed-4647-aec1-7c77329b4ce0] msg: method: PATCH: /api/v1/reactions msg: The post is not found !
+[error]: timestamp:2025-07-25 03:24:13 AM traceId:[8b489cc1-74cc-4b27-8052-8c3dd0e73622] msg: method: PATCH: /api/v1/reactions msg: The comment is not found !
+[error]: timestamp:2025-07-25 03:24:16 AM traceId:[45325450-bbd0-4cf2-82e8-f3896f936b75] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[error]: timestamp:2025-07-25 03:24:24 AM traceId:[af906a09-69e5-4a5f-a4a1-b491e9f719c1] msg: method: PATCH: /api/v1/reactions msg: Validation failed!
+[error]: timestamp:2025-07-25 03:24:28 AM traceId:[0363a2d3-d248-43c4-99cc-18cbdb91ab12] msg: method: PATCH: /api/v1/reactions msg: You haven't reacted to this post yet. Please react first
+[error]: timestamp:2025-08-12 18:12:56 PM traceId:[7683de9d-2311-4be9-ac91-1bf95b64a6fd] msg: method: PATCH: /api/v1/reactions msg: Access token has expired.
+[error]: timestamp:2025-08-12 18:13:04 PM traceId:[840a41e3-9ed8-479c-bd92-dd19db2d65a8] msg: method: PATCH: /api/v1/reactions msg: Access token has expired.
+[error]: timestamp:2025-08-13 00:42:40 AM traceId:[4005cf92-0bb3-4219-9156-0c7ca7932aae] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-08-13 00:44:21 AM traceId:[e7c88e70-60ce-4b8b-ac4e-16f786e1686e] msg: method: POST: /api/v1/posts msg: Some users you are trying to tag could not be found: 686d69a66d44a03f71c03887, 686d69c36d44a03f71c03891
+[error]: timestamp:2025-08-13 00:45:33 AM traceId:[96966d75-d9b3-421e-95f6-b0f6895ff739] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[error]: timestamp:2025-08-13 00:53:37 AM traceId:[72118615-c09f-497c-9392-88f81e3b1a78] msg: method: POST: /api/v1/comments msg: The post is not found !
+[error]: timestamp:2025-08-13 02:23:33 AM traceId:[e2998a93-f33e-48cc-b7f6-b7f1ac2db891] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-08-13 02:24:15 AM traceId:[29d8449c-2a65-43a0-84f2-9e49da097406] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-08-13 02:27:09 AM traceId:[e478df8d-a156-4166-a2af-8db9384555ae] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-08-13 02:28:36 AM traceId:[fd9cf3cb-11bc-4eed-a8d6-30091f74dfbe] msg: method: POST: /api/v1/comments msg: Mongo validation error !
+[error]: timestamp:2025-08-13 03:09:47 AM traceId:[0ed7c8b0-7986-4f1a-8d79-57284505ab92] msg: method: PATCH: /api/v1/comments/689ba6ba3f19908586c3909f msg: You can not update other user comment !
+[error]: timestamp:2025-08-13 18:13:59 PM traceId:[65a23cc5-6e96-4886-a4ca-0e86b6fa4f46] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[error]: timestamp:2025-08-14 02:11:27 AM traceId:[6e19ec80-b9be-4a42-adc3-1b49029419ff] msg: method: GET: /api/v1/notifications msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-14 02:31:36 AM traceId:[df7d6f6f-5105-4f2a-b527-0c413fd0ee73] msg: method: GET: /api/v1/users?limit=as&role=user msg: Validation failed!
+[error]: timestamp:2025-08-14 02:32:25 AM traceId:[5a0a31da-5b17-4f91-893d-d1a7543e4645] msg: method: GET: /api/v1/notifications?page=aca&limit=ac&sort=-createdAt%20sfdlak msg: Validation failed!
+[error]: timestamp:2025-08-14 02:56:05 AM traceId:[3d4f050f-1cad-4f43-b514-5c9ac2a368e2] msg: method: GET: /api/v1/notifications?page=aca&limit=ac&sort=-createdAt%20sfdlak msg: Validation failed!
+[error]: timestamp:2025-08-14 02:56:15 AM traceId:[53bcd391-dc78-44e9-aabc-d6fa19ffc112] msg: method: GET: /api/v1/notifications?page=1&limit=1&sort=-createdAt%20sfdlak msg: Validation failed!
+[error]: timestamp:2025-08-14 17:58:47 PM traceId:[285f9a53-2592-4e0b-970c-95ea1da50f84] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e46c/read msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-14 17:59:13 PM traceId:[00140d0b-3f7e-4fec-b885-0cd9ebf334ea] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e46c/read msg: Notification is not found!
+[error]: timestamp:2025-08-14 18:07:20 PM traceId:[294175d6-a70b-4511-b52b-977896c330b4] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e46c/read msg: You can not mark this notification as read!
+[error]: timestamp:2025-08-14 18:09:31 PM traceId:[c90bae38-a27c-4f02-9172-3573cdcd9aae] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e46c/read msg: You are not authorized to mark this notification as read.
+[error]: timestamp:2025-08-14 18:09:51 PM traceId:[6d5195ff-4b0e-4729-a90a-4131ed09f749] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e6c/read msg: Validation failed!
+[error]: timestamp:2025-08-14 18:10:16 PM traceId:[031591ba-ac4a-48ac-9daf-f72a4a9d5c2f] msg: method: PATCH: /api/v1/notifications/689c857e0121205729d4e46c/read msg: You are not authorized to mark this notification as read.
+[error]: timestamp:2025-08-14 18:15:34 PM traceId:[54442900-8551-4f42-8863-dadc923eff32] msg: method: PATCH: /api/v1/notifications/689b8b2360a46b2a013c1f85/read msg: Notification is not found!
+[error]: timestamp:2025-08-14 18:16:40 PM traceId:[e744af0e-d46e-41b2-90f4-ec1b5091d6f6] msg: method: PATCH: /api/v1/notifications/read-all msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-15 02:05:44 AM traceId:[61ba6230-5f68-43be-8881-6423cfc178b9] msg: method: DELETE: /api/v1/notifications/689b8b2360a46b2a013c1f85 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-15 02:06:27 AM traceId:[3e578ca8-b0f5-4a12-8665-72c502baeb5e] msg: method: DELETE: /api/v1/notifications/689b8b2360a46b2a013c1f85 msg: Notification is not found!
+[error]: timestamp:2025-08-15 02:07:18 AM traceId:[983aeda8-4225-4d60-84f8-598b2bc5dcf4] msg: method: DELETE: /api/v1/notifications/689c857e0121205729d4e46c msg: You are not authorized to delete this notification.
+[error]: timestamp:2025-08-15 02:10:22 AM traceId:[ced3a60c-ced7-4953-b50a-c999e592fc9c] msg: method: DELETE: /api/v1/notifications/689c857e0121205729d4e46c msg: The notification is not found!
+[error]: timestamp:2025-08-15 02:11:13 AM traceId:[c5029964-dac7-4fb5-a66e-0db411c991a3] msg: method: DELETE: /api/v1/notifications/689c859f0121205729d4e47a msg: The notification is not found!
+[error]: timestamp:2025-08-15 02:11:16 AM traceId:[57fe569a-e73e-4ce5-9479-9cae5d0959e0] msg: method: DELETE: /api/v1/notifications/689c859f0121205729d4e47x msg: Validation failed!
+[error]: timestamp:2025-08-17 18:03:48 PM traceId:[875dbaba-62d1-4960-8052-87be0fea0f8b] msg: method: GET: /api/v1/notifications/count-unread msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-17 18:04:24 PM traceId:[17e3d302-421c-495b-a6b0-85c720f7e003] msg: method: GET: /api/v1/notifications/count-unread msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-17 19:59:21 PM traceId:[16fb2593-340e-417f-8bc6-b2c568d34b24] msg: method: POST: /api/v1/notifications/broadcast msg: Validation failed!
+[error]: timestamp:2025-08-17 20:03:15 PM traceId:[b0d9f97a-98a2-485f-96e3-02d428aeb3f4] msg: method: POST: /api/v1/notifications/broadcast msg: Validation failed!
+[error]: timestamp:2025-08-17 20:03:45 PM traceId:[b0c4f4b5-d591-48f0-8225-5310f1463b18] msg: method: POST: /api/v1/notifications/broadcast msg: Mongo validation error !
+[error]: timestamp:2025-08-17 20:11:00 PM traceId:[da220b0c-0bc4-446b-a0be-b0b6fe4a46f6] msg: method: POST: /api/v1/notifications/broadcast msg: Mongo validation error !
+[error]: timestamp:2025-08-17 20:15:03 PM traceId:[a157c261-2b0f-499e-960b-b3faa8553060] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-17 20:15:19 PM traceId:[a4a38f1b-f97a-4ee6-bcac-75447b515a73] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-17 20:15:23 PM traceId:[b4306225-8777-4998-bb4e-1612cb594fd3] msg: method: POST: /api/v1/notifications/broadcast msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-08-19 16:01:08 PM traceId:[9790e127-39f5-4174-9d23-98fb4e6cf18b] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-19 16:01:09 PM traceId:[ad9a673e-33c4-4fcc-9515-b8150765776b] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-19 16:01:10 PM traceId:[c47bf707-8cfd-423b-8969-6139d0e68dd4] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-19 16:01:18 PM traceId:[5e95faa0-e286-4e9b-ae8d-08eb326270c1] msg: method: POST: /api/v1/notifications/broadcast msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-08-19 16:01:19 PM traceId:[86367e1b-eb9a-4134-b3b6-f4489c09387a] msg: method: POST: /api/v1/notifications/broadcast msg: Access denied. Required role(s): admin, superAdmin. Your role: user
