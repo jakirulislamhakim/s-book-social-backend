@@ -9,6 +9,7 @@ import { FriendRoutes } from '../modules/Friend/friend.route';
 import { ReactionRoutes } from '../modules/Reaction/reaction.route';
 import { CommentRoutes } from '../modules/Comment/comment.route';
 import { NotificationRoutes } from '../modules/Notification/notification.route';
+import { StoryRoutes } from '../modules/Story/story.route';
 
 type TModulesRoutes = {
   path: string;
@@ -57,6 +58,10 @@ const moduleRoutes: TModulesRoutes[] = [
   {
     path: '/notifications',
     route: NotificationRoutes,
+  },
+  {
+    path: '/stories',
+    route: StoryRoutes,
   },
 ];
 

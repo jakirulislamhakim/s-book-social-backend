@@ -522,3 +522,84 @@
 [error]: timestamp:2025-08-19 16:01:10 PM traceId:[c47bf707-8cfd-423b-8969-6139d0e68dd4] msg: method: POST: /api/v1/notifications/broadcast msg: Authorization header is missing. Please include a Bearer token.
 [error]: timestamp:2025-08-19 16:01:18 PM traceId:[5e95faa0-e286-4e9b-ae8d-08eb326270c1] msg: method: POST: /api/v1/notifications/broadcast msg: Access denied. Required role(s): admin, superAdmin. Your role: user
 [error]: timestamp:2025-08-19 16:01:19 PM traceId:[86367e1b-eb9a-4134-b3b6-f4489c09387a] msg: method: POST: /api/v1/notifications/broadcast msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-08-20 23:51:31 PM traceId:[c1ca9c26-1d94-4085-8971-5127d441b9b6] msg: method: POST: /api/v1/stories msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-08-21 00:01:25 AM traceId:[efef74c1-f4b2-4fd3-9022-eb3eb953006e] msg: method: POST: /api/v1/stories msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-21 00:08:40 AM traceId:[e95cff10-3569-464b-bdb2-0e241d88d66b] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:09:25 AM traceId:[ab40a2ce-5192-49ca-a0a3-2fafcdc90a73] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:10:21 AM traceId:[2e16dba0-a794-4ed5-bd30-07e763bc3f7f] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:11:18 AM traceId:[b113c161-6cc4-4184-b6e5-614df615b755] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:12:37 AM traceId:[7a70ceb6-47eb-469e-a559-0d1baa0e88f0] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 00:12:44 AM traceId:[d7601363-c384-4b2c-b622-de4fe881471f] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 00:34:59 AM traceId:[1a4da408-5a7e-4a7f-98e2-06df11599a6a] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 00:35:58 AM traceId:[48a2fa20-729c-4c56-8322-859ba1dfdacb] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 00:38:12 AM traceId:[4f2bb620-58e2-4871-98f7-4c7d7df386b5] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:38:54 AM traceId:[ef24a0f2-a0e5-4f05-a794-45cba5c996bd] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:39:19 AM traceId:[f6421873-261c-4646-ac84-858e03e2629b] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[error]: timestamp:2025-08-21 00:43:24 AM traceId:[da4e9676-6ac5-4b60-93d7-9a6432fd98af] msg: method: POST: /api/v1/stories msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[error]: timestamp:2025-08-21 14:16:49 PM traceId:[c8a9fa92-aa63-4c96-b253-087d036847b4] msg: method: GET: /api/v1/stories/archive msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-21 14:26:30 PM traceId:[31c435d3-daf6-4580-b2a2-977c23c6f87f] msg: method: GET: /api/v1/stories/archive msg: Cannot read properties of undefined (reading 'expiresAt')
+[error]: timestamp:2025-08-21 14:27:43 PM traceId:[89d1fe95-90c0-4a53-959a-b424e86bb880] msg: method: GET: /api/v1/stories/archive msg: Cannot read properties of undefined (reading 'expiresAt')
+[error]: timestamp:2025-08-21 15:28:14 PM traceId:[3f4685eb-184a-425e-b090-dd568c1f1b13] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-08-21 15:29:45 PM traceId:[fc096ba3-1b37-45f6-b9e1-5111cc4c2581] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2&limit=ac msg: Validation failed!
+[error]: timestamp:2025-08-21 15:53:15 PM traceId:[3cc200db-9960-486a-bc03-4597fe0bd99e] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f76 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-21 16:01:13 PM traceId:[198fcb13-0fd5-46e7-8643-627a5ca694c4] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 16:01:20 PM traceId:[770d59fb-2b86-40bc-a359-461196bd0b8f] msg: method: POST: /api/v1/stories msg: Unexpected token '}', "}" is not valid JSON
+[error]: timestamp:2025-08-21 16:01:28 PM traceId:[aaf3196f-8d99-492a-b39c-bad098435382] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 16:03:12 PM traceId:[35445042-643a-4a21-92e8-86e3bad28ae3] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f7a msg: The user is not found
+[error]: timestamp:2025-08-21 16:03:35 PM traceId:[ae92a085-9a21-46ac-b8f1-aa25245ee35e] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f msg: Validation failed!
+[error]: timestamp:2025-08-21 18:01:53 PM traceId:[17b7f3b0-e3f6-49ca-81a4-f27252d04c5e] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-21 18:02:58 PM traceId:[4eb9432f-9b21-4cf0-a963-1e9faea5fd1c] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Mongo validation error !
+[error]: timestamp:2025-08-21 18:04:46 PM traceId:[1e43e329-87e9-496e-a89b-32237e49425d] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Mongo validation error !
+[error]: timestamp:2025-08-21 18:08:07 PM traceId:[f3ef541f-bc49-4cad-aa66-f6874b454c2b] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51311/view msg: The story is not found
+[error]: timestamp:2025-08-21 18:19:02 PM traceId:[c0c4f2d3-8fce-4cf3-a0b5-178df9e0fdd0] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-21 18:19:21 PM traceId:[40f72a7a-d1e5-4888-b9d6-d8da422fbbba] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a513/view msg: Validation failed!
+[error]: timestamp:2025-08-21 18:19:37 PM traceId:[cdf34589-847d-43ab-8cff-4c26a26f8de0] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-22 01:20:59 AM traceId:[179ffe0a-cb99-4fbf-a869-b1bc605fa225] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Cannot read properties of undefined (reading 'matchedCount')
+[error]: timestamp:2025-08-22 01:21:03 AM traceId:[87532d7e-2eb0-4157-9f6c-d4d2af640881] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Cannot read properties of undefined (reading 'matchedCount')
+[error]: timestamp:2025-08-22 01:25:29 AM traceId:[7cc92538-baf3-4ee4-bff7-6bb5bfc94b5e] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: Validation failed!
+[error]: timestamp:2025-08-22 01:26:20 AM traceId:[d5b85574-8039-4737-8f46-1cb7526367d3] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: You can not react in your own story
+[error]: timestamp:2025-08-22 01:31:33 AM traceId:[982265b3-812a-477f-be73-000462604948] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: You can not react in your own story
+[error]: timestamp:2025-08-22 01:39:01 AM traceId:[5b54846b-9072-4ccf-a460-4fbbee052e49] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[error]: timestamp:2025-08-22 01:39:07 AM traceId:[d26f47a0-4d9b-4873-8186-1fc0d3ebbf2e] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[error]: timestamp:2025-08-22 01:39:23 AM traceId:[da083d35-60fe-4f9e-8c00-14d2ee5c19ba] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[error]: timestamp:2025-08-22 01:48:43 AM traceId:[0b67ebf3-7c9a-45e7-8b62-6ca92139e71a] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a5131/reaction msg: Validation failed!
+[error]: timestamp:2025-08-22 01:48:54 AM traceId:[f2c1d2d5-c551-4beb-93b6-2eded341940d] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: Validation failed!
+[error]: timestamp:2025-08-24 17:36:56 PM traceId:[869a7e94-bb2c-45b6-91c9-62c61f80d620] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-24 17:42:17 PM traceId:[10176f84-5593-43d7-b1d9-a529c47eae04] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: You can't see view history other user story
+[error]: timestamp:2025-08-24 17:44:36 PM traceId:[dbd1ba72-6b0e-435a-9f64-77c23a3c52e2] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: You will not be able to view other user's story
+[error]: timestamp:2025-08-24 17:46:10 PM traceId:[66c46660-184e-4727-badf-bc9aaa128c83] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a5131a/views msg: The story is not found
+[error]: timestamp:2025-08-26 01:43:59 AM traceId:[7cfdc700-e611-43b0-bda6-25f6da37052e] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: The story is expired!
+[error]: timestamp:2025-08-26 01:44:01 AM traceId:[f4a6413e-7dac-41e6-b04a-12a91041eab7] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-26 01:44:17 AM traceId:[af1458a1-2276-4608-8654-ef3a4c061feb] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: The story is expired!
+[error]: timestamp:2025-08-26 01:45:08 AM traceId:[7a099326-122e-4be2-959f-9121befb8960] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51311 msg: The story is not found
+[error]: timestamp:2025-08-26 01:45:35 AM traceId:[5fe88857-b7d5-453b-8a4e-9077fae36157] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51311 msg: The story is not found
+[error]: timestamp:2025-08-26 01:47:19 AM traceId:[320eac6b-b114-465e-9900-2a1eeea749d2] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-26 01:54:41 AM traceId:[64784955-97c2-4dbb-b401-a0f0f0e633d6] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for user privacy
+[error]: timestamp:2025-08-26 01:55:53 AM traceId:[3311c231-4cbd-4e1e-812c-35eee78fc53e] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[error]: timestamp:2025-08-26 01:56:09 AM traceId:[2e7f8f94-b1ea-4506-852c-22ef8e65b809] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a77 msg: Validation failed!
+[error]: timestamp:2025-08-26 01:56:58 AM traceId:[3c186c7b-554a-40ae-b7d3-bdaffdaf826f] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[error]: timestamp:2025-08-26 02:16:36 AM traceId:[c1b05351-2e92-491c-8aff-7330fd015aee] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[error]: timestamp:2025-08-26 02:33:37 AM traceId:[cc013d35-c09a-48e7-83bf-dbdb8bc1e83a] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a775 msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-08-26 02:33:52 AM traceId:[d31820dd-9bcf-4409-8bed-f30b711735ab] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a775 msg: You are not authorized to delete this story.
+[error]: timestamp:2025-08-26 02:34:15 AM traceId:[a82bc84f-8f61-4d2a-ad73-96c9768035aa] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a771 msg: The story is not found
+[error]: timestamp:2025-08-26 02:34:51 AM traceId:[3012b77e-fc1d-4a7a-9780-bab12af07db5] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a77 msg: Validation failed!
+[error]: timestamp:2025-08-26 12:16:06 PM traceId:[ee51e7e0-f207-4dc8-9976-a27a661281a9] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-26 12:18:25 PM traceId:[0b8a31fe-cc76-4d1f-ae61-20e274227c88] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2&limit=1 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[error]: timestamp:2025-08-26 12:28:07 PM traceId:[7f99ad65-71af-425d-a663-052c7dc4de0b] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: The story is not found
+[error]: timestamp:2025-08-26 12:59:13 PM traceId:[92f19bbe-d097-4f94-88e5-b39a2d78df21] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[error]: timestamp:2025-08-26 12:59:32 PM traceId:[f88c986c-1d6d-4952-b5eb-6a719f1abf5b] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[error]: timestamp:2025-08-26 12:59:39 PM traceId:[f23e5d9a-c698-427c-821e-bb5a611cd49d] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[error]: timestamp:2025-08-26 23:12:25 PM traceId:[046a35fc-4950-4fea-a106-d6f2471f9e2a] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[error]: timestamp:2025-08-28 17:38:53 PM traceId:[3c3b37a7-f082-42db-8d44-94926c634929] msg: method: PATCH: /api/v1/friends/requests/68b03fb5805e11bc8eed773e/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-08-28 18:09:19 PM traceId:[01247e88-b894-424e-8182-dc7a07e11339] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-08-28 18:10:08 PM traceId:[7bc4a64a-ef6d-4a9f-acca-c15998ab4e6a] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-08-29 01:25:36 AM traceId:[a74379f2-f241-475d-bee7-b85b425c0ac0] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-08-29 01:26:19 AM traceId:[f22210e3-af5d-477b-bece-92ff2cb1e49f] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[error]: timestamp:2025-08-29 01:38:12 AM traceId:[10f2e5e3-8c0d-4c7f-93ef-6bf2837f9f64] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-08-31 13:00:48 PM traceId:[45a88b85-6260-47d9-90c9-0aa1b31cef19] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-09-01 17:26:12 PM traceId:[19480263-b085-416f-ad6e-742fcbb55009] msg: method: GET: /api/v1/stories/feed msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-01 17:26:34 PM traceId:[3e389be0-4a01-4063-a9a4-6b22fd2fd46e] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-09-01 17:27:13 PM traceId:[5e6422a7-91d0-4983-8a00-9528504ef4d9] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-09-01 17:27:53 PM traceId:[e71ddadf-3030-4106-80bb-57717bc16843] msg: method: GET: /api/v1/stories/feed msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-02 01:55:19 AM traceId:[2359d7cf-8363-4445-81ca-07a7269db2c7] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-09-03 01:57:21 AM traceId:[1bceab01-d752-49dc-9c8c-10b3a330199a] msg: method: GET: /api/v1/stories/feed msg: a group specification must include an _id

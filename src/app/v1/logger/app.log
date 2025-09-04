@@ -1993,3 +1993,460 @@
 [info]: timestamp:2025-08-19 16:06:35 PM traceId:[f46d1ab3-7443-456f-8b70-56fa8fda7647] msg:Incoming request: GET /api/v1/notifications/count-unread
 [info]: timestamp:2025-08-19 16:06:54 PM traceId:[be3baec6-4d0e-47f5-bc02-098a35abde51] msg:Incoming request: POST /api/v1/notifications/broadcast
 [info]: timestamp:2025-08-19 16:07:26 PM traceId:[8b45af89-241b-4428-84f7-418f624a744b] msg:Incoming request: POST /api/v1/notifications/broadcast
+[info]: timestamp:2025-08-20 23:51:31 PM traceId:[c1ca9c26-1d94-4085-8971-5127d441b9b6] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-20 23:51:31 PM traceId:[c1ca9c26-1d94-4085-8971-5127d441b9b6] msg: method: POST: /api/v1/stories msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-08-21 00:01:25 AM traceId:[efef74c1-f4b2-4fd3-9022-eb3eb953006e] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:01:25 AM traceId:[efef74c1-f4b2-4fd3-9022-eb3eb953006e] msg: method: POST: /api/v1/stories msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-21 00:08:40 AM traceId:[e95cff10-3569-464b-bdb2-0e241d88d66b] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:08:40 AM traceId:[e95cff10-3569-464b-bdb2-0e241d88d66b] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:09:24 AM traceId:[ab40a2ce-5192-49ca-a0a3-2fafcdc90a73] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:09:25 AM traceId:[ab40a2ce-5192-49ca-a0a3-2fafcdc90a73] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:10:17 AM traceId:[2e16dba0-a794-4ed5-bd30-07e763bc3f7f] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:10:21 AM traceId:[2e16dba0-a794-4ed5-bd30-07e763bc3f7f] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:11:13 AM traceId:[b113c161-6cc4-4184-b6e5-614df615b755] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:11:18 AM traceId:[b113c161-6cc4-4184-b6e5-614df615b755] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:12:37 AM traceId:[7a70ceb6-47eb-469e-a559-0d1baa0e88f0] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:12:37 AM traceId:[7a70ceb6-47eb-469e-a559-0d1baa0e88f0] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 00:12:44 AM traceId:[d7601363-c384-4b2c-b622-de4fe881471f] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:12:44 AM traceId:[d7601363-c384-4b2c-b622-de4fe881471f] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 00:12:48 AM traceId:[b1dede36-261a-4159-a7c9-6d85944d590d] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:34:56 AM traceId:[1a4da408-5a7e-4a7f-98e2-06df11599a6a] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:34:59 AM traceId:[1a4da408-5a7e-4a7f-98e2-06df11599a6a] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 00:35:57 AM traceId:[48a2fa20-729c-4c56-8322-859ba1dfdacb] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:35:58 AM traceId:[48a2fa20-729c-4c56-8322-859ba1dfdacb] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 00:36:14 AM traceId:[9c98848e-e29c-4466-8a0a-def17eff8739] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:37:09 AM traceId:[b298d176-4be2-4578-af31-e1dfe1e160f6] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:38:04 AM traceId:[4f2bb620-58e2-4871-98f7-4c7d7df386b5] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:38:12 AM traceId:[4f2bb620-58e2-4871-98f7-4c7d7df386b5] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:38:46 AM traceId:[ef24a0f2-a0e5-4f05-a794-45cba5c996bd] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:38:54 AM traceId:[ef24a0f2-a0e5-4f05-a794-45cba5c996bd] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:39:11 AM traceId:[f6421873-261c-4646-ac84-858e03e2629b] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:39:19 AM traceId:[f6421873-261c-4646-ac84-858e03e2629b] msg: method: POST: /api/v1/stories msg: Mongo validation error !
+[info]: timestamp:2025-08-21 00:41:41 AM traceId:[64531d98-d94a-4eb0-b14d-2c15a55baafc] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:41:56 AM traceId:[ae2e591a-fedd-4541-aeb5-bdc287ddf87b] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:42:24 AM traceId:[e82745ad-0b3c-469d-8785-0f34505499a1] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 00:43:16 AM traceId:[da4e9676-6ac5-4b60-93d7-9a6432fd98af] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 00:43:24 AM traceId:[da4e9676-6ac5-4b60-93d7-9a6432fd98af] msg: method: POST: /api/v1/stories msg: Missing 'data' field in form-data. Please include a 'data' field with a valid JSON string.
+[info]: timestamp:2025-08-21 00:43:38 AM traceId:[7e314bf0-1c96-4af1-94ff-224f47ff540a] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 14:16:49 PM traceId:[c8a9fa92-aa63-4c96-b253-087d036847b4] msg:Incoming request: GET /api/v1/stories/archive
+[error]: timestamp:2025-08-21 14:16:49 PM traceId:[c8a9fa92-aa63-4c96-b253-087d036847b4] msg: method: GET: /api/v1/stories/archive msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-21 14:17:20 PM traceId:[76dd280d-b09d-4220-beee-ae3b4daa0003] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:18:10 PM traceId:[98761890-6f39-4d59-b67a-cf2eea408a8c] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:21:00 PM traceId:[4c15323b-a203-4eea-a419-22087ab33ff4] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:21:16 PM traceId:[09acf3bd-9d45-4e0f-8e64-e9a4af9bf6ed] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:22:07 PM traceId:[cd759676-43bd-4e4b-95d0-c13667bb4787] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:25:38 PM traceId:[466d631f-0ba7-4f13-845a-6a67f0f3b6f6] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:26:28 PM traceId:[31c435d3-daf6-4580-b2a2-977c23c6f87f] msg:Incoming request: GET /api/v1/stories/archive
+[error]: timestamp:2025-08-21 14:26:30 PM traceId:[31c435d3-daf6-4580-b2a2-977c23c6f87f] msg: method: GET: /api/v1/stories/archive msg: Cannot read properties of undefined (reading 'expiresAt')
+[info]: timestamp:2025-08-21 14:26:53 PM traceId:[aa8e0432-da84-4e51-be1e-83e92c37fc23] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:27:42 PM traceId:[89d1fe95-90c0-4a53-959a-b424e86bb880] msg:Incoming request: GET /api/v1/stories/archive
+[error]: timestamp:2025-08-21 14:27:43 PM traceId:[89d1fe95-90c0-4a53-959a-b424e86bb880] msg: method: GET: /api/v1/stories/archive msg: Cannot read properties of undefined (reading 'expiresAt')
+[info]: timestamp:2025-08-21 14:28:02 PM traceId:[69632381-6d5f-49fa-9a8c-ced301f68644] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:29:06 PM traceId:[97796c2f-df43-4884-8a7e-c1cca0ed4b16] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:29:48 PM traceId:[20edff8a-8a3d-4115-ae76-25a52a189c23] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:38:00 PM traceId:[f8ccc678-19c5-444a-8483-a645d3699498] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:42:17 PM traceId:[77b168f9-6d93-467a-8c28-30e057441c38] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:42:54 PM traceId:[b7ee7328-b0d7-4512-a56c-e5d45b1c2fe7] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:43:15 PM traceId:[271b38af-2d5c-4148-b95a-7ea0952a0fc1] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:43:17 PM traceId:[ca7f2e50-58da-41c8-b32c-67b1ffd93a22] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:43:23 PM traceId:[8c7c49e3-8cd5-4a95-babd-a07720e5bc6b] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:43:24 PM traceId:[c2197538-dabc-4248-ac33-8439dbdf3301] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:43:30 PM traceId:[c5581e0d-0dc6-4863-b35d-851eb6bac1e3] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:44:42 PM traceId:[ee893c30-1af7-4a59-9aaa-dbb236c604db] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:49:11 PM traceId:[30bb662a-729d-42ee-b319-2b89edc30868] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:49:14 PM traceId:[7d98d1f8-92a3-4329-917c-19f31ce90430] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:49:16 PM traceId:[50cef662-3bc3-47a5-bb96-83d2b3be8387] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:49:18 PM traceId:[b1252353-109e-4674-bf12-22df3fddff97] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 14:55:49 PM traceId:[c74f86b2-4f9d-4e05-b16b-12e1f7fd3da9] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 15:26:32 PM traceId:[cab13890-c5d4-42ab-92d5-4db5dad25213] msg:Incoming request: GET /api/v1/stories/archive
+[info]: timestamp:2025-08-21 15:27:02 PM traceId:[bec573e9-fd3e-42e7-bef3-275df7cd39cb] msg:Incoming request: GET /api/v1/stories/archive?sort=expiresAt
+[info]: timestamp:2025-08-21 15:27:21 PM traceId:[e2824d6b-7cc8-4773-96df-354a434a7c56] msg:Incoming request: GET /api/v1/stories/archive?sort=createdAt
+[info]: timestamp:2025-08-21 15:27:31 PM traceId:[f9a7025d-47ec-4d5d-bdef-7bfa891a02b1] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-08-21 15:27:59 PM traceId:[eba1c923-fd29-4d65-9e63-2c886a478263] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&fields=createdAt
+[info]: timestamp:2025-08-21 15:28:13 PM traceId:[3f4685eb-184a-425e-b090-dd568c1f1b13] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2
+[error]: timestamp:2025-08-21 15:28:14 PM traceId:[3f4685eb-184a-425e-b090-dd568c1f1b13] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-08-21 15:28:35 PM traceId:[70ba9061-6fea-413a-bec2-903e8950bbab] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=2
+[info]: timestamp:2025-08-21 15:29:45 PM traceId:[fc096ba3-1b37-45f6-b9e1-5111cc4c2581] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=ac
+[error]: timestamp:2025-08-21 15:29:45 PM traceId:[fc096ba3-1b37-45f6-b9e1-5111cc4c2581] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2&limit=ac msg: Validation failed!
+[info]: timestamp:2025-08-21 15:30:12 PM traceId:[484dbde7-2249-4d43-b85c-21236036120b] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=1
+[info]: timestamp:2025-08-21 15:53:15 PM traceId:[3cc200db-9960-486a-bc03-4597fe0bd99e] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[error]: timestamp:2025-08-21 15:53:15 PM traceId:[3cc200db-9960-486a-bc03-4597fe0bd99e] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f76 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-21 15:53:54 PM traceId:[727d38a5-7c80-4955-a52d-00b97fbda7ef] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 15:55:18 PM traceId:[f0f1e141-bc7f-4050-8baf-fc4f83f1a5e4] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 15:56:07 PM traceId:[e7369b03-4835-421a-b8fe-8262417d8034] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 15:56:24 PM traceId:[cbe61b8e-4995-4f86-81ab-4d2956b043d2] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:01:13 PM traceId:[198fcb13-0fd5-46e7-8643-627a5ca694c4] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 16:01:13 PM traceId:[198fcb13-0fd5-46e7-8643-627a5ca694c4] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 16:01:20 PM traceId:[770d59fb-2b86-40bc-a359-461196bd0b8f] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 16:01:20 PM traceId:[770d59fb-2b86-40bc-a359-461196bd0b8f] msg: method: POST: /api/v1/stories msg: Unexpected token '}', "}" is not valid JSON
+[info]: timestamp:2025-08-21 16:01:28 PM traceId:[aaf3196f-8d99-492a-b39c-bad098435382] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 16:01:28 PM traceId:[aaf3196f-8d99-492a-b39c-bad098435382] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 16:01:42 PM traceId:[05422e65-b3a8-4771-bb73-6e2812fdd866] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 16:02:47 PM traceId:[19664514-ba32-4270-940d-32292c605959] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 16:02:59 PM traceId:[8a73c2c1-2c79-41d8-affa-756d518cae79] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:03:11 PM traceId:[35445042-643a-4a21-92e8-86e3bad28ae3] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f7a
+[error]: timestamp:2025-08-21 16:03:12 PM traceId:[35445042-643a-4a21-92e8-86e3bad28ae3] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f7a msg: The user is not found
+[info]: timestamp:2025-08-21 16:03:35 PM traceId:[ae92a085-9a21-46ac-b8f1-aa25245ee35e] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f
+[error]: timestamp:2025-08-21 16:03:35 PM traceId:[ae92a085-9a21-46ac-b8f1-aa25245ee35e] msg: method: GET: /api/v1/stories/user/689b8a3a60a46b2a013c1f msg: Validation failed!
+[info]: timestamp:2025-08-21 16:03:49 PM traceId:[12914e80-ae0d-4639-a737-86521d0e30c2] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:04:24 PM traceId:[3b2b098c-2f2f-4cd8-b4d6-031f58686bf2] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:04:51 PM traceId:[8f5370d7-1936-4d26-9e14-81331e87396d] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:07:01 PM traceId:[bec881ac-0841-4247-a2a1-d99a0af918cb] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:10:07 PM traceId:[3e6884ee-b9dc-4c9a-8ed4-cdd12119c456] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:10:15 PM traceId:[e6cc086e-f8ab-4c1e-aa21-824a05db346b] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:11:18 PM traceId:[06ade654-4ddd-454c-a6da-7145b35f07de] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:11:24 PM traceId:[d16cb09c-37f3-47a8-b20b-f393be831e33] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:11:33 PM traceId:[fd99a58c-9294-4956-813f-6092def8f4e0] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:12:33 PM traceId:[5537ab47-fc95-4f52-a012-ca17e6a2f925] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:15:59 PM traceId:[dcd1a1bf-6630-42aa-9f98-158cb4b3188d] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 16:20:26 PM traceId:[98f8dc00-016f-414f-93a4-deb02d329a76] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:20:53 PM traceId:[aaca1b4b-c5e2-41ba-92c6-636b79f2e467] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:21:53 PM traceId:[5d20d5fa-aea0-428a-9d07-0db7971c8130] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:22:38 PM traceId:[fc7b1b21-978e-4cae-b65f-50b18dd6626e] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:23:45 PM traceId:[729423e9-e515-4c2e-abb8-b6722c2f9029] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:24:41 PM traceId:[5ba8fdfd-33e0-480b-b5de-64d3c840aa98] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:25:24 PM traceId:[3a8cfa2c-d1d5-4e16-bf62-f1939e7488a8] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:26:18 PM traceId:[10326119-3855-4857-8fcc-7da64562a510] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:26:53 PM traceId:[ac56a723-80a5-4526-bdb4-9f6ce8991fd4] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:27:26 PM traceId:[bed06f61-56fc-4420-b11f-df445abac9cc] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:28:14 PM traceId:[c7aba583-f1a3-42f3-bcb4-72e0eec4cf5f] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:28:47 PM traceId:[9a81fed7-d42c-4cb1-a1a2-78bf1be3ef76] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:30:33 PM traceId:[d81d6271-255c-4649-be98-b5eb7eee3787] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:31:29 PM traceId:[a5ddaa05-bd06-4e4f-841b-61da99eb3301] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:31:43 PM traceId:[073f2a7b-e223-428f-8f1c-910a186a650c] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:52:25 PM traceId:[6fc831f8-4e82-4ec8-9c32-d6caed725103] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:52:44 PM traceId:[24320f11-4b1b-48a2-ab5c-c806faf8b7dd] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:53:09 PM traceId:[2119ebb3-4cbc-4e51-9dcd-0cd390bd7cd7] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 16:54:02 PM traceId:[f91e4ee2-e7c7-4b30-82bb-897a705d70d8] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:23:17 PM traceId:[6e699993-3f47-4cde-9a76-fa4169543ca9] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:24:21 PM traceId:[41a74943-061e-4a11-a8c8-62b222297bf0] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:24:54 PM traceId:[138f0248-311d-4e02-b171-1935c9c9d6bb] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:25:21 PM traceId:[4c287f82-1312-4055-870a-671108c8a364] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:28:39 PM traceId:[edbe2311-da09-4d77-87cd-1a37f699d80d] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 17:30:19 PM traceId:[cb33bd68-7cec-48b8-b016-36ed9a0f17d8] msg:Incoming request: GET /api/v1/stories/user/689b8a7b60a46b2a013c1f7c
+[info]: timestamp:2025-08-21 17:32:13 PM traceId:[9b7190d6-b456-4c32-a0cb-b84808315330] msg:Incoming request: GET /api/v1/stories/user/689b8a7b60a46b2a013c1f7c
+[info]: timestamp:2025-08-21 17:34:27 PM traceId:[9e05c608-c82a-44a5-b0e1-a470939e22ea] msg:Incoming request: GET /api/v1/stories/user/689b8b6260a46b2a013c1f95
+[info]: timestamp:2025-08-21 17:37:55 PM traceId:[17c7df9c-44da-4eb6-9693-87da97e33144] msg:Incoming request: GET /api/v1/stories/user/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-08-21 18:01:53 PM traceId:[17b7f3b0-e3f6-49ca-81a4-f27252d04c5e] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-21 18:01:53 PM traceId:[17b7f3b0-e3f6-49ca-81a4-f27252d04c5e] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-21 18:02:08 PM traceId:[94f89515-a2f6-46bc-97cd-d47f50e09c84] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-21 18:02:34 PM traceId:[8ada0b31-3c95-4fb7-a08b-6606200ea1dd] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:02:56 PM traceId:[4eb9432f-9b21-4cf0-a963-1e9faea5fd1c] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-21 18:02:58 PM traceId:[4eb9432f-9b21-4cf0-a963-1e9faea5fd1c] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Mongo validation error !
+[info]: timestamp:2025-08-21 18:04:44 PM traceId:[1e43e329-87e9-496e-a89b-32237e49425d] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-21 18:04:46 PM traceId:[1e43e329-87e9-496e-a89b-32237e49425d] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Mongo validation error !
+[info]: timestamp:2025-08-21 18:05:18 PM traceId:[434f6411-2354-4af5-8000-3ae30a5efab8] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:05:44 PM traceId:[4fdb73ef-e484-40ab-980a-a876541285ea] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 18:05:53 PM traceId:[b3c249e2-25d1-4517-89cc-dfbd0923f2bf] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 18:06:37 PM traceId:[d8489c9d-3706-43b3-9593-ec34d00d8616] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-21 18:07:05 PM traceId:[40928242-8f4d-4370-9925-e11dc2edc6bf] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:07:28 PM traceId:[bfb1d83f-81a7-4a96-b6d0-34f567bd3c05] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:08:06 PM traceId:[f3ef541f-bc49-4cad-aa66-f6874b454c2b] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51311/view
+[error]: timestamp:2025-08-21 18:08:07 PM traceId:[f3ef541f-bc49-4cad-aa66-f6874b454c2b] msg: method: POST: /api/v1/stories/68a70ac7d3ea1c7057a51311/view msg: The story is not found
+[info]: timestamp:2025-08-21 18:10:20 PM traceId:[6504946a-2460-479e-8954-35c64b33ae1a] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:10:47 PM traceId:[46b7706b-64bc-4bbb-9b23-3baff261906d] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:12:03 PM traceId:[06c276f5-f717-4990-84d3-707d3e3991ea] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:12:14 PM traceId:[8d35af20-287e-4e1c-b104-dad4921a4f08] msg:Incoming request: POST /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:12:55 PM traceId:[19cc9709-78b2-41f0-8fa3-310056aafd58] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:14:50 PM traceId:[2d870200-5ccf-4987-aae2-32d625aec542] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:15:29 PM traceId:[9820d168-5af6-4bd6-84ac-d218b04e69dd] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:15:56 PM traceId:[71ad9f84-0ab4-4026-9708-338108d1f7a8] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:17:09 PM traceId:[41551b8d-0de2-451a-b08f-f59fb2ebe4fc] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:17:15 PM traceId:[058e5fd0-f9a8-4639-8466-726513617bda] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:17:59 PM traceId:[cc21ad40-1291-4bfc-a2d0-6160641d5142] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:18:06 PM traceId:[eabe5a3c-f043-4f57-88af-5dc98742f7c8] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:18:08 PM traceId:[a2382532-1cc5-4ba6-bcf4-cd3cee8f374e] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:18:48 PM traceId:[72bf51f2-786f-4413-abf1-effe43e0f689] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 18:19:02 PM traceId:[c0c4f2d3-8fce-4cf3-a0b5-178df9e0fdd0] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-21 18:19:02 PM traceId:[c0c4f2d3-8fce-4cf3-a0b5-178df9e0fdd0] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-21 18:19:21 PM traceId:[40f72a7a-d1e5-4888-b9d6-d8da422fbbba] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a513/view
+[error]: timestamp:2025-08-21 18:19:21 PM traceId:[40f72a7a-d1e5-4888-b9d6-d8da422fbbba] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a513/view msg: Validation failed!
+[info]: timestamp:2025-08-21 18:19:37 PM traceId:[cdf34589-847d-43ab-8cff-4c26a26f8de0] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-21 18:19:37 PM traceId:[cdf34589-847d-43ab-8cff-4c26a26f8de0] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-21 18:19:40 PM traceId:[0c5f770b-c599-42d5-9543-afdc7c6d6dab] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:07:09 PM traceId:[bb902137-894e-4012-b2e9-05f19f000a1f] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:07:38 PM traceId:[ac2b7c81-d527-483d-b0b8-5d4d6fcaeac1] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:08:13 PM traceId:[a7e71c71-9f54-446c-857a-cb70174eba0f] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:08:29 PM traceId:[e4d7e127-874a-4c2d-a6bc-cc4837149811] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:10:38 PM traceId:[7819120b-da87-4474-9d88-1d46d56f8fa4] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-21 19:11:17 PM traceId:[004d1752-1e2e-45f3-8035-da34e1e80022] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:16:55 AM traceId:[26e2da9a-7190-49aa-90ab-710b236e91b4] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:17:51 AM traceId:[51f25e7a-2022-4321-b72e-60280cb839ec] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:17:56 AM traceId:[641bc144-b308-4cba-83f1-fc6ba382f760] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:17:58 AM traceId:[08b4401e-7c6e-417a-9df7-ce77c98e45d0] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:18:37 AM traceId:[cf79cbe9-c075-4ebf-829a-9ff9b0c57941] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:20:58 AM traceId:[179ffe0a-cb99-4fbf-a869-b1bc605fa225] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-22 01:20:59 AM traceId:[179ffe0a-cb99-4fbf-a869-b1bc605fa225] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Cannot read properties of undefined (reading 'matchedCount')
+[info]: timestamp:2025-08-22 01:21:03 AM traceId:[87532d7e-2eb0-4157-9f6c-d4d2af640881] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[error]: timestamp:2025-08-22 01:21:03 AM traceId:[87532d7e-2eb0-4157-9f6c-d4d2af640881] msg: method: PUT: /api/v1/stories/68a70ac7d3ea1c7057a51318/view msg: Cannot read properties of undefined (reading 'matchedCount')
+[info]: timestamp:2025-08-22 01:23:03 AM traceId:[8b6a9cf2-218d-4cc6-a728-4af8cb47a4d1] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:23:08 AM traceId:[1094a460-03f7-4998-aff3-239c1b83a138] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:25:24 AM traceId:[4853e4ef-dbc3-40eb-b091-257041b9782e] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:25:29 AM traceId:[7cc92538-baf3-4ee4-bff7-6bb5bfc94b5e] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:25:29 AM traceId:[7cc92538-baf3-4ee4-bff7-6bb5bfc94b5e] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: Validation failed!
+[info]: timestamp:2025-08-22 01:26:19 AM traceId:[d5b85574-8039-4737-8f46-1cb7526367d3] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:26:20 AM traceId:[d5b85574-8039-4737-8f46-1cb7526367d3] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: You can not react in your own story
+[info]: timestamp:2025-08-22 01:31:32 AM traceId:[982265b3-812a-477f-be73-000462604948] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:31:33 AM traceId:[982265b3-812a-477f-be73-000462604948] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: You can not react in your own story
+[info]: timestamp:2025-08-22 01:35:28 AM traceId:[00786756-cc5e-47bb-948c-76196d1f9cff] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:35:37 AM traceId:[b8c78617-d859-48c4-829b-16a290e5d42f] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:35:40 AM traceId:[495f9be5-268f-4fe8-8b56-20acac667217] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:39:01 AM traceId:[5b54846b-9072-4ccf-a460-4fbbee052e49] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:39:01 AM traceId:[5b54846b-9072-4ccf-a460-4fbbee052e49] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[info]: timestamp:2025-08-22 01:39:06 AM traceId:[d26f47a0-4d9b-4873-8186-1fc0d3ebbf2e] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:39:07 AM traceId:[d26f47a0-4d9b-4873-8186-1fc0d3ebbf2e] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[info]: timestamp:2025-08-22 01:39:22 AM traceId:[da083d35-60fe-4f9e-8c00-14d2ee5c19ba] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:39:23 AM traceId:[da083d35-60fe-4f9e-8c00-14d2ee5c19ba] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: The story is not found
+[info]: timestamp:2025-08-22 01:40:17 AM traceId:[1b9e10cc-54fa-4bfc-8982-91344c756d12] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:40:41 AM traceId:[485284be-59bf-40f6-ba8e-fd9d7f638bce] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:40:52 AM traceId:[9671233c-ab3a-4828-91b4-6daa89958093] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:42:39 AM traceId:[a2835d26-6e8a-49f1-a81d-023e40bb0fc1] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-22 01:44:16 AM traceId:[6684f18f-4f82-4684-a2b6-1dd1f5bab75c] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:45:10 AM traceId:[89fdb2d8-3fa8-4f28-b6f1-797f450693a1] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:48:43 AM traceId:[0b67ebf3-7c9a-45e7-8b62-6ca92139e71a] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a5131/reaction
+[error]: timestamp:2025-08-22 01:48:43 AM traceId:[0b67ebf3-7c9a-45e7-8b62-6ca92139e71a] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a5131/reaction msg: Validation failed!
+[info]: timestamp:2025-08-22 01:48:48 AM traceId:[680aaa01-6757-40aa-97e8-86205dddeb38] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:48:54 AM traceId:[f2c1d2d5-c551-4beb-93b6-2eded341940d] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[error]: timestamp:2025-08-22 01:48:54 AM traceId:[f2c1d2d5-c551-4beb-93b6-2eded341940d] msg: method: PATCH: /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction msg: Validation failed!
+[info]: timestamp:2025-08-22 01:48:59 AM traceId:[04a94b34-1063-406e-bf19-d3316391725c] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:49:03 AM traceId:[85509a16-9d9c-4946-9fca-74c881e28068] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-22 01:50:53 AM traceId:[5acb6ee8-f365-480f-bc66-ffa78a02232b] msg:Incoming request: PATCH /api/v1/stories/68a70ac7d3ea1c7057a51318/reaction
+[info]: timestamp:2025-08-24 17:36:56 PM traceId:[869a7e94-bb2c-45b6-91c9-62c61f80d620] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[error]: timestamp:2025-08-24 17:36:56 PM traceId:[869a7e94-bb2c-45b6-91c9-62c61f80d620] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-24 17:37:22 PM traceId:[18f20745-33db-46f7-9a07-282841b69870] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:42:10 PM traceId:[10176f84-5593-43d7-b1d9-a529c47eae04] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[error]: timestamp:2025-08-24 17:42:17 PM traceId:[10176f84-5593-43d7-b1d9-a529c47eae04] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: You can't see view history other user story
+[info]: timestamp:2025-08-24 17:44:34 PM traceId:[dbd1ba72-6b0e-435a-9f64-77c23a3c52e2] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[error]: timestamp:2025-08-24 17:44:36 PM traceId:[dbd1ba72-6b0e-435a-9f64-77c23a3c52e2] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: You will not be able to view other user's story
+[info]: timestamp:2025-08-24 17:45:01 PM traceId:[eb54b04f-342f-4e22-b741-4f7a85598b08] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:46:10 PM traceId:[66c46660-184e-4727-badf-bc9aaa128c83] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a5131a/views
+[error]: timestamp:2025-08-24 17:46:10 PM traceId:[66c46660-184e-4727-badf-bc9aaa128c83] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a5131a/views msg: The story is not found
+[info]: timestamp:2025-08-24 17:46:39 PM traceId:[56aecc27-20aa-4938-836b-07c6abeaf8b7] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:47:41 PM traceId:[aef2a4fa-1862-4769-9aca-48cec867c29a] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-24 17:47:45 PM traceId:[40e28217-91e8-4e7f-8b2b-861ee2a6aec5] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-24 17:47:52 PM traceId:[56cba76a-e51a-4dbc-99b9-e26045cdeac2] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:49:15 PM traceId:[1bfd37b9-c779-4b2c-ae5b-bfdf12a73e5f] msg:Incoming request: PUT /api/v1/stories/68a70ac7d3ea1c7057a51318/view
+[info]: timestamp:2025-08-24 17:49:19 PM traceId:[e3028589-8569-46a5-842a-88ff871e97c9] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:49:32 PM traceId:[13fca060-dad5-4cb8-8c5c-dd5933ab8bb3] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-24 17:50:30 PM traceId:[16244e48-8800-447d-90b6-db15e425db36] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[info]: timestamp:2025-08-26 01:43:56 AM traceId:[7cfdc700-e611-43b0-bda6-25f6da37052e] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318
+[error]: timestamp:2025-08-26 01:43:59 AM traceId:[7cfdc700-e611-43b0-bda6-25f6da37052e] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: The story is expired!
+[info]: timestamp:2025-08-26 01:44:01 AM traceId:[f4a6413e-7dac-41e6-b04a-12a91041eab7] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318
+[error]: timestamp:2025-08-26 01:44:01 AM traceId:[f4a6413e-7dac-41e6-b04a-12a91041eab7] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-26 01:44:14 AM traceId:[af1458a1-2276-4608-8654-ef3a4c061feb] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318
+[error]: timestamp:2025-08-26 01:44:17 AM traceId:[af1458a1-2276-4608-8654-ef3a4c061feb] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318 msg: The story is expired!
+[info]: timestamp:2025-08-26 01:45:07 AM traceId:[7a099326-122e-4be2-959f-9121befb8960] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51311
+[error]: timestamp:2025-08-26 01:45:08 AM traceId:[7a099326-122e-4be2-959f-9121befb8960] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51311 msg: The story is not found
+[info]: timestamp:2025-08-26 01:45:34 AM traceId:[5fe88857-b7d5-453b-8a4e-9077fae36157] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51311
+[error]: timestamp:2025-08-26 01:45:35 AM traceId:[5fe88857-b7d5-453b-8a4e-9077fae36157] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51311 msg: The story is not found
+[info]: timestamp:2025-08-26 01:47:19 AM traceId:[320eac6b-b114-465e-9900-2a1eeea749d2] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-26 01:47:19 AM traceId:[320eac6b-b114-465e-9900-2a1eeea749d2] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-26 01:47:33 AM traceId:[dd742ce5-f63b-4111-a713-ded60ccb696c] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-26 01:48:20 AM traceId:[65d4b5da-58ec-46c3-ad5e-1a44f06e9ca7] msg:Incoming request: GET /api/v1/stories/68acbddfcb70fc298032a768
+[info]: timestamp:2025-08-26 01:49:57 AM traceId:[6bcb81d3-aa38-4fb4-9dc6-e4c8988ceead] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-26 01:52:24 AM traceId:[cb32adc9-48bb-4ac4-ac1a-e8f0774450ba] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-26 01:52:55 AM traceId:[dea4b0bf-49d8-43f6-8b85-1420c62323fe] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 01:53:49 AM traceId:[b1313c4e-31bb-4c49-9105-1fcc565321c7] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 01:54:22 AM traceId:[3a44a129-3906-4111-9603-3150d4f3e294] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 01:54:40 AM traceId:[64784955-97c2-4dbb-b401-a0f0f0e633d6] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 01:54:41 AM traceId:[64784955-97c2-4dbb-b401-a0f0f0e633d6] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for user privacy
+[info]: timestamp:2025-08-26 01:55:51 AM traceId:[3311c231-4cbd-4e1e-812c-35eee78fc53e] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 01:55:53 AM traceId:[3311c231-4cbd-4e1e-812c-35eee78fc53e] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[info]: timestamp:2025-08-26 01:56:09 AM traceId:[2e7f8f94-b1ea-4506-852c-22ef8e65b809] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a77
+[error]: timestamp:2025-08-26 01:56:09 AM traceId:[2e7f8f94-b1ea-4506-852c-22ef8e65b809] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a77 msg: Validation failed!
+[info]: timestamp:2025-08-26 01:56:56 AM traceId:[3c186c7b-554a-40ae-b7d3-bdaffdaf826f] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 01:56:58 AM traceId:[3c186c7b-554a-40ae-b7d3-bdaffdaf826f] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[info]: timestamp:2025-08-26 01:57:06 AM traceId:[dd0dd4b3-aece-4617-8b71-a6ab8db7b821] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 02:16:02 AM traceId:[85482868-f78f-488f-b609-6ea1cc083d0d] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 02:16:34 AM traceId:[c1b05351-2e92-491c-8aff-7330fd015aee] msg:Incoming request: GET /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 02:16:36 AM traceId:[c1b05351-2e92-491c-8aff-7330fd015aee] msg: method: GET: /api/v1/stories/68acbf05cb70fc298032a775 msg: You can't view this story for story visibility
+[info]: timestamp:2025-08-26 02:33:28 AM traceId:[c8ac0335-425d-4243-bb00-7b706e61e900] msg:Incoming request: GET /api/v1
+[info]: timestamp:2025-08-26 02:33:37 AM traceId:[cc013d35-c09a-48e7-83bf-dbdb8bc1e83a] msg:Incoming request: DELETE /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 02:33:37 AM traceId:[cc013d35-c09a-48e7-83bf-dbdb8bc1e83a] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a775 msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-08-26 02:33:51 AM traceId:[d31820dd-9bcf-4409-8bed-f30b711735ab] msg:Incoming request: DELETE /api/v1/stories/68acbf05cb70fc298032a775
+[error]: timestamp:2025-08-26 02:33:52 AM traceId:[d31820dd-9bcf-4409-8bed-f30b711735ab] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a775 msg: You are not authorized to delete this story.
+[info]: timestamp:2025-08-26 02:34:15 AM traceId:[a82bc84f-8f61-4d2a-ad73-96c9768035aa] msg:Incoming request: DELETE /api/v1/stories/68acbf05cb70fc298032a771
+[error]: timestamp:2025-08-26 02:34:15 AM traceId:[a82bc84f-8f61-4d2a-ad73-96c9768035aa] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a771 msg: The story is not found
+[info]: timestamp:2025-08-26 02:34:51 AM traceId:[3012b77e-fc1d-4a7a-9780-bab12af07db5] msg:Incoming request: DELETE /api/v1/stories/68acbf05cb70fc298032a77
+[error]: timestamp:2025-08-26 02:34:51 AM traceId:[3012b77e-fc1d-4a7a-9780-bab12af07db5] msg: method: DELETE: /api/v1/stories/68acbf05cb70fc298032a77 msg: Validation failed!
+[info]: timestamp:2025-08-26 02:35:41 AM traceId:[fc3a61e8-e8ab-4fad-9277-5871239349c7] msg:Incoming request: DELETE /api/v1/stories/68a70ac7d3ea1c7057a51318
+[info]: timestamp:2025-08-26 02:40:44 AM traceId:[724cf585-438f-4193-86c7-5f9304781631] msg:Incoming request: DELETE /api/v1/stories/68acbf05cb70fc298032a775
+[info]: timestamp:2025-08-26 12:14:40 PM traceId:[fb3485fc-dc2c-462c-a974-3101c891f112] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=1
+[info]: timestamp:2025-08-26 12:16:05 PM traceId:[ee51e7e0-f207-4dc8-9976-a27a661281a9] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-26 12:16:06 PM traceId:[ee51e7e0-f207-4dc8-9976-a27a661281a9] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-26 12:16:20 PM traceId:[dfcfa0cb-6c60-4dcd-a6cd-b434cedf7cfa] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-26 12:18:17 PM traceId:[874c3167-44a7-4bbc-88b9-004c26117c2b] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=1
+[info]: timestamp:2025-08-26 12:18:24 PM traceId:[0b8a31fe-cc76-4d1f-ae61-20e274227c88] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt&page=2&limit=1
+[error]: timestamp:2025-08-26 12:18:25 PM traceId:[0b8a31fe-cc76-4d1f-ae61-20e274227c88] msg: method: GET: /api/v1/stories/archive?sort=-createdAt&page=2&limit=1 msg: Requested page number (2) exceeds the total available pages (1). Please provide a valid page number.
+[info]: timestamp:2025-08-26 12:18:34 PM traceId:[ad1e876a-973c-439d-952e-6c08491891e9] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-08-26 12:21:22 PM traceId:[f873df86-7adc-4039-90f2-aed12031ea41] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-26 12:21:37 PM traceId:[9f156d63-4600-4524-9c92-537725f53199] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-26 12:21:56 PM traceId:[64baecc5-bc9b-4407-a497-48f400c875c5] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-26 12:22:45 PM traceId:[31ff195d-ede5-4dbd-9b8f-33e0383e9173] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-26 12:23:42 PM traceId:[c5cc2afb-1973-489a-b71a-fe898f93f634] msg:Incoming request: GET /api/v1/stories/user/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-08-26 12:28:05 PM traceId:[7f99ad65-71af-425d-a663-052c7dc4de0b] msg:Incoming request: GET /api/v1/stories/68a70ac7d3ea1c7057a51318/views
+[error]: timestamp:2025-08-26 12:28:07 PM traceId:[7f99ad65-71af-425d-a663-052c7dc4de0b] msg: method: GET: /api/v1/stories/68a70ac7d3ea1c7057a51318/views msg: The story is not found
+[info]: timestamp:2025-08-26 12:28:23 PM traceId:[9670b001-50d2-415f-b39e-a829a430931b] msg:Incoming request: PUT /api/v1/stories/68ad51637c3315e24523ed13/view
+[info]: timestamp:2025-08-26 12:28:34 PM traceId:[a9eb8d1a-c846-46fa-b20b-6eb693c855b5] msg:Incoming request: GET /api/v1/stories/68ad51637c3315e24523ed13/views
+[info]: timestamp:2025-08-26 12:59:13 PM traceId:[92f19bbe-d097-4f94-88e5-b39a2d78df21] msg:Incoming request: GET /api/v1/stories/feeds
+[error]: timestamp:2025-08-26 12:59:13 PM traceId:[92f19bbe-d097-4f94-88e5-b39a2d78df21] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[info]: timestamp:2025-08-26 12:59:32 PM traceId:[f88c986c-1d6d-4952-b5eb-6a719f1abf5b] msg:Incoming request: GET /api/v1/stories/feeds
+[error]: timestamp:2025-08-26 12:59:32 PM traceId:[f88c986c-1d6d-4952-b5eb-6a719f1abf5b] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[info]: timestamp:2025-08-26 12:59:39 PM traceId:[f23e5d9a-c698-427c-821e-bb5a611cd49d] msg:Incoming request: GET /api/v1/stories/feeds
+[error]: timestamp:2025-08-26 12:59:39 PM traceId:[f23e5d9a-c698-427c-821e-bb5a611cd49d] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[info]: timestamp:2025-08-26 13:02:40 PM traceId:[0ab162c9-8131-4dd4-96fd-ea816ca1f3f2] msg:Incoming request: GET /api/v1/stories/feeds
+[info]: timestamp:2025-08-26 23:12:25 PM traceId:[046a35fc-4950-4fea-a106-d6f2471f9e2a] msg:Incoming request: GET /api/v1/stories/feeds
+[error]: timestamp:2025-08-26 23:12:25 PM traceId:[046a35fc-4950-4fea-a106-d6f2471f9e2a] msg: method: GET: /api/v1/stories/feeds msg: Validation failed!
+[info]: timestamp:2025-08-26 23:12:32 PM traceId:[38e3f9aa-59f5-4121-9fb6-2358fe3ada05] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-28 17:35:25 PM traceId:[9902c86d-2ae2-46e7-bf27-36dfc08fe83f] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-28 17:35:30 PM traceId:[2f7ae5d9-2fa6-4568-a263-8e817f2ac41e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-28 17:38:28 PM traceId:[d125eb68-4551-4d19-a42e-5c0beffe12de] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-08-28 17:38:53 PM traceId:[3c3b37a7-f082-42db-8d44-94926c634929] msg:Incoming request: PATCH /api/v1/friends/requests/68b03fb5805e11bc8eed773e/accept
+[error]: timestamp:2025-08-28 17:38:53 PM traceId:[3c3b37a7-f082-42db-8d44-94926c634929] msg: method: PATCH: /api/v1/friends/requests/68b03fb5805e11bc8eed773e/accept msg: You can't accept other users friend request
+[info]: timestamp:2025-08-28 17:39:00 PM traceId:[d4ebbcf7-dc8d-4822-b65d-a18483f57c44] msg:Incoming request: PATCH /api/v1/friends/requests/68b03fb5805e11bc8eed773e/accept
+[info]: timestamp:2025-08-28 17:39:43 PM traceId:[56dfc92f-42d9-41f2-9fcf-ac05c9213aae] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-28 17:42:23 PM traceId:[708b5041-1700-4f98-9cc7-17730ff0c642] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-08-28 18:09:18 PM traceId:[01247e88-b894-424e-8182-dc7a07e11339] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-08-28 18:09:19 PM traceId:[01247e88-b894-424e-8182-dc7a07e11339] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-08-28 18:10:07 PM traceId:[7bc4a64a-ef6d-4a9f-acca-c15998ab4e6a] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-08-28 18:10:08 PM traceId:[7bc4a64a-ef6d-4a9f-acca-c15998ab4e6a] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-08-28 18:10:13 PM traceId:[89fc59e2-2a1f-4978-a9ac-33bf1f383849] msg:Incoming request: GET /api/v1/stories/68ad51637c3315e24523ed13/views
+[info]: timestamp:2025-08-28 18:10:27 PM traceId:[277242e6-5c8f-425f-ba3b-f468e581d64c] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 00:57:06 AM traceId:[05811aa5-b9b1-4288-93b0-369d48aa9d07] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:15:51 AM traceId:[646701b9-7f63-4856-8e4d-8756b781b652] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:19:01 AM traceId:[868ae329-2d6e-4484-9d2f-b643713311dc] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:21:54 AM traceId:[02e794ad-c48a-4667-b469-2b7953ed2be6] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:24:47 AM traceId:[1f6ffae3-2851-4147-ba28-7de7cf6d14b6] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:25:35 AM traceId:[a74379f2-f241-475d-bee7-b85b425c0ac0] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-08-29 01:25:36 AM traceId:[a74379f2-f241-475d-bee7-b85b425c0ac0] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-08-29 01:26:01 AM traceId:[041ab9cb-844f-47dd-9f2c-0def0e142e80] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-08-29 01:26:18 AM traceId:[f22210e3-af5d-477b-bece-92ff2cb1e49f] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-08-29 01:26:19 AM traceId:[f22210e3-af5d-477b-bece-92ff2cb1e49f] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-08-29 01:26:25 AM traceId:[5156d5a1-13f1-4e54-8687-01e111accc68] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:26:57 AM traceId:[5f08cdbc-5afe-4046-a292-8dfbe525dd50] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:31:01 AM traceId:[262ff04d-3073-4376-a560-4a4b5b460528] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:31:36 AM traceId:[2fbe41ce-1e97-4832-85cf-fba3c0763db0] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:34:36 AM traceId:[4e13673e-789f-435e-8af1-8ef67651ab34] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:37:19 AM traceId:[4d6d127c-a682-41bb-b9d4-3f5b48b6eba6] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-29 01:38:11 AM traceId:[10f2e5e3-8c0d-4c7f-93ef-6bf2837f9f64] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-29 01:38:12 AM traceId:[10f2e5e3-8c0d-4c7f-93ef-6bf2837f9f64] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-29 01:38:23 AM traceId:[f23f3fa5-9f08-406e-abfb-965b82a15bce] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-29 01:38:48 AM traceId:[81cc8b47-fc52-4100-a9a7-754a97f4db30] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:54:45 PM traceId:[1e6d88ec-f3e7-4c86-be34-5380e621444b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:55:48 PM traceId:[d2c66a02-f687-4677-b41f-bf40304722ce] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:56:40 PM traceId:[a3789956-56ee-41d9-bc9a-2a04b10ffbb4] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:56:43 PM traceId:[442c97d2-cd92-432a-9860-2e7135f25834] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:56:56 PM traceId:[85ba8f65-1a3e-40a4-a84f-16a26ea4761b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:57:03 PM traceId:[fe2f4f4d-c0ef-485f-a52c-d182915da0aa] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:57:14 PM traceId:[aa5cefca-0d5a-4da9-991d-a1df74ce75dc] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:57:59 PM traceId:[410d9ca0-5a53-4dc3-8c45-eb26fc10f969] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:58:02 PM traceId:[67af1157-cd4f-4f3a-9d91-afedb01f2889] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 12:59:15 PM traceId:[595c0bed-4e7b-493a-9719-5018688daa64] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:00:48 PM traceId:[45a88b85-6260-47d9-90c9-0aa1b31cef19] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-08-31 13:00:48 PM traceId:[45a88b85-6260-47d9-90c9-0aa1b31cef19] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-08-31 13:00:56 PM traceId:[a37c2e57-8677-4f8e-a6a2-08c61451d8b7] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-31 13:04:12 PM traceId:[31496764-0f31-4a94-ae8c-f43f9a85da05] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:04:24 PM traceId:[9817f607-ccc4-40a1-b14f-cda1c616c49f] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:06:43 PM traceId:[cc4a94c7-b0fb-48e5-b7d5-b289ca599ca2] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:06:46 PM traceId:[496e0cb3-eea7-42f3-8ed9-b02dbaec8ed1] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:07:01 PM traceId:[2bf7cd36-687f-4247-925f-3bbbba324498] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:07:18 PM traceId:[c3da3555-e388-4e9a-be26-f041569f66eb] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:08:14 PM traceId:[628309b7-f164-44da-8617-8a727c38aaf0] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:09:59 PM traceId:[662890ac-f26d-4764-8585-733d158ddd1c] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:10:19 PM traceId:[150d0eb1-8267-4a35-9dbe-77091e0ca6f6] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-08-31 13:11:00 PM traceId:[2d94419c-61ae-45a9-a104-773a2f261991] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:11:17 PM traceId:[582a7a87-2b37-4e9a-a328-9253b5fd2cee] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:11:52 PM traceId:[ff924375-db74-40ea-96ea-3364cb6d4038] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-08-31 13:12:03 PM traceId:[d5be1d64-78fe-4890-95f2-89a81ede8d8e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:24:23 PM traceId:[85da9839-fc40-444e-a707-d9aa19373429] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:25:28 PM traceId:[27a1467a-d0e9-4264-8f19-181d9262babe] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:26:05 PM traceId:[d8e71bb6-0af3-4dfb-9b14-56ec40e83691] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:26:12 PM traceId:[19480263-b085-416f-ad6e-742fcbb55009] msg:Incoming request: GET /api/v1/stories/feed
+[error]: timestamp:2025-09-01 17:26:12 PM traceId:[19480263-b085-416f-ad6e-742fcbb55009] msg: method: GET: /api/v1/stories/feed msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-09-01 17:26:34 PM traceId:[3e389be0-4a01-4063-a9a4-6b22fd2fd46e] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-09-01 17:26:34 PM traceId:[3e389be0-4a01-4063-a9a4-6b22fd2fd46e] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-09-01 17:27:12 PM traceId:[5e6422a7-91d0-4983-8a00-9528504ef4d9] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-09-01 17:27:13 PM traceId:[5e6422a7-91d0-4983-8a00-9528504ef4d9] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-09-01 17:27:20 PM traceId:[e8e20d90-b014-42b6-b485-7a95f094bdcb] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-09-01 17:27:35 PM traceId:[745ac2ee-00e9-49f8-990a-cf9b88227fc7] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-09-01 17:27:46 PM traceId:[80e29acf-900d-43c5-9b9f-b236c0f02028] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-09-01 17:27:53 PM traceId:[e71ddadf-3030-4106-80bb-57717bc16843] msg:Incoming request: GET /api/v1/stories/feed
+[error]: timestamp:2025-09-01 17:27:53 PM traceId:[e71ddadf-3030-4106-80bb-57717bc16843] msg: method: GET: /api/v1/stories/feed msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-09-01 17:27:55 PM traceId:[8d02a991-992a-4745-8d6a-3ca1a1544dd3] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:28:49 PM traceId:[f1a1e5a8-ee96-4d83-97da-54f7c6cb6abc] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:29:42 PM traceId:[e454425f-b416-4548-8b48-584b7f85abab] msg:Incoming request: GET /api/v1/stories/feed?fields=content
+[info]: timestamp:2025-09-01 17:29:54 PM traceId:[4b194739-66ef-4932-a8a9-1e99e256e581] msg:Incoming request: GET /api/v1/stories/feed?fields=-content
+[info]: timestamp:2025-09-01 17:30:02 PM traceId:[b2a1ca82-fc1a-4a97-95c5-dbe784ebd0b2] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:52:11 PM traceId:[c493babd-259a-4cfd-af73-484ac25588c2] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:53:29 PM traceId:[5e4021c6-2bab-4c29-a2bb-e5545e421403] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 17:53:42 PM traceId:[0f879dc5-6e16-4c4d-a123-fa4a09ccccd7] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 18:15:51 PM traceId:[1cfd8607-6548-46c7-80e3-c3d4cff77bfa] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 18:16:16 PM traceId:[19e88d2d-5454-4c4d-8949-c2efce423b5d] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 18:16:58 PM traceId:[a2e606a9-74b6-46e4-89e2-3bf2114d94d5] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 18:17:37 PM traceId:[3ac5461d-3716-45be-8872-2e428d70fb2c] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-01 18:26:21 PM traceId:[3a692304-d2c6-43b9-b5fd-f9e3b660f268] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 00:56:35 AM traceId:[cef4a5ac-06d3-47b2-a4d4-5b384c8a4ead] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:17:56 AM traceId:[98d59416-9997-4158-b095-1c8ab8b69147] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:20:51 AM traceId:[5adaabb3-8b5c-47ee-ae8d-2d39c17694b9] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:23:28 AM traceId:[9752aa2d-269d-4e59-bf14-9cb6eba90b78] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:25:09 AM traceId:[e91b3949-5cb3-42af-8efe-86bb0a675b07] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:34:31 AM traceId:[bbb90c18-4e45-4dcf-8e74-611aed9f7e14] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:35:12 AM traceId:[32808997-5d89-4d29-9080-01dc84636c94] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:36:03 AM traceId:[ceec0570-1f79-4cd2-b5c0-373083a24fa0] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:36:45 AM traceId:[77cd8595-d505-4286-9fdc-b260e43bd41e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:44:51 AM traceId:[9ba307a4-7aa6-4aec-892d-5ea02ab909b8] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:46:17 AM traceId:[421a174e-502b-48bb-85ba-648e89f44def] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:47:03 AM traceId:[a1334c16-93d7-4294-99e4-2baa9d64eb22] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:49:03 AM traceId:[87a4f2d5-b4b7-418c-8cf6-d2fd40611f46] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:51:18 AM traceId:[18bbaced-3342-4fa8-9704-5c0bdce9b79a] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:53:24 AM traceId:[01a2e0a4-976a-4c9e-b757-0e149f5f9d23] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:54:35 AM traceId:[b95fdc5c-aba4-43d2-874b-2fabdd1b6317] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:55:19 AM traceId:[2359d7cf-8363-4445-81ca-07a7269db2c7] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-09-02 01:55:19 AM traceId:[2359d7cf-8363-4445-81ca-07a7269db2c7] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-09-02 01:55:28 AM traceId:[7fb53eeb-93e2-425e-912b-09b6bf8ec4e1] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-09-02 01:55:38 AM traceId:[75368c88-3995-49dc-b08d-5cacfa62bd3e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:58:29 AM traceId:[04677319-1abd-45ba-af59-a4876f295665] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 01:58:48 AM traceId:[3490c121-20c1-4b2c-89d7-4211cf1eed35] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:04:59 AM traceId:[b3b344d5-67bf-4992-b90f-8a4a8f259658] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:05:35 AM traceId:[804ba994-8805-4315-8e8f-9c852e4e976f] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:06:11 AM traceId:[f5e1b497-3a36-4a0f-b527-3ec0e6b5f1d7] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:07:19 AM traceId:[ef93b050-7444-4811-bff8-82f4cb60bb5b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:08:19 AM traceId:[bb756c12-ebad-4d1c-8983-006df8dbfec3] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:09:03 AM traceId:[de637e81-3c58-4f1c-b3c0-6013837c68d3] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 02:28:17 AM traceId:[5e6b5738-cb0e-4f91-8d3d-d06ed66fdea1] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 14:45:59 PM traceId:[f3a3034e-98e6-42c2-bfec-d2905bab6376] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 14:49:14 PM traceId:[1175a104-e559-4fc7-b185-8a999fdb8643] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 15:03:58 PM traceId:[2da182b0-0c6d-4761-ba17-b197f3de42d8] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 15:32:48 PM traceId:[7be0def2-a28b-472c-8cae-d179629dc36b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 15:34:18 PM traceId:[ea368b9b-a89a-402a-a82d-824244fb545b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 16:00:11 PM traceId:[e8beb1bb-e782-4864-a62f-96da3ae42a2e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 16:02:59 PM traceId:[1560b860-e447-40b0-9847-39d0ff9904e6] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 16:09:41 PM traceId:[49aa41e9-e544-4178-8eac-11a870dcaa54] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 16:09:55 PM traceId:[0e1a710a-3357-4cb5-ba92-04981a028341] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-02 16:10:53 PM traceId:[2f078467-2cff-4462-b213-5a8536758136] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:02:12 AM traceId:[c4ab5f8b-38b1-41b2-85f9-2fb1350d7f2e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:35:19 AM traceId:[3983f3ef-7aad-4a88-9ce7-51c3d115c8b5] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:36:45 AM traceId:[7e6187d4-54d9-4a79-b488-3efbedc68699] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:37:24 AM traceId:[35370797-e620-4f39-a027-b7337471e165] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:37:57 AM traceId:[df111352-8ee4-4568-ba1a-5840f0485bba] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:38:00 AM traceId:[f12b6191-63f9-4f5f-b067-722f87fcd822] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:38:40 AM traceId:[4e583bc2-c5a2-4415-81ef-7b43f6412dde] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:39:04 AM traceId:[b10cb235-acad-4e9a-86cd-1002e1cb61dd] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:39:50 AM traceId:[639a65f4-f5a1-4e1f-a5af-9ddd3ed59611] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:40:12 AM traceId:[aca6b3d4-a709-41d8-8494-6a362d20710a] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:55:28 AM traceId:[3b70e88d-7aa4-420d-8698-1572888d9490] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:56:29 AM traceId:[f5e40541-d00a-46f0-a9ac-8b685fb06fdf] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 01:57:20 AM traceId:[1bceab01-d752-49dc-9c8c-10b3a330199a] msg:Incoming request: GET /api/v1/stories/feed
+[error]: timestamp:2025-09-03 01:57:21 AM traceId:[1bceab01-d752-49dc-9c8c-10b3a330199a] msg: method: GET: /api/v1/stories/feed msg: a group specification must include an _id
+[info]: timestamp:2025-09-03 01:57:35 AM traceId:[fb77c3a5-471e-4b92-a260-1f7e5c153745] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 02:10:56 AM traceId:[7a4ce8e7-48a0-4ee3-b8aa-68b99be2c40b] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 02:11:47 AM traceId:[312f6703-c0f3-40a8-83d9-db395dfa5b9f] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 02:12:12 AM traceId:[c6d2c191-b6fb-4880-9bbd-aae5348f2643] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-03 02:12:34 AM traceId:[9ad7e0a9-b965-43c0-8032-a0f016a67108] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:34:33 PM traceId:[20427059-fba7-4166-b1ea-c019333dfb28] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:37:08 PM traceId:[b08fa049-81ce-4b3c-97a4-aaf268f4feb1] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:43:34 PM traceId:[d5154d21-2de3-49d8-9195-32f7dc7d7262] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:44:04 PM traceId:[5af35653-9bdc-4130-aa4f-bc31c6b99fb4] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:44:09 PM traceId:[262a7a7b-cbf3-49f1-a2cf-ac75e950e6b6] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:46:54 PM traceId:[c1c5d19b-5a8e-4699-9574-b6000cc988fe] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-04 14:47:16 PM traceId:[631fcf0b-83d0-466f-a22d-247877ba8996] msg:Incoming request: GET /api/v1/stories/feed
