@@ -24,6 +24,7 @@ import {
 } from '../Notification/notification.constant';
 import { TNotificationCreate } from '../Notification/notification.interface';
 import { Profile } from '../Profile/profile.model';
+import { UserBlockUtils } from '../Block/block.utils';
 
 const createPostIntoDB = async (payload: TPostCreate) => {
   const { tags, userId } = payload;
@@ -144,6 +145,9 @@ const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
     throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
   }
 
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(userId, post.userId);
+
   const isNotPostOwner = userId.toString() !== post.userId.toString();
 
   // check post visibility
@@ -240,6 +244,12 @@ const getOtherUserPostsFromDB = async (
     throw new AppError(httpStatus.BAD_REQUEST, 'The user is not active');
   }
 
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(
+    currentUserId,
+    new Types.ObjectId(postUserId),
+  );
+
   const isFriend = await Friend.exists({
     $or: [
       { senderId: currentUserId, receiverId: postUserId },
@@ -283,7 +293,7 @@ const getOtherUserPostsFromDB = async (
   };
 };
 
-// admin services
+// ⚠️ admin services
 const removePostByAdminIntoDB = async (
   postId: string,
   { removedReason }: TPostRemove,

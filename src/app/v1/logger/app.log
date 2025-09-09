@@ -2450,3 +2450,179 @@
 [info]: timestamp:2025-09-04 14:44:09 PM traceId:[262a7a7b-cbf3-49f1-a2cf-ac75e950e6b6] msg:Incoming request: GET /api/v1/stories/feed
 [info]: timestamp:2025-09-04 14:46:54 PM traceId:[c1c5d19b-5a8e-4699-9574-b6000cc988fe] msg:Incoming request: GET /api/v1/stories/feed
 [info]: timestamp:2025-09-04 14:47:16 PM traceId:[631fcf0b-83d0-466f-a22d-247877ba8996] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-06 15:33:06 PM traceId:[5a8e8f88-7c85-4639-952b-6c273b68427f] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-09-06 15:33:06 PM traceId:[5a8e8f88-7c85-4639-952b-6c273b68427f] msg: method: POST: /api/v1/stories msg: Image is required
+[info]: timestamp:2025-09-06 15:33:16 PM traceId:[82ba55ee-af61-447f-b236-9e520bfea95d] msg:Incoming request: POST /api/v1/stories
+[error]: timestamp:2025-09-06 15:33:28 PM traceId:[82ba55ee-af61-447f-b236-9e520bfea95d] msg: method: POST: /api/v1/stories msg: Unexpected field
+[info]: timestamp:2025-09-06 15:34:11 PM traceId:[64124328-4944-4b65-9d63-444d6c4ea390] msg:Incoming request: POST /api/v1/stories
+[info]: timestamp:2025-09-06 15:41:56 PM traceId:[c17fdee4-4050-4c9b-b70e-b96651a79e01] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-06 15:41:57 PM traceId:[c17fdee4-4050-4c9b-b70e-b96651a79e01] msg: method: POST: /api/v1/users/block msg: The user is not found
+[info]: timestamp:2025-09-06 15:42:01 PM traceId:[a11ce867-a812-4cf9-b0e4-ea4621b59409] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-06 15:44:52 PM traceId:[c6438e93-4a2f-48d1-a865-f425dbc2533a] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-06 15:44:57 PM traceId:[c6438e93-4a2f-48d1-a865-f425dbc2533a] msg: method: POST: /api/v1/users/block msg: The user is already blocked
+[info]: timestamp:2025-09-06 15:47:59 PM traceId:[fa31477d-b4e9-443d-a177-3c859ac7a38f] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-06 15:48:02 PM traceId:[fa31477d-b4e9-443d-a177-3c859ac7a38f] msg: method: POST: /api/v1/users/block msg: The user is already blocked
+[info]: timestamp:2025-09-06 15:50:35 PM traceId:[04ade608-9049-451f-a45a-1c50a89686b4] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-06 15:50:35 PM traceId:[04ade608-9049-451f-a45a-1c50a89686b4] msg: method: POST: /api/v1/users/block msg: Access denied. Required role(s): user. Your role: superAdmin
+[info]: timestamp:2025-09-06 15:51:58 PM traceId:[b7f37e67-096f-405a-856e-140c0b1cfe3d] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-06 15:53:32 PM traceId:[60eb0fd4-840c-4937-b731-918e8f4b11a6] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-06 15:53:33 PM traceId:[60eb0fd4-840c-4937-b731-918e8f4b11a6] msg: method: POST: /api/v1/users/block msg: You can't block yourself 
+[info]: timestamp:2025-09-06 15:53:42 PM traceId:[af1a710b-636a-401c-a9e9-5d722f1eff13] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-06 15:54:04 PM traceId:[b3aa7dda-7963-41d3-92dc-732c27bcad3d] msg:Incoming request: GET /api/v1/users/block/lists
+[error]: timestamp:2025-09-06 15:54:04 PM traceId:[b3aa7dda-7963-41d3-92dc-732c27bcad3d] msg: method: GET: /api/v1/users/block/lists msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-09-06 15:54:10 PM traceId:[854da5b2-60d6-44f1-962b-565331410f1c] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-06 15:54:18 PM traceId:[9da91967-67cf-4d22-b50f-b7a7fa00af99] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-06 15:55:18 PM traceId:[d1a82dee-4bfb-4fde-b6ca-7f199c65c169] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-06 15:56:32 PM traceId:[03fef11c-647c-4641-8250-37688b17141d] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-06 15:59:36 PM traceId:[73e3cf16-ef2b-4d52-b608-94a29c1648ea] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-06 15:59:59 PM traceId:[1ca40ec3-4875-4500-b38b-c093f0991460] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 14:09:43 PM traceId:[d1e642b2-4fd4-4f9d-b8db-06341f71583b] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 14:10:22 PM traceId:[2d049825-8f49-42f8-b92f-7bb2c6f3bc16] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-07 14:10:24 PM traceId:[2d049825-8f49-42f8-b92f-7bb2c6f3bc16] msg: method: POST: /api/v1/users/block msg: The user is already blocked
+[info]: timestamp:2025-09-07 14:10:36 PM traceId:[1fd54a9a-f1f9-4c03-a89f-7da968ed1b9a] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[error]: timestamp:2025-09-07 14:10:37 PM traceId:[1fd54a9a-f1f9-4c03-a89f-7da968ed1b9a] msg: method: DELETE: /api/v1/users/block/689b8b2360a46b2a013c1f85 msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 14:10:59 PM traceId:[5f26810b-6682-494d-bb7e-96b18afc1c35] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 15:41:09 PM traceId:[c3c20753-2577-4f7d-a17d-39e061b9d6ff] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 15:42:41 PM traceId:[169bc423-0c55-4280-a6fb-0a2aadcbc317] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[error]: timestamp:2025-09-07 15:42:42 PM traceId:[169bc423-0c55-4280-a6fb-0a2aadcbc317] msg: method: DELETE: /api/v1/users/block/689b8b2360a46b2a013c1f85 msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 15:59:12 PM traceId:[abe3a75e-fc89-4b77-b025-73041b697a3e] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 16:00:57 PM traceId:[af83082a-69a5-42e5-bfdd-f34f6e6d1cf1] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 16:01:28 PM traceId:[aeefe657-5e8f-4a7c-884b-3e7d6f54128a] msg:Incoming request: DELETE /api/v1/users/block/68bc044067249c6f938c6832
+[error]: timestamp:2025-09-07 16:01:30 PM traceId:[aeefe657-5e8f-4a7c-884b-3e7d6f54128a] msg: method: DELETE: /api/v1/users/block/68bc044067249c6f938c6832 msg: The user is not found
+[info]: timestamp:2025-09-07 16:06:16 PM traceId:[a3fa1d63-51fb-41fe-95b5-0615c480a744] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[error]: timestamp:2025-09-07 16:06:17 PM traceId:[a3fa1d63-51fb-41fe-95b5-0615c480a744] msg: method: DELETE: /api/v1/users/block/689b8b2360a46b2a013c1f85 msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:06:28 PM traceId:[00aaea85-cc35-4065-ab47-deedd248f528] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[error]: timestamp:2025-09-07 16:06:29 PM traceId:[00aaea85-cc35-4065-ab47-deedd248f528] msg: method: DELETE: /api/v1/users/block/689b8b2360a46b2a013c1f85 msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:06:34 PM traceId:[d067e0a3-7d04-46fa-9e25-5a9a338ebf97] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-09-07 16:07:05 PM traceId:[6c6138e3-571c-4f0c-bb36-f0d4332c2eaa] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[error]: timestamp:2025-09-07 16:07:06 PM traceId:[6c6138e3-571c-4f0c-bb36-f0d4332c2eaa] msg: method: DELETE: /api/v1/users/block/689b8b2360a46b2a013c1f85 msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:08:42 PM traceId:[061869db-df95-46d6-a839-aa66b9f12082] msg:Incoming request: GET /api/v1/users/block/lists
+[info]: timestamp:2025-09-07 16:12:21 PM traceId:[0c9502a1-2a5e-4ad4-b354-a9892668b88b] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-07 16:16:08 PM traceId:[166477db-88ee-4c98-98a5-251f0c3a0d86] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 16:19:44 PM traceId:[17437c13-d557-4ec0-9526-ef6d85987958] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 16:20:48 PM traceId:[0355b5a4-0b01-46bb-8377-fb048e4bfe43] msg:Incoming request: DELETE /api/v1/users/block/689b8b2360a46b2a013c1f85
+[info]: timestamp:2025-09-07 16:21:04 PM traceId:[15499b97-d4ef-48af-9373-e78f8b538ee4] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[info]: timestamp:2025-09-07 16:21:14 PM traceId:[d5c181bf-a055-456b-9770-07e92d991594] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[error]: timestamp:2025-09-07 16:21:15 PM traceId:[d5c181bf-a055-456b-9770-07e92d991594] msg: method: DELETE: /api/v1/users/689b8b2360a46b2a013c1f85/unblock msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:21:42 PM traceId:[5c68a6e5-f1d2-4e17-b7b7-50f58038dfe3] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f5/unblock
+[error]: timestamp:2025-09-07 16:21:42 PM traceId:[5c68a6e5-f1d2-4e17-b7b7-50f58038dfe3] msg: method: DELETE: /api/v1/users/689b8b2360a46b2a013c1f5/unblock msg: Validation failed!
+[info]: timestamp:2025-09-07 16:23:00 PM traceId:[9f446963-28b1-4d9a-9de4-2258a72c0a56] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 16:23:43 PM traceId:[85c5caa5-3b42-49b2-87ac-868bf5182ece] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-07 16:23:54 PM traceId:[64633a44-9d53-4df0-8306-5e080e8eb729] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[info]: timestamp:2025-09-07 16:25:09 PM traceId:[60115961-a6ec-476e-9067-f4332129a8d5] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[error]: timestamp:2025-09-07 16:25:10 PM traceId:[60115961-a6ec-476e-9067-f4332129a8d5] msg: method: DELETE: /api/v1/users/689b8b2360a46b2a013c1f85/unblock msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:25:25 PM traceId:[1410d890-7cd8-49dc-bca7-4d6a4010482b] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-07 16:25:48 PM traceId:[4a089c55-b974-4b37-922c-b7fb2b471364] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 16:48:29 PM traceId:[da523edf-78b7-4d09-9fb9-ecc156e8fa48] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 16:48:30 PM traceId:[da523edf-78b7-4d09-9fb9-ecc156e8fa48] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to blocked user
+[info]: timestamp:2025-09-07 16:52:01 PM traceId:[4667fab9-1f1c-493d-9da5-7ce5a83557f2] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[info]: timestamp:2025-09-07 16:52:06 PM traceId:[9889103a-ecc5-4fc7-9891-cb5092f411e9] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-09-07 16:52:21 PM traceId:[ca68ae86-254f-4414-a222-9f03bba8f3d8] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 16:52:48 PM traceId:[4b734114-461d-40de-a9af-3d1a4d2b4ead] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-07 16:53:57 PM traceId:[dd5c2a38-16d0-4dec-a7f7-f9633d41c515] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[info]: timestamp:2025-09-07 16:54:06 PM traceId:[f22a13ab-8530-421b-afa0-07c562a6df3c] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-09-07 16:54:39 PM traceId:[8cf8f98b-4b2d-4916-a55d-aec1386d38db] msg:Incoming request: DELETE /api/v1/users/689b8b2360a46b2a013c1f85/unblock
+[error]: timestamp:2025-09-07 16:54:40 PM traceId:[8cf8f98b-4b2d-4916-a55d-aec1386d38db] msg: method: DELETE: /api/v1/users/689b8b2360a46b2a013c1f85/unblock msg: The user is not exists in your block list
+[info]: timestamp:2025-09-07 16:55:15 PM traceId:[59f98b3b-bf8a-4a92-9c18-ba5f51d88fbf] msg:Incoming request: POST /api/v1/users/block
+[error]: timestamp:2025-09-07 16:55:15 PM traceId:[59f98b3b-bf8a-4a92-9c18-ba5f51d88fbf] msg: method: POST: /api/v1/users/block msg: You can't block yourself 
+[info]: timestamp:2025-09-07 16:55:24 PM traceId:[0731a96c-2dfa-405c-a1af-7042173fbef3] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-07 17:28:37 PM traceId:[6730b30f-7c26-41b4-97e9-50b3ebe10efa] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 17:28:38 PM traceId:[6730b30f-7c26-41b4-97e9-50b3ebe10efa] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to blocked user
+[info]: timestamp:2025-09-07 17:28:45 PM traceId:[ecac3601-2fa6-422b-b9e4-931733d6d2f6] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 17:28:46 PM traceId:[ecac3601-2fa6-422b-b9e4-931733d6d2f6] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-09-07 17:29:00 PM traceId:[979ee7dd-cca4-47dd-bf16-ebac7fd032e5] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 17:29:01 PM traceId:[979ee7dd-cca4-47dd-bf16-ebac7fd032e5] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to blocked user
+[info]: timestamp:2025-09-07 17:41:20 PM traceId:[492d578d-376c-417e-b780-6c66774928c4] msg:Incoming request: GET /api/v1/users/686d69a66d44a03f71c03887
+[error]: timestamp:2025-09-07 17:41:21 PM traceId:[492d578d-376c-417e-b780-6c66774928c4] msg: method: GET: /api/v1/users/686d69a66d44a03f71c03887 msg: The user is not found
+[info]: timestamp:2025-09-07 17:41:28 PM traceId:[f6568f22-534a-4465-8c0a-e379cdb2694c] msg:Incoming request: GET /api/v1/users/689b8a3a60a46b2a013c1f76
+[info]: timestamp:2025-09-07 19:34:48 PM traceId:[0faac822-fbe3-48ba-8319-c6c80c274c12] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 20:39:04 PM traceId:[52aadfb7-3dc3-4dee-b968-e011db9aee3b] msg:Incoming request: GET /api/v1/users/blocked/lists
+[info]: timestamp:2025-09-07 20:39:11 PM traceId:[96c2edfc-58e6-471d-847a-f386976cba4f] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:39:15 PM traceId:[96c2edfc-58e6-471d-847a-f386976cba4f] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:41:44 PM traceId:[85e7d43b-17ad-4d04-b66f-3afb2cdf903d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:41:45 PM traceId:[85e7d43b-17ad-4d04-b66f-3afb2cdf903d] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:43:00 PM traceId:[ad7bd5a9-5bc9-4c5c-afeb-b8f1038a27b5] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:43:01 PM traceId:[ad7bd5a9-5bc9-4c5c-afeb-b8f1038a27b5] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:43:04 PM traceId:[4b1d49a3-65a7-4dca-b201-68e1ef961870] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:43:06 PM traceId:[4b1d49a3-65a7-4dca-b201-68e1ef961870] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:43:07 PM traceId:[e554d9cf-f7f9-4a14-a36e-c67be0deaf89] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:43:08 PM traceId:[e554d9cf-f7f9-4a14-a36e-c67be0deaf89] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:44:01 PM traceId:[fb8467f6-ea1b-457b-88fb-f03bed46b4e3] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:44:04 PM traceId:[fb8467f6-ea1b-457b-88fb-f03bed46b4e3] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:44:25 PM traceId:[3b397971-b6b7-49dd-9a13-ebc69b2a5568] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:44:26 PM traceId:[3b397971-b6b7-49dd-9a13-ebc69b2a5568] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[info]: timestamp:2025-09-07 20:44:49 PM traceId:[ff5ad63b-574b-41b4-8fbe-684f709acb94] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:44:50 PM traceId:[ff5ad63b-574b-41b4-8fbe-684f709acb94] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:45:34 PM traceId:[3bc97b94-bf76-4b68-b045-50072c28554a] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:45:38 PM traceId:[3bc97b94-bf76-4b68-b045-50072c28554a] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:49:11 PM traceId:[5ed32edb-d4b5-43c0-bc80-ff008447dcb5] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-09-07 20:49:15 PM traceId:[69ad0947-255e-43c5-ae2f-e987265ff178] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:49:17 PM traceId:[69ad0947-255e-43c5-ae2f-e987265ff178] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-07 20:49:37 PM traceId:[1b510a95-93d5-419b-a743-19c0947938b5] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:49:42 PM traceId:[1b510a95-93d5-419b-a743-19c0947938b5] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 20:54:04 PM traceId:[98ae47b1-83ec-4893-b210-ede2ff41c603] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:54:07 PM traceId:[98ae47b1-83ec-4893-b210-ede2ff41c603] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-07 20:57:31 PM traceId:[68bdce5f-fd50-4b41-b373-4106e2de14f4] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 20:57:32 PM traceId:[68bdce5f-fd50-4b41-b373-4106e2de14f4] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-07 21:07:55 PM traceId:[d29a0d49-5529-4303-afd6-411ba0f3480d] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 21:07:59 PM traceId:[d29a0d49-5529-4303-afd6-411ba0f3480d] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-07 21:11:07 PM traceId:[65a3eea7-6747-40ef-8dc7-31cdb32701ce] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 21:11:11 PM traceId:[65a3eea7-6747-40ef-8dc7-31cdb32701ce] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-07 21:11:13 PM traceId:[2321cfe9-7e01-4856-b637-1d9bce8b36a1] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 21:11:15 PM traceId:[2321cfe9-7e01-4856-b637-1d9bce8b36a1] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-07 21:12:26 PM traceId:[5019db60-3fd0-4db5-ac0d-e2ebd3cd73d3] msg:Incoming request: POST /api/v1/friends/requests
+[error]: timestamp:2025-09-07 21:12:27 PM traceId:[5019db60-3fd0-4db5-ac0d-e2ebd3cd73d3] msg: method: POST: /api/v1/friends/requests msg: You have already sent friend request to this user
+[info]: timestamp:2025-09-08 01:14:33 AM traceId:[d6070250-0968-4748-bb1e-1f7a7906c633] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:17:40 AM traceId:[f786d0bc-f7ff-48d0-a12b-a5b0b7271a7e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:17:53 AM traceId:[a5e081ba-02a6-4353-9783-5b5148987b67] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:18:12 AM traceId:[b8a3a14a-b223-4c48-b4d0-fb2498d43347] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:20:56 AM traceId:[bb682189-0a47-4ee3-b4db-83d513358efe] msg:Incoming request: POST /api/v1/users/block
+[info]: timestamp:2025-09-08 01:21:16 AM traceId:[d30acd07-c614-4efb-abae-c781a7c835af] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:22:08 AM traceId:[a7360659-7c73-472d-a610-13a5add17979] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:23:42 AM traceId:[73e7fffa-2a05-4eb5-8f0c-aa77d4bdd867] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:23:52 AM traceId:[27bcee8e-c06b-4f76-acd7-008501bb02c5] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:25:09 AM traceId:[1081570d-1f3d-40b6-bf0d-f1425048cacd] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:27:43 AM traceId:[99edb7d5-23a5-4f96-81d7-7fafdf0ca9f5] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:27:44 AM traceId:[0ac9639b-0c0c-455f-92cf-7869ea895e74] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:54:00 AM traceId:[827412a4-bbe6-4d9b-a0b0-1c9a5b48c28e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:55:42 AM traceId:[c121b1dd-c5dd-4ab5-b0f7-c4f4b401c99f] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:57:30 AM traceId:[a918c808-19ef-487d-a50b-d1491d35534d] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 01:58:58 AM traceId:[62121949-de0d-46c3-b22f-e21947250fe5] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 14:11:33 PM traceId:[e93452e7-db8a-41b4-bc22-002479ce1e77] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 16:26:13 PM traceId:[f38535e2-3d98-46a6-ae09-b1176f37682e] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 16:26:34 PM traceId:[5f2ed3de-eae5-474b-8811-5f4350e87599] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 16:26:58 PM traceId:[0a87d9b7-fd42-4153-8c35-4a67942cea32] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-08 18:03:54 PM traceId:[3b21a2fa-5f4f-4dc2-9514-dc931ef95b52] msg:Incoming request: GET /api/v1/notifications?page=1&limit=1&sort=-createdAt%20
+[info]: timestamp:2025-09-08 18:04:12 PM traceId:[1b6d57a3-f648-45d8-9247-b0650a7b5513] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:04:24 PM traceId:[f55f3802-3b98-4085-8559-c7d7cd3e19d0] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:05:40 PM traceId:[e84730bd-c1fa-4f1b-a10b-f5fc03286238] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:06:36 PM traceId:[e3318e01-b797-4c7a-be93-b85c2cf1b37d] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:06:51 PM traceId:[64c7f673-9096-4de1-a1fa-123eb0c55fef] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:06:59 PM traceId:[2fa5e760-b4f4-4e38-87c1-86d80ae2261e] msg:Incoming request: GET /api/v1/notifications
+[info]: timestamp:2025-09-08 18:52:37 PM traceId:[b3730f3d-6721-44b3-ad7f-64c006bcfdb6] msg:Incoming request: GET /api/v1/users/profile/asjdfa
+[error]: timestamp:2025-09-08 18:52:37 PM traceId:[b3730f3d-6721-44b3-ad7f-64c006bcfdb6] msg: method: GET: /api/v1/users/profile/asjdfa msg: Validation failed!
+[info]: timestamp:2025-09-08 18:53:10 PM traceId:[6b57c67c-a003-455b-b897-db4c3f8d7aff] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7c
+[error]: timestamp:2025-09-08 18:53:10 PM traceId:[6b57c67c-a003-455b-b897-db4c3f8d7aff] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7c msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-09-08 18:53:23 PM traceId:[22b9a205-6293-4678-9f58-03a85ec3f86c] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7c
+[error]: timestamp:2025-09-08 18:53:23 PM traceId:[22b9a205-6293-4678-9f58-03a85ec3f86c] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7c msg: Authorization header is missing. Please include a Bearer token.
+[info]: timestamp:2025-09-08 18:53:38 PM traceId:[eace21a6-681a-4e90-a6dd-d419bb057e57] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7c
+[info]: timestamp:2025-09-08 18:54:11 PM traceId:[4860030f-5299-4785-9cba-ce56133a2acc] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7c
+[error]: timestamp:2025-09-08 18:54:12 PM traceId:[4860030f-5299-4785-9cba-ce56133a2acc] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7c msg: You blocked the user. You will not be able to take any action with each other.
+[info]: timestamp:2025-09-08 18:54:42 PM traceId:[363cc3b8-bf4e-499a-8db8-16732b3cd94e] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7c
+[info]: timestamp:2025-09-08 18:54:58 PM traceId:[3fd97bf3-23ea-48c2-b08c-a092c4830135] msg:Incoming request: GET /api/v1/users/profile/689b8a7b60a46b2a013c1f7a
+[error]: timestamp:2025-09-08 18:54:59 PM traceId:[3fd97bf3-23ea-48c2-b08c-a092c4830135] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7a msg: The user profile is not found
+[info]: timestamp:2025-09-09 02:19:28 AM traceId:[b145669f-4c20-4304-b183-0a4301e08945] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:20:02 AM traceId:[c080af76-1dc6-45fa-9a57-dc3a6a7cc94a] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:23:30 AM traceId:[fccf47d2-f00a-439e-9386-712b9c8742e8] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:25:18 AM traceId:[70556fc5-685c-409c-ac2e-e52ca94335f9] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:27:02 AM traceId:[0ef6bf3d-7daf-45dc-8005-9547a0c2ba79] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:27:48 AM traceId:[0f3c5a20-267c-41d8-b5e9-0a6feb8c0143] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:28:44 AM traceId:[30ab4463-88d5-4cdb-9027-2d8222ce4656] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:30:11 AM traceId:[e7cbbe4a-9d61-493c-a495-b5b66e7d05e0] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:34:17 AM traceId:[290522d9-a8b4-4f20-a9f2-1694fed0c6ca] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:35:07 AM traceId:[8da06a2a-b42a-444d-97d3-5e3b7333840c] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:38:19 AM traceId:[18941535-86fd-463e-8ba1-c6728ff11f7d] msg:Incoming request: GET /api/v1/stories/feed
+[error]: timestamp:2025-09-09 02:38:21 AM traceId:[18941535-86fd-463e-8ba1-c6728ff11f7d] msg: method: GET: /api/v1/stories/feed msg: Invalid $project :: caused by :: Cannot do exclusion on field mentions in inclusion projection
+[info]: timestamp:2025-09-09 02:38:39 AM traceId:[8a3cf552-1c03-4186-8b03-dc580c871371] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:39:11 AM traceId:[ab8531ca-f2b0-44f0-84f7-bff6d03e19c3] msg:Incoming request: GET /api/v1/stories/feed
+[info]: timestamp:2025-09-09 02:39:37 AM traceId:[8ed18dfe-3e71-401e-b87b-a7ce96a58d8f] msg:Incoming request: GET /api/v1/stories/feed

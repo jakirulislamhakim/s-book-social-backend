@@ -48,7 +48,7 @@ router.patch(
   UserController.reactiveUser,
 );
 
-// admin and super admin
+// ⚠️ admin and super admin
 router.patch(
   '/:id/suspend',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),

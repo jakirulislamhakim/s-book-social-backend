@@ -32,7 +32,7 @@ const moduleRoutes: TModulesRoutes[] = [
     route: ProfileRoutes,
   },
   {
-    path: '/users/block',
+    path: '/users',
     route: UserBlockRoutes,
   },
   {

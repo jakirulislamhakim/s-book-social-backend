@@ -1,3 +1,4 @@
+import { UserBlockUtils } from './../Block/block.utils';
 import httpStatus from 'http-status';
 import { Post } from '../Post/post.model';
 import { TCommentCreate, TCommentUpdate } from './comment.interface';
@@ -35,6 +36,9 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
   }
 
   const { audience, userId: postAuthorId } = existingPost;
+
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(commentAuthorId, postAuthorId);
 
   if (
     audience === POST_AUDIENCE.PRIVATE &&
@@ -157,16 +161,18 @@ const createOrReplyComment = async (payload: TCommentCreate) => {
 };
 
 const getTopLevelComments = async (
+  userId: Types.ObjectId,
   postId: string,
   query: Record<string, string>,
 ) => {
-  const isExistPost = await Post.exists({
-    _id: postId,
-  });
+  const post = await Post.findById(postId).select('userId').lean();
 
-  if (!isExistPost) {
+  if (!post) {
     throw new AppError(httpStatus.NOT_FOUND, 'The post is not found !');
   }
+
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(userId, post.userId);
 
   const comments = await Comment.find({
     postId,
@@ -187,7 +193,10 @@ const getTopLevelComments = async (
   return comments;
 };
 
-const getReplyComments = async (commentId: string) => {
+const getReplyComments = async (
+  currentUserId: Types.ObjectId,
+  commentId: string,
+) => {
   const comment = await Comment.findOne({
     _id: commentId,
   })
@@ -202,8 +211,12 @@ const getReplyComments = async (commentId: string) => {
     throw new AppError(httpStatus.BAD_REQUEST, 'This comment has no replies');
   }
 
+  const excludedCommentIds =
+    await UserBlockUtils.getExcludedUserIds(currentUserId);
+
   const repliesComments = await Comment.find({
     parentId: commentId,
+    authorId: { $nin: excludedCommentIds },
   })
     .populate({
       path: 'author',

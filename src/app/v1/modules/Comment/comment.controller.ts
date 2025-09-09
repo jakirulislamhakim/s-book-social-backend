@@ -20,8 +20,10 @@ const createOrReplyComment = catchAsync(async (req, res) => {
 
 const getTopLevelComments = catchAsync(async (req, res) => {
   const { postId } = req.params;
+  const userId = req.user!._id;
 
   const payload = await CommentServices.getTopLevelComments(
+    userId,
     postId,
     req.query as Record<string, string>,
   );
@@ -38,8 +40,9 @@ const getTopLevelComments = catchAsync(async (req, res) => {
 
 const getReplyComments = catchAsync(async (req, res) => {
   const { id } = req.params;
+  const currentUserId = req.user!._id;
 
-  const payload = await CommentServices.getReplyComments(id);
+  const payload = await CommentServices.getReplyComments(currentUserId, id);
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,

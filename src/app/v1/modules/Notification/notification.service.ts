@@ -5,13 +5,19 @@ import AppError from '../../errors/AppError';
 import httpStatus from 'http-status';
 import { TNotificationBroadcast } from './notification.interface';
 import { User } from '../User/user.model';
+import { UserBlockUtils } from '../Block/block.utils';
 
 const getNotifications = async (
   userId: Types.ObjectId,
   query: Record<string, unknown>,
 ) => {
+  const excludeSenderIds = await UserBlockUtils.getExcludedUserIds(userId);
+
   const notificationsQuery = new QueryBuilder(
-    Notification.find({ receiverId: userId }),
+    Notification.find({
+      receiverId: userId,
+      senderId: { $nin: excludeSenderIds },
+    }),
     query,
   )
     .fields()

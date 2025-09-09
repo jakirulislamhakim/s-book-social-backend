@@ -26,11 +26,7 @@ const typeSchema = z
 
 const createReactionSchema = z.object({
   targetType: z.enum(
-    [
-      REACTION_TARGET_TYPE.POST,
-      REACTION_TARGET_TYPE.COMMENT,
-      REACTION_TARGET_TYPE.STORY,
-    ],
+    [REACTION_TARGET_TYPE.POST, REACTION_TARGET_TYPE.COMMENT],
     {
       errorMap: () => ({
         message: `Target type must be one of: ${Object.values(
@@ -54,11 +50,7 @@ const createReactionSchema = z.object({
 
 const getReactionQuerySchema = z.object({
   targetType: z.enum(
-    [
-      REACTION_TARGET_TYPE.POST,
-      REACTION_TARGET_TYPE.COMMENT,
-      REACTION_TARGET_TYPE.STORY,
-    ],
+    [REACTION_TARGET_TYPE.POST, REACTION_TARGET_TYPE.COMMENT],
     {
       errorMap: () => ({
         message: `Target type must be one of: ${Object.values(

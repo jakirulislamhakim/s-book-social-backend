@@ -14,6 +14,7 @@ import {
   NOTIFICATION_TARGET_TYPE,
   NOTIFICATION_URL_METHOD,
 } from '../Notification/notification.constant';
+import { UserBlockUtils } from '../Block/block.utils';
 
 const sendFriendRequest = async (
   senderId: Types.ObjectId,
@@ -25,6 +26,12 @@ const sendFriendRequest = async (
       'You can not send friend request to yourself',
     );
   }
+
+  // check if the user is blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(
+    senderId,
+    new Types.ObjectId(receiverId),
+  );
 
   const isReceiverExist = await User.findById(receiverId)
     .select('status')

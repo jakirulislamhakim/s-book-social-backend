@@ -8,24 +8,22 @@ import { ParamsValidations } from '../../validation/params.validation';
 const router = Router();
 
 router.post(
-  '/',
+  '/block',
   validateReq.body(UserBlockValidations.createUserBlock),
-  authorizeRoles(USER_ROLE.USER),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   UserBlockControllers.userBlock,
 );
 
 router.delete(
-  '/:blockedId',
-  validateReq.pathParams(
-    ParamsValidations.pathParamObjectIDSchema('blockedId'),
-  ),
-  authorizeRoles(USER_ROLE.USER),
+  '/:userId/unblock',
+  validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema('userId')),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   UserBlockControllers.userUnBlock,
 );
 
 router.get(
-  '/lists',
-  authorizeRoles(USER_ROLE.USER),
+  '/blocked/lists',
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   UserBlockControllers.getMyAllBlockedUsers,
 );
 

@@ -17,6 +17,7 @@ import {
 import { TNotificationCreate } from '../Notification/notification.interface';
 import { Profile } from '../Profile/profile.model';
 import { NotificationUtils } from '../Notification/notification.utils';
+import { UserBlockUtils } from '../Block/block.utils';
 
 const createStory = async (payload: TStoryCreate) => {
   const mentions = await getMentionUserIdsFromContent(payload.content || '');
@@ -85,6 +86,12 @@ const getActiveStoryByUserId = async (
   if (!existingUser) {
     throw new AppError(httpStatus.NOT_FOUND, 'The user is not found');
   }
+
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(
+    userId,
+    new Types.ObjectId(otherUserId),
+  );
 
   const hasFriend = await Friend.exists({
     $or: [
@@ -167,6 +174,9 @@ const reactingInStory = async (
     );
   }
 
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(userId, existingStory.userId);
+
   const reaction = await StoryView.updateOne(
     { storyId, userId },
     { storyId, userId, reactionType: payload.reactionType },
@@ -212,6 +222,9 @@ const getStoryById = async (userId: Types.ObjectId, storyId: string) => {
   if (!existingStory) {
     throw new AppError(httpStatus.NOT_FOUND, 'The story is not found');
   }
+
+  // check they are blocked or not if they are blocked then throw error
+  await UserBlockUtils.checkMutualBlock(userId, existingStory.userId);
 
   const hasFriend = await Friend.exists({
     $or: [
@@ -447,11 +460,14 @@ const getStoriesForFeed = async (
   //   },
   // ]);
 
+  const excludedUserIds = await UserBlockUtils.getExcludedUserIds(userId);
+
   const stories = await Story.aggregate([
     {
       $match: {
-        $or: condition, // your condition for friends, followings, public
+        $or: condition,
         expiresAt: { $gte: new Date() },
+        userId: { $nin: excludedUserIds },
       },
     },
     {
@@ -469,6 +485,8 @@ const getStoriesForFeed = async (
         createdAt: -1, // latest stories next
       },
     },
+
+    // Group by userId
     {
       $group: {
         _id: '$userId',
@@ -487,6 +505,8 @@ const getStoriesForFeed = async (
         priority: { $first: '$priority' },
       },
     },
+
+    // Lookup user profile
     {
       $lookup: {
         localField: '_id',
@@ -496,6 +516,40 @@ const getStoriesForFeed = async (
       },
     },
     { $unwind: '$user' },
+
+    // handle mentions population
+    { $unwind: '$stories' },
+    {
+      $lookup: {
+        from: 'users',
+        let: { mentionIds: '$stories.mentions' },
+        pipeline: [
+          {
+            $match: {
+              $expr: { $in: ['$_id', '$$mentionIds'] },
+            },
+          },
+          {
+            $project: {
+              _id: 1,
+              username: 1,
+            },
+          },
+        ],
+        as: 'stories.mentionUsers',
+      },
+    },
+
+    // again group by userId (_id) and push stories array
+    {
+      $group: {
+        _id: '$_id',
+        stories: { $push: '$stories' },
+        priority: { $first: '$priority' },
+        user: { $first: '$user' },
+      },
+    },
+
     {
       $project: {
         user: {
@@ -503,12 +557,21 @@ const getStoriesForFeed = async (
           fullName: '$user.fullName',
           profilePhoto: '$user.profilePhoto',
         },
-        stories: 1,
+        stories: {
+          _id: 1,
+          image: 1,
+          content: 1,
+          mentionUsers: 1,
+          viewCounts: 1,
+          visibility: 1,
+          createdAt: 1,
+          expiresAt: 1,
+        },
         priority: 1,
       },
     },
-    { $sort: { priority: 1 } }, // again to ensure owner is always first
-    //! i can do also more like pagination and remove  priority field by project pipeline
+
+    { $sort: { priority: 1 } },
   ]);
 
   return stories;

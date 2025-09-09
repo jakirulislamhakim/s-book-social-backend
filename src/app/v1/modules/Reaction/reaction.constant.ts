@@ -12,5 +12,4 @@ export const REACTION_TYPE = {
 export const REACTION_TARGET_TYPE = {
   POST: 'post',
   COMMENT: 'comment',
-  STORY: 'story',
 } as const;

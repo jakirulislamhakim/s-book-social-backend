@@ -35,7 +35,24 @@ const updateMyProfile = catchAsync(async (req, res) => {
   });
 });
 
+const getProfileByUserId = catchAsync(async (req, res) => {
+  const { userId } = req.params;
+  const currentUserId = req.user!._id;
+
+  const payload = await ProfileServices.getProfileByUserId(
+    currentUserId,
+    userId,
+  );
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Successfully retrieved the user profile.',
+    payload,
+  });
+});
+
 export const ProfileControllers = {
   getMyProfile,
   updateMyProfile,
+  getProfileByUserId,
 };

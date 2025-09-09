@@ -19,9 +19,10 @@ const toggleReaction = catchAsync(async (req, res) => {
 
 const getReactions = catchAsync(async (req, res) => {
   const query = req.query as unknown as TReactionQuery;
+  const currentUserId = req.user!._id;
 
   const { reactions: payload, pagination } =
-    await ReactionServices.getReactions(query);
+    await ReactionServices.getReactions(currentUserId, query);
 
   const hasResults = payload.length > 0;
   const hasQuery = Object.keys(query).length > 2;

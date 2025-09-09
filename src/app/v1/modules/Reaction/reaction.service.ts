@@ -15,6 +15,7 @@ import {
 import { Profile } from '../Profile/profile.model';
 import { Comment } from '../Comment/comment.model';
 import { Notification } from '../Notification/notification.model';
+import { UserBlockUtils } from '../Block/block.utils';
 
 // create or update reaction if exist & type is provided then remove reaction
 const toggleReaction = async (
@@ -34,12 +35,17 @@ const toggleReaction = async (
     notificationReceiverId = new Types.ObjectId(
       targetEntity?.userId.toString(),
     );
+
+    // check they are blocked or not if they are blocked then throw error
+    await UserBlockUtils.checkMutualBlock(
+      userId,
+      new Types.ObjectId(targetEntity?.userId.toString()),
+    );
   } else if (targetType === REACTION_TARGET_TYPE.COMMENT) {
     targetEntity = await Comment.findById(targetId).select('authorId').lean();
 
     notificationReceiverId = targetEntity?.authorId;
   }
-  // TODO : Extend this to check  STORY targets
 
   if (!targetEntity) {
     throw new AppError(
@@ -131,16 +137,23 @@ const toggleReaction = async (
   return message;
 };
 
-const getReactions = async (query: TReactionQuery) => {
+const getReactions = async (
+  currentUserId: Types.ObjectId,
+  query: TReactionQuery,
+) => {
   const { targetType, targetId, limit, page, sort, type } = query;
 
   const skip = (page - 1) * limit;
+
+  const excludedUserIds =
+    await UserBlockUtils.getExcludedUserIds(currentUserId);
 
   const reactionsAggregate = await Reaction.aggregate([
     {
       $match: {
         targetType,
         targetId,
+        userId: { $nin: excludedUserIds },
       },
     },
     ...(type ? [{ $match: { type } }] : []),

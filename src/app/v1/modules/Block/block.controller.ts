@@ -11,7 +11,7 @@ const userBlock = catchAsync(async (req, res) => {
 
   sendApiResponse(res, {
     statusCode: httpStatus.CREATED,
-    message: 'User blocked successfully',
+    message: 'The user has been blocked successfully',
     payload,
   });
 });
@@ -19,12 +19,12 @@ const userBlock = catchAsync(async (req, res) => {
 const userUnBlock = catchAsync(async (req, res) => {
   const payload = await UserBlockServices.userUnblockIntoDB(
     req.user!._id,
-    req.params.blockedId,
+    req.params.userId,
   );
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message: 'User unblocked successfully',
+    message: 'The user has been unblocked successfully',
     payload,
   });
 });

@@ -5,6 +5,7 @@ import { User } from '../User/user.model';
 import AppError from '../../errors/AppError';
 import httpStatus from 'http-status';
 import { Profile } from '../Profile/profile.model';
+import { Friend } from '../Friend/friend.model';
 
 const userBlockIntoDB = async (
   blockerId: Types.ObjectId,
@@ -35,14 +36,24 @@ const userBlockIntoDB = async (
     blockedId,
   });
 
+  if (result) {
+    // if they are friend then remove them from friend list
+    await Friend.findOneAndDelete({
+      $or: [
+        { senderId: blockerId, receiverId: blockedId },
+        { senderId: blockedId, receiverId: blockerId },
+      ],
+    });
+  }
+
   return result;
 };
 
 const userUnblockIntoDB = async (
   blockerId: Types.ObjectId,
-  blockedId: string,
+  blockedUserId: string,
 ) => {
-  const isExistUser = await User.exists({ _id: blockedId });
+  const isExistUser = await User.exists({ _id: blockedUserId });
 
   if (!isExistUser) {
     throw new AppError(httpStatus.NOT_FOUND, 'The user is not found');
@@ -50,7 +61,7 @@ const userUnblockIntoDB = async (
 
   const result = await UserBlock.findOneAndDelete({
     blockerId,
-    blockedId,
+    blockedId: blockedUserId,
   });
 
   if (!result) {
@@ -68,9 +79,9 @@ const getMyAllBlockedUsersFromDB = async (userId: Types.ObjectId) => {
     .sort({ createdAt: -1 })
     .lean();
 
-  const userIds = blockLists.map((item) => item.blockedId);
+  const blockedUserIds = blockLists.map((item) => item.blockedId);
 
-  const profiles = await Profile.find({ userId: { $in: userIds } })
+  const profiles = await Profile.find({ userId: { $in: blockedUserIds } })
     .select('fullName profilePhoto userId -_id')
     .lean();
 
