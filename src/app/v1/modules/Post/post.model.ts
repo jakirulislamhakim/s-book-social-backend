@@ -14,6 +14,12 @@ const postSchema = new Schema<TPost>(
       default: '',
       trim: true,
     },
+    mentions: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Profile',
+      },
+    ],
     media: {
       type: [String],
       default: [],

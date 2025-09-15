@@ -37,6 +37,26 @@ const getUserById = catchAsync(async (req, res) => {
   });
 });
 
+const findMentionableFriends = catchAsync(async (req, res) => {
+  const currentUserId = req.user!._id;
+
+  const payload = await UserServices.findMentionableFriends(
+    currentUserId,
+    req.query,
+  );
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message:
+      payload.length > 0
+        ? 'Mention friends fetched successfully.'
+        : req.query.fullName
+          ? 'No friends found for your search criteria.'
+          : 'You have no friends',
+    payload,
+  });
+});
+
 const updateUserUsername = catchAsync(async (req, res) => {
   const { username } = req.body;
 
@@ -102,9 +122,10 @@ const restoreSuspendUser = catchAsync(async (req, res) => {
 });
 
 export const UserController = {
-  getUserById,
-  updateUserUsername,
   getAllUsers,
+  getUserById,
+  findMentionableFriends,
+  updateUserUsername,
   deactivateUser,
   softDeleteUser,
   reactiveUser,

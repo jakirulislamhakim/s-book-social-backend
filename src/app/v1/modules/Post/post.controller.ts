@@ -51,10 +51,10 @@ const getMyPosts = catchAsync(async (req, res) => {
   const hasResults = payload.length > 0;
 
   const message = hasResults
-    ? 'Posts fetched successfully'
+    ? 'Successfully fetched your posts for your profile'
     : hasQuery
       ? 'No posts matched your search criteria. Please review your filters.'
-      : 'No posts available in the system.';
+      : 'No posts available for your profile';
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
@@ -71,7 +71,7 @@ const getPostById = catchAsync(async (req, res) => {
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message: 'Post fetched successfully',
+    message: 'Successfully fetched the post',
     payload,
   });
 });
@@ -108,22 +108,47 @@ const deletePostById = catchAsync(async (req, res) => {
 
 const getOtherUserPosts = catchAsync(async (req, res) => {
   const { id } = req.params;
+  const { query } = req;
+
   const { posts, pagination } = await PostServices.getOtherUserPostsFromDB(
     id,
     req.user!._id,
-    req.query,
+    query,
   );
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
     message:
       posts.length > 0
-        ? 'Your posts fetched successfully.'
-        : 'The user has no posts yet.',
+        ? 'Successfully fetched the user posts'
+        : Object.values(query).length > 0
+          ? 'No posts matched your search criteria. Please review your filters.'
+          : 'The user has no posts yet.',
     payload: posts,
     pagination,
   });
 });
+
+const getPostsForFeed = catchAsync(async (req, res) => {
+  const currentUserId = req.user!._id;
+
+  const { posts: payload, pagination } = await PostServices.getPostsForFeed(
+    currentUserId,
+    req.query,
+  );
+
+  sendApiResponse(res, {
+    statusCode: httpStatus.OK,
+    message:
+      payload.length > 0
+        ? 'Successfully fetched posts for your feed.'
+        : 'No posts available for your feed. Please add some friends to your friends list.',
+    payload,
+    pagination,
+  });
+});
+
+// ⚠️ admin controllers
 
 const removePostByAdmin = catchAsync(async (req, res) => {
   const { id: postId } = req.params;
@@ -165,6 +190,9 @@ export const PostControllers = {
   updatePostById,
   deletePostById,
   getOtherUserPosts,
+  getPostsForFeed,
+
+  // admin controllers
   removePostByAdmin,
   restorePostByAdmin,
   rejectPostAppealByAdmin,

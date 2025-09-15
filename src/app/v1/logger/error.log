@@ -651,3 +651,76 @@
 [error]: timestamp:2025-09-08 18:54:12 PM traceId:[4860030f-5299-4785-9cba-ce56133a2acc] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7c msg: You blocked the user. You will not be able to take any action with each other.
 [error]: timestamp:2025-09-08 18:54:59 PM traceId:[3fd97bf3-23ea-48c2-b08c-a092c4830135] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7a msg: The user profile is not found
 [error]: timestamp:2025-09-09 02:38:21 AM traceId:[18941535-86fd-463e-8ba1-c6728ff11f7d] msg: method: GET: /api/v1/stories/feed msg: Invalid $project :: caused by :: Cannot do exclusion on field mentions in inclusion projection
+[error]: timestamp:2025-09-10 02:08:40 AM traceId:[dced3186-d772-4ec2-b0a6-e1261c0f76d2] msg: method: GET: /api/v1/users/profile/689b8a7b60a46b2a013c1f7a msg: The user profile is not found
+[error]: timestamp:2025-09-11 15:46:48 PM traceId:[fcfa17f1-18bd-4354-a693-6dd3e2aac974] msg: method: GET: /api/v1/users?searchTerm=super%20admin msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-11 15:47:12 PM traceId:[22ff3ce4-6d70-4e01-9e59-6d24756742f2] msg: method: GET: /api/v1/users?searchTerm=super%20admin msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-11 15:48:04 PM traceId:[d5699970-38ef-48f9-918d-4c908534bd02] msg: method: GET: /api/v1/users/mentions?searchTerm=super%20admin msg: Validation failed!
+[error]: timestamp:2025-09-11 17:55:42 PM traceId:[76e716a0-b6ab-48c1-9368-9d67ecf7eb58] msg: method: GET: /api/v1/users/mentions?searchTerm=&sort=fullName%20kjsa&fields=-userId msg: Validation failed!
+[error]: timestamp:2025-09-11 19:41:24 PM traceId:[49845e6d-c631-4d3b-8b77-9b0c695fe998] msg: method: GET: /api/v1/users/mentions msg: Cannot read properties of undefined (reading 'replace')
+[error]: timestamp:2025-09-11 19:41:46 PM traceId:[5e2b147c-fbcc-4477-b0d4-73f6fd4eb128] msg: method: GET: /api/v1/users/mentions msg: Cannot read properties of undefined (reading 'replace')
+[error]: timestamp:2025-09-11 19:41:49 PM traceId:[54e48db5-9bf5-4af4-a300-ab76799d05ff] msg: method: GET: /api/v1/users/mentions msg: Cannot read properties of undefined (reading 'replace')
+[error]: timestamp:2025-09-12 00:50:58 AM traceId:[494550c1-e0b9-41bd-a823-abb7f9c33371] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:51:02 AM traceId:[788fba62-6131-417e-a8e5-020b3187ffed] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:51:15 AM traceId:[8ee02013-8f18-4dc7-9e6f-958a8aa1b593] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:51:16 AM traceId:[67781ddb-ca8c-4b17-b024-27cf87553afe] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:51:17 AM traceId:[d402dd42-67f0-45c1-9c13-0b149375ef95] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:51:18 AM traceId:[f42a1825-5b68-4d7c-9416-bd003dce9c9f] msg: method: GET: /api/v1/users/mentions msg: Access token has expired.
+[error]: timestamp:2025-09-12 00:52:16 AM traceId:[ac056f6f-61fd-4cd7-9f02-56503c0ab06b] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:52:18 AM traceId:[c7a18402-755e-42bf-8089-737eb469ac28] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:53:46 AM traceId:[91a40dd7-3837-458c-aa2a-6a15fd4e00f0] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:53:47 AM traceId:[28ab0cae-f3c4-432f-a1b3-67daad5df376] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:54:07 AM traceId:[884d8d6b-1f21-4d28-b109-4aeba0659d95] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:54:31 AM traceId:[fd6830f0-bc1d-4bca-9b17-5bdf85afe580] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:54:33 AM traceId:[3e38e966-f838-481b-a228-a038b7b69d38] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 00:54:34 AM traceId:[340e05fc-d05f-4629-8a08-467fbf0ef463] msg: method: GET: /api/v1/users/mentions msg: Access denied. Required role(s): admin, superAdmin. Your role: user
+[error]: timestamp:2025-09-12 01:05:57 AM traceId:[e3be6e5c-9f5f-4238-8b16-f10bb403ae81] msg: method: GET: /api/v1/users/mentions?username=tash msg: An object representing an expression must have exactly one field: { $regex: "tash", $options: "i" }
+[error]: timestamp:2025-09-12 01:07:08 AM traceId:[d172bd6c-ec38-4133-8e0e-59f52c87acda] msg: method: GET: /api/v1/users/mentions?username=tash msg: Unrecognized expression '$user.username'
+[error]: timestamp:2025-09-12 01:07:21 AM traceId:[bc6486f1-317b-41d0-b4ea-32d97b689847] msg: method: GET: /api/v1/users/mentions?username=tash msg: FieldPath field names may not contain '.'. Consider using $getField or $setField.
+[error]: timestamp:2025-09-12 23:52:54 PM traceId:[9947cb1d-6d1e-4769-9236-9a410044632a] msg: method: GET: /api/v1/users/mentions?fullNames=tash msg: Validation failed!
+[error]: timestamp:2025-09-12 23:52:58 PM traceId:[cd193b23-ddb0-4dad-a919-07bb67398e2a] msg: method: GET: /api/v1/users/mentions?fullNames=tash msg: Validation failed!
+[error]: timestamp:2025-09-13 00:28:44 AM traceId:[dfabce24-1ebe-411e-a487-5d77f3056ec0] msg: method: GET: /api/v1/posts/feed msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-13 00:29:08 AM traceId:[6df6f80c-4926-4bce-bfc2-eecc9547dc88] msg: method: GET: /api/v1/posts/feed msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-09-13 00:29:33 AM traceId:[9dda5db6-b952-407d-add1-2cc490af052d] msg: method: GET: /api/v1/posts/feed msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-09-13 00:30:02 AM traceId:[2a6cc57f-7a2d-4fea-9588-ad5a00c972ac] msg: method: GET: /api/v1/posts/feed msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-09-13 00:30:38 AM traceId:[480d05b2-21aa-49a5-a467-b418ee630be4] msg: method: GET: /api/v1/posts/feed msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-09-13 00:30:48 AM traceId:[b5ec38fe-3854-4d20-ac8b-59c6e09de5dc] msg: method: GET: /api/v1/posts/feed msg: Cannot read properties of undefined (reading 'length')
+[error]: timestamp:2025-09-13 00:59:23 AM traceId:[d9f2075c-1783-470b-a07d-8c01eb15bdc8] msg: method: GET: /api/v1/posts/feed msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-13 14:26:19 PM traceId:[1f991c53-baf5-410f-9454-1f9e2ea4133f] msg: method: GET: /api/v1/posts/feed?fields=audience%20-tags msg: Validation failed!
+[error]: timestamp:2025-09-13 14:26:35 PM traceId:[802e245b-9f74-476d-9091-f31f00bec35e] msg: method: GET: /api/v1/posts/feed?fields=audience%20%20tags msg: Validation failed!
+[error]: timestamp:2025-09-13 14:26:42 PM traceId:[568926d8-e0ef-49c1-9f6b-97af65de3e94] msg: method: GET: /api/v1/posts/feed?fields=audience%20,tags msg: Validation failed!
+[error]: timestamp:2025-09-13 16:43:15 PM traceId:[283141e5-eb39-491f-a2de-3d11ba77ad67] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-09-14 01:33:08 AM traceId:[d3db9a03-6b92-4afb-a045-c52501e9ff47] msg: method: PATCH: /api/v1/friends/requests/68c5c6df93dd42af7f6aad70/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-09-14 01:33:20 AM traceId:[91e5dc34-75e5-4c64-bad8-c3f0dd329640] msg: method: PATCH: /api/v1/friends/requests/68c5c6df93dd42af7f6aad70/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-09-14 01:36:34 AM traceId:[0b7338cd-b78e-4103-8bcd-a85e8491c8a3] msg: method: PATCH: /api/v1/friends/requests/68c5c7af93dd42af7f6aad8e/accept msg: You can't accept other users friend request
+[error]: timestamp:2025-09-14 01:39:11 AM traceId:[dd17cd84-59ee-4d93-aa30-bb8b3a43e617] msg: method: POST: /api/v1/posts msg: You can only tag users who are your friends. Some selected users are not in your friend list.
+[error]: timestamp:2025-09-14 01:39:37 AM traceId:[a2c681a0-5440-4628-a8bc-c5dfdc136478] msg: method: POST: /api/v1/posts msg: You can not tag yourself in your post . Please remove yourself from tags
+[error]: timestamp:2025-09-14 02:25:26 AM traceId:[ed56bbe6-cde4-4058-810f-94e3e42f9dba] msg: method: POST: /api/v1/friends/requests msg: The user blocked you. You will not be able to take any action with each other.
+[error]: timestamp:2025-09-14 02:25:55 AM traceId:[3d068b63-c756-4503-9a6c-a704241dcb96] msg: method: POST: /api/v1/friends/requests msg: You can not send friend request to yourself
+[error]: timestamp:2025-09-14 02:26:09 AM traceId:[d39b1b14-2efe-4338-9241-3e6b5ff83179] msg: method: POST: /api/v1/friends/requests msg: The user you sent request is not found!
+[error]: timestamp:2025-09-14 02:27:11 AM traceId:[ea4496e1-ec7b-4573-93e1-ad9c036ca4a0] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[error]: timestamp:2025-09-14 02:27:46 AM traceId:[9b59f863-2b10-45a9-a03f-dedcd0f8da02] msg: method: POST: /api/v1/friends/requests msg: You blocked the user. You will not be able to take any action with each other.
+[error]: timestamp:2025-09-14 02:28:39 AM traceId:[b755b8f2-0af8-4df1-8389-73a4ea675722] msg: method: POST: /api/v1/users/block msg: The user is already blocked
+[error]: timestamp:2025-09-14 02:52:28 AM traceId:[934a8ff8-160a-42f0-bca8-6608276c0be2] msg: method: POST: /api/v1/stories msg: Image is required
+[error]: timestamp:2025-09-14 02:55:45 AM traceId:[db5dd825-99e9-4e75-adce-f7df5279e1a8] msg: method: GET: /api/v1/stories/feed msg: getaddrinfo EAI_AGAIN ac-u8vxmyt-shard-00-01.5prtsfh.mongodb.net
+[error]: timestamp:2025-09-14 18:01:40 PM traceId:[a95c0ae7-b3c0-4895-8f7b-13bc2452245e] msg: method: GET: /api/v1/posts/684a957637396bf10a9495a1 msg: The post is not found !
+[error]: timestamp:2025-09-14 18:06:50 PM traceId:[723ae5d0-cc42-4ba0-ac84-c17c7ddcb7d9] msg: method: GET: /api/v1/posts/68c5c94393dd42af7f6aadba msg: The post is private . You can't see the post !
+[error]: timestamp:2025-09-14 18:47:27 PM traceId:[6451871f-f361-415b-a6b9-09bfa7c881bd] msg: method: GET: /api/v1/posts/68c5c94393dd42af7f6aadba msg: The post is private . You can't see the post !
+[error]: timestamp:2025-09-14 18:48:58 PM traceId:[eec029bf-0411-4c1d-9e1a-45cfbddcaabc] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: Access token has expired.
+[error]: timestamp:2025-09-14 18:49:07 PM traceId:[9fc0fe85-0e7b-4149-a24e-a04336ed454b] msg: method: GET: /api/v1/posts/users/68554eefe1557582022c7100 msg: The user is not found
+[error]: timestamp:2025-09-14 19:01:32 PM traceId:[3f7a0348-e0c1-484e-83ac-403505b9705a] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-14 19:01:45 PM traceId:[7ede115a-7204-420d-a3eb-c34157ebd62e] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-14 19:02:36 PM traceId:[4cd49af3-9cee-48b5-aeb6-9019e71581f9] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-14 19:27:03 PM traceId:[5c96db74-1581-4ebf-9e8b-bc82a8a7d960] msg: method: GET: /api/v1/posts/68c5c95b93dd42af7f6aadc2 msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:27:29 PM traceId:[5cbfa051-a9c9-426c-80da-7d5d58c30976] msg: method: GET: /api/v1/posts/68c5c95b93dd42af7f6aadc2 msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:27:53 PM traceId:[77314f9d-e444-420c-958e-d8163ae3a940] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:28:33 PM traceId:[bcfa9cd2-585b-4e8b-8db2-f20352e0f5cf] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:29:21 PM traceId:[f6b64940-4c95-4dd2-89b0-858dee52a585] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:32:51 PM traceId:[89d78ef4-62fa-4df8-b0c1-719ec15b952d] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Invalid mongo id
+[error]: timestamp:2025-09-14 19:41:00 PM traceId:[fbde2c8c-8f89-496b-abec-7c5bbce6abf4] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-09-14 19:41:51 PM traceId:[e0eb1b4b-bb70-4b9e-8171-49b492c4dc67] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-09-14 19:42:22 PM traceId:[09328787-3c22-4824-bbdf-8a5482161b76] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-09-14 19:44:59 PM traceId:[c49fc1d1-096e-4667-bf5f-25663e1108c4] msg: method: GET: /api/v1/posts/68c5c97693dd42af7f6aadca msg: Cannot read properties of undefined (reading 'toString')
+[error]: timestamp:2025-09-15 01:58:37 AM traceId:[40d2966f-bab5-4911-a97a-398db1678acc] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: Authorization header is missing. Please include a Bearer token.
+[error]: timestamp:2025-09-15 01:59:01 AM traceId:[72f52f08-c314-474f-99a6-bf3424aed493] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-15 01:59:06 AM traceId:[b965361a-ee07-44b4-9269-3ae72caf07a4] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-15 23:36:38 PM traceId:[e5c95b08-e52f-4ee6-90b4-6c072f8773e6] msg: method: GET: /api/v1/posts/users/68c54ac68e7585e8b85f993e msg: You can not see your own post by yourself

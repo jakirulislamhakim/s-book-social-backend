@@ -11,6 +11,7 @@ export type TPost = {
   _id: Types.ObjectId;
   userId: Types.ObjectId;
   content: string;
+  mentions: Types.ObjectId[];
   media: string[];
   tags: Types.ObjectId[];
   location: string;

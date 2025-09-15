@@ -11,6 +11,8 @@ import {
 } from './user.constant';
 import { Types } from 'mongoose';
 import { TUserLogin } from '../Auth/auth.interface';
+import { Profile } from '../Profile/profile.model';
+import { FriendUtils } from '../Friend/friend.utils';
 
 const getAllUsersFromDB = async (query: Record<string, unknown>) => {
   const userQuery = new QueryBuilder(User.find(), query)
@@ -37,6 +39,88 @@ const getUserByIdFromDB = async (id: string) => {
   }
 
   return user;
+};
+
+const findMentionableFriends = async (
+  currentUserId: Types.ObjectId,
+  query: Record<string, unknown>,
+) => {
+  const { friendIds } =
+    await FriendUtils.getFriendsAndFollowingIds(currentUserId);
+
+  // const mentionsUserQuery = new QueryBuilder(
+  //   Profile.find({
+  //     _id: { $ne: currentUserId },
+  //     userId: { $in: friends },
+  //   }).select('-_id userId fullName profilePhoto'),
+  //   query,
+  // )
+  //   .search(['fullName'])
+  //   .fields()
+  //   .filter()
+  //   .sort()
+  //   .paginate();
+
+  // const mentionUsers = await mentionsUserQuery.modelQuery;
+  // const pagination = await mentionsUserQuery.paginateMeta();
+
+  // return {
+  //   mentionUsers,
+  //   pagination,
+  // };
+
+  const mentionFriends = await Profile.aggregate([
+    {
+      $match: {
+        _id: { $ne: currentUserId },
+        userId: { $in: friendIds },
+        fullName: { $regex: query.fullName ?? '', $options: 'i' },
+      },
+    },
+    {
+      $sort: {
+        fullName: 1,
+      },
+    },
+    {
+      $limit: 10,
+    },
+    {
+      $project: {
+        _id: 0,
+        userId: 1,
+        fullName: 1,
+        profilePhoto: 1,
+      },
+    },
+    {
+      $lookup: {
+        from: 'users',
+        localField: 'userId',
+        foreignField: '_id',
+        as: 'user',
+      },
+    },
+    {
+      $unwind: '$user',
+    },
+    {
+      $match: {
+        'user.status': USER_STATUS.ACTIVE,
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        username: '$user.username',
+        userId: '$user._id',
+        fullName: 1,
+        profilePhoto: 1,
+      },
+    },
+  ]);
+
+  return mentionFriends;
 };
 
 const updateUserUsernameIntoDB = async (
@@ -178,6 +262,7 @@ const restoreSuspendUserIntoDB = async (id: string) => {
 export const UserServices = {
   getAllUsersFromDB,
   getUserByIdFromDB,
+  findMentionableFriends,
   updateUserUsernameIntoDB,
   deactivateUserIntoDB,
   softDeleteUserIntoDB,

@@ -27,7 +27,18 @@ const suspendUserSchema = z.object({
     .max(500, 'Suspension reason should not exceed 500 characters'),
 });
 
+const findMentionableFriendsQuerySchema = z.object({
+  fullName: z
+    .string({
+      invalid_type_error: 'Full name must be a string',
+    })
+    .trim()
+    .max(40, 'Full name must be at most 40 characters')
+    .optional(),
+});
+
 export const UserValidations = {
   usernameSchema,
   suspendUserSchema,
+  findMentionableFriendsQuerySchema,
 };

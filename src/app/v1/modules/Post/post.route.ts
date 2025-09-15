@@ -23,6 +23,13 @@ router.post(
 );
 
 router.get(
+  '/feed',
+  validateReq.queryParams(ParamsValidations.queryParamsSchema),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  PostControllers.getPostsForFeed,
+);
+
+router.get(
   '/me',
   authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
   PostControllers.getMyPosts,

@@ -18,6 +18,7 @@ import { TNotificationCreate } from '../Notification/notification.interface';
 import { Profile } from '../Profile/profile.model';
 import { NotificationUtils } from '../Notification/notification.utils';
 import { UserBlockUtils } from '../Block/block.utils';
+import { FriendUtils } from '../Friend/friend.utils';
 
 const createStory = async (payload: TStoryCreate) => {
   const mentions = await getMentionUserIdsFromContent(payload.content || '');
@@ -297,38 +298,16 @@ const deleteStoryById = async (userId: Types.ObjectId, storyId: string) => {
 };
 
 const getStoriesForFeed = async (
-  userId: Types.ObjectId,
+  currentUserId: Types.ObjectId,
   // query: Record<string, unknown>,
 ) => {
-  const followingAndFriends = await Friend.find({
-    $or: [{ senderId: userId }, { receiverId: userId }],
-    // status: FRIEND_STATUS.ACCEPTED,
-  })
-    .select('receiverId senderId status')
-    .lean();
-
-  const friendIds: Types.ObjectId[] = [];
-  const followingIds: Types.ObjectId[] = [];
-
-  for (const friend of followingAndFriends) {
-    if (friend.status === FRIEND_STATUS.ACCEPTED) {
-      if (userId.equals(friend.senderId)) {
-        friendIds.push(friend.receiverId);
-      } else {
-        friendIds.push(friend.senderId);
-      }
-    } else if (
-      friend.status === FRIEND_STATUS.PENDING &&
-      userId.equals(friend.senderId)
-    ) {
-      followingIds.push(friend.receiverId);
-    }
-  }
+  const { friendIds, followingIds } =
+    await FriendUtils.getFriendsAndFollowingIds(currentUserId);
 
   // condition for story visibility
   const condition = [
     // own stories
-    { userId },
+    { userId: currentUserId },
 
     // friends stories : friends and public visibility
     {
@@ -460,20 +439,23 @@ const getStoriesForFeed = async (
   //   },
   // ]);
 
-  const excludedUserIds = await UserBlockUtils.getExcludedUserIds(userId);
+  const excludedUserIds =
+    await UserBlockUtils.getExcludedUserIds(currentUserId);
 
   const stories = await Story.aggregate([
     {
       $match: {
-        $or: condition,
-        expiresAt: { $gte: new Date() },
-        userId: { $nin: excludedUserIds },
+        $and: [
+          { $or: condition },
+          { expiresAt: { $gte: new Date() } },
+          { userId: { $nin: excludedUserIds } },
+        ],
       },
     },
     {
       $addFields: {
         priority: {
-          $cond: [{ $eq: ['$userId', userId] }, 0, 1],
+          $cond: [{ $eq: ['$userId', currentUserId] }, 0, 1],
           //  if story belongs to logged-in user → priority 0
           // otherwise → priority 1
         },

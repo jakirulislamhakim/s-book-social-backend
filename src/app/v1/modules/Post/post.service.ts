@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { UserBlockUtils } from './../Block/block.utils';
 import httpStatus from 'http-status';
 import AppError from '../../errors/AppError';
 import { User } from '../User/user.model';
@@ -24,7 +26,20 @@ import {
 } from '../Notification/notification.constant';
 import { TNotificationCreate } from '../Notification/notification.interface';
 import { Profile } from '../Profile/profile.model';
-import { UserBlockUtils } from '../Block/block.utils';
+import { FriendUtils } from '../Friend/friend.utils';
+import { getMentionUserIdsFromContent } from '../../utils/getMentionUserIdsFromContent';
+
+const postSelect = '-_id userId fullName profilePhoto';
+
+const postPopulates = [
+  { path: 'tags', select: postSelect },
+  { path: 'mentions', select: postSelect },
+  {
+    path: 'userId',
+    model: 'Profile',
+    select: postSelect,
+  },
+];
 
 const createPostIntoDB = async (payload: TPostCreate) => {
   const { tags, userId } = payload;
@@ -80,9 +95,9 @@ const createPostIntoDB = async (payload: TPostCreate) => {
     }
   }
 
-  // todo: add mentions filed in post model & mentions content & add notification for mention user
+  const mentions = await getMentionUserIdsFromContent(payload.content || '');
 
-  const createPost = await Post.create(payload);
+  const createPost = await Post.create({ ...payload, mentions });
 
   const profile = await Profile.findById(userId).select('fullName').lean();
 
@@ -101,28 +116,41 @@ const createPostIntoDB = async (payload: TPostCreate) => {
     await NotificationUtils.createNotification(notificationData);
   }
 
+  if (mentions && mentions.length > 0) {
+    const notificationData: TNotificationCreate[] = mentions.map(
+      (mentionId) => ({
+        action: NOTIFICATION_ACTION.MENTIONED,
+        message: `${profile?.fullName} mentioned you in a post`,
+        receiverId: new Types.ObjectId(mentionId),
+        senderId: userId,
+        targetType: NOTIFICATION_TARGET_TYPE.POST,
+        targetId: new Types.ObjectId(createPost._id),
+        url: `/posts/${createPost._id}`,
+        url_method: NOTIFICATION_URL_METHOD.GET,
+      }),
+    );
+
+    await NotificationUtils.createNotification(notificationData);
+  }
+
   return createPost;
 };
 
 const getMyPostsFromDB = async (
-  userId: Types.ObjectId,
+  currentUserId: Types.ObjectId,
   query: Record<string, unknown>,
 ) => {
-  const postQuery = new QueryBuilder(Post.find({ userId }), query)
+  const postQuery = new QueryBuilder(
+    Post.find({ userId: currentUserId }),
+    query,
+  )
     .search(POST_SEARCHABLE_FIELDS)
     .filter()
     .sort()
     .paginate()
     .fields();
 
-  // fixme: populate also post owner details
-
-  const posts = await postQuery.modelQuery
-    .populate({
-      path: 'tags',
-      select: 'userId fullName profilePhoto',
-    })
-    .lean();
+  const posts = await postQuery.modelQuery.populate(postPopulates).lean();
   const pagination = await postQuery.paginateMeta();
 
   return {
@@ -131,14 +159,11 @@ const getMyPostsFromDB = async (
   };
 };
 
-const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
-  // fixme: populate also post owner details
-  const post = await Post.findById(postId)
-    .populate({
-      path: 'tags',
-      select: 'userId fullName profilePhoto',
-    })
-    .lean();
+const getPostByIdFromDB = async (
+  postId: string,
+  currentUserId: Types.ObjectId,
+) => {
+  const post = await Post.findById(postId).populate(postPopulates).lean();
 
   // check post exists & removed
   if (!post) {
@@ -146,9 +171,13 @@ const getPostByIdFromDB = async (postId: string, userId: Types.ObjectId) => {
   }
 
   // check they are blocked or not if they are blocked then throw error
-  await UserBlockUtils.checkMutualBlock(userId, post.userId);
+  await UserBlockUtils.checkMutualBlock(
+    currentUserId,
+    (post.userId as any).userId,
+  );
 
-  const isNotPostOwner = userId.toString() !== post.userId.toString();
+  const isNotPostOwner =
+    currentUserId.toString() !== (post.userId as any).userId.toString();
 
   // check post visibility
   if (post.audience === POST_AUDIENCE.PRIVATE) {
@@ -276,12 +305,61 @@ const getOtherUserPostsFromDB = async (
     .paginate()
     .fields();
 
-  // fixme: populate also post owner details
   const posts = await postQuery.modelQuery
-    .populate({
-      path: 'tags',
-      select: 'userId fullName profilePhoto',
+    .populate(postPopulates)
+    .select('-status -removeReason')
+    .lean();
+
+  const pagination = await postQuery.paginateMeta();
+
+  return {
+    posts,
+    pagination,
+  };
+};
+
+const getPostsForFeed = async (
+  currentUserId: Types.ObjectId,
+  query: Record<string, unknown>,
+) => {
+  const { friendIds, followingIds } =
+    await FriendUtils.getFriendsAndFollowingIds(currentUserId);
+
+  const postAccessConditions = [
+    { userId: currentUserId },
+    {
+      userId: { $in: friendIds },
+      audience: { $in: [POST_AUDIENCE.FRIENDS, POST_AUDIENCE.PUBLIC] },
+    },
+    {
+      userId: { $in: followingIds },
+      audience: POST_AUDIENCE.PUBLIC,
+    },
+  ];
+
+  const excludedUserIds =
+    await UserBlockUtils.getExcludedUserIds(currentUserId);
+
+  const postQuery = new QueryBuilder(
+    Post.find({
+      $and: [
+        { $or: postAccessConditions },
+        { status: POST_STATUS.ACTIVE },
+        { userId: { $nin: excludedUserIds } },
+      ],
     })
+      .sort({ createdAt: -1 })
+      .lean(),
+    query,
+  )
+    .search(POST_SEARCHABLE_FIELDS)
+    .filter()
+    .sort()
+    .paginate()
+    .fields();
+
+  const posts = await postQuery.modelQuery
+    .populate(postPopulates)
     .select('-status -removeReason')
     .lean();
 
@@ -455,6 +533,9 @@ export const PostServices = {
   updatePostByIdIntoDB,
   deletePostByIdFromDB,
   getOtherUserPostsFromDB,
+  getPostsForFeed,
+
+  // admin services
   removePostByAdminIntoDB,
   restorePostAppealByAdmin,
   rejectPostAppealByAdmin,

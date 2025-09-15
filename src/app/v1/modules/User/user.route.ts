@@ -17,6 +17,13 @@ router.get(
 );
 
 router.get(
+  '/mentions',
+  validateReq.queryParams(UserValidations.findMentionableFriendsQuerySchema),
+  authorizeRoles(USER_ROLE.USER, USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
+  UserController.findMentionableFriends,
+);
+
+router.get(
   '/:id',
   validateReq.pathParams(ParamsValidations.pathParamObjectIDSchema()),
   authorizeRoles(USER_ROLE.ADMIN, USER_ROLE.SUPER_ADMIN),
