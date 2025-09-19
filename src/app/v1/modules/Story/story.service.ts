@@ -66,7 +66,7 @@ const getArchiveStories = async (
   const archiveStories = await archiveStoriesQuery.modelQuery
     .populate({
       path: 'mentions',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .lean();
 
@@ -121,11 +121,11 @@ const getActiveStoryByUserId = async (
   })
     .populate({
       path: 'userId',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .populate({
       path: 'mentions',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .lean();
 
@@ -208,7 +208,7 @@ const getStoryViews = async (userId: Types.ObjectId, storyId: string) => {
   const result = await StoryView.find({ storyId })
     .populate({
       path: 'userId',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .select('-storyId')
     .lean();
@@ -254,11 +254,11 @@ const getStoryById = async (userId: Types.ObjectId, storyId: string) => {
   })
     .populate({
       path: 'userId',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .populate({
       path: 'mentions',
-      select: '_id fullName profilePhoto',
+      select: '-_id userId fullName profilePhoto',
     })
     .lean();
 
@@ -335,7 +335,7 @@ const getStoriesForFeed = async (
   //   const stories = await storiesQuery.modelQuery
   //     .populate({
   //       path: 'userId',
-  //       select: '_id fullName profilePhoto',
+  //       select: '-_id userId fullName profilePhoto',
   //     })
   //     .lean();
 

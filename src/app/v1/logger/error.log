@@ -724,3 +724,17 @@
 [error]: timestamp:2025-09-15 01:59:01 AM traceId:[72f52f08-c314-474f-99a6-bf3424aed493] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
 [error]: timestamp:2025-09-15 01:59:06 AM traceId:[b965361a-ee07-44b4-9269-3ae72caf07a4] msg: method: GET: /api/v1/posts/users/68c5499e8e7585e8b85f991d msg: You can not see your own post by yourself
 [error]: timestamp:2025-09-15 23:36:38 PM traceId:[e5c95b08-e52f-4ee6-90b4-6c072f8773e6] msg: method: GET: /api/v1/posts/users/68c54ac68e7585e8b85f993e msg: You can not see your own post by yourself
+[error]: timestamp:2025-09-17 01:40:01 AM traceId:[9d9c2190-7caa-44dd-8fa2-e0220b3784e4] msg: method: POST: /api/v1/auth/resend-verification msg: Email is already verified
+[error]: timestamp:2025-09-17 01:43:14 AM traceId:[b578832a-6204-4d00-835a-03187469efe8] msg: method: POST: /api/v1/auth/login msg: Password is incorrect!
+[error]: timestamp:2025-09-19 00:30:52 AM traceId:[b889c604-eed7-4a32-874c-9af3156e24ce] msg: method: GET: /api/v1/stories/archive?sort=-createdAt msg: error processing query: ns=s-book-social-media.storiesTree: $and
+    userId $eq ObjectId('68c5499e8e7585e8b85f991d')
+    expiresAt $lte new Date(1758220251491)
+Sort: {}
+Proj: {}
+ planner returned error :: caused by :: hint provided does not correspond to an existing index
+[error]: timestamp:2025-09-19 00:30:55 AM traceId:[bfd8e611-90f9-469f-812b-17c0eb4ff621] msg: method: GET: /api/v1/stories/archive?sort=-createdAt msg: error processing query: ns=s-book-social-media.storiesTree: $and
+    userId $eq ObjectId('68c5499e8e7585e8b85f991d')
+    expiresAt $lte new Date(1758220254853)
+Sort: {}
+Proj: {}
+ planner returned error :: caused by :: hint provided does not correspond to an existing index

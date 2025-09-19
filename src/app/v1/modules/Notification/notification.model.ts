@@ -63,6 +63,8 @@ const notificationSchema = new Schema<TNotification>(
   },
 );
 
+notificationSchema.index({ receiverId: 1, isRead: 1, createdAt: -1 });
+
 export const Notification = model<TNotification>(
   'Notification',
   notificationSchema,

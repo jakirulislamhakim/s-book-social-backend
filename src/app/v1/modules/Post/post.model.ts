@@ -55,4 +55,7 @@ const postSchema = new Schema<TPost>(
   },
 );
 
+postSchema.index({ content: 1, location: 1 });
+postSchema.index({ userId: 1, audience: 1, status: 1, createdAt: -1 });
+
 export const Post = model<TPost>('Post', postSchema);

@@ -54,4 +54,5 @@ export default {
   // email send
   SENDER_EMAIL: getEnvVar('SENDER_EMAIL'),
   SENDGRID_API_KEY: getEnvVar('SENDGRID_API_KEY'),
+  GMAIL_APP_PASS: getEnvVar('GMAIL_APP_PASS'),
 };

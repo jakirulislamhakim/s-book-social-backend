@@ -39,4 +39,6 @@ const profileSchema = new Schema<TProfile>(
   { timestamps: true, versionKey: false },
 );
 
+profileSchema.index({ userId: 1 }, { unique: true }).index({ fullName: 1 });
+
 export const Profile = model<TProfile>('Profile', profileSchema);

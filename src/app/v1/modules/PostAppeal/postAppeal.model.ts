@@ -53,6 +53,8 @@ postAppealSchema.virtual('post', {
 postAppealSchema.set('toObject', { virtuals: true });
 postAppealSchema.set('toJSON', { virtuals: true });
 
+postAppealSchema.index({ postId: 1, status: 1 });
+
 export const PostAppeal = model<TPostAppeal>(
   'PostAppeal',
   postAppealSchema,

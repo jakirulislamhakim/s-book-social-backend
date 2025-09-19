@@ -23,6 +23,8 @@ const userBlockSchema = new Schema<TUserBlock>(
   },
 );
 
+userBlockSchema.index({ blockerId: 1, blockedId: 1 }, { unique: true });
+
 export const UserBlock = model<TUserBlock>(
   'UserBlock',
   userBlockSchema,

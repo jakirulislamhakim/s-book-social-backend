@@ -3131,3 +3131,64 @@
 [info]: timestamp:2025-09-16 00:37:49 AM traceId:[d93c268b-a9f8-42d7-a4ef-b9be0d40177a] msg:Incoming request: GET /api/v1/posts/feed
 [info]: timestamp:2025-09-16 00:37:57 AM traceId:[72bf8d35-3099-44c5-acdd-1afe8dd11301] msg:Incoming request: GET /api/v1/posts/feed
 [info]: timestamp:2025-09-16 00:38:42 AM traceId:[4712472f-25b1-4730-ae31-0b8292a6e94a] msg:Incoming request: GET /api/v1/posts/feed
+[info]: timestamp:2025-09-17 01:33:47 AM traceId:[8e3be8ac-c56d-4b7e-8d9c-a937957b8349] msg:Incoming request: POST /api/v1/auth/registration
+[info]: timestamp:2025-09-17 01:36:42 AM traceId:[0f4fbc28-29a3-43fa-b78c-dc57c11bedf0] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-09-17 01:38:06 AM traceId:[48fe1593-3e8e-4ac9-8938-a363e6e56882] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE0MDMsImV4cCI6MTc1ODA1NTAwM30.f5FY6LLDY0Ytl1kPxJlkvpCG7GMOE1rd6GlPfNQswyA
+[info]: timestamp:2025-09-17 01:38:06 AM traceId:[ae3a77e0-17e4-4a2a-a615-16259add9bc8] msg:Incoming request: GET /favicon.ico
+[info]: timestamp:2025-09-17 01:38:23 AM traceId:[43c29c10-f6d0-4208-a81d-7d01947c9107] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE0MDMsImV4cCI6MTc1ODA1NTAwM30.f5FY6LLDY0Ytl1kPxJlkvpCG7GMOE1rd6GlPfNQswyA
+[info]: timestamp:2025-09-17 01:38:28 AM traceId:[03fe2283-aae7-402b-b4fa-a32ef41e41ed] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-09-17 01:40:01 AM traceId:[9d9c2190-7caa-44dd-8fa2-e0220b3784e4] msg:Incoming request: POST /api/v1/auth/resend-verification
+[error]: timestamp:2025-09-17 01:40:01 AM traceId:[9d9c2190-7caa-44dd-8fa2-e0220b3784e4] msg: method: POST: /api/v1/auth/resend-verification msg: Email is already verified
+[info]: timestamp:2025-09-17 01:40:16 AM traceId:[594a1827-fe0a-4531-885d-cbc76e418feb] msg:Incoming request: POST /api/v1/auth/forget-password
+[info]: timestamp:2025-09-17 01:42:33 AM traceId:[bab66594-89ce-4b07-873d-9f6c4c30a53d] msg:Incoming request: GET /api/v1/auth/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE2MTcsImV4cCI6MTc1ODA1MjIxN30.y_Su7CGoShSOepg2X0K1uTgyNpOjPRMWs4SQPLeXtAU
+[info]: timestamp:2025-09-17 01:42:33 AM traceId:[4509c1b1-fd27-4eba-8c6c-45224d4d195a] msg:Incoming request: GET /favicon.ico
+[info]: timestamp:2025-09-17 01:42:47 AM traceId:[75b6afab-8fc2-4b08-a7cc-6c5135fa343a] msg:Incoming request: POST /api/v1/auth/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE2MTcsImV4cCI6MTc1ODA1MjIxN30.y_Su7CGoShSOepg2X0K1uTgyNpOjPRMWs4SQPLeXtAU
+[info]: timestamp:2025-09-17 01:43:13 AM traceId:[b578832a-6204-4d00-835a-03187469efe8] msg:Incoming request: POST /api/v1/auth/login
+[error]: timestamp:2025-09-17 01:43:14 AM traceId:[b578832a-6204-4d00-835a-03187469efe8] msg: method: POST: /api/v1/auth/login msg: Password is incorrect!
+[info]: timestamp:2025-09-17 01:43:24 AM traceId:[97c6af79-7b20-49bb-b5cc-f4cac776b752] msg:Incoming request: POST /api/v1/auth/login
+[info]: timestamp:2025-09-17 01:46:27 AM traceId:[a992e36e-df45-423c-af75-d464c9c76ff5] msg:Incoming request: POST /api/v1/auth/resend-verification
+[info]: timestamp:2025-09-17 01:47:26 AM traceId:[4af35d2d-3bb8-4fd4-91a5-0c975ee9a854] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE5ODcsImV4cCI6MTc1ODA1NTU4N30.ssPSNB_cSW2olSyVffKwwEXEmlWVuoi0roxMhHWzz74
+[info]: timestamp:2025-09-17 01:47:27 AM traceId:[152b63b3-2971-4f38-b5a0-e49648df0d1c] msg:Incoming request: GET /favicon.ico
+[info]: timestamp:2025-09-17 01:47:38 AM traceId:[ac47ae4c-baa0-4654-8c47-9b73f08a8e74] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE5ODcsImV4cCI6MTc1ODA1NTU4N30.ssPSNB_cSW2olSyVffKwwEXEmlWVuoi0roxMhHWzz74
+[info]: timestamp:2025-09-17 01:47:42 AM traceId:[47da638f-09c9-4e10-9690-61576a64f2b2] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE5ODcsImV4cCI6MTc1ODA1NTU4N30.ssPSNB_cSW2olSyVffKwwEXEmlWVuoi0roxMhHWzz74
+[info]: timestamp:2025-09-17 01:47:46 AM traceId:[9481ef6d-aa91-49d9-92cb-164ecd0221e1] msg:Incoming request: GET /api/v1/auth/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphaGlkdWxpc2xhbWhha2ltNTNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTgwNTE5ODcsImV4cCI6MTc1ODA1NTU4N30.ssPSNB_cSW2olSyVffKwwEXEmlWVuoi0roxMhHWzz74
+[info]: timestamp:2025-09-19 00:22:59 AM traceId:[c06ddf9c-5d08-421c-92c7-1de94360f1df] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:24:34 AM traceId:[8a3e6b70-40fc-4527-80c1-14d878da6f6a] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:24:55 AM traceId:[6af1a462-e5ed-46cf-9ba5-4eb4a0791821] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:27:08 AM traceId:[411fb64b-baa2-4dbc-a0fd-d5c81a062613] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:30:51 AM traceId:[b889c604-eed7-4a32-874c-9af3156e24ce] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[error]: timestamp:2025-09-19 00:30:52 AM traceId:[b889c604-eed7-4a32-874c-9af3156e24ce] msg: method: GET: /api/v1/stories/archive?sort=-createdAt msg: error processing query: ns=s-book-social-media.storiesTree: $and
+    userId $eq ObjectId('68c5499e8e7585e8b85f991d')
+    expiresAt $lte new Date(1758220251491)
+Sort: {}
+Proj: {}
+ planner returned error :: caused by :: hint provided does not correspond to an existing index
+[info]: timestamp:2025-09-19 00:30:54 AM traceId:[bfd8e611-90f9-469f-812b-17c0eb4ff621] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[error]: timestamp:2025-09-19 00:30:55 AM traceId:[bfd8e611-90f9-469f-812b-17c0eb4ff621] msg: method: GET: /api/v1/stories/archive?sort=-createdAt msg: error processing query: ns=s-book-social-media.storiesTree: $and
+    userId $eq ObjectId('68c5499e8e7585e8b85f991d')
+    expiresAt $lte new Date(1758220254853)
+Sort: {}
+Proj: {}
+ planner returned error :: caused by :: hint provided does not correspond to an existing index
+[info]: timestamp:2025-09-19 00:31:07 AM traceId:[8a3ae6db-7304-487a-bb02-57cd57b6dca7] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:31:12 AM traceId:[c323ebba-dcfa-4f9f-a8f8-2f914a563189] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:31:15 AM traceId:[ea027a3c-4239-46c4-aaaf-fa808541281b] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:31:17 AM traceId:[afcd6ee0-2a42-49df-8c79-babdd0591b7f] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:31:40 AM traceId:[671f08a6-199e-41a4-bfec-a6fa67d6487e] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:31:46 AM traceId:[e1858d83-916a-4b71-9259-50afb3262a6c] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:24 AM traceId:[f1ea871c-09fa-4fff-a0fe-fc044ba2fe55] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:27 AM traceId:[0f39298e-8153-4351-9c6c-1df72bfb0887] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:29 AM traceId:[2d637c2e-3c64-441e-b0ad-43afc4b3bed4] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:31 AM traceId:[1c122898-c920-4388-ada4-d5a0e7648b9d] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:45 AM traceId:[fede4ddf-9894-483f-88a3-a81df75ec168] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:46 AM traceId:[c0911a46-d99d-4388-b246-042a9f46cfda] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:51 AM traceId:[7ea30bf0-bbc3-430f-ba48-de66fd4a4070] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:56 AM traceId:[a44249c5-f1af-4d50-a623-3c72f8dbfa97] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:32:59 AM traceId:[4520b87b-eade-4d5d-ba83-4e2055e664e2] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:03 AM traceId:[c64db7c7-4aed-40df-9953-01e28f1250b5] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:17 AM traceId:[90e30da0-5d5c-4170-be29-5cc8c3aecf3c] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:20 AM traceId:[e2445683-d411-458d-b8c9-2464e0c49180] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:31 AM traceId:[e221ae26-676b-4e40-b287-99e231137318] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:35 AM traceId:[3a1995b0-763c-481b-bbe7-0e4c943c3731] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:38 AM traceId:[f71aa0ce-ffc7-450f-872c-f947f1449566] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-19 00:33:48 AM traceId:[74c2867a-21a3-42cb-a0ff-c1e5733db468] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt

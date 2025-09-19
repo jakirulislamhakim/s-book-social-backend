@@ -87,6 +87,11 @@ const storyViewSchema = new Schema<TStoryView>(
   },
 );
 
+storySchema.index({ userId: 1, expiresAt: 1, createdAt: -1 });
+storySchema.index({ userId: 1, expiresAt: 1, visibility: 1, createdAt: -1 });
+
+storyViewSchema.index({ storyId: 1, userId: 1 }, { unique: true });
+
 // models
 export const Story = model('Story', storySchema);
 export const StoryView = model('StoryView', storyViewSchema, 'story_views');

@@ -1,5 +1,5 @@
 import config from '../config';
-import { compileTemplate } from './compileTemplete';
+import { compileTemplate } from './compileTemplate';
 import sgMail from '@sendgrid/mail';
 
 sgMail.setApiKey(config.SENDGRID_API_KEY);

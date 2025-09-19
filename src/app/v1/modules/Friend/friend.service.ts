@@ -294,7 +294,7 @@ const getMyReceivedFriendRequests = async (
     {
       $match: {
         receiverId: receiverId,
-        status: 'pending',
+        status: FRIEND_STATUS.PENDING,
       },
     },
     {
@@ -382,7 +382,7 @@ const getMySentFriendRequests = async (
     {
       $match: {
         senderId: senderId,
-        status: 'pending',
+        status: FRIEND_STATUS.PENDING,
       },
     },
     {

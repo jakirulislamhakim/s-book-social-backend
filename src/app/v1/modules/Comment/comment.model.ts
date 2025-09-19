@@ -29,4 +29,6 @@ commentSchema.virtual('author', {
   justOne: true,
 });
 
+commentSchema.index({ authorId: 1 }).index({ postId: 1 });
+
 export const Comment = model<TComment>('Comment', commentSchema);

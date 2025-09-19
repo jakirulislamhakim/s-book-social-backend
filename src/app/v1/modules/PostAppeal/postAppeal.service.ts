@@ -80,6 +80,7 @@ const createPostAppealIntoDB = async (
   return createPostAppeal;
 };
 
+// admin can get all post appeals
 const getAllPostAppealsFromDB = async (query: Record<string, unknown>) => {
   const postAppealQuery = new QueryBuilder(
     PostAppeal.find().select('-userId'),
