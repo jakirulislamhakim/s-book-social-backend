@@ -65,6 +65,12 @@ const notificationSchema = new Schema<TNotification>(
 
 notificationSchema.index({ receiverId: 1, isRead: 1, createdAt: -1 });
 
+// delete notification after 30 days
+notificationSchema.index(
+  { createdAt: 1 },
+  { expireAfterSeconds: 60 * 60 * 24 * 30 },
+);
+
 export const Notification = model<TNotification>(
   'Notification',
   notificationSchema,

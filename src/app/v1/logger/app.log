@@ -3192,3 +3192,34 @@ Proj: {}
 [info]: timestamp:2025-09-19 00:33:35 AM traceId:[3a1995b0-763c-481b-bbe7-0e4c943c3731] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
 [info]: timestamp:2025-09-19 00:33:38 AM traceId:[f71aa0ce-ffc7-450f-872c-f947f1449566] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
 [info]: timestamp:2025-09-19 00:33:48 AM traceId:[74c2867a-21a3-42cb-a0ff-c1e5733db468] msg:Incoming request: GET /api/v1/stories/archive?sort=-createdAt
+[info]: timestamp:2025-09-20 02:18:07 AM traceId:[b29dc795-8848-4b43-9323-b925dfd03afe] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-09-20 02:18:54 AM traceId:[8274d345-05b4-441a-9fd0-42556c58e360] msg:Incoming request: PATCH /api/v1/friends/requests/68cdba81645f523935a1b520/accept
+[info]: timestamp:2025-09-20 02:19:45 AM traceId:[c6d0622d-b8c2-4b80-b777-05a6d3acce6a] msg:Incoming request: PATCH /api/v1/friends/requests/68cdba81645f523935a1b520/reject
+[info]: timestamp:2025-09-20 02:21:10 AM traceId:[8cca6ebe-fc5c-4d05-9870-fb830fc64793] msg:Incoming request: DELETE /api/v1/friends/requests/68cdba81645f523935a1b520/undo
+[error]: timestamp:2025-09-20 02:21:11 AM traceId:[8cca6ebe-fc5c-4d05-9870-fb830fc64793] msg: method: DELETE: /api/v1/friends/requests/68cdba81645f523935a1b520/undo msg: You can't undo other users friend request
+[info]: timestamp:2025-09-20 02:21:17 AM traceId:[baae4514-4a12-42d7-8087-da5f983d7a46] msg:Incoming request: DELETE /api/v1/friends/requests/68cdba81645f523935a1b520/undo
+[info]: timestamp:2025-09-20 02:21:27 AM traceId:[34745dc4-1062-4267-ac22-275a4c453a03] msg:Incoming request: DELETE /api/v1/friends/requests/68cdba81645f523935a1b520/undo
+[error]: timestamp:2025-09-20 02:21:27 AM traceId:[34745dc4-1062-4267-ac22-275a4c453a03] msg: method: DELETE: /api/v1/friends/requests/68cdba81645f523935a1b520/undo msg: The friend request you want to undo is not found
+[info]: timestamp:2025-09-20 02:22:04 AM traceId:[cb4382da-7b41-4be2-a06a-ec9acc889acd] msg:Incoming request: GET /api/v1/friends/requests/received?page=2&limit=1&sort=asc
+[error]: timestamp:2025-09-20 02:22:04 AM traceId:[cb4382da-7b41-4be2-a06a-ec9acc889acd] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=asc msg: Validation failed!
+[info]: timestamp:2025-09-20 02:22:11 AM traceId:[9a83543d-5f9b-4d97-9b8b-65bfd06b68f9] msg:Incoming request: GET /api/v1/friends/requests/received?sort=asc
+[error]: timestamp:2025-09-20 02:22:11 AM traceId:[9a83543d-5f9b-4d97-9b8b-65bfd06b68f9] msg: method: GET: /api/v1/friends/requests/received?sort=asc msg: Validation failed!
+[info]: timestamp:2025-09-20 02:22:18 AM traceId:[70be54b1-3b26-4dee-be4e-cbfc515fd343] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-09-20 02:22:23 AM traceId:[7db6837a-e3b5-4a48-a493-0aee1d4fd281] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-09-20 02:22:26 AM traceId:[a29865b7-c995-44ac-9bd6-12d528e884eb] msg:Incoming request: GET /api/v1/friends/requests/received?sort=1
+[info]: timestamp:2025-09-20 02:22:40 AM traceId:[d3f420d2-1d89-4c15-940f-c65537b32550] msg:Incoming request: GET /api/v1/friends/requests/received
+[info]: timestamp:2025-09-20 02:23:01 AM traceId:[9ff2b87f-e115-42a6-92ae-df2bc49a1f08] msg:Incoming request: GET /api/v1/friends/requests/sent?page=2&limit=1&sort=1
+[error]: timestamp:2025-09-20 02:23:01 AM traceId:[9ff2b87f-e115-42a6-92ae-df2bc49a1f08] msg: method: GET: /api/v1/friends/requests/sent?page=2&limit=1&sort=1 msg: No results found. The requested page number does not exist.
+[info]: timestamp:2025-09-20 02:23:11 AM traceId:[4d52fe05-c5b0-4a67-84e2-faae28d8960f] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-09-20 02:23:31 AM traceId:[bc79e681-e16c-40fa-9a20-79078974ada9] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-09-20 02:23:40 AM traceId:[a53cbdef-2440-4444-8b9e-33d71b7eb1ac] msg:Incoming request: POST /api/v1/friends/requests
+[info]: timestamp:2025-09-20 02:23:46 AM traceId:[b2a46182-49b2-4280-a007-7ac5c136f233] msg:Incoming request: GET /api/v1/friends/requests/sent
+[info]: timestamp:2025-09-20 02:23:59 AM traceId:[6a70080a-64ce-4e44-9f8e-25f4f44d8581] msg:Incoming request: GET /api/v1/friends?sort=asc
+[error]: timestamp:2025-09-20 02:23:59 AM traceId:[6a70080a-64ce-4e44-9f8e-25f4f44d8581] msg: method: GET: /api/v1/friends?sort=asc msg: Validation failed!
+[info]: timestamp:2025-09-20 02:24:11 AM traceId:[9128a1c5-2c90-4f06-bd4d-7dea10d980bf] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-09-20 02:25:23 AM traceId:[7d606b8a-7b13-480f-98eb-f7d7ee4668f2] msg:Incoming request: GET /api/v1/friends
+[info]: timestamp:2025-09-20 02:27:16 AM traceId:[71217422-1492-409e-9a48-5a1acc4739bf] msg:Incoming request: DELETE /api/v1/friends/68cdbbcd645f523935a1b548
+[error]: timestamp:2025-09-20 02:27:16 AM traceId:[71217422-1492-409e-9a48-5a1acc4739bf] msg: method: DELETE: /api/v1/friends/68cdbbcd645f523935a1b548 msg: The user you want to delete from your friend list is not found
+[info]: timestamp:2025-09-21 02:02:09 AM traceId:[3da59170-e421-4da1-952f-52338021bf16] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[info]: timestamp:2025-09-21 02:13:10 AM traceId:[d85449f2-52e1-485e-a3d8-cfceac8e1e44] msg:Incoming request: PATCH /api/v1/users/me/soft-delete
+[error]: timestamp:2025-09-21 02:13:11 AM traceId:[d85449f2-52e1-485e-a3d8-cfceac8e1e44] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid token. User with email "jahidulislamhakim53@gmail.com" and role "user" not found.

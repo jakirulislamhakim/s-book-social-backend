@@ -10,6 +10,7 @@ export type TFriend = {
   senderId: Types.ObjectId;
   receiverId: Types.ObjectId;
   status: TFriendStatus;
+  rejectedAt: Date;
   requestedAt: Date;
   updatedAt: Date;
 };

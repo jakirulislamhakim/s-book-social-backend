@@ -228,6 +228,7 @@ const rejectFriendRequest = async (
     requestId,
     {
       status: FRIEND_STATUS.REJECTED,
+      rejectedAt: new Date(),
     },
     {
       new: true,
@@ -521,7 +522,7 @@ const getMyFriends = async (
           fullName: '$otherProfile.fullName',
           profilePhoto: '$otherProfile.profilePhoto',
         },
-        updatedAt: 1,
+        // updatedAt: 1,
       },
     },
 

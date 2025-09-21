@@ -3,6 +3,7 @@ import app from './app';
 import { Server } from 'http';
 import config from './app/v1/config';
 import { seedSuperAdminIntoDB } from './app/v1/utils/seedSuperAdminIntoDB';
+import { initializeJobs } from '../src/app/v1/jobs/index';
 
 let server: Server;
 
@@ -12,6 +13,8 @@ async function startServer() {
 
     // first super admin push if no admin exists
     seedSuperAdminIntoDB();
+
+    initializeJobs();
 
     server = app.listen(config.PORT, () => {
       console.info(`app is listening on port ${config.PORT}`);

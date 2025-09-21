@@ -738,3 +738,11 @@ Proj: {}
 Sort: {}
 Proj: {}
  planner returned error :: caused by :: hint provided does not correspond to an existing index
+[error]: timestamp:2025-09-20 02:21:11 AM traceId:[8cca6ebe-fc5c-4d05-9870-fb830fc64793] msg: method: DELETE: /api/v1/friends/requests/68cdba81645f523935a1b520/undo msg: You can't undo other users friend request
+[error]: timestamp:2025-09-20 02:21:27 AM traceId:[34745dc4-1062-4267-ac22-275a4c453a03] msg: method: DELETE: /api/v1/friends/requests/68cdba81645f523935a1b520/undo msg: The friend request you want to undo is not found
+[error]: timestamp:2025-09-20 02:22:04 AM traceId:[cb4382da-7b41-4be2-a06a-ec9acc889acd] msg: method: GET: /api/v1/friends/requests/received?page=2&limit=1&sort=asc msg: Validation failed!
+[error]: timestamp:2025-09-20 02:22:11 AM traceId:[9a83543d-5f9b-4d97-9b8b-65bfd06b68f9] msg: method: GET: /api/v1/friends/requests/received?sort=asc msg: Validation failed!
+[error]: timestamp:2025-09-20 02:23:01 AM traceId:[9ff2b87f-e115-42a6-92ae-df2bc49a1f08] msg: method: GET: /api/v1/friends/requests/sent?page=2&limit=1&sort=1 msg: No results found. The requested page number does not exist.
+[error]: timestamp:2025-09-20 02:23:59 AM traceId:[6a70080a-64ce-4e44-9f8e-25f4f44d8581] msg: method: GET: /api/v1/friends?sort=asc msg: Validation failed!
+[error]: timestamp:2025-09-20 02:27:16 AM traceId:[71217422-1492-409e-9a48-5a1acc4739bf] msg: method: DELETE: /api/v1/friends/68cdbbcd645f523935a1b548 msg: The user you want to delete from your friend list is not found
+[error]: timestamp:2025-09-21 02:13:11 AM traceId:[d85449f2-52e1-485e-a3d8-cfceac8e1e44] msg: method: PATCH: /api/v1/users/me/soft-delete msg: Invalid token. User with email "jahidulislamhakim53@gmail.com" and role "user" not found.
