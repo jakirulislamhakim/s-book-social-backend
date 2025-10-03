@@ -1,0 +1,3 @@
+[info]: timestamp:2025-10-04 03:41:20 AM traceId:[6a885e2a-49aa-45c4-891b-27f7e7dd58f6] msg:Incoming request: GET /api/v1/posts/me
+[error]: timestamp:2025-10-04 03:41:21 AM traceId:[6a885e2a-49aa-45c4-891b-27f7e7dd58f6] msg: method: GET: /api/v1/posts/me msg: Invalid token. User with email "jahidulislamhakim53@gmail.com" and role "user" not found.
+[info]: timestamp:2025-10-04 03:41:39 AM traceId:[83e3133a-64a1-45ed-92d8-0e93efde4b91] msg:Incoming request: POST /api/v1/auth/registration

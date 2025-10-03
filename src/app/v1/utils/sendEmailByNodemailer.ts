@@ -11,7 +11,9 @@ type TSendEmail = {
 };
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 587, // TLS
+  secure: false, // false for TLS
   auth: {
     user: config.SENDER_EMAIL,
     pass: config.GMAIL_APP_PASS,
