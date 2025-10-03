@@ -35,9 +35,10 @@ const userRegistrationIntoDB = async (
   baseUrl: string,
 ) => {
   const session = await mongoose.startSession();
-  session.startTransaction();
 
   try {
+    session.startTransaction();
+
     const { password, email, ...remainingPayload } = payload;
 
     // Check if user already exists

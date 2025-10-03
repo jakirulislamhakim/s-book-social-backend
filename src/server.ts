@@ -8,8 +8,14 @@ import { initializeJobs } from '../src/app/v1/jobs/index';
 let server: Server;
 
 async function startServer() {
+  const DB_URL = config.DATABASE_URL;
+
   try {
-    await mongoose.connect(config.DATABASE_URL);
+    if (!DB_URL) {
+      throw new Error('Please set DATABASE_URL in .env file');
+    }
+
+    await mongoose.connect(DB_URL);
 
     // first super admin push if no admin exists
     seedSuperAdminIntoDB();

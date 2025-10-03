@@ -15,6 +15,7 @@ const getEnvVar = (key: string, required = true): string => {
 
 export default {
   NODE_ENV: getEnvVar('NODE_ENV'),
+  BASE_DIR: getEnvVar('NODE_ENV') === 'production' ? 'dist' : 'src',
   PORT: getEnvVar('PORT'),
   DATABASE_URL: getEnvVar('DATABASE_URL'),
   BCRYPT_SALT_ROUNDS: getEnvVar('BCRYPT_SALT_ROUNDS'),

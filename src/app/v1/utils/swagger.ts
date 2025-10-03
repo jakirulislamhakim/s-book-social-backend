@@ -1,6 +1,9 @@
 import YAML from 'yamljs';
 import path from 'path';
-declare const __dirname: string;
+import config from '../config';
 
-const swaggerPath = path.resolve(__dirname, '../../../docs/v1/swagger.yaml');
+const swaggerPath = path.resolve(
+  process.cwd(),
+  `${config.BASE_DIR}/docs/v1/swagger.yaml`,
+);
 export const swaggerV1Doc = YAML.load(swaggerPath);

@@ -16,9 +16,10 @@ export const seedSuperAdminIntoDB = async () => {
   // if not found super admin then seed super admin into db
   if (!user) {
     const session = await mongoose.startSession();
-    session.startTransaction();
 
     try {
+      session.startTransaction();
+
       const password = await AuthUtils.bcryptHashPassword(
         config.SUPER_ADMIN_PASSWORD,
       );

@@ -1,6 +1,7 @@
 import handlebars from 'handlebars';
 import fs from 'fs';
 import path from 'path';
+import config from '../config';
 
 type TCompilePath = {
   templateName: string;
@@ -9,8 +10,10 @@ type TCompilePath = {
 
 export const compileTemplate = ({ templateName, emailData }: TCompilePath) => {
   try {
-    // eslint-disable-next-line no-undef
-    const filePath = path.join(__dirname, `../views/${templateName}.hbs`);
+    const filePath = path.join(
+      process.cwd(),
+      `${config.BASE_DIR}/app/v1/views/${templateName}.hbs`,
+    );
     const emailTemplate = fs.readFileSync(filePath, 'utf-8');
     const template = handlebars.compile(emailTemplate);
 

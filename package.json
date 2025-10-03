@@ -6,7 +6,8 @@
   "scripts": {
     "prod": "node ./dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
+    "build": "tsc && pnpm copy-assets",
+    "copy-assets": "copyfiles -u 1 src/**/*.hbs dist/ && copyfiles -u 1 src/docs/**/*.yaml dist/",
     "deploy": "vercel --prod",
     "lint": "eslint src --ignore-path .eslintignore --ext .ts",
     "lint:fix": "npx eslint src --fix",
@@ -60,6 +61,7 @@
     "@types/yamljs": "^0.2.34",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^8.0.3",
