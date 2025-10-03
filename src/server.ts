@@ -3,7 +3,7 @@ import app from './app';
 import { Server } from 'http';
 import config from './app/v1/config';
 import { seedSuperAdminIntoDB } from './app/v1/utils/seedSuperAdminIntoDB';
-import { initializeJobs } from '../src/app/v1/jobs/index';
+import { initializeJobs } from 'app/v1/jobs';
 
 let server: Server;
 
