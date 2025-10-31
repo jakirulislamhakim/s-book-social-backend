@@ -210,10 +210,3 @@ src/
 ### ✍️ Author
 
 Built by **Jakirul Islam Hakim** – a passionate backend developer open to new opportunities. If this project aligns with what you're looking for, I'd be excited to connect!
-
-chore(docs)+fix(auth): update README and add temporary email fallback in auth
-
-- README: project documentation
-- Auth (controller):
-  - Temporarily include verification/reset links in response messages when email is disabled
-  - Email sending currently disabled due to provider/host constraints
