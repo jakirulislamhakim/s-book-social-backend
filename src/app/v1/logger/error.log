@@ -1,1 +1,28 @@
 [error]: timestamp:2025-10-04 03:41:21 AM traceId:[6a885e2a-49aa-45c4-891b-27f7e7dd58f6] msg: method: GET: /api/v1/posts/me msg: Invalid token. User with email "jahidulislamhakim53@gmail.com" and role "user" not found.
+[error]: timestamp:2025-10-11 01:32:13 AM traceId:[4fae1dbf-d0da-4052-ab0c-ea2bd573438e] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 01:32:18 AM traceId:[aa8f4306-0905-47fb-a8b4-cdf5a39ffbe5] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 01:32:21 AM traceId:[20730771-e8b7-4d2d-a4c0-30f1407b17d4] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 01:37:10 AM traceId:[557c7e91-9cc1-4715-80d7-53794709f77d] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 01:54:21 AM traceId:[3a1f1764-0a46-4778-828b-217bd6ba1cff] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 01:54:25 AM traceId:[2d8322e5-e757-486b-b381-6816de96248e] msg: method: POST: /api/v1/auth/registration msg: A user with this email already exists.
+[error]: timestamp:2025-10-11 03:04:45 AM traceId:[b4faf791-32f4-4d17-beae-a8a466c99ac6] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:04:50 AM traceId:[94299d61-30c6-46c2-8e4a-b778ec722877] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:04:53 AM traceId:[95a6fc3d-0945-40b7-b316-a67892ab5062] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:07:15 AM traceId:[3c1c62b4-9dce-4d63-9d46-ed4ddf2efff4] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Invalid login: 535 5.7.8 Authentication failed
+[error]: timestamp:2025-10-11 03:08:42 AM traceId:[f5f0cf6b-beb1-40fc-830b-5877b0276a5e] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Invalid login: 535 5.7.8 Authentication failed
+[error]: timestamp:2025-10-11 03:10:28 AM traceId:[56c82ba5-7ef2-4264-8a4f-49cc4288d18d] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:10:36 AM traceId:[5971d9fa-9453-4bb8-a8ff-37fbc8c11a53] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Invalid login: 535 5.7.8 Authentication failed
+[error]: timestamp:2025-10-11 03:11:12 AM traceId:[8528a474-5feb-4347-8bc2-ccad2044dd55] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:11:14 AM traceId:[646c522c-eb53-4349-b8fc-71306a0c2ad7] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:11:19 AM traceId:[6bd5079d-1f0a-4d54-8dd5-463542b28245] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Invalid login: 535 5.7.8 Authentication failed
+[error]: timestamp:2025-10-11 03:13:50 AM traceId:[bd0b43b6-802c-49ab-8769-f57343a5b525] msg: method: POST: /api/v1/auth/registration msg: Failed to send email: Invalid login: 535 5.7.8 Authentication failed
+[error]: timestamp:2025-10-11 03:18:23 AM traceId:[719945af-a860-4383-b2c2-8810d6bb57ba] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 03:20:01 AM traceId:[97096e39-f01e-4a37-af0a-14b0c030d035] msg: method: POST: /api/v1/auth/registration msg: A user with this email already exists.
+[error]: timestamp:2025-10-11 17:32:53 PM traceId:[a917f358-d575-444c-a61d-e4b4fe717538] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 17:37:01 PM traceId:[f3a3dd12-628a-4e3a-be1d-a8c20c2cb552] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-11 17:37:04 PM traceId:[2bc9e2c5-deab-452a-98ab-cb8a351c779b] msg: method: POST: /api/v1/auth/registration msg: A user with this email already exists.
+[error]: timestamp:2025-10-11 17:37:06 PM traceId:[651c04c8-7d9f-4f40-8ddd-271e53336d18] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-26 16:55:06 PM traceId:[7fee7acd-08f9-43a4-8444-e1fb946973b5] msg: method: POST: /api/v1/auth/registration msg: A user with this email already exists.
+[error]: timestamp:2025-10-26 16:55:14 PM traceId:[7383bed3-341d-4292-86d4-bfbcd0c85a7b] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-26 16:55:16 PM traceId:[f84d3bf7-c2ec-4394-b01c-0ed693377b7a] msg: method: POST: /api/v1/auth/registration msg: Validation failed!
+[error]: timestamp:2025-10-26 16:56:25 PM traceId:[ba6c33fd-4091-40b9-aa6e-6142bf11c377] msg: method: POST: /api/v1/auth/registration msg: A user with this email already exists.

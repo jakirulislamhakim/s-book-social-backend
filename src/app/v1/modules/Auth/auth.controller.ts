@@ -8,14 +8,12 @@ import { getBaseUrl } from '../../utils/getBaseUrl';
 const userRegistration = catchAsync(async (req, res) => {
   const baseUrl = getBaseUrl(req);
 
-  const { fullName } = await AuthServices.userRegistrationIntoDB(
-    req.body,
-    baseUrl,
-  );
+  const { fullName, verificationLink } =
+    await AuthServices.userRegistrationIntoDB(req.body, baseUrl);
 
   sendApiResponse(res, {
     statusCode: httpStatus.CREATED,
-    message: `Welcome ${fullName}! Please check your email to verify your account`,
+    message: `Welcome ${fullName}! Please check your email to verify your account..[ ${verificationLink} ]`,
     payload: null,
   });
 });
@@ -27,7 +25,7 @@ const login = catchAsync(async (req, res) => {
 
   let message = '';
   if (result.fullName) {
-    message = `Hey ${result.fullName} before you login, please check your email to verify your email`;
+    message = `Hey ${result.fullName} before you login, please check your email to verify your email.. [${result.verificationLink}]`;
   } else {
     message = `Welcome back ${result.user!.fullName}!`;
   }
@@ -58,11 +56,14 @@ const verifyEmail = catchAsync(async (req, res) => {
 const resendVerificationEmail = catchAsync(async (req, res) => {
   const baseUrl = getBaseUrl(req);
 
-  await AuthServices.resendVerificationEmail(req.body.email, baseUrl);
+  const { verificationLink } = await AuthServices.resendVerificationEmail(
+    req.body.email,
+    baseUrl,
+  );
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message: 'Verification email sent successfully',
+    message: `Verification email sent successfully.. [${verificationLink}]`,
     payload: null,
   });
 });
@@ -82,11 +83,11 @@ const changePassword = catchAsync(async (req, res) => {
 const forgetPassword = catchAsync(async (req, res) => {
   const baseUrl = getBaseUrl(req);
 
-  await AuthServices.forgetPassword(req.body, baseUrl);
+  const { resetUrl } = await AuthServices.forgetPassword(req.body, baseUrl);
 
   sendApiResponse(res, {
     statusCode: httpStatus.OK,
-    message: `We’ve sent you an email with instructions to reset your password`,
+    message: `We’ve sent you an email with instructions to reset your password.. [${resetUrl}]`,
     payload: null,
   });
 });

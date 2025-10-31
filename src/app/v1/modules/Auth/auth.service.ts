@@ -15,7 +15,7 @@ import config from '../../config';
 import { Profile } from '../Profile/profile.model';
 import mongoose from 'mongoose';
 import { ADMIN_BADGE, USER_ROLE, USER_STATUS } from '../User/user.constant';
-import { sendEmailByNodemailer } from '../../utils/sendEmailByNodemailer';
+// import { sendEmailByNodemailer } from '../../utils/sendEmailByNodemailer';
 
 const {
   bcryptComparePassword,
@@ -85,21 +85,21 @@ const userRegistrationIntoDB = async (
 
     const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
-    await sendEmailByNodemailer({
-      to: user[0].email,
-      subject: 'Verify Your Email',
-      templateName: 'verify-email',
-      emailData: {
-        verificationLink,
-        name: profile[0].fullName,
-      },
-    });
+    // await sendEmailByNodemailer({
+    //   to: user[0].email,
+    //   subject: 'Verify Your Email',
+    //   templateName: 'verify-email',
+    //   emailData: {
+    //     verificationLink,
+    //     name: profile[0].fullName,
+    //   },
+    // });
 
     // Commit the transaction
     await session.commitTransaction();
     session.endSession();
 
-    return { fullName: profile[0].fullName };
+    return { fullName: profile[0].fullName, verificationLink };
   } catch (error) {
     await session.abortTransaction();
     session.endSession();
@@ -151,17 +151,17 @@ const login = async (payload: TUserLogin, baseUrl: string) => {
 
     const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
-    await sendEmailByNodemailer({
-      to: isExistsUser.email,
-      subject: 'Verify Your Email',
-      templateName: 'verify-email',
-      emailData: {
-        verificationLink,
-        name: profile!.fullName,
-      },
-    });
+    // await sendEmailByNodemailer({
+    //   to: isExistsUser.email,
+    //   subject: 'Verify Your Email',
+    //   templateName: 'verify-email',
+    //   emailData: {
+    //     verificationLink,
+    //     name: profile!.fullName,
+    //   },
+    // });
 
-    return { fullName: profile!.fullName };
+    return { fullName: profile!.fullName, verificationLink };
   }
 
   // check valid password
@@ -235,19 +235,21 @@ const resendVerificationEmail = async (email: string, baseUrl: string) => {
 
   const verificationLink = `${baseUrl}/auth/verify-email/${verifyToken}`;
 
-  const profile = await Profile.findOne({ userId: user._id })
-    .select('fullName')
-    .lean();
+  // const profile = await Profile.findOne({ userId: user._id })
+  //   .select('fullName')
+  //   .lean();
 
-  await sendEmailByNodemailer({
-    to: user.email,
-    subject: 'Verify Your Email',
-    templateName: 'verify-email',
-    emailData: {
-      verificationLink,
-      name: profile!.fullName,
-    },
-  });
+  // await sendEmailByNodemailer({
+  //   to: user.email,
+  //   subject: 'Verify Your Email',
+  //   templateName: 'verify-email',
+  //   emailData: {
+  //     verificationLink,
+  //     name: profile!.fullName,
+  //   },
+  // });
+
+  return { verificationLink };
 };
 
 // change password
@@ -306,19 +308,21 @@ const forgetPassword = async (
   const resetToken = createJwtResetToken(jwtPayload);
   const resetUrl = `${baseUrl}/auth/reset-password/${resetToken}`;
 
-  const profile = await Profile.findOne({ userId: user._id })
-    .select('fullName')
-    .lean();
+  // const profile = await Profile.findOne({ userId: user._id })
+  //   .select('fullName')
+  //   .lean();
 
-  await sendEmailByNodemailer({
-    to: user.email,
-    subject: 'Reset Your Password',
-    templateName: 'reset-password',
-    emailData: {
-      resetUrl,
-      name: profile!.fullName,
-    },
-  });
+  // await sendEmailByNodemailer({
+  //   to: user.email,
+  //   subject: 'Reset Your Password',
+  //   templateName: 'reset-password',
+  //   emailData: {
+  //     resetUrl,
+  //     name: profile!.fullName,
+  //   },
+  // });
+
+  return { resetUrl };
 };
 
 // reset password

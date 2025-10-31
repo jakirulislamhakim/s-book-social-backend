@@ -1,17 +1,17 @@
 export const NOTIFICATION_ACTION = {
   REACTED: 'reacted',
   COMMENTED: 'commented',
-  STORY_EXPIRED: 'story_expired',
+  STORY_EXPIRED: 'storyExpired',
   REPLIED: 'replied',
   MENTIONED: 'mentioned',
-  FRIEND_REQUEST: 'friend_request',
-  FRIEND_REQUEST_ACCEPTED: 'friend_request_accepted',
+  FRIEND_REQUEST: 'friendRequest',
+  FRIEND_REQUEST_ACCEPTED: 'friendRequestAccepted',
   MESSAGE: 'message',
   TAGGED: 'tagged',
-  POST_REMOVED: 'post_removed',
-  POST_APPEAL: 'post_appeal',
-  SYSTEM_ALERT: 'system_alert',
-  SYSTEM_INFO: 'system_info',
+  POST_REMOVED: 'postRemoved',
+  POST_APPEAL: 'postAppeal',
+  SYSTEM_ALERT: 'systemAlert',
+  SYSTEM_INFO: 'systemInfo',
 } as const;
 
 export const NOTIFICATION_TARGET_TYPE = {
